@@ -2,25 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/[[...slug]]/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/[locale]/[[...slug]]/page.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/PageRenderer.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/components/SiteShell.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/legacy/LegacyContent.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/cdpap-redirects.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/pages.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/locales.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/pages.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/dist/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/legacy-theme/dist/css/style.css.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/legacy-theme/dist/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/legacy-theme/dist/js/app.js.map" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/images/bg/bg_conditions.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/images/bg/bg_contact.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/images/bg/bg_hero.jpg" beforeDir="false" />
@@ -61,7 +58,6 @@
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/images/video/video.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/nice-select/jquery.nice-select.min.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/legacy-theme/nice-select/nice-select.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/legacy-theme/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/2020/09/Screen-Shot-2020-11-17-at-10.12.16-PM-150x150.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/2020/09/Screen-Shot-2020-11-17-at-10.12.16-PM-230x300.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/2020/09/Screen-Shot-2020-11-17-at-10.12.16-PM-310x295.png" beforeDir="false" />
@@ -1323,6 +1319,33 @@
       <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/2026/06/test2-768x685.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/2026/06/test2-e1780490185787.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/2026/06/test2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/cfdb7_uploads/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/complianz/css/banner-1-optout.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpcf7_uploads/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/.htaccess" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Bertha-Vasquez-SSN-6e6d1ef5b7cd3d0656c5d698bf764fbc.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Chimene-Ransom-Pre-Employment-Health-Aide-2b25fb5ee7cca16b794852b50b024855.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Christopher-Andersons-Ids-e5aad7169ed20f1dac5ede60b76531d2.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Erick-Escalastico-Labs-a1aa2b9c07c80fb6fbe37900a16a82f9.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/FAX_20241101_1730473864_507-1-a6bacba2b817c40fb98c4c3360d801be.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Noemi-Fernandez-Driver-License2-5997870f4055cd6d49c306b0c16c8038.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Referral-Form_16950671911494_88-987e3114e82f7e9e5f53ef623567e8e8.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/Rosalie-Paperwork-fdb40c9337ea5f32e00d80016372eeee.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/SHEPPARD-JANIAH-A-NYIA-ed44012a00ca33cfb9b99f74c2d42d2a.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/WhatsApp-Image-2024-10-02-at-1.18.26-AM-1-baee531251fb65afb932d5c85e2c18b1.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/candidaseguradegrullonrefertoideal-11c5bc3f9de571f8d7e742d9af388ed7.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/doc00102620250312135202-459fe1fb80d15964da351aeeffbae4d5.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/form-b64ca16eb602ffe3e5106bf645e422bd.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/2670-e4873d84f7b1d0985c0ca5a7cb43838d/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/3052-10851cb9d39533907d7f8a14993648f7/RW-M11Q-505460eaf1ac1c8083296b7a7e35e572.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/3052-10851cb9d39533907d7f8a14993648f7/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/3080-108716a678747f7f8bc9444381209192/Cesar-Marie--0ea12dde05c2391faa7b6a5c1928e618.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/3080-108716a678747f7f8bc9444381209192/Joseph-Dorlus-Intake-form--a7e4fcd40474caebd072aae41a3d191f.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/3080-108716a678747f7f8bc9444381209192/LamandeAntoinette--92dbd9a83ffe5af25ad2dc6142696a21.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/3080-108716a678747f7f8bc9444381209192/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/themes/themes-custom.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/wp-content/uploads/wpforms/tmp/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -1356,6 +1379,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="ClojureREPL" factoryName="Local" activateToolWindowBeforeRun="false">
