@@ -10,7 +10,7 @@ export default function Footer() {
           <p className="mt-3 text-sm text-paper/70 leading-relaxed">
             Compassionate, accredited home care serving Brooklyn, the Bronx, and Manhattan since {site.foundedYear}.
           </p>
-          <a href={site.phoneHref} className="mt-4 inline-block text-sm font-semibold text-gold">
+          <a href={site.phoneHref} className="mt-4 inline-block text-sm font-semibold text-sky">
             {site.phone}
           </a>
         </div>
@@ -22,13 +22,13 @@ export default function Footer() {
             </div>
             <ul className="mt-3 space-y-2">
               <li>
-                <Link href={section.href} className="text-sm text-paper/80 hover:text-gold">
+                <Link href={section.href} className="text-sm text-paper/80 hover:text-sky">
                   {section.label} Overview
                 </Link>
               </li>
               {section.children?.map((child) => (
                 <li key={child.href}>
-                  <Link href={child.href} className="text-sm text-paper/80 hover:text-gold">
+                  <Link href={child.href} className="text-sm text-paper/80 hover:text-sky">
                     {child.label}
                   </Link>
                 </li>
@@ -42,8 +42,8 @@ export default function Footer() {
         <div className="mx-auto max-w-6xl px-6 py-6 flex flex-col sm:flex-row justify-between gap-3 text-xs text-paper/50">
           <span>&copy; {new Date().getFullYear()} {site.name}. All rights reserved.</span>
           <div className="flex gap-4">
-            <Link href="/privacy-policy" className="hover:text-gold">Privacy Policy</Link>
-            <Link href="/tos" className="hover:text-gold">Terms of Service</Link>
+            <Link href="/privacy-policy" className="hover:text-sky">Privacy Policy</Link>
+            <Link href="/tos" className="hover:text-sky">Terms of Service</Link>
           </div>
         </div>
       </div>

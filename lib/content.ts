@@ -53,6 +53,7 @@ export const homePage = {
       "Families needing respite care",
     ],
     button: { title: "Enroll Now", href: "/enroll-now" },
+    image: "/images/home-health-care-in-nyc.jpg",
   },
   customPlans: {
     label: "Ideal Home Health",
@@ -61,6 +62,7 @@ export const homePage = {
     description:
       "Our home care services in all five boroughs of New York City specialize in a diverse range of conditions. We offer custom care models and flexible home attendant services tailored to your family's unique lifestyle and needs across NYC.",
     button: { title: "View Our Care Specialties", href: "/services/conditions" },
+    image: "/images/personalized-home-health-care-new-york.jpg",
   },
   locations: {
     label: "Ideal Home Health",
@@ -75,6 +77,7 @@ export const homePage = {
     description:
       "Are you a dedicated and compassionate caregiver seeking a rewarding career in home health care in New York City? Ideal Home Health is actively seeking talented individuals to join our growing team. Discover a supportive environment where your passion for care truly makes a difference.",
     button: { title: "View Career Opportunities", href: "/careers" },
+    image: "/images/join-ideal-home-health-care-nyc.jpg",
   },
   prefooterCta: {
     title: "Ready to Find Your Ideal Home Health Care Solution in NYC?",
@@ -82,6 +85,8 @@ export const homePage = {
       "Contact us today for a free consultation and discuss a custom home care plan perfectly suited to your family's needs in New York City.",
     button: { title: "Enroll Today", href: "/enroll-now" },
   },
+  heroImage: "/images/compassionate-home-health-care-services-nyc.jpg",
+  locationsImage: "/images/Daco_924160.png",
 };
 
 export const servicesPage = {
@@ -94,12 +99,14 @@ export const servicesPage = {
       description:
         "Our Department of Health certified Home Health Aides (HHAs) offer compassionate assistance with Activities of Daily Living (ADLs). From personal care to medication reminders, our in-home aides in NYC help maintain independence. All HHAs receive continuous training, ensuring top safety standards.",
       button: { title: "Learn More", href: "/services/home-health-aide" },
+      image: "/images/home-health-aides-new-york.jpg",
     },
     {
       title: "Visiting Home Nurse – Expert Skilled Nursing Care at Home",
       description:
         "Receive skilled nursing care in your New York City home with our licensed Visiting Home Nurses (RNs/LPNs). We offer medication management, wound care, post-operative support, chronic disease management, and more. Our nurses create custom plans tailored to your recovery and health goals.",
       button: { title: "Learn More", href: "/services/visiting-home-nurse" },
+      image: "/images/visiting-home-nurse-new-york.jpg",
     },
   ],
   whyChoose: {
@@ -112,6 +119,7 @@ export const servicesPage = {
       "Seamless Enrollment",
     ],
     button: { title: "Enroll Now", href: "/enroll-now" },
+    image: "/images/choose-ideal-home-health-care-nyc.jpg",
   },
 };
 
@@ -132,6 +140,7 @@ export const homeHealthAidePage = {
       "Promoting independence and physical activity within the home",
       "Providing compassionate care and promoting well being through kindness, teamwork and setting goals to continue living your best life!",
     ],
+    image: "/images/certified-home-health-aides-new-york.jpg",
   },
 };
 
@@ -167,6 +176,7 @@ export const locations = {
     whyChoose: {
       title: "Why Brooklyn Families Choose Ideal Home Health",
       intro: "Ideal Home Health is deeply committed to the Brooklyn community. When you choose us, you benefit from:",
+      image: "/images/brooklyn-families-choose-ideal-home-health-1.jpg",
       items: [
         { title: "Local Expertise", description: "Our Brooklyn team understands the borough's unique character and resources." },
         { title: "Compassionate Caregivers", description: "Vetted, trained, and dedicated professionals ready to serve your neighborhood." },

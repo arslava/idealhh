@@ -9,7 +9,7 @@ type PrefooterCtaProps = {
 
 export default function PrefooterCta({ title, description, button }: PrefooterCtaProps) {
   return (
-    <section className="bg-brick text-paper">
+    <section className="bg-accent text-paper">
       <div className="mx-auto max-w-4xl px-6 py-16 text-center">
         <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
         <p className="mt-4 text-paper/85 max-w-xl mx-auto leading-relaxed">{description}</p>
@@ -19,7 +19,7 @@ export default function PrefooterCta({ title, description, button }: PrefooterCt
           </Button>
           <a
             href={site.phoneHref}
-            className="text-sm font-semibold text-paper underline underline-offset-4 decoration-gold"
+            className="text-sm font-semibold text-paper underline underline-offset-4 decoration-sky"
           >
             or call {site.phone}
           </a>

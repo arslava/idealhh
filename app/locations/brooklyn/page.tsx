@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
@@ -10,10 +11,10 @@ export default function BrooklynPage() {
     <>
       <section className="bg-navy text-paper">
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-20 md:pb-24">
-          <p className="text-gold text-sm font-semibold tracking-[0.2em] uppercase">Brooklyn, NY</p>
+          <p className="text-sky text-sm font-semibold tracking-[0.2em] uppercase">Brooklyn, NY</p>
           <h1 className="mt-4 max-w-2xl text-4xl md:text-5xl font-semibold leading-tight">
             {hero.title.replace(hero.highlight, "")}
-            <span className="italic text-gold">{hero.highlight}</span>
+            <span className="italic text-sky">{hero.highlight}</span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg text-paper/80 leading-relaxed">{hero.description}</p>
           <div className="mt-8 flex flex-wrap gap-4">
@@ -40,19 +41,24 @@ export default function BrooklynPage() {
       </section>
 
       <section className="bg-paper-deep">
-        <div className="mx-auto max-w-4xl px-6 py-20">
-          <h2 className="text-3xl font-semibold text-navy text-center">{whyChoose.title}</h2>
-          <p className="mt-4 text-ink/80 text-center max-w-2xl mx-auto">{whyChoose.intro}</p>
-          <ul className="mt-10 space-y-5">
-            {whyChoose.items.map((item) => (
-              <li key={item.title} className="flex gap-4">
-                <span className="mt-1.5 h-2 w-2 rounded-full bg-brick shrink-0" />
-                <p className="text-ink/85 leading-relaxed">
-                  <span className="font-semibold text-navy">{item.title}</span>: {item.description}
-                </p>
-              </li>
-            ))}
-          </ul>
+        <div className="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+          <div className="relative rounded-3xl overflow-hidden bg-white aspect-[4/3]">
+            <Image src={whyChoose.image} alt={whyChoose.title} fill className="object-cover" />
+          </div>
+          <div>
+            <h2 className="text-3xl font-semibold text-navy">{whyChoose.title}</h2>
+            <p className="mt-4 text-ink/80">{whyChoose.intro}</p>
+            <ul className="mt-8 space-y-5">
+              {whyChoose.items.map((item) => (
+                <li key={item.title} className="flex gap-4">
+                  <span className="mt-1.5 h-2 w-2 rounded-full bg-accent shrink-0" />
+                  <p className="text-ink/85 leading-relaxed">
+                    <span className="font-semibold text-navy">{item.title}</span>: {item.description}
+                  </p>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </section>
 

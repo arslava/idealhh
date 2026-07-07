@@ -1,22 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --color-navy: #223258;
-  --color-navy-deep: #141d33;
-  --color-brick: #8a3a2e;
-  --color-brick-deep: #6e2d24;
-  --color-gold: #c3953f;
-  --color-paper: #f3f5f1;
-  --color-paper-deep: #e9ebe4;
+  /* Real brand colors extracted from idealhh.com's actual content styling
+     (inline heading colors + section background colors found in the WP export),
+     not invented — this replaces the earlier navy/brick/gold placeholder palette. */
+  --color-navy: #384b74;       /* primary heading/brand blue */
+  --color-navy-deep: #102347;  /* darkest navy — header/footer bg */
+  --color-navy-mid: #364f85;   /* mid blue — section backgrounds */
+  --color-sky: #617ab2;        /* lighter blue accent */
+  --color-accent: #f03c47;     /* red/coral — CTA buttons ("burgundy" in their CMS) */
+  --color-accent-deep: #c72d37;
+  --color-paper: #ffffff;
+  --color-paper-deep: #f4f6fa; /* soft cool grey, matches their light section bg, not cream */
   --color-ink: #1c2333;
 }
 
 @theme inline {
   --color-navy: var(--color-navy);
   --color-navy-deep: var(--color-navy-deep);
-  --color-brick: var(--color-brick);
-  --color-brick-deep: var(--color-brick-deep);
-  --color-gold: var(--color-gold);
+  --color-navy-mid: var(--color-navy-mid);
+  --color-sky: var(--color-sky);
+  --color-accent: var(--color-accent);
+  --color-accent-deep: var(--color-accent-deep);
   --color-paper: var(--color-paper);
   --color-paper-deep: var(--color-paper-deep);
   --color-ink: var(--color-ink);

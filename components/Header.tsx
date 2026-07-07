@@ -14,7 +14,7 @@ export default function Header() {
             <div key={item.label} className="group relative">
               <Link
                 href={item.href}
-                className="text-sm font-medium text-ink hover:text-brick transition-colors"
+                className="text-sm font-medium text-ink hover:text-accent transition-colors"
               >
                 {item.label}
               </Link>
@@ -25,7 +25,7 @@ export default function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="block px-4 py-2 text-sm text-ink hover:bg-paper hover:text-brick"
+                        className="block px-4 py-2 text-sm text-ink hover:bg-paper hover:text-accent"
                       >
                         {child.label}
                       </Link>
