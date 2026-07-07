@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { proximaNova } from "./fonts";
+import { proximaNova, cormorant } from "./fonts";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
