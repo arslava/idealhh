@@ -19,18 +19,40 @@ export const nav = [
     label: "Services",
     href: "/services",
     children: [
+      { label: "Our Services", href: "/services" },
       { label: "Home Health Aides", href: "/services/home-health-aide" },
       { label: "Visiting Home Nurse", href: "/services/visiting-home-nurse" },
-      { label: "Conditions We Support", href: "/services/conditions" },
+      { label: "Conditions", href: "/services/conditions" },
       { label: "How to Enroll", href: "/how-to-enroll" },
+    ],
+  },
+  { label: "Benefits", href: "/home-care-benefits" },
+  {
+    label: "Locations",
+    href: "/locations",
+    children: [
+      { label: "Our Locations", href: "/locations" },
+      { label: "Brooklyn", href: "/locations/brooklyn" },
+      { label: "Bronx", href: "/locations/bronx" },
+    ],
+  },
+  {
+    label: "Resources",
+    href: "/resources",
+    children: [
+      { label: "Patient & Caregiver Resources", href: "/resources" },
+      { label: "FAQ", href: "/resources/faq" },
     ],
   },
   {
     label: "Careers",
     href: "/careers",
-    children: [{ label: "Become a Caregiver", href: "/careers/how-it-works-caregivers" }],
+    children: [
+      { label: "Open Positions", href: "/careers" },
+      { label: "Become A Caregiver", href: "/careers/how-it-works-caregivers" },
+      { label: "Apply as a Caregiver", href: "/careers#qualifyenroll" },
+    ],
   },
-  { label: "Locations", href: "/locations" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

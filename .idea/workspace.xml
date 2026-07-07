@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/home-care-benefits/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/locations/bronx/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/locations/manhattan/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/faq/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/resources/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/content.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783459244961</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="init">
+      <created>1783459451837</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1783459451837</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -138,11 +154,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="132" key="CommitChangelistDialog2" timestamp="1783459244564">
-      <screen x="0" y="23" width="1920" height="1057" />
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783459451378">
+      <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783457512728" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783459451378" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783460603369">
+      <screen x="0" y="23" width="1920" height="1002" />
+    </state>
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783460603369" />
     <state x="639" y="356" key="com.intellij.ide.util.TipDialog" timestamp="1783450921161">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
