@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${proximaNova.variable} antialiased`}>
+      <body className={`${proximaNova.variable} ${cormorant.variable} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

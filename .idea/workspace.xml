@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CLAUDE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/fonts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/ProximaNova-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/ProximaNova-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/ProximaNova-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/fonts/ProximaNova-Semibold.woff2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about-us/testimonials-reviews/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/careers/how-it-works-caregivers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/careers/how-it-works-caregivers/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/careers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/careers/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/enroll-now/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/enroll-now/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/how-to-enroll/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locations/brooklyn/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/locations/brooklyn/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locations/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/locations/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/privacy-policy/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/privacy-policy/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/conditions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/home-health-aide/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/home-health-aide/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/visiting-home-nurse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/visiting-home-nurse/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tos/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/tos/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PrefooterCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PrefooterCta.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/WaveDivider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/WaveDivider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/content.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +38,10 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -128,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783451368168</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="init">
+      <created>1783454358114</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1783454358114</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -136,10 +110,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783451367240">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783454357485">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783451367240" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783454357485" />
     <state x="639" y="356" key="com.intellij.ide.util.TipDialog" timestamp="1783450921161">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>

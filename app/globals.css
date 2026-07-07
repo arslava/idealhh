@@ -33,7 +33,7 @@
   --font-body: var(--font-proxima-nova);
   /* Real display font is Cormorant Garamond (see app/fonts.ts for why this
      is a fallback stack in this sandbox rather than the live Google Font). */
-  --font-display: "Cormorant Garamond", Garamond, "Iowan Old Style", Georgia, serif;
+  --font-display: var(--font-cormorant), Garamond, Georgia, serif;
 }
 
 body {
