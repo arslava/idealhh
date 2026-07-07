@@ -9,14 +9,14 @@ export default function HomeHealthAidePage() {
 
   return (
     <>
-      <section className="bg-navy text-paper">
+      <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-20 md:pb-24">
-          <p className="text-sky text-sm font-semibold tracking-[0.2em] uppercase">Home Health Aides</p>
+          <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Home Health Aides</p>
           <h1 className="mt-4 max-w-2xl text-4xl md:text-5xl font-semibold leading-tight">
             {hero.title.replace(hero.highlight, "")}
-            <span className="italic text-sky">{hero.highlight}</span>
+            <span className="italic text-accent">{hero.highlight}</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-paper/80 leading-relaxed">{hero.description}</p>
+          <p className="mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">{hero.description}</p>
           <Button href="/enroll-now" className="mt-8">Apply for Homecare</Button>
         </div>
       </section>
@@ -24,17 +24,17 @@ export default function HomeHealthAidePage() {
 
       <section className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-3xl font-semibold text-navy">{howTheyHelp.title}</h2>
+          <h2 className="text-3xl font-semibold text-navy-700">{howTheyHelp.title}</h2>
           <ul className="mt-8 space-y-4">
             {howTheyHelp.items.map((item) => (
-              <li key={item} className="flex gap-4 text-ink/85 leading-relaxed">
+              <li key={item} className="flex gap-4 text-grey-800/85 leading-relaxed">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
                 {item}
               </li>
             ))}
           </ul>
         </div>
-        <div className="relative rounded-3xl overflow-hidden bg-paper-deep aspect-[4/3]">
+        <div className="relative rounded-3xl overflow-hidden bg-bg-light aspect-[4/3]">
           <Image src={howTheyHelp.image} alt={howTheyHelp.title} fill className="object-cover" />
         </div>
       </section>

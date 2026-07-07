@@ -7,20 +7,19 @@ type PrefooterCtaProps = {
   button: { title: string; href: string };
 };
 
+// Real contact/prefooter section uses .u-bg-secondary (#9b2c4d, wine) per
+// the theme CSS — not the button accent color.
 export default function PrefooterCta({ title, description, button }: PrefooterCtaProps) {
   return (
-    <section className="bg-accent text-paper">
-      <div className="mx-auto max-w-4xl px-6 py-16 text-center">
-        <h2 className="text-3xl md:text-4xl font-semibold">{title}</h2>
-        <p className="mt-4 text-paper/85 max-w-xl mx-auto leading-relaxed">{description}</p>
+    <section className="bg-wine text-white">
+      <div className="mx-auto max-w-[1140px] px-4 py-16 text-center">
+        <h2 className="font-display text-3xl md:text-4xl font-semibold">{title}</h2>
+        <p className="mt-4 text-white/85 max-w-xl mx-auto leading-relaxed">{description}</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <Button href={button.href} variant="secondary">
+          <Button href={button.href} variant="primary" className="!bg-white">
             {button.title}
           </Button>
-          <a
-            href={site.phoneHref}
-            className="text-sm font-semibold text-paper underline underline-offset-4 decoration-sky"
-          >
+          <a href={site.phoneHref} className="text-sm font-semibold text-white underline underline-offset-4">
             or call {site.phone}
           </a>
         </div>

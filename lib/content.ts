@@ -36,13 +36,32 @@ export const nav = [
 
 export const homePage = {
   hero: {
-    title: "Ideal Home Health: Compassionate Home Care Services in New York City",
+    titlePrefix: "Ideal Home Health: ",
     highlight: "Compassionate Home Care Services",
+    titleSuffix: " in New York City",
     description:
       "Experience compassionate, high-quality home health care services right in your own home with Ideal Home Health. As a leading accredited home health agency in New York City, we are dedicated to providing personalized in-home care solutions that empower you to live independently and comfortably. Whether you need assistance with daily living activities or specialized support, our dedicated team is here for you. Discover the Ideal difference today.",
-    primaryButton: { title: "Apply for Homecare", href: "/enroll-now" },
-    secondaryButton: { title: "Become a Caregiver", href: "/careers#qualifyenroll" },
+    // Real button order per the live site: primary (white/accent) = Become a
+    // Caregiver, secondary (solid accent) = Apply for Homecare.
+    primaryButton: { title: "Become a Caregiver", href: "/careers#qualifyenroll" },
+    secondaryButton: { title: "Apply for Homecare", href: "/enroll-now" },
   },
+  servicesTeaser: [
+    {
+      title: "Home Health Aides for Personalized Care",
+      description:
+        "Our Certified Home Health Aides offer compassionate personal care & daily living assistance. We empower independence in your NYC home.",
+      button: { title: "Learn More", href: "/services/home-health-aide" },
+      icon: "heart",
+    },
+    {
+      title: "Expert Visiting Home Nurses for Skilled Care",
+      description:
+        "Our licensed Visiting Home Nurses provide skilled medical care at your New York City home, customizing plans for your needs.",
+      button: { title: "Learn More", href: "/services/visiting-home-nurse" },
+      icon: "heart-pulse",
+    },
+  ],
   whoBenefits: {
     label: "Ideal Home Health",
     title: "Who Benefits from Ideal Home Health Care in NYC?",
@@ -143,6 +162,24 @@ export const homeHealthAidePage = {
     image: "/images/certified-home-health-aides-new-york.jpg",
   },
 };
+
+export const locationCards = [
+  {
+    name: "Brooklyn",
+    address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235",
+    button: { title: "Brooklyn Services", href: "/locations/brooklyn" },
+  },
+  {
+    name: "Bronx",
+    address: "391 East 149th Street, Suite 515, Bronx, NY 10455",
+    button: { title: "Bronx Services", href: "/locations/bronx" },
+  },
+  {
+    name: "Manhattan",
+    address: "112 W 34th St., 17th floor, New York, NY 10120",
+    button: { title: "Manhattan Services", href: "/locations/manhattan" },
+  },
+];
 
 export const locations = {
   brooklyn: {

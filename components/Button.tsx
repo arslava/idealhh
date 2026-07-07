@@ -3,18 +3,23 @@ import Link from "next/link";
 type ButtonProps = {
   href: string;
   children: React.ReactNode;
-  variant?: "primary" | "secondary" | "ghost";
+  variant?: "outline" | "primary" | "secondary";
   className?: string;
 };
 
-export default function Button({ href, children, variant = "primary", className = "" }: ButtonProps) {
+// Matches the real .c-button system from the theme CSS: pill shape
+// (30px radius), min-width ~200px, ProximaNova semibold, 1px accent border.
+// outline = transparent bg / accent text+border (theme default)
+// primary  = white bg / accent border+text
+// secondary = solid accent bg / white text
+export default function Button({ href, children, variant = "outline", className = "" }: ButtonProps) {
   const base =
-    "inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-colors duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky";
+    "inline-flex items-center justify-center rounded-full min-w-[196px] px-6 py-3.5 text-[1.125rem] font-semibold border transition-colors duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
   const variants = {
-    primary: "bg-accent text-paper hover:bg-accent-deep",
-    secondary: "bg-navy text-paper hover:bg-navy-deep",
-    ghost: "bg-transparent text-navy border border-navy/30 hover:bg-navy/5",
+    outline: "bg-transparent border-accent text-accent hover:bg-accent hover:text-white",
+    primary: "bg-white border-accent text-accent hover:bg-accent hover:text-white",
+    secondary: "bg-accent border-accent text-white hover:bg-navy-900 hover:border-navy-900",
   };
 
   return (

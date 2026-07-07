@@ -9,17 +9,22 @@ export default function BrooklynPage() {
 
   return (
     <>
-      <section className="bg-navy text-paper">
+      <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-20 md:pb-24">
-          <p className="text-sky text-sm font-semibold tracking-[0.2em] uppercase">Brooklyn, NY</p>
+          <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Brooklyn, NY</p>
           <h1 className="mt-4 max-w-2xl text-4xl md:text-5xl font-semibold leading-tight">
             {hero.title.replace(hero.highlight, "")}
-            <span className="italic text-sky">{hero.highlight}</span>
+            <span className="italic text-accent">{hero.highlight}</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-paper/80 leading-relaxed">{hero.description}</p>
+          <p className="mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">{hero.description}</p>
           <div className="mt-8 flex flex-wrap gap-4">
             {hero.buttons.map((btn) => (
-              <Button key={btn.title} href={btn.href} variant={btn.title.includes("Caregiver") ? "ghost" : "primary"} className={btn.title.includes("Caregiver") ? "!text-paper !border-paper/40 hover:!bg-paper/10" : ""}>
+              <Button
+                key={btn.title}
+                href={btn.href}
+                variant={btn.title.includes("Caregiver") ? "secondary" : "primary"}
+                className={btn.title.includes("Caregiver") ? "" : "!bg-white"}
+              >
                 {btn.title}
               </Button>
             ))}
@@ -30,30 +35,30 @@ export default function BrooklynPage() {
 
       <section className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-8">
         {services.map((service) => (
-          <div key={service.title} className="rounded-3xl border border-navy/10 p-8 bg-white">
-            <h2 className="text-xl font-semibold text-navy leading-snug">{service.title}</h2>
-            <p className="mt-4 text-ink/80 leading-relaxed text-sm">{service.description}</p>
-            <Button href={service.button.href} variant="ghost" className="mt-6">
+          <div key={service.title} className="rounded-3xl border border-navy-700/10 p-8 bg-white">
+            <h2 className="text-xl font-semibold text-navy-700 leading-snug">{service.title}</h2>
+            <p className="mt-4 text-grey-800/80 leading-relaxed text-sm">{service.description}</p>
+            <Button href={service.button.href} variant="outline" className="mt-6">
               {service.button.title}
             </Button>
           </div>
         ))}
       </section>
 
-      <section className="bg-paper-deep">
+      <section className="bg-bg-light">
         <div className="mx-auto max-w-6xl px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div className="relative rounded-3xl overflow-hidden bg-white aspect-[4/3]">
             <Image src={whyChoose.image} alt={whyChoose.title} fill className="object-cover" />
           </div>
           <div>
-            <h2 className="text-3xl font-semibold text-navy">{whyChoose.title}</h2>
-            <p className="mt-4 text-ink/80">{whyChoose.intro}</p>
+            <h2 className="text-3xl font-semibold text-navy-700">{whyChoose.title}</h2>
+            <p className="mt-4 text-grey-800/80">{whyChoose.intro}</p>
             <ul className="mt-8 space-y-5">
               {whyChoose.items.map((item) => (
                 <li key={item.title} className="flex gap-4">
                   <span className="mt-1.5 h-2 w-2 rounded-full bg-accent shrink-0" />
-                  <p className="text-ink/85 leading-relaxed">
-                    <span className="font-semibold text-navy">{item.title}</span>: {item.description}
+                  <p className="text-grey-800/85 leading-relaxed">
+                    <span className="font-semibold text-navy-700">{item.title}</span>: {item.description}
                   </p>
                 </li>
               ))}

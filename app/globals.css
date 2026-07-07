@@ -1,40 +1,45 @@
 @import "tailwindcss";
 
 :root {
-  /* Real brand colors extracted from idealhh.com's actual content styling
-     (inline heading colors + section background colors found in the WP export),
-     not invented — this replaces the earlier navy/brick/gold placeholder palette. */
-  --color-navy: #384b74;       /* primary heading/brand blue */
-  --color-navy-deep: #102347;  /* darkest navy — header/footer bg */
-  --color-navy-mid: #364f85;   /* mid blue — section backgrounds */
-  --color-sky: #617ab2;        /* lighter blue accent */
-  --color-accent: #f03c47;     /* red/coral — CTA buttons ("burgundy" in their CMS) */
-  --color-accent-deep: #c72d37;
-  --color-paper: #ffffff;
-  --color-paper-deep: #f4f6fa; /* soft cool grey, matches their light section bg, not cream */
-  --color-ink: #1c2333;
+  /* Real brand tokens extracted directly from the theme's compiled CSS
+     (wp-content/themes/ideal/dist/css/style.css) — u-bg-primary-*, u-primary-*,
+     u-bg-secondary, and .c-button color values. Not guesses. */
+  --color-navy-900: #102347;   /* u-bg-primary-300 / u-primary-300 — hero bg, deepest navy */
+  --color-navy-800: #112347;   /* c-intro__title color */
+  --color-navy-700: #384b74;   /* u-primary-250 — heading/body-strong color */
+  --color-navy-600: #364f85;   /* u-bg-primary-200 — testimonials section bg */
+  --color-navy-muted: #747f98; /* u-primary-100 — muted body text */
+  --color-grey-800: #44474d;   /* u-primary-200 — dark grey body text */
+  --color-bg-light: #eaebef;   /* u-bg-primary-100 */
+  --color-bg-lighter: #f7f8fb; /* u-bg-primary-150 */
+  --color-wine: #9b2c4d;       /* u-bg-secondary */
+  --color-accent: #f03c47;     /* .c-button border/bg — real CTA color */
+  --color-white: #ffffff;
 }
 
 @theme inline {
-  --color-navy: var(--color-navy);
-  --color-navy-deep: var(--color-navy-deep);
-  --color-navy-mid: var(--color-navy-mid);
-  --color-sky: var(--color-sky);
+  --color-navy-900: var(--color-navy-900);
+  --color-navy-800: var(--color-navy-800);
+  --color-navy-700: var(--color-navy-700);
+  --color-navy-600: var(--color-navy-600);
+  --color-navy-muted: var(--color-navy-muted);
+  --color-grey-800: var(--color-grey-800);
+  --color-bg-light: var(--color-bg-light);
+  --color-bg-lighter: var(--color-bg-lighter);
+  --color-wine: var(--color-wine);
   --color-accent: var(--color-accent);
-  --color-accent-deep: var(--color-accent-deep);
-  --color-paper: var(--color-paper);
-  --color-paper-deep: var(--color-paper-deep);
-  --color-ink: var(--color-ink);
-  /* Swap these for --font-fraunces / --font-public-sans (see app/layout.tsx) once
-     next/font/google can reach the network in a real dev/deploy environment. */
-  --font-display: Georgia, "Iowan Old Style", "Palatino Linotype", serif;
-  --font-body: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --color-white: var(--color-white);
+
+  --font-body: var(--font-proxima-nova);
+  /* Real display font is Cormorant Garamond (see app/fonts.ts for why this
+     is a fallback stack in this sandbox rather than the live Google Font). */
+  --font-display: "Cormorant Garamond", Garamond, "Iowan Old Style", Georgia, serif;
 }
 
 body {
-  background: var(--color-paper);
-  color: var(--color-ink);
-  font-family: var(--font-body);
+  background: var(--color-white);
+  color: var(--color-grey-800);
+  font-family: var(--font-body), -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
 h1, h2, h3, h4 {
