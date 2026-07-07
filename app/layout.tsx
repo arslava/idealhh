@@ -10,18 +10,12 @@ export const metadata: Metadata = {
     "Ideal Home Health provides compassionate home health care services across Brooklyn, the Bronx, and Manhattan — Home Health Aides, Visiting Nurses, and personalized care plans.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body className={`${proximaNova.variable} ${cormorant.variable} antialiased`}>
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
-}
+return (
+  <html lang="en" className={`${proximaNova.variable} ${cormorant.variable}`}>
+    <body className="antialiased">
+      <Header />
+      <main>{children}</main>
+      <Footer />
+    </body>
+  </html>
+);
