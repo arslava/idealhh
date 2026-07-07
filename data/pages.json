@@ -5,7 +5,7 @@
     "lang": "ar",
     "title": "الصفحة الرئيسية",
     "slug": "home-page",
-    "path": "//",
+    "path": "/",
     "parent": 0,
     "excerpt": "",
     "content": "<!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":183,\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"مساعدو الصحة المنزلية للرعاية الشخصية\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"يقدم مساعدونا الصحيون المعتمدون رعاية شخصية مليئة بالرحمة ومساعدة في أنشطة الحياة اليومية. نحن نمكّن الاستقلالية في منزلك في نيويورك.\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"اعرف المزيد\",\"url\":\"/ar/services/home-health-aide/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":189,\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"ممرضون منزليون خبراء للرعاية الطبية المتخصصة\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"يقدم ممرضونا المرخصون زيارات منزلية مع رعاية طبية متخصصة في منزلك في مدينة نيويورك، مع خطط مخصصة لاحتياجاتك.\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"اعرف المزيد\",\"url\":\"/ar/services/visiting-home-nurse/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11071,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"من يستفيد من Ideal Home Health Care في نيويورك؟\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003cdiv class=\\u0022c-list__content aos-init aos-animate\\u0022 data-aos=\\u0022fade-up\\u0022 data-aos-delay=\\u0022100\\u0022\\u003e\\u003cul\\u003e\\u003cli\\u003eكبار السن الذين يبحثون عن مساعدة للعيش المستقل\\u003c/li\\u003e\\u003cli\\u003eالأفراد الذين يتعافون من الجراحة أو المرض\\u003c/li\\u003e\\u003cli\\u003eالمرضى الذين يعانون من حالات مزمنة (مثل السكتة الدماغية، رعاية مرضى السكري في المنزل)\\u003c/li\\u003e\\u003cli\\u003eالعائلات التي تحتاج إلى رعاية استراحة\\u003c/li\\u003e\\u003c/ul\\u003e\\u003c/div\\u003e\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"سجل الآن\",\"url\":\"/ar/enroll-now/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"grey\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"left\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11084,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"رعاية منزلية مخصصة في نيويورك: احتياجاتك الفريدة، خططنا الخاصة\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003ch3 style=\\u0022color: #384b74; font-size: 2.0rem; margin: -13px 0px 16px 0px; font-weight: 600;\\u0022\\u003eخدمات مساعد منزلي مرنة ورعاية متخصصة\\u003c/h3\\u003e نقدم خدمات رعاية منزلية في جميع الأحياء الخمسة لمدينة نيويورك، متخصصة في مجموعة متنوعة من الحالات. نحن نقدم نماذج رعاية مخصصة وخدمات مرنة لمساعدي المنازل مصممة خصيصًا لنمط حياة عائلتك الفريد واحتياجاتها عبر نيويورك.\\u003cdiv style=\\u0022position: absolute; clip: rect(1px, 1px, 1px, 1px);\\u0022\\u003e\\u003c/div\\u003e\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"اطّلع على تخصصات الرعاية لدينا\",\"url\":\"/ar/conditions/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /--><div style=\"overflow: hidden; height: 1px;\">تلتزم Ideal Health & Wellness بتقديم رعاية عالية الجودة مصممة وفقًا لاحتياجات كل فرد. نحن نقدم مجموعة من الخدمات المصممة لتعزيز الصحة والعافية على المدى الطويل، من الاستشارات الغذائية إلى خطط اللياقة البدنية المخصصة. </div>\n<!-- wp:acf/locations {\"name\":\"acf/locations\",\"data\":{\"location_use_gradients\":\"1\",\"_location_use_gradients\":\"field_5f631eb4fd55b\",\"show_location_boxes\":\"0\",\"_show_location_boxes\":\"field_5f631f53fd55c\",\"hide_location_intro\":\"0\",\"_hide_location_intro\":\"field_5f631f6efd55d\",\"location_image\":1150,\"_location_image\":\"field_5f631fc5fd55e\",\"location_label\":\"Ideal Home Health\",\"_location_label\":\"field_5f631feefd55f\",\"location_title\":\"Ideal Home Health: نخدم بفخر الأحياء الخمسة لمدينة نيويورك\",\"_location_title\":\"field_5f631ffbfd560\",\"location_description\":\"لراحة مقدم الرعاية والعائلة، تقع مكاتبنا في نيويورك بالقرب من المنازل. يقدم أخصائيو الرعاية المنزلية المدربون لدينا في كل موقع خدمات مهنية وفعالة في جميع أنحاء مدينة نيويورك، بما في ذلك كوينز، بروكلين، مانهاتن، ستاتن آيلاند، وبرونكس.\",\"_location_description\":\"field_5f632006fd561\",\"location_button\":{\"title\":\"تواصل معنا\",\"url\":\"/contact-us-2/\",\"target\":\"\"},\"_location_button\":\"field_5f632020fd562\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":\"\",\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Brooklyn\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Brooklyn Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e2617 East 16th Street \\\r\\\nFloor 2\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBrooklyn\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e11235\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Brooklyn Services\",\"url\":\"/locations/brooklyn/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":\"\",\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Bronx\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Bronx Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e391 East 149th Street \\\r\\\nSuite 515\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBronx\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e10455\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Bronx Services\",\"url\":\"/locations/bronx/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:group {\"tagName\":\"section\",\"className\":\"idealhh-testimonials-area\",\"style\":{\"color\":{\"background\":\"#364f85\"},\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|black\"}}}},\"textColor\":\"black\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"},\"translatedWithWPMLTM\":\"1\"} -->\n<section class=\"wp-block-group idealhh-testimonials-area has-black-color has-text-color has-background has-link-color\" style=\"background-color:#364f85\"><!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\"><!-- wp:shortcode -->\n<h2 style=\"color:#fff\">What Our Clients Say: Trusted Home Care in New York</h2>\n\n[ideal_reviews nav_style=\"two\" words_limit=\"30\" items_mobile=\"1\"]\n<!-- /wp:shortcode --></div>\n<!-- /wp:group --></section>\n<!-- /wp:group --><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11098,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"IDEAL HOME HEALTH\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"انضم إلى فريقنا في الرعاية الصحية المنزلية المليئة بالرحمة في نيويورك\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"هل أنت مقدم رعاية مخلص ومليء بالرحمة تبحث عن مسيرة مهنية مجزية في \\u003cb\\u003eالرعاية الصحية المنزلية في مدينة نيويورك\\u003c/b\\u003e? تبحث Ideal Home Health بنشاط عن أفراد موهوبين للانضمام إلى فريقنا المتنامي. اكتشف بيئة داعمة حيث يصنع شغفك بالرعاية فرقًا حقيقيًا.\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"عرض فرص العمل\",\"url\":\"/ar/careers/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->",
@@ -32,7 +32,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "مساعدو الصحة المنزلية للرعاية الشخصية",
               "description": "يقدم مساعدونا الصحيون المعتمدون رعاية شخصية مليئة بالرحمة ومساعدة في أنشطة الحياة اليومية. نحن نمكّن الاستقلالية في منزلك في نيويورك.",
               "button": {
@@ -43,7 +43,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "ممرضون منزليون خبراء للرعاية الطبية المتخصصة",
               "description": "يقدم ممرضونا المرخصون زيارات منزلية مع رعاية طبية متخصصة في منزلك في مدينة نيويورك، مع خطط مخصصة لاحتياجاتك.",
               "button": {
@@ -136,7 +136,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -237,7 +237,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -422,7 +422,7 @@
             "url": "/ar/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -616,7 +616,7 @@
           "bullets_list_title": "ممرضات ماهرات من Ideal Home Health",
           "bullets_list_description": "يمكن لمتخصصينا الصحيين المرخصين المساعدة في",
           "bullets_list_content": "<ul><li>العمل معك لتطوير خطة رعاية بناءً على توصيات طبيبك وتفضيلاتك الشخصية ونمط حياتك</li><li>اتباع تعليمات الرعاية الطبية كما يوجهك طبيبك</li><li>مراقبة العلامات الحيوية والمعدات الطبية</li><li>إدارة جدول الأدوية ومراقبة الأعراض</li><li>رعاية ما بعد العمليات والجروح</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -690,7 +690,7 @@
             "url": "/bn/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -842,7 +842,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "ব্যক্তিগত যত্নের জন্য হোম হেলথ এইডস",
               "description": "আমাদের সার্টিফায়েড হোম হেলথ এইডস সহানুভূতিশীল ব্যক্তিগত যত্ন এবং দৈনন্দিন জীবনের সহায়তা প্রদান করে। আমরা আপনার এনওয়াইসি বাড়িতে স্বাধীনতা সক্ষম করি।",
               "button": {
@@ -853,7 +853,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "দক্ষ যত্নের জন্য বিশেষজ্ঞ ভিজিটিং হোম নার্স",
               "description": "আমাদের লাইসেন্সপ্রাপ্ত ভিজিটিং হোম নার্সরা আপনার নিউ ইয়র্ক সিটি বাড়িতে দক্ষ মেডিকেল কেয়ার প্রদান করে, আপনার প্রয়োজন অনুযায়ী পরিকল্পনা কাস্টমাইজ করে।",
               "button": {
@@ -946,7 +946,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -1054,7 +1054,7 @@
             "url": "/bn/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -1248,7 +1248,7 @@
           "bullets_list_title": "আইডিয়াল হোম হেলথ দক্ষ নার্সরা",
           "bullets_list_description": "আমাদের লাইসেন্সপ্রাপ্ত স্বাস্থ্য পেশাজীবীরা সহায়তা করতে পারেন",
           "bullets_list_content": "<ul><li>আপনার চিকিৎসকের সুপারিশ, আপনার ব্যক্তিগত পছন্দ এবং জীবনধারার উপর ভিত্তি করে আপনার সাথে একটি কেয়ার পরিকল্পনা তৈরি করা</li><li>আপনার চিকিৎসকের নির্দেশ অনুযায়ী চিকিৎসা যত্নের নির্দেশাবলী অনুসরণ করা</li><li>ভাইটালস এবং চিকিৎসা সরঞ্জামের পর্যবেক্ষণ</li><li>ঔষধের সময়সূচী পরিচালনা করা এবং উপসর্গগুলি পর্যবেক্ষণ করা</li><li>অপারেশনের পরে এবং ক্ষত যত্ন</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -1264,48 +1264,12 @@
     ]
   },
   {
-    "id": 1451,
-    "trid": "2089",
-    "lang": "en",
-    "title": "Зарегистрируйся сегодня",
-    "slug": "%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f",
-    "path": "/%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f/",
-    "parent": 0,
-    "excerpt": "",
-    "content": "",
-    "blocks": []
-  },
-  {
-    "id": 1452,
-    "trid": "2090",
-    "lang": "en",
-    "title": "Зарегистрируйся сегодня",
-    "slug": "%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f",
-    "path": "/%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f/",
-    "parent": 0,
-    "excerpt": "",
-    "content": "",
-    "blocks": []
-  },
-  {
-    "id": 1453,
-    "trid": "2091",
-    "lang": "en",
-    "title": "Зарегистрируйся сегодня",
-    "slug": "%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f",
-    "path": "/%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f/",
-    "parent": 0,
-    "excerpt": "",
-    "content": "",
-    "blocks": []
-  },
-  {
     "id": 6,
     "trid": "6",
     "lang": "en",
     "title": "Home Page",
     "slug": "home-page",
-    "path": "//",
+    "path": "/",
     "parent": 0,
     "excerpt": "",
     "content": "<!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":183,\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Home Health Aides for Personalized Care\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"Our Certified Home Health Aides offer compassionate personal care \\u0026 daily living assistance. We empower independence in your NYC home.\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Learn More\",\"url\":\"/services/home-health-aide/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":189,\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Expert Visiting Home Nurses for Skilled Care\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"Our licensed Visiting Home Nurses provide skilled medical care at your New York City home, customizing plans for your needs.\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Learn More\",\"url\":\"/services/visiting-home-nurse/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n\n<!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11071,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"Who Benefits from Ideal Home Health Care in NYC?\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003cdiv class=\\u0022c-list__content aos-init aos-animate\\u0022 data-aos=\\u0022fade-up\\u0022 data-aos-delay=\\u0022100\\u0022\\u003e\\\r\\\n\\u003cul\\u003e\\\r\\\n \\\t\\u003cli\\u003eSeniors seeking independent living assistance\\u003c/li\\u003e\\\r\\\n \\\t\\u003cli\\u003eIndividuals recovering from surgery or illness\\u003c/li\\u003e\\\r\\\n \\\t\\u003cli\\u003ePatients with chronic conditions (e.g., stroke, diabetes care at home)\\u003c/li\\u003e\\\r\\\n \\\t\\u003cli\\u003eFamilies needing respite care\\u003c/li\\u003e\\\r\\\n\\u003c/ul\\u003e\\\r\\\n\\u003c/div\\u003e\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"Enroll Now\",\"url\":\"/enroll-now/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n\n<!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"grey\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"left\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11084,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"Personalized Home Care in New York: Your Unique Needs, Our Custom Plans\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003ch3 style=\\u0022color: #384b74; font-size: 2.0rem; margin: -13px 0px 16px 0px; font-weight: 600;\\u0022\\u003eFlexible Home Attendant Services \\u0026amp; Specialized Care\\u003c/h3\\u003e\\\r\\\nOur home care services in all five boroughs of New York City specialize in a diverse range of conditions. We offer custom care models and flexible home attendant services tailored to your family's unique lifestyle and needs across NYC.\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\\\r\\\n\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"View Our Care Specialties\",\"url\":\"/conditions/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n\n\n\n<!-- wp:acf/locations {\"name\":\"acf/locations\",\"data\":{\"location_use_gradients\":\"1\",\"_location_use_gradients\":\"field_5f631eb4fd55b\",\"show_location_boxes\":\"0\",\"_show_location_boxes\":\"field_5f631f53fd55c\",\"hide_location_intro\":\"0\",\"_hide_location_intro\":\"field_5f631f6efd55d\",\"location_image\":1150,\"_location_image\":\"field_5f631fc5fd55e\",\"location_label\":\"Ideal Home Health\",\"_location_label\":\"field_5f631feefd55f\",\"location_title\":\"Ideal Home Health: Proudly Serving New York City's 5 Boroughs\",\"_location_title\":\"field_5f631ffbfd560\",\"location_description\":\"For caregiver and family convenience, our NYC offices are close to home. Our trained home care specialists at each location provide professional, efficient service throughout New York City, including Queens, Brooklyn, Manhattan, Staten Island, and the Bronx.\",\"_location_description\":\"field_5f632006fd561\",\"location_button\":{\"title\":\"Get in Touch\",\"url\":\"/contact-us-2/\",\"target\":\"\"},\"_location_button\":\"field_5f632020fd562\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n\n<!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":\"\",\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Brooklyn\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Brooklyn Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e2617 East 16th Street \\\r\\\nFloor 2\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBrooklyn\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e11235\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Brooklyn Services\",\"url\":\"/locations/brooklyn/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":\"\",\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Bronx\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Bronx Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e391 East 149th Street \\\r\\\nSuite 515\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBronx\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e10455\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Bronx Services\",\"url\":\"/locations/bronx/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n\n<!-- wp:group {\"tagName\":\"section\",\"className\":\"idealhh-testimonials-area\",\"style\":{\"color\":{\"background\":\"#364f85\"},\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|black\"}}}},\"textColor\":\"black\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"}} -->\n<section class=\"wp-block-group idealhh-testimonials-area has-black-color has-text-color has-background has-link-color\" style=\"background-color:#364f85\"><!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\"><!-- wp:shortcode -->\n<h2 style=\"color:#fff\">What Our Clients Say: Trusted Home Care in New York</h2>\n\n[ideal_reviews nav_style=\"two\" words_limit=\"30\" items_mobile=\"1\"]\n<!-- /wp:shortcode --></div>\n<!-- /wp:group --></section>\n<!-- /wp:group -->\n\n<!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11098,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"IDEAL HOME HEALTH\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"Join Our Compassionate Home Health Care Team in New York\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"Are you a dedicated and compassionate caregiver seeking a rewarding career in \\u003cb\\u003ehome health care in New York City\\u003c/b\\u003e? Ideal Home Health is actively seeking talented individuals to join our growing team. Discover a supportive environment where your passion for care truly makes a difference.\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"View Career Opportunities\",\"url\":\"/careers/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->",
@@ -1332,7 +1296,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "Home Health Aides for Personalized Care",
               "description": "Our Certified Home Health Aides offer compassionate personal care & daily living assistance. We empower independence in your NYC home.",
               "button": {
@@ -1343,7 +1307,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "Expert Visiting Home Nurses for Skilled Care",
               "description": "Our licensed Visiting Home Nurses provide skilled medical care at your New York City home, customizing plans for your needs.",
               "button": {
@@ -1378,7 +1342,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -1671,7 +1635,7 @@
             "url": "/careers/#qualifyenroll",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -1970,18 +1934,6 @@
   {
     "id": 1416,
     "trid": "2054",
-    "lang": "en",
-    "title": "condicion",
-    "slug": "condicion",
-    "path": "/services/condicion/",
-    "parent": 1378,
-    "excerpt": "",
-    "content": "",
-    "blocks": []
-  },
-  {
-    "id": 1417,
-    "trid": "2055",
     "lang": "en",
     "title": "condicion",
     "slug": "condicion",
@@ -2303,7 +2255,7 @@
             "url": "/es/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -2470,7 +2422,7 @@
             "url": "/es/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -2541,7 +2493,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "Asistentes de salud en el hogar",
               "description": "Our Certified Home Health Aides offer compassionate personal care & daily living assistance. We empower independence in your NYC home.",
               "button": {
@@ -2552,7 +2504,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "Enfermera visitante a domicilio",
               "description": "Our licensed Visiting Home Nurses provide skilled medical care at your New York City home, customizing plans for your needs.",
               "button": {
@@ -2616,7 +2568,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -2837,7 +2789,7 @@
     "lang": "hi",
     "title": "मुख्य पृष्ठ",
     "slug": "home-page",
-    "path": "//",
+    "path": "/",
     "parent": 0,
     "excerpt": "",
     "content": "<!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":183,\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"व्यक्तिगत देखभाल के लिए होम हेल्थ एड्स\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"हमारे प्रमाणित होम हेल्थ एड्स सहानुभूतिपूर्ण व्यक्तिगत देखभाल और दैनिक जीवन सहायता प्रदान करते हैं। हम आपके एनवाईसी घर में स्वतंत्रता को सशक्त बनाते हैं।\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"अधिक जानें\",\"url\":\"/hi/services/home-health-aide/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":189,\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"कुशल देखभाल के लिए विशेषज्ञ विज़िटिंग होम नर्स\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"हमारी लाइसेंस प्राप्त विज़िटिंग होम नर्सेस आपके न्यूयॉर्क सिटी घर में कुशल चिकित्सा देखभाल प्रदान करती हैं, आपकी ज़रूरतों के लिए योजनाएँ अनुकूलित करती हैं।\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"अधिक जानें\",\"url\":\"/hi/services/visiting-home-nurse/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11071,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"एनवाईसी में Ideal Home Health Care से किसे लाभ मिलता है?\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003cdiv class=\\u0022c-list__content aos-init aos-animate\\u0022 data-aos=\\u0022fade-up\\u0022 data-aos-delay=\\u0022100\\u0022\\u003e\\u003cul\\u003e\\u003cli\\u003eस्वतंत्र जीवन सहायता चाहने वाले वरिष्ठ नागरिक\\u003c/li\\u003e\\u003cli\\u003eसर्जरी या बीमारी से उबर रहे व्यक्ति\\u003c/li\\u003e\\u003cli\\u003eपुरानी बीमारियों वाले मरीज (जैसे स्ट्रोक, घर पर मधुमेह देखभाल)\\u003c/li\\u003e\\u003cli\\u003eआराम देखभाल की आवश्यकता वाले परिवार\\u003c/li\\u003e\\u003c/ul\\u003e\\u003c/div\\u003e\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"अभी नामांकन करें\",\"url\":\"/hi/enroll-now/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"grey\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"left\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11084,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"न्यूयॉर्क में व्यक्तिगत होम केयर: आपकी अनूठी ज़रूरतें, हमारी कस्टम योजनाएँ\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003ch3 style=\\u0022color: #384b74; font-size: 2.0rem; margin: -13px 0px 16px 0px; font-weight: 600;\\u0022\\u003eलचीली होम अटेंडेंट सेवाएँ और विशेष देखभाल\\u003c/h3\\u003e हमारी होम केयर सेवाएँ न्यूयॉर्क सिटी के सभी पाँच बरो में विभिन्न स्थितियों में विशेषज्ञ हैं। हम कस्टम केयर मॉडल और लचीली होम अटेंडेंट सेवाएँ प्रदान करते हैं, जो एनवाईसी में आपकी परिवार की अनूठी जीवनशैली और ज़रूरतों के अनुसार अनुकूलित हैं।\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"हमारी देखभाल विशेषज्ञताओं को देखें\",\"url\":\"/hi/conditions/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n<!-- wp:acf/locations {\"name\":\"acf/locations\",\"data\":{\"location_use_gradients\":\"1\",\"_location_use_gradients\":\"field_5f631eb4fd55b\",\"show_location_boxes\":\"0\",\"_show_location_boxes\":\"field_5f631f53fd55c\",\"hide_location_intro\":\"0\",\"_hide_location_intro\":\"field_5f631f6efd55d\",\"location_image\":1150,\"_location_image\":\"field_5f631fc5fd55e\",\"location_label\":\"Ideal Home Health\",\"_location_label\":\"field_5f631feefd55f\",\"location_title\":\"Ideal Home Health: गर्व से न्यूयॉर्क सिटी के 5 बरो की सेवा कर रहा है\",\"_location_title\":\"field_5f631ffbfd560\",\"location_description\":\"देखभालकर्ताओं और परिवार की सुविधा के लिए, हमारे एनवाईसी कार्यालय घर के पास हैं। प्रत्येक स्थान पर हमारे प्रशिक्षित होम केयर विशेषज्ञ न्यूयॉर्क सिटी में क्वींस, ब्रुकलिन, मैनहट्टन, स्टेटन आइलैंड और ब्रॉन्क्स सहित पेशेवर, कुशल सेवा प्रदान करते हैं।\",\"_location_description\":\"field_5f632006fd561\",\"location_button\":{\"title\":\"संपर्क करें\",\"url\":\"/contact-us-2/\",\"target\":\"\"},\"_location_button\":\"field_5f632020fd562\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":\"\",\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Brooklyn\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Brooklyn Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e2617 East 16th Street \\\r\\\nFloor 2\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBrooklyn\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e11235\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Brooklyn Services\",\"url\":\"/locations/brooklyn/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":\"\",\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Bronx\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Bronx Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e391 East 149th Street \\\r\\\nSuite 515\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBronx\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e10455\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Bronx Services\",\"url\":\"/locations/bronx/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:group {\"tagName\":\"section\",\"className\":\"idealhh-testimonials-area\",\"style\":{\"color\":{\"background\":\"#364f85\"},\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|black\"}}}},\"textColor\":\"black\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"},\"translatedWithWPMLTM\":\"1\"} -->\n<section class=\"wp-block-group idealhh-testimonials-area has-black-color has-text-color has-background has-link-color\" style=\"background-color:#364f85\"><!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\"><!-- wp:shortcode -->\n<h2 style=\"color:#fff\">What Our Clients Say: Trusted Home Care in New York</h2>\n\n[ideal_reviews nav_style=\"two\" words_limit=\"30\" items_mobile=\"1\"]\n<!-- /wp:shortcode --></div>\n<!-- /wp:group --></section>\n<!-- /wp:group --><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11098,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"IDEAL HOME HEALTH\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"न्यूयॉर्क में हमारी सहानुभूतिपूर्ण होम हेल्थ केयर टीम से जुड़ें\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"न्यूयॉर्क में हमारी सहानुभूतिपूर्ण होम हेल्थ केयर टीम से जुड़ें\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"करियर अवसर देखें\",\"url\":\"/hi/careers/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->",
@@ -2864,7 +2816,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "व्यक्तिगत देखभाल के लिए होम हेल्थ एड्स",
               "description": "हमारे प्रमाणित होम हेल्थ एड्स सहानुभूतिपूर्ण व्यक्तिगत देखभाल और दैनिक जीवन सहायता प्रदान करते हैं। हम आपके एनवाईसी घर में स्वतंत्रता को सशक्त बनाते हैं।",
               "button": {
@@ -2875,7 +2827,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "कुशल देखभाल के लिए विशेषज्ञ विज़िटिंग होम नर्स",
               "description": "हमारी लाइसेंस प्राप्त विज़िटिंग होम नर्सेस आपके न्यूयॉर्क सिटी घर में कुशल चिकित्सा देखभाल प्रदान करती हैं, आपकी ज़रूरतों के लिए योजनाएँ अनुकूलित करती हैं।",
               "button": {
@@ -2968,7 +2920,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -3069,7 +3021,7 @@
             "url": "/hi/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -3254,7 +3206,7 @@
             "url": "/hi/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -3434,7 +3386,7 @@
           "bullets_list_title": "आइडियल होम हेल्थ कुशल नर्सें",
           "bullets_list_description": "हमारे लाइसेंस प्राप्त स्वास्थ्य पेशेवर मदद कर सकते हैं",
           "bullets_list_content": "<ul><li>आपके चिकित्सक की सिफारिशों, आपकी व्यक्तिगत प्राथमिकताओं और जीवनशैली के आधार पर देखभाल की योजना बनाने में आपके साथ काम करना</li><li>आपके चिकित्सक द्वारा निर्देशित चिकित्सा देखभाल निर्देशों का पालन करना</li><li>महत्वपूर्ण संकेतों और चिकित्सा उपकरणों की निगरानी करना</li><li>दवाओं का समय निर्धारित करना और लक्षणों की निगरानी करना</li><li>ऑपरेशन के बाद और घाव की देखभाल</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -3508,7 +3460,7 @@
             "url": "/ko/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -3693,7 +3645,7 @@
             "url": "/ko/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -3760,7 +3712,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "맞춤 케어를 위한 홈 헬스 도우미",
               "description": "자격을 갖춘 홈 헬스 도우미가 따뜻한 개인 케어와 일상생활 지원을 제공합니다. 뉴욕시 가정에서 독립적인 생활을 돕습니다.",
               "button": {
@@ -3771,7 +3723,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "전문 방문 간호사를 통한 숙련된 간호",
               "description": "자격을 갖춘 방문 간호사가 뉴욕시 가정에서 전문적인 의료 서비스를 제공하며 귀하의 필요에 맞게 맞춤형 계획을 세웁니다.",
               "button": {
@@ -3864,7 +3816,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -4057,7 +4009,7 @@
           "bullets_list_title": "아이디얼 홈 헬스 전문 간호사",
           "bullets_list_description": "저희의 자격을 갖춘 건강 전문가가 도와드릴 수 있는 사항:",
           "bullets_list_content": "<ul><li>의사의 권고, 개인 취향 및 생활 방식을 기반으로 한 간호 계획을 함께 수립</li><li>의사의 지시에 따른 의료 지침 준수</li><li>활력 징후 및 의료 장비 모니터링</li><li>약물 복용 일정을 관리하고 증상을 모니터링</li><li>수술 후 및 상처 간호</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -4069,23 +4021,6 @@
             "124"
           ]
         }
-      }
-    ]
-  },
-  {
-    "id": 1454,
-    "trid": "2110",
-    "lang": "ru",
-    "title": "Зарегистрируйся сегодня",
-    "slug": "%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f",
-    "path": "/%d0%b7%d0%b0%d1%80%d0%b5%d0%b3%d0%b8%d1%81%d1%82%d1%80%d0%b8%d1%80%d1%83%d0%b9%d1%81%d1%8f-%d1%81%d0%b5%d0%b3%d0%be%d0%b4%d0%bd%d1%8f/",
-    "parent": 0,
-    "excerpt": "",
-    "content": "<!-- wp:acf/enroll-form {\n    \"id\": \"block_5f58e98ea056d\",\n    \"name\": \"acf\\/enroll-form\",\n    \"data\": {\n        \"enroll_form_label\": \"\",\n        \"_enroll_form_label\": \"field_5f58df6ffd442\",\n        \"enroll_form_section_title\": \"Имею ли я право?\",\n        \"_enroll_form_section_title\": \"field_5f58df88fd443\",\n        \"enroll_form_lists_0_list_title\": \"Чтобы получить помощь:\",\n        \"_enroll_form_lists_0_list_title\": \"field_5f58e070fd447\",\n        \"enroll_form_lists_0_list\": \"<ul>\\\r\\\n \\\t<li>Имеете ли вы право на участие в программе Medicaid или думаете об этом?<\\/li>\\\r\\\n \\\t<li>Вы живете в Нью-Йорке?<\\/li>\\\r\\\n \\\t<li>Вам нужна помощь в повседневных делах, таких как приготовление пищи, уборка и уход за собой?<\\/li>\\\r\\\n<\\/ul>\",\n        \"_enroll_form_lists_0_list\": \"field_5f58e07afd448\",\n        \"enroll_form_lists_1_list_title\": \"Чтобы позаботиться о ком-то:\",\n        \"_enroll_form_lists_1_list_title\": \"field_5f58e070fd447\",\n        \"enroll_form_lists_1_list\": \"<ul>\\\r\\\n \\\t<li>Вам 18 или больше?<\\/li>\\\r\\\n \\\t<li>Вы имеете право работать в США?<\\/li>\\\r\\\n \\\t<li>Вы заинтересованы в том, чтобы получать зарплату более 21.09 долларов в час?<\\/li>\\\r\\\n<\\/ul>\",\n        \"_enroll_form_lists_1_list\": \"field_5f58e07afd448\",\n        \"enroll_form_lists\": 2,\n        \"_enroll_form_lists\": \"field_5f58e053fd446\",\n        \"enroll_form_title\": \"Зарегестрируйтесь сегодня\",\n        \"_enroll_form_title\": \"field_5f58e008fd444\",\n        \"enroll_form\": \"[wpforms id=\\\"2467\\\" title=\\\"false\\\"]\",\n        \"_enroll_form\": \"field_5f58e01bfd445\"\n    },\n    \"align\": \"full\",\n    \"mode\": \"edit\"\n} /-->",
-    "blocks": [
-      {
-        "name": "enroll-form",
-        "data": {}
       }
     ]
   },
@@ -4148,7 +4083,7 @@
             "url": "/ru/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -4315,7 +4250,7 @@
             "url": "/ru/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -4382,7 +4317,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "Помощники по уходу на дому (Хоуматенды)",
               "description": "Наши сертифицированные помощники по уходу на дому предлагают заботливый личный уход и помощь в повседневной жизни. Мы помогаем вам сохранить независимость в вашем доме в Нью-Йорке.",
               "button": {
@@ -4393,7 +4328,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "Медбратья и медсестра",
               "description": "Наши лицензированные выездные медсестры предоставляют квалифицированную медицинскую помощь на дому в Нью-Йорке, подбирая планы лечения с учетом ваших потребностей.",
               "button": {
@@ -4457,7 +4392,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -4518,91 +4453,91 @@
           "card_grid_0_description": "Наши квалифицированные хоматенды могут обеспечить надлежащее лечение диабета, чтобы помочь вам жить более счастливой и здоровой жизнью.",
           "card_grid_0_button": {
             "title": "Диабет",
-            "url": "https://idealhh.com/ru/conditions/%D0%B4%D0%B8%D0%B0%D0%B1%D0%B5%D1%82/",
+            "url": "/ru/conditions/%D0%B4%D0%B8%D0%B0%D0%B1%D0%B5%D1%82/",
             "target": ""
           },
           "card_grid_1_title": "Инсульт",
           "card_grid_1_description": "Жизнь после инсульта может стать лучше с помощью помощника, который понимает, что ваше выздоровление является приоритетом номер один. ",
           "card_grid_1_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%b8%d0%bd%d1%81%d1%83%d0%bb%d1%8c%d1%82/",
+            "url": "/ru/conditions/%d0%b8%d0%bd%d1%81%d1%83%d0%bb%d1%8c%d1%82/",
             "target": ""
           },
           "card_grid_2_title": "Болезнь Альцгеймера / Деменция",
           "card_grid_2_description": "Мы обеспечиваем безопасность членов вашей семьи, заботясь о потребности в уходе за памятью, и помогаем им найти комфорт в повседневной жизни.\"\\ ",
           "card_grid_2_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/alzheimers-dementia/",
+            "url": "/ru/conditions/alzheimers-dementia/",
             "target": ""
           },
           "card_grid_3_title": "Эпилепсия",
           "card_grid_3_description": "Эпилепсия может произойти мгновенно, мы можем быть рядом, чтобы обеспечить вашу безопасность, когда вам это нужно больше всего ",
           "card_grid_3_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d1%8d%d0%bf%d0%b8%d0%bb%d0%b5%d0%bf%d1%81%d0%b8%d1%8f/",
+            "url": "/ru/conditions/%d1%8d%d0%bf%d0%b8%d0%bb%d0%b5%d0%bf%d1%81%d0%b8%d1%8f/",
             "target": ""
           },
           "card_grid_4_title": "Предотвращение падений",
           "card_grid_4_description": "Предотвращение падений может спасти вашу жизнь, снизить риск потенциальных осложнений и помочь вам сохранить или улучшить свою мобильность. ",
           "card_grid_4_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%bf%d1%80%d0%b5%d0%b4%d0%be%d1%82%d0%b2%d1%80%d0%b0%d1%89%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%b0%d0%b4%d0%b5%d0%bd%d0%b8%d0%b9/",
+            "url": "/ru/conditions/%d0%bf%d1%80%d0%b5%d0%b4%d0%be%d1%82%d0%b2%d1%80%d0%b0%d1%89%d0%b5%d0%bd%d0%b8%d0%b5-%d0%bf%d0%b0%d0%b4%d0%b5%d0%bd%d0%b8%d0%b9/",
             "target": ""
           },
           "card_grid_5_title": "Помощь с ежедневной рутиной",
           "card_grid_5_description": "Наши высококвалифицированные помощники по уходу на дому (хоуматенды) окажут вам помощь в повседневной жизни и чтобы вы продолжали заниматься вашим любимым делом. ",
           "card_grid_5_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c-%d1%81-%d0%b5%d0%b6%d0%b5%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d0%be%d0%b9-%d1%80%d1%83%d1%82%d0%b8%d0%bd%d0%be%d0%b9-2/",
+            "url": "/ru/conditions/%d0%bf%d0%be%d0%bc%d0%be%d1%89%d1%8c-%d1%81-%d0%b5%d0%b6%d0%b5%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d0%be%d0%b9-%d1%80%d1%83%d1%82%d0%b8%d0%bd%d0%be%d0%b9-2/",
             "target": ""
           },
           "card_grid_6_title": "Болезнь Паркинсона",
           "card_grid_6_description": "Наши высококвалифицированные помощники по уходу на дому (хоуматенды) специализируются по уходу за болезнью Паркинсона, помогая вам добиться наилучшего качества жизни.",
           "card_grid_6_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/parkinsons/",
+            "url": "/ru/conditions/parkinsons/",
             "target": ""
           },
           "card_grid_7_title": "Артрит",
           "card_grid_7_description": "Когда перемещение вызывает у вас боль, мы можем помочь вам заниматься любимым делом с индивидуальным подходом к вашим потребностям.",
           "card_grid_7_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%b0%d1%80%d1%82%d1%80%d0%b8%d1%82/",
+            "url": "/ru/conditions/%d0%b0%d1%80%d1%82%d1%80%d0%b8%d1%82/",
             "target": ""
           },
           "card_grid_8_title": "Подъем и перенос",
           "card_grid_8_description": "У нас есть обученные специалисты, чтобы безопасно и надежно перемещать пациентов, во избежание ненужных травм и стресса. ",
           "card_grid_8_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%bf%d0%be%d0%bc%d0%be%d0%b6%d0%b5%d0%bc-%d0%bf%d0%be%d0%b4%d0%bd%d1%8f%d1%82%d1%8c-%d0%b8-%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%b5%d1%81%d1%82%d0%b8/",
+            "url": "/ru/conditions/%d0%bf%d0%be%d0%bc%d0%be%d0%b6%d0%b5%d0%bc-%d0%bf%d0%be%d0%b4%d0%bd%d1%8f%d1%82%d1%8c-%d0%b8-%d0%bf%d0%b5%d1%80%d0%b5%d0%bd%d0%b5%d1%81%d1%82%d0%b8/",
             "target": ""
           },
           "card_grid_9_title": "Круглосуточный уход",
           "card_grid_9_description": "Если вам нужна круглосуточная помощь, наши опытные помощники по уходу на дому (хоуматенды) могут быть рядом с вами, когда вы в нас больше всего нуждаетесь. ",
           "card_grid_9_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d1%83%d1%85%d0%be%d0%b4-%d0%b8-%d0%b7%d0%b0%d0%b1%d0%be%d1%82%d0%b0-24-7/",
+            "url": "/ru/conditions/%d1%83%d1%85%d0%be%d0%b4-%d0%b8-%d0%b7%d0%b0%d0%b1%d0%be%d1%82%d0%b0-24-7/",
             "target": ""
           },
           "card_grid_10_title": "Постбольничный уход",
           "card_grid_10_description": "После пребывания в больнице наши высококвалифицированные помощники по уходу на дому (хоуматенды) помогут вам соблюдать график выздоровления и как можно быстрее прийти в форму.",
           "card_grid_10_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%bf%d0%be%d1%81%d1%82%d0%b1%d0%be%d0%bb%d1%8c%d0%bd%d0%b8%d1%87%d0%bd%d1%8b%d0%b9-%d1%83%d1%85%d0%be%d0%b4/",
+            "url": "/ru/conditions/%d0%bf%d0%be%d1%81%d1%82%d0%b1%d0%be%d0%bb%d1%8c%d0%bd%d0%b8%d1%87%d0%bd%d1%8b%d0%b9-%d1%83%d1%85%d0%be%d0%b4/",
             "target": ""
           },
           "card_grid_11_title": "Уход за пациентами кто использует инвалидные кресла и кто прикован к кровати",
           "card_grid_11_description": "Если член вашей семьи прикован к инвалидной коляске или к кровати, доверьтесь нашему высококвалифицированному специалисту, который поможет ему безопасно перемещаться по своему пространству и выполнять повседневные дела. ",
           "card_grid_11_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%be%d0%bf%d0%be%d1%80%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b8%d0%bd%d0%b2%d0%b0%d0%bb%d0%b8%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%ba%d1%80%d0%b5%d1%81%d0%bb%d0%b0-%d0%ba%d1%80%d0%be%d0%b2%d0%b0%d1%82%d0%b8/",
+            "url": "/ru/conditions/%d0%be%d0%bf%d0%be%d1%80%d0%b0-%d0%b4%d0%bb%d1%8f-%d0%b8%d0%bd%d0%b2%d0%b0%d0%bb%d0%b8%d0%b4%d0%bd%d0%be%d0%b3%d0%be-%d0%ba%d1%80%d0%b5%d1%81%d0%bb%d0%b0-%d0%ba%d1%80%d0%be%d0%b2%d0%b0%d1%82%d0%b8/",
             "target": ""
           },
           "card_grid_12_title": "Индивидуальный уход ",
           "card_grid_12_description": "Если ваши потребности и состояние требуют специального ухода или внимания, то наши сертифицированные мед.братья и мед.сестра помогут вам и вашей семье разработать индивидуальный план по уходу за вами.",
           "card_grid_12_button": {
             "title": "Узнайте больше",
-            "url": "https://idealhh.com/ru/conditions/%d0%b8%d0%bd%d0%b4%d0%b8%d0%b2%d0%b8%d0%b4%d1%83%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%85%d0%be%d0%b4/",
+            "url": "/ru/conditions/%d0%b8%d0%bd%d0%b4%d0%b8%d0%b2%d0%b8%d0%b4%d1%83%d0%b0%d0%bb%d1%8c%d0%bd%d1%8b%d0%b9-%d1%83%d1%85%d0%be%d0%b4/",
             "target": ""
           },
           "card_grid": 13,
@@ -4726,7 +4661,7 @@
             "url": "/ur/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -4911,7 +4846,7 @@
             "url": "/ur/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -4978,7 +4913,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "ذاتی نگہداشت کے لیے ہوم ہیلتھ ایڈز",
               "description": "ہمارے تصدیق شدہ ہوم ہیلتھ ایڈز ہمدردانہ ذاتی نگہداشت اور روزمرہ کی زندگی میں مدد فراہم کرتے ہیں۔ ہم آپ کو نیو یارک سٹی میں آپ کے گھر پر آزادی دینے کے قابل بناتے ہیں۔",
               "button": {
@@ -4989,7 +4924,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "ماہر وزٹنگ ہوم نرسز برائے خصوصی نگہداشت",
               "description": "ہمارے لائسنس یافتہ وزٹنگ ہوم نرسز آپ کے نیو یارک سٹی کے گھر پر ماہر طبی نگہداشت فراہم کرتے ہیں، آپ کی ضروریات کے لیے منصوبوں کو حسب ضرورت بناتے ہیں۔",
               "button": {
@@ -5082,7 +5017,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -5284,7 +5219,7 @@
           "bullets_list_title": "آئیڈیل ہوم ہیلتھ ماہر نرسز",
           "bullets_list_description": "ہمارے لائسنس یافتہ صحت کے ماہرین اس میں مدد کر سکتے ہیں",
           "bullets_list_content": "<ul><li>آپ کے ساتھ مل کر آپ کے معالج کی سفارشات، آپ کی ذاتی ترجیحات اور طرز زندگی کی بنیاد پر نگہداشت کا منصوبہ تیار کرنا</li><li>آپ کے معالج کی ہدایات کے مطابق طبی نگہداشت پر عمل کرنا</li><li>اہم علامات اور طبی آلات کی نگرانی</li><li>ادویات کے شیڈول کا انتظام اور علامات کی نگرانی</li><li>آپریشن کے بعد اور زخموں کی دیکھ بھال</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -5305,7 +5240,7 @@
     "lang": "uz",
     "title": "Bosh sahifa",
     "slug": "home-page",
-    "path": "//",
+    "path": "/",
     "parent": 0,
     "excerpt": "",
     "content": "<!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":183,\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Shaxsiylashtirilgan parvarish uchun Home Health Aides\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"Sertifikatlangan Home Health Aides shaxsiy parvarish va kunlik hayot faoliyatida mehribon yordam ko‘rsatadi. Biz NYCdagi uyingizda mustaqillikni mustahkamlaymiz.\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Batafsil ma’lumot\",\"url\":\"/uz/services/home-health-aide/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":189,\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Tajribali tashrif buyuruvchi hamshiralar tomonidan malakali parvarish\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"Litsenziyaga ega tashrif buyuruvchi hamshiralar Nyu-York shahridagi uyingizda malakali tibbiy yordam ko‘rsatadi va rejalaringizni ehtiyojlaringizga moslashtiradi.\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Batafsil ma’lumot\",\"url\":\"/uz/services/visiting-home-nurse/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11071,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"NYCda Ideal Home Health parvarishidan kimlar foyda ko‘radi?\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003cdiv class=\\u0022c-list__content aos-init aos-animate\\u0022 data-aos=\\u0022fade-up\\u0022 data-aos-delay=\\u0022100\\u0022\\u003e\\u003cul\\u003e\\u003cli\\u003eMustaqil yashash yordamiga muhtoj bo‘lgan keksalar\\u003c/li\\u003e\\u003cli\\u003eOperatsiya yoki kasallikdan keyin tiklanayotgan shaxslar\\u003c/li\\u003e\\u003cli\\u003eSurunkali kasalliklarga ega bemorlar (masalan, uyda insult, diabet parvarishi)\\u003c/li\\u003e\\u003cli\\u003eVaqtincha parvarish zarur bo‘lgan oilalar\\u003c/li\\u003e\\u003c/ul\\u003e\\u003c/div\\u003e\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"Hozir ro‘yxatdan o‘ting\",\"url\":\"/uz/enroll-now/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"grey\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"left\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11084,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"Nyu-Yorkda Shaxsiylashtirilgan Uy Parvarishi: Sizning Yagona Ehtiyojlaringiz, Bizning Maxsus Rejalarimiz\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003ch3 style=\\u0022color: #384b74; font-size: 2.0rem; margin: -13px 0px 16px 0px; font-weight: 600;\\u0022\\u003eMoslashuvchan uy yordamchisi xizmatlari va maxsus parvarish\\u003c/h3\\u003eBizning Nyu-York shahrining barcha besh tumanidagi uy parvarish xizmatlarimiz turli sharoitlarga ixtisoslashgan. Biz maxsus parvarish modellari va oilangizning noyob turmush tarziga va ehtiyojlariga mos moslashuvchan uy yordamchisi xizmatlarini taklif etamiz.\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"Parvarish bo‘yicha ixtisosliklarimizni ko‘ring\",\"url\":\"/uz/conditions/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n<!-- wp:acf/locations {\"name\":\"acf/locations\",\"data\":{\"location_use_gradients\":\"1\",\"_location_use_gradients\":\"field_5f631eb4fd55b\",\"show_location_boxes\":\"0\",\"_show_location_boxes\":\"field_5f631f53fd55c\",\"hide_location_intro\":\"0\",\"_hide_location_intro\":\"field_5f631f6efd55d\",\"location_image\":1150,\"_location_image\":\"field_5f631fc5fd55e\",\"location_label\":\"Ideal Home Health\",\"_location_label\":\"field_5f631feefd55f\",\"location_title\":\"Ideal Home Health: Nyu-York shahrining 5 tumaniga faxr bilan xizmat qiladi\",\"_location_title\":\"field_5f631ffbfd560\",\"location_description\":\"Parvarishchilar va oilalar qulayligi uchun bizning NYC ofislarimiz uyga yaqin joylashgan. Har bir joydagi malakali uy parvarishi mutaxassislarimiz Queens, Brooklyn, Manhattan, Staten Island va Bronx bo‘ylab professional va samarali xizmat ko‘rsatadi.\",\"_location_description\":\"field_5f632006fd561\",\"location_button\":{\"title\":\"Biz bilan bog‘laning\",\"url\":\"/contact-us-2/\",\"target\":\"\"},\"_location_button\":\"field_5f632020fd562\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":\"\",\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Brooklyn\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Brooklyn Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e2617 East 16th Street \\\r\\\nFloor 2\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBrooklyn\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e11235\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Brooklyn Services\",\"url\":\"/locations/brooklyn/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":\"\",\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Bronx\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Bronx Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e391 East 149th Street \\\r\\\nSuite 515\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBronx\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e10455\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Bronx Services\",\"url\":\"/locations/bronx/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:group {\"tagName\":\"section\",\"className\":\"idealhh-testimonials-area\",\"style\":{\"color\":{\"background\":\"#364f85\"},\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|black\"}}}},\"textColor\":\"black\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"},\"translatedWithWPMLTM\":\"1\"} -->\n<section class=\"wp-block-group idealhh-testimonials-area has-black-color has-text-color has-background has-link-color\" style=\"background-color:#364f85\"><!-- wp:group {\"layout\":{\"type\":\"constrained\"}} -->\n<div class=\"wp-block-group\"><!-- wp:shortcode -->\n<h2 style=\"color:#fff\">What Our Clients Say: Trusted Home Care in New York</h2>\n\n[ideal_reviews nav_style=\"two\" words_limit=\"30\" items_mobile=\"1\"]\n<!-- /wp:shortcode --></div>\n<!-- /wp:group --></section>\n<!-- /wp:group --><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11098,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"IDEAL HOME HEALTH\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"Nyu-Yorkda bizning mehribon uy sog‘liqni saqlash jamoamizga qo‘shiling\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"Siz Nyu-York shahrida \\u003cb\\u003euyda sog‘liqni saqlash\\u003c/b\\u003e bo‘yicha mukofotli martaba qidirayotgan fidoyi va mehribon parvarishchimisiz? Ideal Home Health iste’dodli shaxslarni o‘sib borayotgan jamoamizga qo‘shilishga faol ravishda taklif qilmoqda. Sizning parvarishga bo‘lgan ishtiyoqingiz haqiqiy farq qiladigan qo‘llab-quvvatlovchi muhitni kashf eting.\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"Martaba imkoniyatlarini ko‘ring\",\"url\":\"/uz/careers/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->",
@@ -5332,7 +5267,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "Shaxsiylashtirilgan parvarish uchun Home Health Aides",
               "description": "Sertifikatlangan Home Health Aides shaxsiy parvarish va kunlik hayot faoliyatida mehribon yordam ko‘rsatadi. Biz NYCdagi uyingizda mustaqillikni mustahkamlaymiz.",
               "button": {
@@ -5343,7 +5278,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "Tajribali tashrif buyuruvchi hamshiralar tomonidan malakali parvarish",
               "description": "Litsenziyaga ega tashrif buyuruvchi hamshiralar Nyu-York shahridagi uyingizda malakali tibbiy yordam ko‘rsatadi va rejalaringizni ehtiyojlaringizga moslashtiradi.",
               "button": {
@@ -5436,7 +5371,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -5537,7 +5472,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -5722,7 +5657,7 @@
             "url": "/uz/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -5807,7 +5742,7 @@
           "bullets_list_title": "Ideal Home Health Malakali Hamshiralar",
           "bullets_list_description": "Bizning litsenziyaga ega sog‘liqni saqlash mutaxassislarimiz quyidagilarga yordam berishi mumkin",
           "bullets_list_content": "<ul><li>Siz bilan shifokoringiz tavsiyalari, shaxsiy afzalliklaringiz va turmush tarziga asoslangan parvarish rejasini ishlab chiqadi</li><li>Shifokoringiz tomonidan belgilangan tibbiy ko‘rsatmalarga rioya qiladi</li><li>Hayotiy ko‘rsatkichlar va tibbiy uskunalarni kuzatib boradi</li><li>Dori-darmon jadvalini boshqaradi va alomatlarni kuzatadi</li><li>Operatsiyadan keyingi va yara parvarishi</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -5855,7 +5790,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "个性化护理的家庭护理助理",
               "description": "我们认证的家庭护理助理提供富有同情心的照护，帮助日常生活所需。我们在您的纽约市家庭中赋予独立。",
               "button": {
@@ -5866,7 +5801,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "专业上门护士提供的熟练护理",
               "description": "我们持牌的上门护士在您的纽约市家中提供专业护理，根据您的需求定制护理计划。",
               "button": {
@@ -5930,7 +5865,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -6031,7 +5966,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -6207,7 +6142,7 @@
             "url": "/zh-hans/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -6401,7 +6336,7 @@
           "bullets_list_title": "Ideal Home Health 专业护士",
           "bullets_list_description": "我们的持牌健康专业人员可以协助",
           "bullets_list_content": "<ul><li>与您一起制定基于医生建议、个人偏好和生活方式的护理计划</li><li>按照医生的指示执行医疗护理</li><li>监测生命体征和医疗设备</li><li>管理用药时间表并监测症状</li><li>术后和伤口护理</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {
@@ -6422,7 +6357,7 @@
     "lang": "zh-hant",
     "title": "首頁",
     "slug": "home-page",
-    "path": "//",
+    "path": "/",
     "parent": 0,
     "excerpt": "",
     "content": "<!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":183,\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"個人化照護的家庭護理助理\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"我們的認證家庭護理助理提供貼心的個人照護與日常生活協助。我們幫助您在紐約的家中保持獨立。\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"了解更多\",\"url\":\"/zh-hant/services/home-health-aide/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":189,\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"專業居家訪視護士\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"我們的持證訪視護士在您位於紐約市的家中提供專業醫療護理，並根據您的需求制定個人化計劃。\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"了解更多\",\"url\":\"/zh-hant/services/visiting-home-nurse/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11071,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"誰能從 Ideal 的紐約居家護理服務中受益？\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003cdiv class=\\u0022c-list__content aos-init aos-animate\\u0022 data-aos=\\u0022fade-up\\u0022 data-aos-delay=\\u0022100\\u0022\\u003e\\u003cul\\u003e\\u003cli\\u003e需要獨立生活協助的長者\\u003c/li\\u003e\\u003cli\\u003e術後或病後康復人士\\u003c/li\\u003e\\u003cli\\u003e慢性病患者（如中風、糖尿病居家護理）\\u003c/li\\u003e\\u003cli\\u003e需要喘息服務的家庭\\u003c/li\\u003e\\u003c/ul\\u003e\\u003c/div\\u003e\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"立即報名\",\"url\":\"/zh-hant/enroll-now/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"grey\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"left\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11084,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"Ideal Home Health\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"紐約的個性化居家護理：您的獨特需求，我們的專屬計劃\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"\\u003ch3 style=\\u0022color: #384b74; font-size: 2.0rem; margin: -13px 0px 16px 0px; font-weight: 600;\\u0022\\u003e彈性的居家陪護服務與專業照護\\u003c/h3\\u003e我們在紐約市五大行政區提供的居家護理服務涵蓋各類需求。我們提供量身訂做的護理模式與彈性的居家陪護服務，符合您家庭獨特的生活方式與需求。\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"查看我們的專科護理\",\"url\":\"/zh-hant/conditions/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->\n<p></p>\n<!-- wp:acf/locations {\"name\":\"acf/locations\",\"data\":{\"location_use_gradients\":\"1\",\"_location_use_gradients\":\"field_5f631eb4fd55b\",\"show_location_boxes\":\"0\",\"_show_location_boxes\":\"field_5f631f53fd55c\",\"hide_location_intro\":\"0\",\"_hide_location_intro\":\"field_5f631f6efd55d\",\"location_image\":1150,\"_location_image\":\"field_5f631fc5fd55e\",\"location_label\":\"Ideal Home Health\",\"_location_label\":\"field_5f631feefd55f\",\"location_title\":\"Ideal Home Health：自豪地服務紐約市五大行政區\",\"_location_title\":\"field_5f631ffbfd560\",\"location_description\":\"為了照護員與家庭的便利，我們在紐約市的辦公室都設在鄰近地區。我們在各地的專業護理人員為整個紐約市（包括皇后區、布魯克林、曼哈頓、史泰登島及布朗克斯）提供高效專業的服務。\",\"_location_description\":\"field_5f632006fd561\",\"location_button\":{\"title\":\"聯絡我們\",\"url\":\"/contact-us-2/\",\"target\":\"\"},\"_location_button\":\"field_5f632020fd562\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:acf/services {\"name\":\"acf/services\",\"data\":{\"services_section_0_icon\":\"\",\"_services_section_0_icon\":\"field_5f577973bee1a\",\"services_section_0_title\":\"Brooklyn\",\"_services_section_0_title\":\"field_5f577991bee1b\",\"services_section_0_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Brooklyn Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e2617 East 16th Street \\\r\\\nFloor 2\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBrooklyn\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e11235\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_0_description\":\"field_5f577998bee1c\",\"services_section_0_button\":{\"title\":\"Brooklyn Services\",\"url\":\"/locations/brooklyn/\",\"target\":\"\"},\"_services_section_0_button\":\"field_5f5779b1bee1d\",\"services_section_1_icon\":\"\",\"_services_section_1_icon\":\"field_5f577973bee1a\",\"services_section_1_title\":\"Bronx\",\"_services_section_1_title\":\"field_5f577991bee1b\",\"services_section_1_description\":\"\\u003cdiv itemscope itemtype=\\u0022https://schema.org/MedicalOrganization\\u0022\\u003e\\u003cspan itemprop=\\u0022name\\u0022 style=\\u0022display:none;\\u0022\\u003eIdeal Home Health - Bronx Office\\u003c/span\\u003e\\u003cdiv itemprop=\\u0022address\\u0022 itemscope itemtype=\\u0022https://schema.org/PostalAddress\\u0022\\u003e\\u003cspan itemprop=\\u0022streetAddress\\u0022\\u003e391 East 149th Street \\\r\\\nSuite 515\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressLocality\\u0022\\u003eBronx\\u003c/span\\u003e, \\u003cspan itemprop=\\u0022addressRegion\\u0022\\u003eNY,\\u003c/span\\u003e \\u003cspan itemprop=\\u0022postalCode\\u0022\\u003e10455\\u003c/span\\u003e\\\r\\\n\\u003cspan itemprop=\\u0022addressCountry\\u0022 style=\\u0022display:none;\\u0022\\u003eUS\\u003c/span\\u003e\\u003c/div\\u003ePhone: \\u003cspan itemprop=\\u0022telephone\\u0022\\u003e(718) 517 – 2424\\u003c/span\\u003e\\u003c/div\\u003e\",\"_services_section_1_description\":\"field_5f577998bee1c\",\"services_section_1_button\":{\"title\":\"Bronx Services\",\"url\":\"/locations/bronx/\",\"target\":\"\"},\"_services_section_1_button\":\"field_5f5779b1bee1d\",\"services_section\":2,\"_services_section\":\"field_5f57794fbee19\"},\"align\":\"full\",\"mode\":\"edit\"} /--><!-- wp:group {\"tagName\":\"section\",\"className\":\"idealhh-testimonials-area\",\"style\":{\"color\":{\"background\":\"#364f85\"},\"elements\":{\"link\":{\"color\":{\"text\":\"var:preset|color|black\"}}}},\"textColor\":\"black\",\"layout\":{\"type\":\"flex\",\"flexWrap\":\"nowrap\",\"justifyContent\":\"center\",\"orientation\":\"horizontal\"},\"translatedWithWPMLTM\":\"1\"} -->\n<section class=\"wp-block-group idealhh-testimonials-area has-black-color has-text-color has-background has-link-color\" style=\"background-color:#364f85\"><!-- wp:group {\"layout\":{\"type\":\"constrained\"},\"translatedWithWPMLTM\":\"1\"} -->\n<div class=\"wp-block-group\"><!-- wp:shortcode -->\n<h2 style=\"color:#fff\">What Our Clients Say: Trusted Home Care in New York</h2>\n\n[ideal_reviews nav_style=\"two\" words_limit=\"30\" items_mobile=\"1\"]\n<!-- /wp:shortcode --></div>\n<!-- /wp:group --></section>\n<!-- /wp:group --><!-- wp:acf/text-image {\"name\":\"acf/text-image\",\"data\":{\"text_image_blocks_0_bg_color\":\"white\",\"_text_image_blocks_0_bg_color\":\"field_5f576468e1e49\",\"text_image_blocks_0_orientation\":\"right\",\"_text_image_blocks_0_orientation\":\"field_5f5764a0e1e4a\",\"text_image_blocks_0_image\":11098,\"_text_image_blocks_0_image\":\"field_5f5764ece1e4b\",\"text_image_blocks_0_label\":\"IDEAL HOME HEALTH\",\"_text_image_blocks_0_label\":\"field_5f576516e1e4c\",\"text_image_blocks_0_title\":\"加入我們在紐約的富有愛心居家護理團隊\",\"_text_image_blocks_0_title\":\"field_5f576520e1e4d\",\"text_image_blocks_0_description\":\"您是一位專注且有愛心的照護者，並正在尋找在\\u003cb\\u003e紐約市居家護理\\u003c/b\\u003e領域的有意義職涯嗎？Ideal Home Health 正積極招募有才華的人士加入我們成長中的團隊。在這裡，您會發現一個支持性的環境，讓您對照護的熱情真正發揮影響力。\",\"_text_image_blocks_0_description\":\"field_5f57652de1e4e\",\"text_image_blocks_0_button\":{\"title\":\"查看職涯機會\",\"url\":\"/zh-hant/careers/\",\"target\":\"\"},\"_text_image_blocks_0_button\":\"field_5f57655ae1e4f\",\"text_image_blocks\":1,\"_text_image_blocks\":\"field_5f576422e1e48\"},\"align\":\"full\",\"mode\":\"edit\"} /-->",
@@ -6449,7 +6384,7 @@
           "services_section": [
             {
               "icon": 183,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart.svg",
               "title": "個人化照護的家庭護理助理",
               "description": "我們的認證家庭護理助理提供貼心的個人照護與日常生活協助。我們幫助您在紐約的家中保持獨立。",
               "button": {
@@ -6460,7 +6395,7 @@
             },
             {
               "icon": 189,
-              "icon_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/heart-2-1.svg",
+              "icon_url": "/wp-content/uploads/2020/09/heart-2-1.svg",
               "title": "專業居家訪視護士",
               "description": "我們的持證訪視護士在您位於紐約市的家中提供專業醫療護理，並根據您的需求制定個人化計劃。",
               "button": {
@@ -6553,7 +6488,7 @@
             "url": "/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -6654,7 +6589,7 @@
             "url": "/zh-hant/contact-us-2/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       },
       {
@@ -6839,7 +6774,7 @@
             "url": "/zh-hant/enroll-now/",
             "target": ""
           },
-          "location_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/11/Daco_924160.png"
+          "location_image_url": "/wp-content/uploads/2020/11/Daco_924160.png"
         }
       }
     ]
@@ -7019,7 +6954,7 @@
           "bullets_list_title": "Ideal Home Health 專業護理師",
           "bullets_list_description": "我們的持牌健康專業人員可以協助",
           "bullets_list_content": "<ul><li>依據您的醫師建議、個人偏好與生活方式，與您共同制定護理計劃</li><li>按照醫師指示執行醫療護理</li><li>監測生命體徵與醫療設備</li><li>管理用藥時間表並監控症狀</li><li>術後及傷口護理</li></ul>",
-          "bullets_section_image_url": "https://idealhh.wpengine.com/wp-content/uploads/2020/09/iStock-638124036.jpg"
+          "bullets_section_image_url": "/wp-content/uploads/2020/09/iStock-638124036.jpg"
         }
       },
       {

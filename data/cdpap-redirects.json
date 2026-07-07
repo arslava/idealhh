@@ -5,143 +5,58 @@
     "permanent": true
   },
   {
-    "source": "/what-is-cdpap/",
+    "source": "/:path*cdpap:path2*",
     "destination": "/services/",
     "permanent": true
   },
   {
-    "source": "/how-to-enroll-cdpap/",
-    "destination": "/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/who-is-eligible-cdpap/",
+    "source": "/consumer-directed:path*",
     "destination": "/services/",
     "permanent": true
   },
   {
-    "source": "/:locale/cdpap/",
-    "destination": "/:locale/services/",
-    "permanent": true
-  },
-  {
-    "source": "/:locale/what-is-cdpap/",
-    "destination": "/:locale/services/",
-    "permanent": true
-  },
-  {
-    "source": "/services/",
+    "source": "/paid-family-caregiver:path*",
     "destination": "/services/",
     "permanent": true
   },
   {
-    "source": "/how-to-enroll/",
-    "destination": "/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/resources/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/careers/how-it-works-caregivers/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ru/services/",
+    "source": "/ru/cdpap/",
     "destination": "/ru/services/",
     "permanent": true
   },
   {
-    "source": "/servicio/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/es/services/",
-    "destination": "/es/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ru/how-to-enroll/",
-    "destination": "/ru/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/es/how-to-enroll/",
-    "destination": "/es/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/es/what-is-cdpap/",
-    "destination": "/es/services/",
-    "permanent": true
-  },
-  {
-    "source": "/%d1%87%d1%82%d0%be-%d1%82%d0%b0%d0%ba%d0%be%d0%b5-cdpap-%d0%bf%d1%80%d0%be%d0%b3%d1%80%d0%b0%d0%bc%d0%bc%d0%b0/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ru/what-is-cdpap/",
+    "source": "/ru/:path*cdpap:path2*",
     "destination": "/ru/services/",
     "permanent": true
   },
   {
-    "source": "/ru/how-to-enroll-cdpap/",
-    "destination": "/ru/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/es/how-to-enroll-cdpap/",
-    "destination": "/es/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/ru/careers/become-a-caregiver/",
+    "source": "/ru/consumer-directed:path*",
     "destination": "/ru/services/",
     "permanent": true
   },
   {
-    "source": "/es/carreras/convertirse-en-un-cuidador-de-ideal-home-health/",
-    "destination": "/es/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ru/who-is-eligible-cdpap/",
+    "source": "/ru/paid-family-caregiver:path*",
     "destination": "/ru/services/",
     "permanent": true
   },
   {
-    "source": "/es/who-is-eligible-cdpap/",
+    "source": "/es/cdpap/",
     "destination": "/es/services/",
     "permanent": true
   },
   {
-    "source": "/forms/",
-    "destination": "/services/",
+    "source": "/es/:path*cdpap:path2*",
+    "destination": "/es/services/",
     "permanent": true
   },
   {
-    "source": "/cdpad-info/",
-    "destination": "/services/",
+    "source": "/es/consumer-directed:path*",
+    "destination": "/es/services/",
     "permanent": true
   },
   {
-    "source": "/locations/brooklyn/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/bn/services/",
-    "destination": "/bn/services/",
-    "permanent": true
-  },
-  {
-    "source": "/bn/how-to-enroll/",
-    "destination": "/bn/how-to-enroll/",
+    "source": "/es/paid-family-caregiver:path*",
+    "destination": "/es/services/",
     "permanent": true
   },
   {
@@ -150,58 +65,18 @@
     "permanent": true
   },
   {
-    "source": "/bn/what-is-cdpap-new/",
+    "source": "/bn/:path*cdpap:path2*",
     "destination": "/bn/services/",
     "permanent": true
   },
   {
-    "source": "/bn/what-is-cdpap/",
+    "source": "/bn/consumer-directed:path*",
     "destination": "/bn/services/",
     "permanent": true
   },
   {
-    "source": "/bn/who-is-eligible-cdpap/",
+    "source": "/bn/paid-family-caregiver:path*",
     "destination": "/bn/services/",
-    "permanent": true
-  },
-  {
-    "source": "/bn/how-to-enroll-cdpap/",
-    "destination": "/bn/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/bn/careers/how-it-works-caregivers/",
-    "destination": "/bn/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/careers/how-it-works-caregivers/",
-    "destination": "/ko/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/how-to-enroll/",
-    "destination": "/ko/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/how-to-enroll-cdpap/",
-    "destination": "/ko/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/services/",
-    "destination": "/ko/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/what-is-cdpap/",
-    "destination": "/ko/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/who-is-eligible-cdpap/",
-    "destination": "/ko/services/",
     "permanent": true
   },
   {
@@ -210,7 +85,17 @@
     "permanent": true
   },
   {
-    "source": "/ko/cdpap-new/",
+    "source": "/ko/:path*cdpap:path2*",
+    "destination": "/ko/services/",
+    "permanent": true
+  },
+  {
+    "source": "/ko/consumer-directed:path*",
+    "destination": "/ko/services/",
+    "permanent": true
+  },
+  {
+    "source": "/ko/paid-family-caregiver:path*",
     "destination": "/ko/services/",
     "permanent": true
   },
@@ -220,48 +105,18 @@
     "permanent": true
   },
   {
-    "source": "/zh-hans/what-is-cdpap-new/",
+    "source": "/zh-hans/:path*cdpap:path2*",
     "destination": "/zh-hans/services/",
     "permanent": true
   },
   {
-    "source": "/zh-hans/how-to-enroll-cdpap/",
-    "destination": "/zh-hans/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hans/careers/how-it-works-caregivers/",
+    "source": "/zh-hans/consumer-directed:path*",
     "destination": "/zh-hans/services/",
     "permanent": true
   },
   {
-    "source": "/zh-hans/how-to-enroll/",
-    "destination": "/zh-hans/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hans/services/",
+    "source": "/zh-hans/paid-family-caregiver:path*",
     "destination": "/zh-hans/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hans/what-is-cdpap/",
-    "destination": "/zh-hans/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hans/who-is-eligible-cdpap/",
-    "destination": "/zh-hans/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hant/services/",
-    "destination": "/zh-hant/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hant/how-to-enroll/",
-    "destination": "/zh-hant/how-to-enroll/",
     "permanent": true
   },
   {
@@ -270,38 +125,18 @@
     "permanent": true
   },
   {
-    "source": "/zh-hant/what-is-cdpap/",
+    "source": "/zh-hant/:path*cdpap:path2*",
     "destination": "/zh-hant/services/",
     "permanent": true
   },
   {
-    "source": "/zh-hant/what-is-cdpap-new/",
+    "source": "/zh-hant/consumer-directed:path*",
     "destination": "/zh-hant/services/",
     "permanent": true
   },
   {
-    "source": "/zh-hant/who-is-eligible-cdpap/",
+    "source": "/zh-hant/paid-family-caregiver:path*",
     "destination": "/zh-hant/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hant/how-to-enroll-cdpap/",
-    "destination": "/zh-hant/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hant/careers/how-it-works-caregivers/",
-    "destination": "/zh-hant/services/",
-    "permanent": true
-  },
-  {
-    "source": "/hi/services/",
-    "destination": "/hi/services/",
-    "permanent": true
-  },
-  {
-    "source": "/hi/how-to-enroll/",
-    "destination": "/hi/how-to-enroll/",
     "permanent": true
   },
   {
@@ -310,33 +145,18 @@
     "permanent": true
   },
   {
-    "source": "/hi/what-is-cdpap/",
+    "source": "/hi/:path*cdpap:path2*",
     "destination": "/hi/services/",
     "permanent": true
   },
   {
-    "source": "/hi/who-is-eligible-cdpap/",
+    "source": "/hi/consumer-directed:path*",
     "destination": "/hi/services/",
     "permanent": true
   },
   {
-    "source": "/hi/how-to-enroll-cdpap/",
-    "destination": "/hi/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/hi/careers/how-it-works-caregivers/",
+    "source": "/hi/paid-family-caregiver:path*",
     "destination": "/hi/services/",
-    "permanent": true
-  },
-  {
-    "source": "/uz/services/",
-    "destination": "/uz/services/",
-    "permanent": true
-  },
-  {
-    "source": "/uz/how-to-enroll/",
-    "destination": "/uz/how-to-enroll/",
     "permanent": true
   },
   {
@@ -345,33 +165,18 @@
     "permanent": true
   },
   {
-    "source": "/uz/what-is-cdpap/",
+    "source": "/uz/:path*cdpap:path2*",
     "destination": "/uz/services/",
     "permanent": true
   },
   {
-    "source": "/uz/who-is-eligible-cdpap/",
+    "source": "/uz/consumer-directed:path*",
     "destination": "/uz/services/",
     "permanent": true
   },
   {
-    "source": "/uz/how-to-enroll-cdpap/",
-    "destination": "/uz/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/uz/careers/how-it-works-caregivers/",
+    "source": "/uz/paid-family-caregiver:path*",
     "destination": "/uz/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ur/services/",
-    "destination": "/ur/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ur/how-to-enroll/",
-    "destination": "/ur/how-to-enroll/",
     "permanent": true
   },
   {
@@ -380,33 +185,18 @@
     "permanent": true
   },
   {
-    "source": "/ur/what-is-cdpap/",
+    "source": "/ur/:path*cdpap:path2*",
     "destination": "/ur/services/",
     "permanent": true
   },
   {
-    "source": "/ur/who-is-eligible-cdpap/",
+    "source": "/ur/consumer-directed:path*",
     "destination": "/ur/services/",
     "permanent": true
   },
   {
-    "source": "/ur/how-to-enroll-cdpap/",
-    "destination": "/ur/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/ur/careers/how-it-works-caregivers/",
+    "source": "/ur/paid-family-caregiver:path*",
     "destination": "/ur/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ar/services/",
-    "destination": "/ar/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ar/how-to-enroll/",
-    "destination": "/ar/how-to-enroll/",
     "permanent": true
   },
   {
@@ -415,88 +205,18 @@
     "permanent": true
   },
   {
-    "source": "/ar/what-is-cdpap/",
+    "source": "/ar/:path*cdpap:path2*",
     "destination": "/ar/services/",
     "permanent": true
   },
   {
-    "source": "/ar/who-is-eligible-cdpap/",
+    "source": "/ar/consumer-directed:path*",
     "destination": "/ar/services/",
     "permanent": true
   },
   {
-    "source": "/ar/how-to-enroll-cdpap/",
-    "destination": "/ar/how-to-enroll/",
-    "permanent": true
-  },
-  {
-    "source": "/ar/careers/how-it-works-caregivers/",
+    "source": "/ar/paid-family-caregiver:path*",
     "destination": "/ar/services/",
-    "permanent": true
-  },
-  {
-    "source": "/locations/bronx/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/locations/manhattan/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/home-care-benefits/",
-    "destination": "/services/",
-    "permanent": true
-  },
-  {
-    "source": "/uz/uyda-parvarish-qilishning-foydalari/",
-    "destination": "/uz/services/",
-    "permanent": true
-  },
-  {
-    "source": "/es/home-care-benefits/",
-    "destination": "/es/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ru/%d0%bb%d1%8c%d0%b3%d0%be%d1%82%d1%8b-%d0%bf%d0%be-%d1%83%d1%85%d0%be%d0%b4%d1%83-%d0%bd%d0%b0-%d0%b4%d0%be%d0%bc%d1%83/",
-    "destination": "/ru/services/",
-    "permanent": true
-  },
-  {
-    "source": "/hi/home-care-benefits/",
-    "destination": "/hi/services/",
-    "permanent": true
-  },
-  {
-    "source": "/bn/home-care-benefits/",
-    "destination": "/bn/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ar/home-care-benefits/",
-    "destination": "/ar/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hant/home-care-benefits/",
-    "destination": "/zh-hant/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ko/home-care-benefits/",
-    "destination": "/ko/services/",
-    "permanent": true
-  },
-  {
-    "source": "/ur/home-care-benefits/",
-    "destination": "/ur/services/",
-    "permanent": true
-  },
-  {
-    "source": "/zh-hans/%e5%b1%85%e5%ae%b6%e6%8a%a4%e7%90%86%e7%a6%8f%e5%88%a9/",
-    "destination": "/zh-hans/services/",
     "permanent": true
   }
 ]

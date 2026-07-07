@@ -1,8 +1,18 @@
 import { notFound } from 'next/navigation'
+import { getPage, allPages } from '@/lib/pages'
 import { SiteShell } from '@/components/SiteShell'
 import { PageRenderer } from '@/components/PageRenderer'
-import { getAllPages, getPage } from '@/lib/pages'
 
-export function generateStaticParams() { return getAllPages().filter(p => p.lang === 'en').map(p => ({ slug: p.path === '/' ? [] : p.path.split('/').filter(Boolean) })) }
-export async function generateMetadata({ params }: { params: { slug?: string[] } }) { const page = getPage('en', params.slug); return { title: page ? `${page.title} | Ideal Home Health` : 'Ideal Home Health' } }
-export default function Page({ params }: { params: { slug?: string[] } }) { const page = getPage('en', params.slug); if (!page) notFound(); return <SiteShell locale="en"><PageRenderer page={page} /></SiteShell> }
+function parts(path: string) {
+  return path === '/' ? [] : path.replace(/^\//, '').replace(/\/$/, '').split('/')
+}
+
+export function generateStaticParams() {
+  return allPages().filter((p) => p.lang === 'en').map((p) => ({ slug: parts(p.path) }))
+}
+
+export default function Page({ params }: { params: { slug?: string[] } }) {
+  const page = getPage('en', params.slug)
+  if (!page) notFound()
+  return <SiteShell locale="en"><PageRenderer page={page} /></SiteShell>
+}

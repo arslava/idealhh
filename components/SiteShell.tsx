@@ -1,21 +1,3 @@
-import Link from 'next/link'
-import { localePrefix, languageLabels } from '@/lib/locales'
-
-const nav = [
-  ['Services','/services/'], ['How to Enroll','/how-to-enroll/'], ['Conditions','/conditions/'], ['Careers','/careers/'], ['Contact','/contact-us-2/']
-]
-export function SiteShell({ locale, children }: { locale: string; children: React.ReactNode }) {
-  const prefix = localePrefix(locale)
-  return <div className="site">
-    <div className="topbar"><div className="container"><span>New York Home Health Care</span><a href="tel:+17182323223">(718) 232-3223</a></div></div>
-    <header className="header"><div className="container header-inner">
-      <Link href={`${prefix}/`} className="logo"><span className="logo-mark">IH</span><span>Ideal Home Health</span></Link>
-      <nav className="nav">{nav.map(([label,path]) => <Link key={path} href={`${prefix}${path}`}>{label}</Link>)}</nav>
-      <Link className="header-cta" href={`${prefix}/enroll-now/`}>Enroll Now</Link>
-    </div>
-    <div className="container lang-row">{Object.entries(languageLabels).map(([code,label]) => <Link key={code} href={`${code==='en'?'':'/'+code}/`} className={code===locale?'active':''}>{label}</Link>)}</div>
-    </header>
-    <main>{children}</main>
-    <footer className="footer"><div className="container footer-grid"><div><b>Ideal Home Health</b><p>Compassionate home care services in New York.</p></div><div><b>Contact</b><p><a href="tel:+17182323223">(718) 232-3223</a><br/>Brooklyn, NY</p></div><div><b>Quick Links</b><p><Link href={`${prefix}/services/`}>Services</Link><br/><Link href={`${prefix}/careers/`}>Careers</Link><br/><Link href={`${prefix}/contact-us-2/`}>Contact</Link></p></div></div><div className="container copyright">© {new Date().getFullYear()} Ideal Home Health</div></footer>
-  </div>
-}
+import { getNav, href } from '@/lib/pages'; import { labels, prefix } from '@/lib/locales';
+const phone='(718) 535-9199';
+export function SiteShell({locale,children}:{locale:string;children:React.ReactNode}){const nav=getNav(locale); const p=prefix(locale); return <><div className="top-strip"><div className="container top-strip__inner"><span>New York home care services</span><a href={`tel:${phone.replace(/\D/g,'')}`}>{phone}</a></div></div><header className="site-header"><div className="container header-grid"><a className="brand" href={p||'/'}><img src="/wp-content/uploads/2023/12/ideal-logo.png" alt="Ideal Home Health"/><span>Ideal Home Health</span></a><nav className="main-nav">{nav.map(n=><a key={n.id} href={href(locale,n.path)}>{n.path==='/'?'Home':n.title.replace('Home Page','Home').replace('Contact Us','Contact')}</a>)}</nav><a className="header-button" href={href(locale,'/contact-us-2/')}>Get Care</a></div><div className="container lang-switcher">{Object.entries(labels).map(([code,label])=><a key={code} className={code===locale?'active':''} href={(code==='en'?'':'/'+code)+'/' }>{label}</a>)}</div></header><main>{children}</main><section className="contact-band"><div className="container contact-band__grid"><div><p className="eyebrow">Ideal Home Health</p><h2>Need home care support?</h2><p>Speak with our team about services, enrollment, caregiver opportunities, and local New York care options.</p></div><a className="button button-red" href={href(locale,'/contact-us-2/')}>Contact Us</a></div></section><footer className="site-footer"><div className="container footer-grid"><div><img src="/wp-content/uploads/2023/12/ideal-logo.png" alt="Ideal Home Health"/><p>Delivering compassionate home care services across New York City.</p></div><div><h3>Services</h3><a href={href(locale,'/services/home-health-aide/')}>Home Health Aides</a><a href={href(locale,'/services/visiting-home-nurse/')}>Visiting Home Nurse</a><a href={href(locale,'/services/conditions/')}>Conditions</a></div><div><h3>Contact</h3><a href={`tel:${phone.replace(/\D/g,'')}`}>{phone}</a><a href={href(locale,'/careers/')}>Careers</a><a href={href(locale,'/contact-us-2/')}>Contact Us</a></div></div><div className="container copyright">© {new Date().getFullYear()} Ideal Home Health</div></footer></> }
