@@ -15,5 +15,5 @@ export const proximaNova = localFont({
 export const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin"],
-  weight: ["500", "600", "700", "900"],
+  weight: "variable",
 });
