@@ -30,7 +30,7 @@
   --color-accent: var(--color-accent);
   --color-white: var(--color-white);
 
-  --font-body: var(--font-proxima-nova);
+  --font-body: var(--font-public-sans);
   /* Real display font is Cormorant Garamond (see app/fonts.ts for why this
      is a fallback stack in this sandbox rather than the live Google Font). */
   --font-display: var(--font-cormorant), Garamond, "Iowan Old Style", Georgia, serif;

@@ -52,9 +52,12 @@ page, resources/FAQ, and the enrollment/contact forms (need a backend
 decision — Formspree, email API, or CRM webhook).
 
 ## Fonts
-Real ProximaNova files are in /public/fonts, wired via app/fonts.ts
-(next/font/local). Cormorant Garamond loads via next/font/google — needs
-internet access at build time, which DigitalOcean's build servers have.
+Body font is Public Sans (free, open-source, loaded via next/font/google —
+swapped in to replace ProximaNova, which was a commercial font we didn't have
+a confirmed redistribution license for). Cormorant Garamond (headings) also
+loads via next/font/google. Both need internet access at build time, which
+DigitalOcean's build servers have — this sandbox doesn't, which is why local
+dev builds here use a temporary stub during testing.
 
 ## Blog (put these in /public/images/blog/, not /public/images/)
 - what-aging-in-place-means-for-seniors-1.jpg

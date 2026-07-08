@@ -1,19 +1,19 @@
-import localFont from "next/font/local";
-import { Cormorant_Garamond } from "next/font/google";
+import { Cormorant_Garamond, Public_Sans } from "next/font/google";
 
-// Real brand font, self-hosted from the actual theme font files.
-export const proximaNova = localFont({
-  src: [
-    { path: "../public/fonts/ProximaNova-Regular.woff2", weight: "400", style: "normal" },
-    { path: "../public/fonts/ProximaNova-Semibold.woff2", weight: "600", style: "normal" },
-    { path: "../public/fonts/ProximaNova-Bold.woff2", weight: "700", style: "normal" },
-    { path: "../public/fonts/ProximaNova-Black.woff2", weight: "900", style: "normal" },
-  ],
-  variable: "--font-proxima-nova",
-  display: "swap",
+// Both fonts are genuinely free/open-source Google Fonts — no licensing
+// question here. ProximaNova (previously self-hosted) has been removed
+// entirely: it's a commercial font and we didn't have a confirmed license
+// covering redistribution via a public git repo. Public Sans is a very close
+// visual substitute — same humanist proportions, similar weight range
+// (400/600/700/900 map directly to Regular/Semibold/Bold/Black).
+
+export const publicSans = Public_Sans({
+  variable: "--font-public-sans",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "900"],
 });
 
-// Real display/heading font confirmed from theme CSS (.c-hero-home__title,
+// Real display/heading font confirmed from the theme CSS (.c-hero-home__title,
 // .c-intro__title). weight:"variable" loads the variable font so any
 // font-weight (including 900, which has no static cut for this family) still
 // renders correctly.

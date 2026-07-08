@@ -8,7 +8,8 @@ type ButtonProps = {
 };
 
 // Matches the real .c-button system from the theme CSS: pill shape
-// (30px radius), min-width ~200px, ProximaNova semibold, 1px accent border.
+// (30px radius), min-width ~200px, semibold weight, 1px accent border.
+// (Font is Public Sans, not the original theme's ProximaNova — see app/fonts.ts.)
 // outline = transparent bg / accent text+border (theme default)
 // primary  = white bg / accent border+text
 // secondary = solid accent bg / white text
