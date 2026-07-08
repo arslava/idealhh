@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Ideal Home Health | Compassionate Home Care in New York City",
   description:
-    "Ideal Home Health provides compassionate home health care services across Brooklyn, the Bronx, and Manhattan — Home Health Aides, Visiting Nurses, and personalized care plans.",
+    "Ideal Home Health provides compassionate home health care services across Brooklyn and the Bronx — Home Health Aides, Visiting Nurses, and personalized care plans.",
 };
 
 export default function RootLayout({

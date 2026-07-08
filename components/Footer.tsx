@@ -18,29 +18,30 @@ export default function Footer() {
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">About Us</h2>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/about-us" className="text-white/80 hover:text-accent">About Us</Link></li>
-            <li><Link href="/about-us/testimonials-reviews" className="text-white/80 hover:text-accent">Testimonials &amp; Reviews</Link></li>
-            <li><Link href="/careers/how-it-works-caregivers" className="text-white/80 hover:text-accent">Join Our Team</Link></li>
+            <li><Link href="/about-us" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">About Us</Link></li>
+            <li><Link href="/about-us/testimonials-reviews" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Testimonials &amp; Reviews</Link></li>
+            <li><Link href="/careers/how-it-works-caregivers" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Join Our Team</Link></li>
+            <li><Link href="/blog" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Blog</Link></li>
           </ul>
         </div>
 
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">Services</h2>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/services" className="text-white/80 hover:text-accent">Services</Link></li>
-            <li><Link href="/locations" className="text-white/80 hover:text-accent">Locations</Link></li>
-            <li><Link href="/services/conditions" className="text-white/80 hover:text-accent">Conditions</Link></li>
-            <li><Link href="/enroll-now" className="text-white/80 hover:text-accent">Patient Enrollment</Link></li>
+            <li><Link href="/services" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Services</Link></li>
+            <li><Link href="/locations" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Locations</Link></li>
+            <li><Link href="/services/conditions" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Conditions</Link></li>
+            <li><Link href="/enroll-now" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Patient Enrollment</Link></li>
           </ul>
         </div>
 
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">Get in Touch</h2>
           <ul className="mt-4 space-y-2 text-sm">
-            <li><Link href="/resources" className="text-white/80 hover:text-accent">Resources</Link></li>
-            <li><Link href="/contact-us" className="text-white/80 hover:text-accent">Contact Us</Link></li>
-            <li><Link href="/privacy-policy" className="text-white/80 hover:text-accent">Privacy Policy</Link></li>
-            <li><Link href="/tos" className="text-white/80 hover:text-accent">Terms of Service</Link></li>
+            <li><Link href="/resources" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Resources</Link></li>
+            <li><Link href="/contact-us" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Contact Us</Link></li>
+            <li><Link href="/privacy-policy" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Privacy Policy</Link></li>
+            <li><Link href="/tos" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Terms of Service</Link></li>
           </ul>
           <a href={site.phoneHref} className="mt-4 inline-block text-sm font-semibold text-accent">
             {site.phone}

@@ -39,7 +39,7 @@ export default function Header() {
               <div key={item.label} className="group relative">
                 <Link
                   href={item.href}
-                  className="text-sm font-semibold text-grey-800 hover:text-accent transition-colors"
+                  className="text-[1.125rem] font-bold text-grey-800 hover:text-accent transition-colors"
                 >
                   {item.label}
                 </Link>
@@ -94,7 +94,7 @@ export default function Header() {
                 <div className="flex items-center justify-between">
                   <Link
                     href={item.href}
-                    className="flex-1 py-3 text-base font-semibold text-navy-700"
+                    className="flex-1 py-3 text-[1.5625rem] md:text-[1.875rem] font-normal text-navy-700"
                     onClick={() => setMobileOpen(false)}
                   >
                     {item.label}

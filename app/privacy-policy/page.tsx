@@ -1,9 +1,34 @@
-export default function Page() {
+import { privacyPolicyPage } from "@/lib/content";
+import { privacyPolicyParagraphs } from "@/lib/privacy-policy-text";
+
+export default function PrivacyPolicyPage() {
+  const { hero, intro, effectiveDate, contact } = privacyPolicyPage;
+
   return (
-    <section className="mx-auto max-w-3xl px-6 py-24 text-center">
-      <p className="text-accent text-sm font-semibold tracking-wide uppercase">Coming soon</p>
-      <h1 className="mt-3 text-3xl md:text-4xl font-semibold text-navy-700 capitalize">privacy policy</h1>
-      <p className="mt-4 text-grey-800/70">This page is part of the next build phase — placeholder for now.</p>
-    </section>
+    <>
+      <section className="bg-bg-light">
+        <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
+          <h1 className="font-display text-3xl md:text-4xl font-black text-navy-800">{hero.title}</h1>
+        </div>
+      </section>
+
+      <article className="mx-auto max-w-[760px] px-4 py-16">
+        <p className="text-grey-800 leading-relaxed font-medium">{intro}</p>
+        <p className="mt-4 text-sm text-navy-muted">{effectiveDate}</p>
+
+        <div className="mt-6 rounded-2xl bg-bg-light p-6">
+          <p className="font-semibold text-navy-800">{contact.title}</p>
+          {contact.lines.map((line) => (
+            <p key={line} className="text-grey-800">{line}</p>
+          ))}
+        </div>
+
+        <div className="mt-10 space-y-4 text-grey-800 leading-relaxed">
+          {privacyPolicyParagraphs.map((p, i) => (
+            <p key={i} className="whitespace-pre-line">{p}</p>
+          ))}
+        </div>
+      </article>
+    </>
   );
 }
