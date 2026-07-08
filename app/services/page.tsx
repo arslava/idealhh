@@ -19,14 +19,14 @@ export default function ServicesPage() {
       </section>
       <WaveDivider />
 
-      <section className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-8">
+      <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-8">
         {services.map((service) => (
-          <div key={service.title} className="rounded-3xl border border-navy-700/10 bg-white overflow-hidden">
+          <div key={service.title} className="rounded-3xl border border-navy-900/10 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)] overflow-hidden">
             <div className="relative aspect-[16/9]">
               <Image src={service.image} alt={service.title} fill className="object-cover" />
             </div>
             <div className="p-8">
-              <h2 className="text-2xl font-semibold text-navy-700 leading-snug">{service.title}</h2>
+              <h2 className="font-display text-2xl font-semibold text-navy-800 leading-snug">{service.title}</h2>
               <p className="mt-4 text-[1.125rem] md:text-[1.375rem] text-grey-800 leading-relaxed">{service.description}</p>
               <Button href={service.button.href} variant="outline" className="mt-6">
                 {service.button.title}

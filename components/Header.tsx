@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { nav, site } from "@/lib/content";
 
@@ -30,7 +31,7 @@ export default function Header() {
       <div className="shadow-[0_20px_40px_rgba(56,75,116,0.1)] py-6">
         <div className="mx-auto max-w-[1140px] px-4 flex items-center justify-between gap-8">
           <Link href="/" className="shrink-0">
-            <span className="font-display text-2xl font-semibold text-navy-700">{site.name}</span>
+            <Image src="/images/logo.svg" alt={site.name} width={186} height={59} priority className="h-10 w-auto md:h-12" />
           </Link>
 
           {/* Desktop nav */}

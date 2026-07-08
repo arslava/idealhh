@@ -1,2 +1,7 @@
 node_modules
 .next
+
+# env files (secrets like RESEND_API_KEY should never be committed)
+.env
+.env.local
+.env*.local

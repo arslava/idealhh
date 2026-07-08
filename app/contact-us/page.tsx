@@ -1,5 +1,6 @@
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
+import ContactForm from "@/components/ContactForm";
 import { contactUsPage, site } from "@/lib/content";
 
 export default function ContactUsPage() {
@@ -35,11 +36,8 @@ export default function ContactUsPage() {
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-16">
           <h2 className="font-display text-3xl font-black text-navy-800 text-center">Send Us a Message</h2>
-          <div className="mt-8 max-w-2xl mx-auto rounded-3xl bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8 text-center text-grey-800">
-            {/* Real site embeds a WPForms shortcode here (form id 2466). Needs a
-                real form backend (Formspree, email API, or CRM webhook) before
-                this can go live — placeholder until that's decided. */}
-            Contact form goes here — pending decision on form backend (email, Formspree, or CRM).
+          <div className="mt-8 max-w-2xl mx-auto rounded-3xl bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8">
+            <ContactForm />
           </div>
         </div>
       </section>

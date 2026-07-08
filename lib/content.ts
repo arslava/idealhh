@@ -692,6 +692,12 @@ export const locations = {
           "Our Department of Health certified Home Health Aides (HHAs) in The Bronx provide compassionate personal care and daily living assistance. From help with bathing, dressing, and meal prep to medication reminders and light housekeeping, our Bronx HHAs empower residents in neighborhoods like Mott Haven and Pelham Bay to maintain their independence and comfort at home. They receive ongoing training to ensure the highest quality of care.",
         button: { title: "Learn More About HHAs", href: "/services/home-health-aide" },
       },
+      {
+        title: "Skilled Visiting Home Nurses Serving The Bronx",
+        description:
+          "Receive expert skilled nursing care directly in your Bronx home with our licensed Visiting Home Nurses. Our RNs and LPNs deliver a range of medical services, including wound care, medication management, post-operative support, and chronic disease care for residents across Riverdale, Fordham, and beyond. We develop custom care plans focused on your health and recovery.",
+        button: { title: "Learn More About Visiting Nurses", href: "/services/visiting-home-nurse" },
+      },
     ],
     whyChoose: {
       title: "Why Bronx Families Choose Ideal Home Health",
