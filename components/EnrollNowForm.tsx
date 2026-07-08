@@ -4,6 +4,10 @@ import { useState } from "react";
 
 type Status = "idle" | "loading" | "success" | "error";
 
+// Patient Enrollment form — matches the original site's /enroll-now/ page
+// (WPForms id 2688, titled "Patient Enrollment"). The caregiver application
+// is a separate form on a separate page (/careers/#qualifyenroll) —
+// see CaregiverApplicationForm.tsx.
 export default function EnrollNowForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -52,17 +56,6 @@ export default function EnrollNowForm() {
         aria-hidden="true"
       />
 
-      <div>
-        <label htmlFor="enrollmentType" className="block text-sm font-semibold text-navy-700 mb-1">I am enrolling as a... *</label>
-        <select
-          id="enrollmentType" name="enrollmentType" required defaultValue=""
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        >
-          <option value="" disabled>Select one</option>
-          <option value="Patient">Patient / Family Member</option>
-          <option value="Caregiver">Caregiver</option>
-        </select>
-      </div>
       <div>
         <label htmlFor="name" className="block text-sm font-semibold text-navy-700 mb-1">Name *</label>
         <input

@@ -259,6 +259,19 @@ export const careersPage = {
       "We serve an ethnically diverse clientele — bi-lingual aides are important to us, and we welcome cultural and ethnic diversity.",
     ],
   },
+  // Real content from the original site's #qualifyenroll section on this
+  // page: a "Do I qualify?" checklist next to a "Caregiver Job Application"
+  // form (WPForms id 3064 originally).
+  qualify: {
+    title: "Do I qualify?",
+    subtitle: "To take care of someone:",
+    items: [
+      "Are you 18 or over?",
+      "Are you authorized to work in the US?",
+      "Are you interested in getting paid over $21.64/hr?",
+    ],
+    formTitle: "Caregiver Job Application",
+  },
   jobs: [
     { title: "Home Health Aide (HHA)", label: "FULL-TIME / PART-TIME", location: "BROOKLYN, NY" },
   ],
@@ -271,7 +284,7 @@ export const becomeCaregiverPage = {
     subtitle: "A Rewarding Career Awaits You at Ideal Home Health",
     description:
       "Are you ready to start a rewarding career helping others in your community? At Ideal Home Health, we value our staff and provide the support you need to succeed. Our team of professionals earns some of the highest wages in the industry for a company that truly cares about its employees and the patients they care for.",
-    button: { title: "Apply Now", href: "#qualifyenroll" },
+    button: { title: "Apply Now", href: "/careers#qualifyenroll" },
   },
   steps: [
     { number: "01.", title: "Contact Us", description: "Contact us to speak with a friendly coordinator who will guide you through our simple registration process and confirm you qualify." },
@@ -291,7 +304,7 @@ export const becomeCaregiverPage = {
   prefooterCta: {
     title: "Start Your Home Care Career Today",
     description: "Contact us to start the process of becoming an Ideal Home Health caregiver.",
-    button: { title: "Apply Now", href: "#qualifyenroll" },
+    button: { title: "Apply Now", href: "/careers#qualifyenroll" },
     image: "/images/ideal-home-health-caregiver-nyc.jpg",
   },
 };
