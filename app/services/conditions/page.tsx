@@ -13,7 +13,7 @@ export default function ConditionsPage() {
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div className="py-16 lg:py-20">
             <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">{hero.label}</p>
-            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[3.75rem] leading-[1.05]">
+            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
               {hero.title.replace(hero.highlight, "")}
               <span className="text-accent">{hero.highlight}</span>
             </h1>
@@ -37,7 +37,7 @@ export default function ConditionsPage() {
       <WaveDivider />
 
       <section className="mx-auto max-w-[1140px] px-4 py-16">
-        <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800 text-center">{sectionTitle}</h2>
+        <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">{sectionTitle}</h2>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card) => (
             <div key={card.slug} className="rounded-2xl border border-navy-900/10 p-6 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.06)]">

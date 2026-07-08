@@ -13,7 +13,7 @@ export default function VisitingHomeNursePage() {
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div className="py-16 lg:py-20">
             <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">{hero.label}</p>
-            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] leading-[1.05]">{hero.title}</h1>
+            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">{hero.title}</h1>
             <h2 className="mt-4 text-xl md:text-2xl text-white/90 font-semibold">{hero.subtitle}</h2>
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">
               {hero.description}
@@ -35,12 +35,12 @@ export default function VisitingHomeNursePage() {
 
       <section className="mx-auto max-w-[1140px] px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800">
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">
             {bullets.title.replace(bullets.highlight, "")}
             <span className="text-accent">{bullets.highlight}</span>
           </h2>
           <h3 className="mt-6 text-xl font-semibold text-navy-700">{bullets.listTitle}</h3>
-          <p className="mt-2 text-grey-800">{bullets.listDescription}</p>
+          <p className="mt-2 text-[1.375rem] text-grey-800">{bullets.listDescription}</p>
           <ul className="mt-6 space-y-4">
             {bullets.items.map((item) => (
               <li key={item} className="flex gap-4 text-grey-800 leading-relaxed">

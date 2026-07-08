@@ -12,7 +12,7 @@ export default function ServicesPage() {
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-20 md:pb-24">
           <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Services</p>
-          <h1 className="mt-4 max-w-2xl text-4xl md:text-5xl font-semibold leading-tight">
+          <h1 className="mt-4 max-w-2xl font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
             {hero.title}
           </h1>
         </div>
@@ -42,7 +42,7 @@ export default function ServicesPage() {
             <Image src={whyChoose.image} alt={whyChoose.title} fill className="object-cover" />
           </div>
           <div>
-            <h2 className="text-3xl md:text-4xl font-semibold text-navy-700">{whyChoose.title}</h2>
+            <h2 className="text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-700">{whyChoose.title}</h2>
             <div className="mt-8 flex flex-wrap gap-3">
               {whyChoose.items.map((item) => (
                 <span key={item} className="rounded-full bg-white border border-navy-700/10 px-5 py-2 text-sm text-grey-800/80">

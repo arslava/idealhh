@@ -20,7 +20,7 @@ export default async function ConditionDetailPage({ params }: { params: Promise<
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div className="py-16 lg:py-20">
             <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">{condition.heroLabel}</p>
-            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[3.75rem] leading-[1.05]">
+            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
               {condition.heroTitle.replace(condition.heroHighlight, "")}
               <span className="text-accent">{condition.heroHighlight}</span>
             </h1>
@@ -47,13 +47,13 @@ export default async function ConditionDetailPage({ params }: { params: Promise<
           <Image src={condition.bulletsImage} alt={condition.bulletsTitle} fill className="object-cover" />
         </div>
         <div className="order-1 lg:order-2">
-          <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800">
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">
             {condition.bulletsTitle.replace(condition.bulletsHighlight, "")}
             <span className="text-accent">{condition.bulletsHighlight}</span>
           </h2>
           <h3 className="mt-6 text-xl font-semibold text-navy-700">{condition.bulletsListTitle}</h3>
           {condition.bulletsListDescription && (
-            <p className="mt-2 text-grey-800">{condition.bulletsListDescription}</p>
+            <p className="mt-2 text-[1.375rem] text-grey-800">{condition.bulletsListDescription}</p>
           )}
           <ul className="mt-6 space-y-4">
             {condition.bulletsItems.map((item) => (

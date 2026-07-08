@@ -9,7 +9,7 @@ export default function ContactUsPage() {
     <>
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 py-16 lg:py-20">
-          <h1 className="font-display text-[2.8125rem] md:text-[3.75rem] leading-[1.05] max-w-2xl">
+          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] max-w-2xl">
             {hero.title.replace(hero.highlight, "")}
             <span className="text-accent">{hero.highlight}</span>
           </h1>

@@ -50,7 +50,7 @@ export default function Header() {
                         <Link
                           key={child.href}
                           href={child.href}
-                          className="block px-4 py-2 text-sm text-grey-800 hover:bg-bg-light hover:text-accent"
+                          className="block px-4 py-2 text-[1.125rem] font-bold text-grey-800 hover:bg-bg-light hover:text-accent"
                         >
                           {child.label}
                         </Link>
@@ -121,7 +121,7 @@ export default function Header() {
                       <Link
                         key={child.href}
                         href={child.href}
-                        className="py-2 text-sm text-grey-800"
+                        className="py-2 text-[1.5625rem] md:text-[1.875rem] font-normal text-navy-700"
                         onClick={() => setMobileOpen(false)}
                       >
                         {child.label}

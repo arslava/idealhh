@@ -12,7 +12,7 @@ export default function AboutUsPage() {
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div className="py-16 lg:py-20">
-            <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] leading-[1.05]">{hero.title}</h1>
+            <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">{hero.title}</h1>
             <h2 className="mt-4 text-xl md:text-2xl text-accent font-semibold">{hero.subtitle}</h2>
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">
               {hero.description}
@@ -38,7 +38,7 @@ export default function AboutUsPage() {
         </div>
         <div>
           <p className="text-navy-700/50 text-sm font-semibold tracking-[1px] uppercase">{mission.label}</p>
-          <h2 className="mt-3 font-display text-3xl md:text-4xl font-black text-navy-800">{mission.title}</h2>
+          <h2 className="mt-3 font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{mission.title}</h2>
           <p className="mt-4 text-[1.375rem] text-grey-800 leading-relaxed">{mission.description}</p>
           <Button href={mission.button.href} className="mt-8">{mission.button.title}</Button>
         </div>
@@ -48,7 +48,7 @@ export default function AboutUsPage() {
         <div className="mx-auto max-w-[1140px] px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-navy-700/50 text-sm font-semibold tracking-[1px] uppercase">{areasServed.label}</p>
-            <h2 className="mt-3 font-display text-3xl md:text-4xl font-black text-navy-800">{areasServed.title}</h2>
+            <h2 className="mt-3 font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{areasServed.title}</h2>
             <p className="mt-4 text-[1.375rem] text-grey-800 leading-relaxed">{areasServed.description}</p>
           </div>
           <div className="relative aspect-[863/854] max-w-md mx-auto">

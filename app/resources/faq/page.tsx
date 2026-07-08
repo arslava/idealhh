@@ -28,17 +28,17 @@ export default function FaqPage() {
     <>
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
-          <h1 className="font-display text-3xl md:text-4xl font-black text-navy-800">{hero.title}</h1>
+          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-black text-navy-800">{hero.title}</h1>
         </div>
       </section>
 
       <section className="mx-auto max-w-[840px] px-4 py-16">
-        <h2 className="font-display text-2xl font-semibold text-navy-800">Common Questions from Patients</h2>
+        <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">Common Questions from Patients</h2>
         <div className="mt-6">
           <QuestionList items={patientQuestions} />
         </div>
 
-        <h2 className="mt-14 font-display text-2xl font-semibold text-navy-800">Common Questions from Caregivers</h2>
+        <h2 className="mt-14 font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">Common Questions from Caregivers</h2>
         <div className="mt-6">
           <QuestionList items={caregiverQuestions} />
         </div>

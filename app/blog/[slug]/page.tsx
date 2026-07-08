@@ -29,7 +29,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         <div className="mx-auto max-w-[840px] px-4 py-16 lg:py-20">
           <Link href="/blog" className="text-sm text-white/70 hover:text-accent">← Back to Blog</Link>
           <p className="mt-6 text-xs text-white/50 uppercase tracking-wide">{formatDate(post.date)}</p>
-          <h1 className="mt-3 font-display text-3xl md:text-5xl leading-[1.1]">{post.title}</h1>
+          <h1 className="mt-3 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">{post.title}</h1>
         </div>
       </section>
 

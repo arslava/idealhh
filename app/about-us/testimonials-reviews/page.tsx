@@ -19,14 +19,14 @@ export default function TestimonialsReviewsPage() {
     <>
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
-          <h1 className="font-display text-3xl md:text-4xl font-black text-navy-800">{hero.title}</h1>
+          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-black text-navy-800">{hero.title}</h1>
           <h2 className="mt-3 text-xl text-navy-700 font-semibold">{hero.subtitle}</h2>
           <p className="mt-4 text-grey-800 leading-relaxed max-w-2xl mx-auto">{hero.description}</p>
         </div>
       </section>
 
       <section className="mx-auto max-w-[1140px] px-4 py-16">
-        <h2 className="font-display text-2xl font-semibold text-navy-800 text-center">Testimonials</h2>
+        <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Testimonials</h2>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <div key={t.author} className="rounded-3xl bg-white border border-navy-900/10 shadow-[0_20px_40px_rgba(56,75,116,0.06)] p-6 flex flex-col">
@@ -43,7 +43,7 @@ export default function TestimonialsReviewsPage() {
 
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-16">
-          <h2 className="font-display text-2xl font-semibold text-navy-800 text-center">Reviews</h2>
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Reviews</h2>
           <div className="mt-8 grid md:grid-cols-2 gap-6">
             {reviews.map((r) => (
               <div key={r.name} className="rounded-3xl bg-white border border-navy-900/10 shadow-[0_20px_40px_rgba(56,75,116,0.06)] p-6">

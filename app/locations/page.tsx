@@ -12,7 +12,7 @@ export default function LocationsIndexPage() {
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div className="py-16 lg:py-20">
-            <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[4.5rem] leading-[1.05]">
+            <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
               {hero.title.replace(hero.highlight, "")}
               <span className="text-accent">{hero.highlight}</span>
             </h1>
@@ -34,7 +34,7 @@ export default function LocationsIndexPage() {
         {cards.map((card) => (
           <div key={card.title} className="rounded-3xl border border-navy-900/10 p-8 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
             <h2 className="font-display text-2xl font-semibold text-navy-800 leading-snug">{card.title}</h2>
-            <p className="mt-4 text-grey-800 leading-relaxed">{card.description}</p>
+            <p className="mt-4 text-[1.375rem] text-grey-800 leading-relaxed">{card.description}</p>
             <Button href={card.button.href} variant="outline" className="mt-6">
               {card.button.title}
             </Button>

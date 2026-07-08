@@ -11,7 +11,7 @@ export default function BecomeCaregiverPage() {
     <>
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-16 lg:py-20 text-center">
-          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] leading-[1.05] max-w-3xl mx-auto text-navy-900">
+          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] max-w-3xl mx-auto text-navy-900">
             {hero.title.replace(hero.highlight, "")}
             <span className="text-accent">{hero.highlight}</span>
           </h1>
@@ -48,11 +48,11 @@ export default function BecomeCaregiverPage() {
             <Image src={gettingStarted.image} alt={gettingStarted.title} fill className="object-cover" />
           </div>
           <div>
-            <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800">
+            <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">
               {gettingStarted.title.replace(gettingStarted.highlight, "")}
               <span className="text-accent">{gettingStarted.highlight}</span>
             </h2>
-            <p className="mt-3 text-grey-800">{gettingStarted.description}</p>
+            <p className="mt-3 text-[1.375rem] text-grey-800">{gettingStarted.description}</p>
             <h3 className="mt-6 text-xl font-semibold text-navy-700">{gettingStarted.listTitle}</h3>
             <p className="mt-2 text-grey-800">{gettingStarted.listDescription}</p>
           </div>

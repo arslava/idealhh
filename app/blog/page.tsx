@@ -16,7 +16,7 @@ export default function BlogIndexPage() {
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 py-16 lg:py-20">
           <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Resources</p>
-          <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] leading-[1.05]">
+          <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
             Ideal Home Health Blog
           </h1>
           <p className="mt-6 max-w-2xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">

@@ -12,7 +12,7 @@ export default function HomeHealthAidePage() {
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-20 md:pb-24">
           <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Home Health Aides</p>
-          <h1 className="mt-4 max-w-2xl text-4xl md:text-5xl font-semibold leading-tight">
+          <h1 className="mt-4 max-w-2xl font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
             {hero.title.replace(hero.highlight, "")}
             <span className="italic text-accent">{hero.highlight}</span>
           </h1>

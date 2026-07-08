@@ -12,7 +12,7 @@ export default function CareersPage() {
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
           <div className="py-16 lg:py-20">
-            <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] leading-[1.05]">
+            <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
               {hero.title.replace(hero.highlight, "")}
               <span className="text-accent">{hero.highlight}</span>
             </h1>
@@ -34,11 +34,11 @@ export default function CareersPage() {
           <Image src={benefits.image} alt={benefits.title} fill className="object-cover" />
         </div>
         <div>
-          <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800">
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">
             {benefits.title.replace(benefits.highlight, "")}
             <span className="text-accent">{benefits.highlight}</span>
           </h2>
-          <p className="mt-3 text-grey-800">{benefits.description}</p>
+          <p className="mt-3 text-[1.375rem] text-grey-800">{benefits.description}</p>
           <h3 className="mt-6 text-xl font-semibold text-navy-700">{benefits.listTitle}</h3>
           <ul className="mt-4 space-y-3">
             {benefits.items.map((item) => (
@@ -53,7 +53,7 @@ export default function CareersPage() {
 
       <section id="qualifyenroll" className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-16">
-          <h2 className="font-display text-3xl font-black text-navy-800 text-center">Ideal Home Health Job Listings</h2>
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Ideal Home Health Job Listings</h2>
           <div className="mt-8 grid gap-4 max-w-2xl mx-auto">
             {jobs.map((job) => (
               <div key={job.title} className="rounded-2xl bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-6 flex flex-wrap items-center justify-between gap-4">

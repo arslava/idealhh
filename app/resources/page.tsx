@@ -8,7 +8,7 @@ export default function ResourcesIndexPage() {
     <>
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
-          <h1 className="font-display text-3xl md:text-4xl font-black text-navy-800">{hero.title}</h1>
+          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-black text-navy-800">{hero.title}</h1>
           <p className="mt-4 text-grey-800">{hero.description}</p>
         </div>
       </section>
