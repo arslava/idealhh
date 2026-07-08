@@ -29,7 +29,7 @@ export default function HowToEnrollPage() {
             <span className="font-display text-3xl font-black text-accent shrink-0">{step.number}</span>
             <div>
               <h3 className="font-display text-xl font-semibold text-navy-800">{step.title}</h3>
-              <p className="mt-1 text-grey-800 leading-relaxed">{step.description}</p>
+              <p className="mt-1 text-lg text-grey-800 leading-relaxed">{step.description}</p>
             </div>
           </div>
         ))}
@@ -44,8 +44,8 @@ export default function HowToEnrollPage() {
           <h3 className="mt-4 text-lg text-navy-700 font-semibold">{bullets.subtitle}</h3>
           <p className="mt-2 text-[1.375rem] text-grey-800">{bullets.description}</p>
           <h4 className="mt-8 text-xl font-semibold text-navy-700">{bullets.listTitle}</h4>
-          <p className="mt-2 text-grey-800">{bullets.listDescription}</p>
-          <ul className="mt-6 space-y-3 max-w-2xl">
+          <p className="mt-2 text-[1.375rem] text-grey-800">{bullets.listDescription}</p>
+          <ul className="mt-6 space-y-3 max-w-2xl text-[1.375rem]">
             {bullets.items.map((item) => (
               <li key={item} className="flex gap-3 text-grey-800 leading-relaxed">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />

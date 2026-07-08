@@ -35,7 +35,7 @@ export default function BecomeCaregiverPage() {
               <span className="font-display text-3xl font-black text-accent shrink-0">{step.number}</span>
               <div>
                 <h3 className="font-display text-xl font-semibold text-navy-800">{step.title}</h3>
-                <p className="mt-1 text-grey-800 leading-relaxed">{step.description}</p>
+                <p className="mt-1 text-lg text-grey-800 leading-relaxed">{step.description}</p>
               </div>
             </div>
           ))}
@@ -54,7 +54,7 @@ export default function BecomeCaregiverPage() {
             </h2>
             <p className="mt-3 text-[1.375rem] text-grey-800">{gettingStarted.description}</p>
             <h3 className="mt-6 text-xl font-semibold text-navy-700">{gettingStarted.listTitle}</h3>
-            <p className="mt-2 text-grey-800">{gettingStarted.listDescription}</p>
+            <p className="mt-2 text-[1.375rem] text-grey-800">{gettingStarted.listDescription}</p>
           </div>
         </div>
       </section>

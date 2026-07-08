@@ -30,7 +30,7 @@ export default function BenefitsPage() {
           <Button href={qualify.button.href} className="mt-6">{qualify.button.title}</Button>
         </div>
         <div className="rounded-3xl bg-bg-light p-8">
-          <ul className="space-y-4">
+          <ul className="space-y-4 text-[1.375rem]">
             {qualify.items.map((item) => (
               <li key={item} className="flex gap-3 text-grey-800 font-medium">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
@@ -47,7 +47,7 @@ export default function BenefitsPage() {
           <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">{included.title}</h2>
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {included.items.map((item) => (
-              <div key={item.title} className="rounded-2xl bg-white p-6 shadow-[0_10px_30px_rgba(56,75,116,0.06)]">
+              <div key={item.title} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
                 <h3 className="font-display text-lg font-semibold text-navy-800">{item.title}</h3>
                 <p className="mt-2 text-sm text-grey-800 leading-relaxed">{item.description}</p>
               </div>
@@ -64,7 +64,7 @@ export default function BenefitsPage() {
         <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">{extras.title}</h2>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {extras.items.map((item) => (
-            <div key={item.title} className="rounded-2xl border border-navy-900/10 p-6 text-center">
+            <div key={item.title} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] text-center">
               <h3 className="font-display text-lg font-semibold text-navy-800">{item.title}</h3>
               <p className="mt-2 text-sm text-grey-800 leading-relaxed">{item.description}</p>
             </div>
@@ -82,7 +82,7 @@ export default function BenefitsPage() {
                 <span className="font-display text-2xl font-black text-accent shrink-0">{step.number}</span>
                 <div>
                   <h3 className="font-semibold">{step.title}</h3>
-                  <p className="mt-1 text-white/80 text-sm leading-relaxed">{step.description}</p>
+                  <p className="mt-1 text-lg text-white/80 leading-relaxed">{step.description}</p>
                 </div>
               </div>
             ))}
@@ -98,7 +98,7 @@ export default function BenefitsPage() {
         <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">{whyChoose.title}</h2>
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {whyChoose.items.map((item) => (
-            <div key={item.title} className="rounded-2xl bg-bg-light p-6 text-center">
+            <div key={item.title} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] text-center">
               <h3 className="font-display text-lg font-semibold text-navy-800">{item.title}</h3>
               <p className="mt-2 text-sm text-grey-800 leading-relaxed">{item.description}</p>
             </div>
@@ -120,7 +120,7 @@ export default function BenefitsPage() {
         <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Home Care Services Across New York City</h2>
         <div className="mt-10 grid md:grid-cols-3 gap-6">
           {locationCards.map((loc) => (
-            <div key={loc.name} className="rounded-2xl border border-navy-900/10 p-6 text-center">
+            <div key={loc.name} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] text-center">
               <h3 className="font-display text-xl font-semibold text-navy-800">{loc.name}</h3>
               <p className="mt-2 text-sm text-navy-muted">{loc.address}</p>
               <Button href={loc.button.href} variant="outline" className="mt-4 !min-w-0 !px-5 !py-2 text-sm">

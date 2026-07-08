@@ -55,7 +55,7 @@ export default async function ConditionDetailPage({ params }: { params: Promise<
           {condition.bulletsListDescription && (
             <p className="mt-2 text-[1.375rem] text-grey-800">{condition.bulletsListDescription}</p>
           )}
-          <ul className="mt-6 space-y-4">
+          <ul className="mt-6 space-y-4 text-[1.375rem]">
             {condition.bulletsItems.map((item) => (
               <li key={item} className="flex gap-4 text-grey-800 leading-relaxed">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />

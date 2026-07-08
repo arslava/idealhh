@@ -21,7 +21,7 @@ export default function ContactUsPage() {
 
       <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-8">
         {officeCards.map((office) => (
-          <div key={office.title} className="rounded-3xl border border-navy-900/10 p-8 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
+          <div key={office.title} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
             <h2 className="font-display text-2xl font-semibold text-navy-800">{office.title}</h2>
             <p className="mt-3 text-grey-800">{office.address}</p>
             <p className="mt-2 text-grey-800">Phone: {site.phone}</p>

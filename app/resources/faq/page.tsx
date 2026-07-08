@@ -6,7 +6,7 @@ function QuestionList({ items }: { items: { question: string; answer: string }[]
   return (
     <div className="space-y-4">
       {items.map((item) => (
-        <details key={item.question} className="group rounded-2xl border border-navy-900/10 bg-white p-6 shadow-[0_10px_30px_rgba(56,75,116,0.05)]">
+        <details key={item.question} className="group rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
           <summary className="cursor-pointer font-display text-lg font-semibold text-navy-800 list-none flex items-center justify-between gap-4">
             {item.question}
             <span className="text-accent text-xl shrink-0 group-open:rotate-45 transition-transform">+</span>

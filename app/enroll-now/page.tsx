@@ -32,7 +32,7 @@ export default function EnrollNowPage() {
       <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-8">
         <div className="rounded-3xl bg-bg-light p-8">
           <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{patientSection.title}</h2>
-          <p className="mt-3 text-grey-800 leading-relaxed">{patientSection.description}</p>
+          <p className="mt-3 text-[1.375rem] text-grey-800 leading-relaxed">{patientSection.description}</p>
           <ul className="mt-6 space-y-3">
             {patientSection.questions.map((q) => (
               <li key={q} className="flex gap-3 text-grey-800">
@@ -45,7 +45,7 @@ export default function EnrollNowPage() {
         </div>
         <div className="rounded-3xl bg-bg-light p-8">
           <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{caregiverSection.title}</h2>
-          <p className="mt-3 text-grey-800 leading-relaxed">{caregiverSection.description}</p>
+          <p className="mt-3 text-[1.375rem] text-grey-800 leading-relaxed">{caregiverSection.description}</p>
           <ul className="mt-6 space-y-3">
             {caregiverSection.questions.map((q) => (
               <li key={q} className="flex gap-3 text-grey-800">

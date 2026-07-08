@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
       </section>
 
       <article className="mx-auto max-w-[760px] px-4 py-16">
-        <p className="text-grey-800 leading-relaxed font-medium">{intro}</p>
+        <p className="text-[1.375rem] text-grey-800 leading-relaxed font-medium">{intro}</p>
         <p className="mt-4 text-sm text-navy-muted">{effectiveDate}</p>
 
         <div className="mt-6 rounded-2xl bg-bg-light p-6">

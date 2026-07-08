@@ -16,7 +16,7 @@ export default function HomeHealthAidePage() {
             {hero.title.replace(hero.highlight, "")}
             <span className="italic text-accent">{hero.highlight}</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-lg text-white/80 leading-relaxed">{hero.description}</p>
+          <p className="mt-6 max-w-2xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">{hero.description}</p>
           <Button href="/enroll-now" className="mt-8">Apply for Homecare</Button>
         </div>
       </section>
@@ -25,7 +25,7 @@ export default function HomeHealthAidePage() {
       <section className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-3xl font-semibold text-navy-700">{howTheyHelp.title}</h2>
-          <ul className="mt-8 space-y-4">
+          <ul className="mt-8 space-y-4 text-[1.375rem]">
             {howTheyHelp.items.map((item) => (
               <li key={item} className="flex gap-4 text-grey-800/85 leading-relaxed">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />

@@ -9,7 +9,7 @@ export default function ResourcesIndexPage() {
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
           <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-black text-navy-800">{hero.title}</h1>
-          <p className="mt-4 text-grey-800">{hero.description}</p>
+          <p className="mt-4 text-[1.125rem] md:text-[1.375rem] text-grey-800">{hero.description}</p>
         </div>
       </section>
 
@@ -18,7 +18,7 @@ export default function ResourcesIndexPage() {
           <Link
             key={card.href}
             href={card.href}
-            className="rounded-3xl border border-navy-900/10 p-8 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.06)] hover:shadow-[0_20px_40px_rgba(56,75,116,0.12)] transition-shadow"
+            className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] hover:shadow-[0_20px_40px_rgba(56,75,116,0.14)] transition-shadow transition-shadow"
           >
             <h2 className="font-display text-xl font-semibold text-navy-800">{card.title}</h2>
             <p className="mt-3 text-sm text-grey-800 leading-relaxed">{card.description}</p>

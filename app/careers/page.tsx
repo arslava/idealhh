@@ -56,7 +56,7 @@ export default function CareersPage() {
           <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Ideal Home Health Job Listings</h2>
           <div className="mt-8 grid gap-4 max-w-2xl mx-auto">
             {jobs.map((job) => (
-              <div key={job.title} className="rounded-2xl bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-6 flex flex-wrap items-center justify-between gap-4">
+              <div key={job.title} className="rounded-3xl bg-white border border-navy-900/10 p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-6 flex flex-wrap items-center justify-between gap-4">
                 <div>
                   <h3 className="font-display text-xl font-semibold text-navy-800">{job.title}</h3>
                   <p className="mt-1 text-sm text-navy-muted">{job.label} · {job.location}</p>

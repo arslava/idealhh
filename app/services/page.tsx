@@ -27,7 +27,7 @@ export default function ServicesPage() {
             </div>
             <div className="p-8">
               <h2 className="text-2xl font-semibold text-navy-700 leading-snug">{service.title}</h2>
-              <p className="mt-4 text-grey-800/80 leading-relaxed">{service.description}</p>
+              <p className="mt-4 text-[1.125rem] md:text-[1.375rem] text-grey-800 leading-relaxed">{service.description}</p>
               <Button href={service.button.href} variant="outline" className="mt-6">
                 {service.button.title}
               </Button>

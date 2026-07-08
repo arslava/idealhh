@@ -52,7 +52,7 @@ export default function Home() {
             return (
               <div
                 key={service.title}
-                className="bg-white rounded-[40px] shadow-[0_20px_40px_rgba(56,75,116,0.1)] p-10 flex flex-col items-center text-center"
+                className="bg-white rounded-3xl border border-navy-900/10 shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8 flex flex-col items-center text-center"
               >
                 <div className="h-32 w-32 rounded-full bg-bg-light flex items-center justify-center mb-8">
                   <Icon className="h-12 w-12 text-accent" strokeWidth={1.5} />
@@ -98,7 +98,7 @@ export default function Home() {
             <p className="text-navy-700/50 text-sm font-semibold tracking-[1px] uppercase">{customPlans.label}</p>
             <h2 className="mt-3 font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{customPlans.title}</h2>
             <h3 className="mt-5 text-xl font-semibold text-navy-700">{customPlans.subtitle}</h3>
-            <p className="mt-3 text-grey-800 leading-relaxed">{customPlans.description}</p>
+            <p className="mt-3 text-[1.375rem] text-grey-800 leading-relaxed">{customPlans.description}</p>
             <Button href={customPlans.button.href} className="mt-8">{customPlans.button.title}</Button>
           </div>
         </div>
@@ -124,7 +124,7 @@ export default function Home() {
       <section className="bg-bg-light py-16 md:py-20">
         <div className="mx-auto max-w-[1140px] px-4 grid md:grid-cols-3 gap-6">
           {locationCards.map((loc) => (
-            <div key={loc.name} className="bg-white rounded-[40px] shadow-[0_20px_40px_rgba(56,75,116,0.1)] p-8 text-center flex flex-col items-center">
+            <div key={loc.name} className="bg-white rounded-3xl border border-navy-900/10 shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8 text-center flex flex-col items-center">
               <h3 className="font-display text-2xl font-semibold text-navy-800">{loc.name}</h3>
               <p className="mt-3 text-sm text-navy-muted leading-relaxed">{loc.address}</p>
               <Button href={loc.button.href} className="mt-6">{loc.button.title}</Button>

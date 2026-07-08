@@ -41,7 +41,7 @@ export default function VisitingHomeNursePage() {
           </h2>
           <h3 className="mt-6 text-xl font-semibold text-navy-700">{bullets.listTitle}</h3>
           <p className="mt-2 text-[1.375rem] text-grey-800">{bullets.listDescription}</p>
-          <ul className="mt-6 space-y-4">
+          <ul className="mt-6 space-y-4 text-[1.375rem]">
             {bullets.items.map((item) => (
               <li key={item} className="flex gap-4 text-grey-800 leading-relaxed">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
