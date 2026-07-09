@@ -1,9 +1,10 @@
+import { ReactNode } from "react";
 import Button from "./Button";
 import { site } from "@/lib/content";
 
 type PrefooterCtaProps = {
   title: string;
-  description: string;
+  description: ReactNode;
   button: { title: string; href: string };
 };
 

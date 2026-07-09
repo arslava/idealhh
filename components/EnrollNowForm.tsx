@@ -70,9 +70,10 @@ export default function EnrollNowForm() {
       <div>
         <label htmlFor="preferredLanguage" className="block text-xs font-bold uppercase text-navy-muted mb-1">Preferred Language</label>
         <select
-          id="preferredLanguage" name="preferredLanguage" defaultValue="English"
+          id="preferredLanguage" name="preferredLanguage" defaultValue=""
           className="w-full rounded-[10px] border border-navy-900/15 bg-white px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
         >
+          <option value="" disabled></option>
           {LANGUAGES.map((lang) => (
             <option key={lang} value={lang}>{lang}</option>
           ))}
