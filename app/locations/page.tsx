@@ -19,7 +19,7 @@ export default function LocationsIndexPage() {
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">
               {hero.description}
             </p>
-            <Button href={hero.button.href} variant="primary" className="mt-8 !bg-white">
+            <Button href={hero.button.href} variant="primary" className="mt-8">
               {hero.button.title}
             </Button>
           </div>

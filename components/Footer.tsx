@@ -104,9 +104,6 @@ export default function Footer() {
             <li><Link href="/tos" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Terms of Service</Link></li>
             <li><Link href="/legal" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Legal</Link></li>
           </ul>
-          <a href={site.phoneHref} className="mt-4 inline-block text-sm font-semibold text-accent">
-            {site.phone}
-          </a>
         </div>
       </div>
 

@@ -23,7 +23,7 @@ export default function ConditionsPage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
               {hero.buttons.map((btn, i) => (
-                <Button key={btn.title} href={btn.href} variant={i === 0 ? "primary" : "secondary"} className={i === 0 ? "!bg-white" : ""}>
+                <Button key={btn.title} href={btn.href} variant={i === 0 ? "primary" : "secondary"} className="">
                   {btn.title}
                 </Button>
               ))}

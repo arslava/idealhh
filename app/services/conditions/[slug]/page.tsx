@@ -31,7 +31,7 @@ export default async function ConditionDetailPage({ params }: { params: Promise<
               {condition.heroDescription}
             </p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/contact-us" variant="primary" className="!bg-white">Contact Us</Button>
+              <Button href="/contact-us" variant="primary">Contact Us</Button>
               <Button href="/enroll-now" variant="secondary">Enroll Now</Button>
             </div>
           </div>

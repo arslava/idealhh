@@ -28,7 +28,7 @@ export default function LocationPageContent({ locationKey }: { locationKey: Loca
                   key={btn.title}
                   href={btn.href}
                   variant={btn.title.includes("Caregiver") ? "secondary" : "primary"}
-                  className={btn.title.includes("Caregiver") ? "" : "!bg-white"}
+                  className=""
                 >
                   {btn.title}
                 </Button>

@@ -24,7 +24,7 @@ export default function Home() {
             </h1>
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">{hero.description}</p>
             <div className="mt-9 flex flex-wrap gap-4">
-              <Button href={hero.primaryButton.href} variant="primary" className="!bg-white">
+              <Button href={hero.primaryButton.href} variant="primary">
                 {hero.primaryButton.title}
               </Button>
               <Button href={hero.secondaryButton.href} variant="secondary">

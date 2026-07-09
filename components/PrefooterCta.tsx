@@ -16,7 +16,7 @@ export default function PrefooterCta({ title, description, button }: PrefooterCt
         <h2 className="font-display text-3xl md:text-4xl font-semibold">{title}</h2>
         <p className="mt-4 text-white/85 max-w-xl mx-auto leading-relaxed">{description}</p>
         <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-          <Button href={button.href} variant="primary" className="!bg-white">
+          <Button href={button.href} variant="primary">
             {button.title}
           </Button>
           <a href={site.phoneHref} className="text-[1.5625rem] font-extrabold text-white hover:text-white/80">
