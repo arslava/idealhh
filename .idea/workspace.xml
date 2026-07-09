@@ -287,10 +287,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783607247401">
-      <screen x="0" y="23" width="1920" height="1002" />
+    <state x="-981" y="141" key="CommitChangelistDialog2" timestamp="1783611222565">
+      <screen x="-1280" y="141" width="1280" height="777" />
     </state>
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783607247401" />
+    <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783610751296" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783610748009">
       <screen x="0" y="23" width="1920" height="1002" />
@@ -300,9 +301,10 @@
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="828" y="242" key="RollbackChangesDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783607233978" />
-    <state x="639" y="356" key="com.intellij.ide.util.TipDialog" timestamp="1783450921161">
+    <state x="563" y="477" key="com.intellij.ide.util.TipDialog" timestamp="1783611187784">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
+    <state x="563" y="477" key="com.intellij.ide.util.TipDialog/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611187784" />
     <state x="639" y="356" key="com.intellij.ide.util.TipDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783450921161" />
     <state x="622" y="281" width="675" height="486" key="find.popup" timestamp="1783459317258">
       <screen x="0" y="23" width="1920" height="1057" />
