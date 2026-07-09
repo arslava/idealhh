@@ -815,8 +815,16 @@ export const contactUsPage = {
   hero: {
     title: "Contact Ideal Home Health - Your NYC Home Care Experts",
     highlight: "NYC Home Care Experts",
-    description:
-      "Looking for compassionate home care services in New York City? We provide home care services in New York City, with Offices in Brooklyn and the Bronx. Whether you have a general inquiry, want to learn more about our services, or are ready to get started, our team is here to help. Please feel free to contact us by calling our main office (718) 517 – 2424 or by filling out the form with your message.",
+    paragraphs: [
+      "Looking for compassionate home care services in New York City?",
+      "We provide home care services in New York City, with Offices in Brooklyn and the Bronx.",
+      "Whether you have a general inquiry, want to learn more about our services, or are ready to get started, our team is here to help.",
+      "Please feel free to contact us by calling our main office (718) 517 – 2424 or by filling out the form with your message.",
+    ],
+    links: [
+      { prefix: "Interested in becoming a patient or caregiver? ", label: "Enroll Today.", href: "/enroll-now" },
+      { prefix: "Looking for non-caregiver careers? ", label: "View Our Job Listings.", href: "/careers" },
+    ],
   },
   officeCards: [
     {

@@ -4,27 +4,28 @@ import { sendFormEmail, isSpam } from "@/lib/email";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, email, phone, message, website } = body;
+    const { firstName, lastName, email, phone, message, preferredLanguage, smsOptIn, website } = body;
 
     if (isSpam(website)) {
-      // Silently succeed so bots don't learn the honeypot failed.
       return NextResponse.json({ ok: true });
     }
 
-    if (!name || !email || !message) {
+    if (!firstName || !lastName || !phone) {
       return NextResponse.json({ ok: false, error: "Missing required fields." }, { status: 400 });
     }
 
     await sendFormEmail({
-      subject: `New Contact Form Submission — ${name}`,
-      replyTo: email,
+      subject: `New Contact Form Submission — ${firstName} ${lastName}`,
+      replyTo: email || undefined,
       html: `
         <h2>New Contact Form Submission</h2>
-        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
+        <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email || "Not provided")}</p>
+        <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
+        <p><strong>Preferred Language:</strong> ${escapeHtml(preferredLanguage || "Not specified")}</p>
+        <p><strong>SMS Opt-in:</strong> ${escapeHtml(smsOptIn || "No")}</p>
         <p><strong>Message:</strong></p>
-        <p>${escapeHtml(message).replace(/\n/g, "<br>")}</p>
+        <p>${escapeHtml(message || "None provided").replace(/\n/g, "<br>")}</p>
       `,
     });
 
