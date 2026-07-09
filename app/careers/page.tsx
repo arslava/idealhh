@@ -11,7 +11,7 @@ export default function CareersPage() {
   return (
     <>
       <section className="bg-navy-900 text-white">
-        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">
             <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
               {hero.title.replace(hero.highlight, "")}
@@ -23,15 +23,15 @@ export default function CareersPage() {
             </p>
             <Button href={hero.button.href} variant="secondary" className="mt-8">{hero.button.title}</Button>
           </div>
-          <div className="relative h-[280px] lg:h-[480px]">
-            <Image src={hero.image} alt={hero.title} fill className="object-cover rounded-t-3xl lg:rounded-3xl" />
+          <div className="relative min-h-[280px] h-full">
+            <Image src={hero.image} alt={hero.title} fill className="object-cover rounded-t-[49px] lg:rounded-[49px]" />
           </div>
         </div>
       </section>
       <WaveDivider />
 
       <section className="mx-auto max-w-[1140px] px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+        <div className="relative rounded-[49px] overflow-hidden aspect-[4/3]">
           <Image src={benefits.image} alt={benefits.title} fill className="object-cover" />
         </div>
         <div>

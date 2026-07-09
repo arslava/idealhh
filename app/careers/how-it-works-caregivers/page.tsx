@@ -26,7 +26,7 @@ export default function BecomeCaregiverPage() {
 
       {/* Steps — real sequence, numbering carries meaning here */}
       <section className="mx-auto max-w-[1140px] px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
-        <div className="relative rounded-3xl overflow-hidden aspect-[4/3] order-2 lg:order-1">
+        <div className="relative rounded-[49px] overflow-hidden aspect-[4/3] order-2 lg:order-1">
           <Image src={stepsImage} alt="Caregiver application process" fill className="object-cover" />
         </div>
         <div className="order-1 lg:order-2 space-y-8">
@@ -44,7 +44,7 @@ export default function BecomeCaregiverPage() {
 
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-20 grid lg:grid-cols-2 gap-12 items-center">
-          <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+          <div className="relative rounded-[49px] overflow-hidden aspect-[4/3]">
             <Image src={gettingStarted.image} alt={gettingStarted.title} fill className="object-cover" />
           </div>
           <div>

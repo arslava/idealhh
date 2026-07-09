@@ -68,6 +68,11 @@ export default function EnrollNowPage() {
 
       <ReviewsCarousel />
 
+      <div className="bg-wine text-center pt-8">
+        <Link href={patientSection.link.href} className="text-white underline text-sm">
+          {patientSection.link.title}
+        </Link>
+      </div>
       <PrefooterCta {...prefooterCta} />
     </>
   );

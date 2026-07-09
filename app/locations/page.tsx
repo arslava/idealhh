@@ -10,7 +10,7 @@ export default function LocationsIndexPage() {
   return (
     <>
       <section className="bg-navy-900 text-white">
-        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">
             <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
               {hero.title.replace(hero.highlight, "")}
@@ -23,7 +23,7 @@ export default function LocationsIndexPage() {
               {hero.button.title}
             </Button>
           </div>
-          <div className="relative h-[280px] lg:h-[420px]">
+          <div className="relative min-h-[280px] h-full">
             <Image src={hero.image} alt="" fill className="object-contain" />
           </div>
         </div>

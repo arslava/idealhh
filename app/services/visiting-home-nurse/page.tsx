@@ -10,7 +10,7 @@ export default function VisitingHomeNursePage() {
   return (
     <>
       <section className="bg-navy-900 text-white">
-        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">
             <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">{hero.label}</p>
             <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">{hero.title}</h1>
@@ -26,8 +26,8 @@ export default function VisitingHomeNursePage() {
               ))}
             </div>
           </div>
-          <div className="relative h-[280px] lg:h-[480px]">
-            <Image src={hero.image} alt={hero.title} fill className="object-cover rounded-t-3xl lg:rounded-3xl" />
+          <div className="relative min-h-[280px] h-full">
+            <Image src={hero.image} alt={hero.title} fill className="object-cover rounded-t-[49px] lg:rounded-[49px]" />
           </div>
         </div>
       </section>
@@ -50,7 +50,7 @@ export default function VisitingHomeNursePage() {
             ))}
           </ul>
         </div>
-        <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
+        <div className="relative rounded-[49px] overflow-hidden aspect-[4/3]">
           <Image src={bullets.image} alt={bullets.title} fill className="object-cover" />
         </div>
       </section>

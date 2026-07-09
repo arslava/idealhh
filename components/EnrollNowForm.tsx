@@ -80,10 +80,14 @@ export default function EnrollNowForm() {
       </div>
 
       <label className="flex items-start gap-3 text-xs text-navy-muted leading-relaxed">
-        <input type="checkbox" name="smsOptIn" className="mt-1 shrink-0" />
+        <input type="checkbox" name="smsOptIn" defaultChecked className="mt-1 shrink-0" />
         I agree to receive text messages regarding homecare enrollment from Ideal Home Health at the
         number I provided. Msg &amp; data rates may apply. Reply STOP to no longer receive messages.
-        Message frequency varies. Text HELP to (929) 298-4059 for assistance.
+        Message frequency varies. Text HELP to (929) 298-4059 or email{" "}
+        <a href="mailto:info@idealhh.com" className="text-accent underline">info@idealhh.com</a>{" "}
+        for assistance. Click to view our{" "}
+        <a href="/tos" className="text-accent underline">Terms of Service</a> and{" "}
+        <a href="/privacy-policy" className="text-accent underline">Privacy Policy</a>.
       </label>
 
       {status === "error" && <p className="text-sm text-accent">{errorMsg}</p>}

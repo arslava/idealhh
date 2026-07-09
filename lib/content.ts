@@ -470,6 +470,11 @@ export const homeHealthAideResourcesPage = {
     { title: "Pre-Employment Requirements [English]", href: "https://idealhh.com/wp-content/uploads/2021/01/4116_001.pdf" },
     { title: "Pre-Employment Requirements [Russian]", href: "https://idealhh.com/wp-content/uploads/2021/01/4117_001.pdf" },
     { title: "Pre-Employment Requirements [Chinese]", href: "https://idealhh.com/wp-content/uploads/2021/01/requirements-chinese.docx" },
+    { title: "Pre-Employment Requirements [Spanish]", href: "https://idealhh.com/wp-content/uploads/2021/02/HHA-REQUIREMENTS-1.docx" },
+    { title: "TB Form Request", href: "https://idealhh.com/tb-form-request/" },
+    { title: "Labor Law Compliance Center [English]", href: "https://idealhh.com/wp-content/uploads/2024/01/New-York-City-English.pdf" },
+    { title: "Labor Law Compliance Center [Bilingual]", href: "https://idealhh.com/wp-content/uploads/2024/01/New-York-Bilingual.pdf" },
+    { title: "Federal eFile [English]", href: "https://idealhh.com/wp-content/uploads/2024/01/Federal-eFile-English.pdf" },
   ],
 };
 
@@ -665,7 +670,7 @@ export const locations = {
       title: "Compassionate Home Health Care Services in Brooklyn, NY",
       highlight: "Home Health Care Services",
       description:
-        "Ideal Home Health is proud to be a trusted home health care agency in Brooklyn, New York. We understand the diverse and vibrant community and provide personalized in-home care across every neighborhood.",
+        "Ideal Home Health is proud to be a trusted home health care agency in Brooklyn, New York. We understand the diverse and vibrant communities that make up this incredible borough. Our dedicated team provides personalized in-home care solutions to residents across Brooklyn's neighborhoods, from historic Brooklyn Heights to the lively streets of Williamsburg and the family-friendly vibe of Park Slope.",
       image: "/images/home-health-care-in-nyc.jpg",
       buttons: [
         { title: "Apply for Homecare", href: "/enroll-now" },

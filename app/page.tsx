@@ -15,7 +15,7 @@ export default function Home() {
       {/* Hero — real structure is a two-column split on a solid navy section,
           not a full-bleed image with overlay. Text left, photo right. */}
       <section className="bg-navy-900 text-white">
-        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-center">
+        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">
             <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-medium">
               {hero.titlePrefix}
@@ -32,13 +32,13 @@ export default function Home() {
               </Button>
             </div>
           </div>
-          <div className="relative h-[320px] lg:h-[560px] lg:-mr-4">
+          <div className="relative min-h-[320px] h-full lg:-mr-4">
             <Image
               src={heroImage}
               alt="Compassionate home health care services in New York City"
               fill
               priority
-              className="object-cover rounded-t-3xl lg:rounded-none"
+              className="object-cover rounded-t-[49px] lg:rounded-none"
             />
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function Home() {
 
       {/* Who benefits */}
       <section className="mx-auto max-w-[1140px] px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative rounded-3xl overflow-hidden aspect-[508/550]">
+        <div className="relative rounded-[49px] overflow-hidden aspect-[508/550]">
           <Image src={whoBenefits.image} alt="Caregiver assisting a client at home" fill className="object-cover" />
         </div>
         <div>
@@ -92,7 +92,7 @@ export default function Home() {
       {/* Custom plans */}
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative rounded-3xl overflow-hidden aspect-[508/550] order-2 md:order-1">
+          <div className="relative rounded-[49px] overflow-hidden aspect-[508/550] order-2 md:order-1">
             <Image src={customPlans.image} alt="Family consultation for personalized home care planning" fill className="object-cover" />
           </div>
           <div className="order-1 md:order-2">
@@ -144,7 +144,7 @@ export default function Home() {
           <p className="mt-4 text-[1.375rem] text-grey-800 leading-relaxed">{careers.description}</p>
           <Button href={careers.button.href} className="mt-8">{careers.button.title}</Button>
         </div>
-        <div className="relative rounded-3xl overflow-hidden aspect-[508/454]">
+        <div className="relative rounded-[49px] overflow-hidden aspect-[508/454]">
           <Image src={careers.image} alt="Ideal Home Health caregiver team in New York City" fill className="object-cover" />
         </div>
       </section>
