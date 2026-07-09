@@ -360,12 +360,7 @@ export const conditionsPage = {
 
 export const enrollNowPage = {
   hero: {
-    label: "Ideal Home Health",
-    title: "Enroll Today",
-    highlight: "Today",
-    subtitle: "Home Health Aide in New York",
-    description: "Our caregivers can help you enjoy a happier, healthier lifestyle. Call us now to speak to an Ideal Home Health Representative, and find out how we can better serve you.",
-    image: "/images/compassionate-representative-ideal-home-health.jpg",
+    title: "Enroll Now: Qualify for Care or Apply to Join Our Team",
   },
   patientSection: {
     title: "Do You Qualify to Receive Home Care?",
@@ -375,6 +370,7 @@ export const enrollNowPage = {
       "Do you live in New York?",
       "Do you want assistance with daily activities, such as cooking, cleaning, and health and personal care?",
     ],
+    link: { title: "Know more about enrolling as a patient.", href: "/how-to-enroll" },
   },
   caregiverSection: {
     title: "Ready to Become a Caregiver?",
@@ -384,6 +380,11 @@ export const enrollNowPage = {
       "Are you authorized to work in the U.S.?",
       "Are you interested in competitive pay?",
     ],
+  },
+  formSection: {
+    title: "Patient Enrollment",
+    note: "This is a Patient Application ONLY",
+    caregiverButton: { title: "Become a Caregiver", href: "/careers" },
   },
   prefooterCta: {
     title: "Have Questions About Enrollment or Careers?",

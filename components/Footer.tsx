@@ -90,6 +90,7 @@ export default function Footer() {
             <li><Link href="/locations" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Locations</Link></li>
             <li><Link href="/services/conditions" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Conditions</Link></li>
             <li><Link href="/enroll-now" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Patient Enrollment</Link></li>
+            <li><Link href="/careers/#qualifyenroll" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Enroll as a Caregiver</Link></li>
           </ul>
         </div>
 
@@ -97,9 +98,11 @@ export default function Footer() {
           <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">Get in Touch</h2>
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/resources" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Resources</Link></li>
+            <li><Link href="/enroll-now" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Enroll Now</Link></li>
             <li><Link href="/contact-us" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Contact Us</Link></li>
             <li><Link href="/privacy-policy" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Privacy Policy</Link></li>
             <li><Link href="/tos" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Terms of Service</Link></li>
+            <li><Link href="/legal" className="text-[1.375rem] font-normal text-white/70 underline decoration-white/20 hover:text-accent hover:decoration-accent">Legal</Link></li>
           </ul>
           <a href={site.phoneHref} className="mt-4 inline-block text-sm font-semibold text-accent">
             {site.phone}

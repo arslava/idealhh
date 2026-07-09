@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="resend">
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about-us/testimonials-reviews/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/blog/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/api/enroll-now/route.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/api/enroll-now/route.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/careers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/careers/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/contact-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/contact-us/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/enroll-now/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/enroll-now/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home-care-benefits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/home-care-benefits/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/how-to-enroll/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/resources/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/conditions/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/conditions/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/conditions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/home-health-aide/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/services/home-health-aide/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/CaregiverApplicationForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CaregiverApplicationForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ContactForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ContactForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EnrollNowForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/EnrollNowForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/PrefooterCta.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/PrefooterCta.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/content.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/content.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/email.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/email.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -230,19 +230,27 @@
       <option name="project" value="LOCAL" />
       <updated>1783549287022</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="fixes">
+      <created>1783567990043</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1783567990043</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
     <MESSAGE value="resend" />
-    <option name="LAST_COMMIT_MESSAGE" value="resend" />
+    <MESSAGE value="fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783549306498">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783567989034">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783549306498" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783567989034" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783476764959">
       <screen x="0" y="23" width="1920" height="1002" />

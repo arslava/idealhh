@@ -24,7 +24,7 @@ const FROM = "Ideal Home Health Website <forms@idealhh.com>";
 
 type SendFormEmailArgs = {
   subject: string;
-  replyTo: string;
+  replyTo?: string;
   html: string;
 };
 

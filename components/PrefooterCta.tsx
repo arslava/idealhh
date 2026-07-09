@@ -19,8 +19,8 @@ export default function PrefooterCta({ title, description, button }: PrefooterCt
           <Button href={button.href} variant="primary" className="!bg-white">
             {button.title}
           </Button>
-          <a href={site.phoneHref} className="text-sm font-semibold text-white underline underline-offset-4">
-            or call {site.phone}
+          <a href={site.phoneHref} className="text-[1.5625rem] font-extrabold text-white hover:text-white/80">
+            Call us today! {site.phone}
           </a>
         </div>
       </div>

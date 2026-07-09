@@ -70,7 +70,7 @@ export default function CareersPage() {
               ))}
             </ul>
           </div>
-          <div className="rounded-3xl bg-white p-8">
+          <div className="rounded-[10px] bg-white shadow-[0_20px_40px_rgba(56,75,116,0.1)] p-11">
             <h3 className="font-display text-2xl font-semibold text-navy-800 text-center mb-6">{qualify.formTitle}</h3>
             <CaregiverApplicationForm />
           </div>

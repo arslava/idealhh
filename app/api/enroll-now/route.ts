@@ -5,26 +5,27 @@ import { sendFormEmail, isSpam } from "@/lib/email";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { name, email, phone, message, website } = body;
+    const { firstName, lastName, email, phone, medicaidId, preferredLanguage, smsOptIn, website } = body;
 
     if (isSpam(website)) {
       return NextResponse.json({ ok: true });
     }
 
-    if (!name || !email) {
+    if (!firstName || !lastName || !phone) {
       return NextResponse.json({ ok: false, error: "Missing required fields." }, { status: 400 });
     }
 
     await sendFormEmail({
-      subject: `New Patient Enrollment Inquiry — ${name}`,
-      replyTo: email,
+      subject: `New Patient Enrollment — ${firstName} ${lastName}`,
+      replyTo: email || undefined,
       html: `
-        <h2>New Patient Enrollment Inquiry</h2>
-        <p><strong>Name:</strong> ${escapeHtml(name)}</p>
-        <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone || "Not provided")}</p>
-        <p><strong>Message:</strong></p>
-        <p>${escapeHtml(message || "None provided").replace(/\n/g, "<br>")}</p>
+        <h2>New Patient Enrollment</h2>
+        <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
+        <p><strong>Email:</strong> ${escapeHtml(email || "Not provided")}</p>
+        <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
+        <p><strong>Medicaid ID:</strong> ${escapeHtml(medicaidId || "Not provided")}</p>
+        <p><strong>Preferred Language:</strong> ${escapeHtml(preferredLanguage || "English")}</p>
+        <p><strong>SMS Opt-in:</strong> ${escapeHtml(smsOptIn || "No")}</p>
       `,
     });
 

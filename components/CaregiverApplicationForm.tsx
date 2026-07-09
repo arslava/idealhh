@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import FloatingInput from "./FloatingInput";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -45,42 +46,20 @@ export default function CaregiverApplicationForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="text-left space-y-4">
+    <form onSubmit={handleSubmit} className="text-left space-y-5">
       <input
-        type="text"
-        name="website"
-        tabIndex={-1}
-        autoComplete="off"
-        className="absolute left-[-9999px] w-px h-px opacity-0"
-        aria-hidden="true"
+        type="text" name="website" tabIndex={-1} autoComplete="off"
+        className="absolute left-[-9999px] w-px h-px opacity-0" aria-hidden="true"
       />
 
+      <FloatingInput id="ca-name" name="name" label="Name" required />
+      <FloatingInput id="ca-email" name="email" label="Email" type="email" required />
+      <FloatingInput id="ca-phone" name="phone" label="Phone" type="tel" required />
       <div>
-        <label htmlFor="ca-name" className="block text-sm font-semibold text-navy-700 mb-1">Name *</label>
-        <input
-          id="ca-name" name="name" type="text" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="ca-email" className="block text-sm font-semibold text-navy-700 mb-1">Email *</label>
-        <input
-          id="ca-email" name="email" type="email" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="ca-phone" className="block text-sm font-semibold text-navy-700 mb-1">Phone *</label>
-        <input
-          id="ca-phone" name="phone" type="tel" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="ca-position" className="block text-sm font-semibold text-navy-700 mb-1">Position</label>
+        <label htmlFor="ca-position" className="block text-xs font-bold uppercase text-navy-muted mb-1">Position</label>
         <select
           id="ca-position" name="position" defaultValue="Home Health Aide (HHA)"
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
+          className="w-full rounded-[10px] border border-navy-900/15 bg-white px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
         >
           <option>Home Health Aide (HHA)</option>
           <option>Registered Nurse (RN)</option>
@@ -89,22 +68,14 @@ export default function CaregiverApplicationForm() {
           <option>Other</option>
         </select>
       </div>
-      <div>
-        <label htmlFor="ca-message" className="block text-sm font-semibold text-navy-700 mb-1">Tell us about your experience</label>
-        <textarea
-          id="ca-message" name="message" rows={4}
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
+      <FloatingInput id="ca-message" name="message" label="Tell us about your experience" as="textarea" rows={4} />
 
-      {status === "error" && (
-        <p className="text-sm text-accent">{errorMsg}</p>
-      )}
+      {status === "error" && <p className="text-sm text-accent">{errorMsg}</p>}
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="w-full inline-flex items-center justify-center rounded-full px-6 py-3.5 text-[1.125rem] font-semibold border bg-accent border-accent text-white hover:bg-navy-900 hover:border-navy-900 transition-colors duration-200 disabled:opacity-60"
+        className="w-full inline-flex items-center justify-center rounded-full px-6 py-3.5 text-[1.125rem] font-semibold border bg-accent border-accent text-white hover:bg-white hover:text-accent transition-colors duration-200 disabled:opacity-60"
       >
         {status === "loading" ? "Submitting..." : "Submit Application"}
       </button>

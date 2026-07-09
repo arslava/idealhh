@@ -36,7 +36,7 @@ export default function ContactUsPage() {
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-16">
           <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Send Us a Message</h2>
-          <div className="mt-8 max-w-2xl mx-auto rounded-3xl bg-white shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8">
+          <div className="mt-8 max-w-[510px] mx-auto rounded-[10px] bg-white shadow-[0_20px_40px_rgba(56,75,116,0.1)] p-11">
             <ContactForm />
           </div>
         </div>

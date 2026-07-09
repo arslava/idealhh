@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import FloatingInput from "./FloatingInput";
 
 type Status = "idle" | "loading" | "success" | "error";
 
@@ -42,54 +43,23 @@ export default function ContactForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="text-left space-y-4">
-      {/* Honeypot — hidden from real users, bots that auto-fill every field trip it */}
+    <form onSubmit={handleSubmit} className="text-left space-y-5">
       <input
-        type="text"
-        name="website"
-        tabIndex={-1}
-        autoComplete="off"
-        className="absolute left-[-9999px] w-px h-px opacity-0"
-        aria-hidden="true"
+        type="text" name="website" tabIndex={-1} autoComplete="off"
+        className="absolute left-[-9999px] w-px h-px opacity-0" aria-hidden="true"
       />
 
-      <div>
-        <label htmlFor="name" className="block text-sm font-semibold text-navy-700 mb-1">Name *</label>
-        <input
-          id="name" name="name" type="text" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-semibold text-navy-700 mb-1">Email *</label>
-        <input
-          id="email" name="email" type="email" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="phone" className="block text-sm font-semibold text-navy-700 mb-1">Phone</label>
-        <input
-          id="phone" name="phone" type="tel"
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-semibold text-navy-700 mb-1">Message *</label>
-        <textarea
-          id="message" name="message" required rows={5}
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
+      <FloatingInput id="name" name="name" label="Name" required />
+      <FloatingInput id="email" name="email" label="Email" type="email" required />
+      <FloatingInput id="phone" name="phone" label="Phone" type="tel" />
+      <FloatingInput id="message" name="message" label="Message" as="textarea" rows={5} required />
 
-      {status === "error" && (
-        <p className="text-sm text-accent">{errorMsg}</p>
-      )}
+      {status === "error" && <p className="text-sm text-accent">{errorMsg}</p>}
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex items-center justify-center rounded-full min-w-[196px] px-6 py-3.5 text-[1.125rem] font-semibold border bg-accent border-accent text-white hover:bg-navy-900 hover:border-navy-900 transition-colors duration-200 disabled:opacity-60"
+        className="inline-flex items-center justify-center rounded-full min-w-[196px] px-6 py-3.5 text-[1.125rem] font-semibold border bg-accent border-accent text-white hover:bg-white hover:text-accent transition-colors duration-200 disabled:opacity-60"
       >
         {status === "loading" ? "Sending..." : "Send Message"}
       </button>

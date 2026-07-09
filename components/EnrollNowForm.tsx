@@ -1,13 +1,20 @@
 "use client";
 
 import { useState } from "react";
+import FloatingInput from "./FloatingInput";
 
 type Status = "idle" | "loading" | "success" | "error";
 
-// Patient Enrollment form — matches the original site's /enroll-now/ page
-// (WPForms id 2688, titled "Patient Enrollment"). The caregiver application
-// is a separate form on a separate page (/careers/#qualifyenroll) —
-// see CaregiverApplicationForm.tsx.
+const LANGUAGES = [
+  "English", "Spanish", "Russian", "Arabic", "Mandarin", "Cantonese",
+  "Haitian Creole", "French", "Hindi", "Urdu", "Albanian", "Armenian",
+  "Bengali", "Burmese", "Korean", "Italian", "Indonesian", "Nepali", "Punjabi",
+];
+
+// Patient Enrollment form — matches the real fields on the original site's
+// /enroll-now/ page (WPForms id 2688): First/Last Name, Email, Phone,
+// Medicaid ID, Preferred Language, and an SMS-consent opt-in checkbox.
+// No message field — this form doesn't have one on the real site.
 export default function EnrollNowForm() {
   const [status, setStatus] = useState<Status>("idle");
   const [errorMsg, setErrorMsg] = useState("");
@@ -18,7 +25,9 @@ export default function EnrollNowForm() {
     setErrorMsg("");
 
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const fd = new FormData(form);
+    const data = Object.fromEntries(fd.entries());
+    data.smsOptIn = fd.get("smsOptIn") ? "Yes" : "No";
 
     try {
       const res = await fetch("/api/enroll-now", {
@@ -46,55 +55,45 @@ export default function EnrollNowForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="text-left space-y-4">
+    <form onSubmit={handleSubmit} className="text-left space-y-5">
       <input
-        type="text"
-        name="website"
-        tabIndex={-1}
-        autoComplete="off"
-        className="absolute left-[-9999px] w-px h-px opacity-0"
-        aria-hidden="true"
+        type="text" name="website" tabIndex={-1} autoComplete="off"
+        className="absolute left-[-9999px] w-px h-px opacity-0" aria-hidden="true"
       />
 
+      <FloatingInput id="firstName" name="firstName" label="First Name" required />
+      <FloatingInput id="lastName" name="lastName" label="Last Name" required />
+      <FloatingInput id="email" name="email" label="Email" type="email" />
+      <FloatingInput id="phone" name="phone" label="Phone" type="tel" required />
+      <FloatingInput id="medicaidId" name="medicaidId" label="Medicaid ID" />
+
       <div>
-        <label htmlFor="name" className="block text-sm font-semibold text-navy-700 mb-1">Name *</label>
-        <input
-          id="name" name="name" type="text" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="email" className="block text-sm font-semibold text-navy-700 mb-1">Email *</label>
-        <input
-          id="email" name="email" type="email" required
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="phone" className="block text-sm font-semibold text-navy-700 mb-1">Phone</label>
-        <input
-          id="phone" name="phone" type="tel"
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
-      </div>
-      <div>
-        <label htmlFor="message" className="block text-sm font-semibold text-navy-700 mb-1">Anything else we should know?</label>
-        <textarea
-          id="message" name="message" rows={4}
-          className="w-full rounded-xl border border-navy-900/15 px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
-        />
+        <label htmlFor="preferredLanguage" className="block text-xs font-bold uppercase text-navy-muted mb-1">Preferred Language</label>
+        <select
+          id="preferredLanguage" name="preferredLanguage" defaultValue="English"
+          className="w-full rounded-[10px] border border-navy-900/15 bg-white px-4 py-3 text-grey-800 focus:outline-none focus:ring-2 focus:ring-accent"
+        >
+          {LANGUAGES.map((lang) => (
+            <option key={lang} value={lang}>{lang}</option>
+          ))}
+        </select>
       </div>
 
-      {status === "error" && (
-        <p className="text-sm text-accent">{errorMsg}</p>
-      )}
+      <label className="flex items-start gap-3 text-xs text-navy-muted leading-relaxed">
+        <input type="checkbox" name="smsOptIn" className="mt-1 shrink-0" />
+        I agree to receive text messages regarding homecare enrollment from Ideal Home Health at the
+        number I provided. Msg &amp; data rates may apply. Reply STOP to no longer receive messages.
+        Message frequency varies. Text HELP to (929) 298-4059 for assistance.
+      </label>
+
+      {status === "error" && <p className="text-sm text-accent">{errorMsg}</p>}
 
       <button
         type="submit"
         disabled={status === "loading"}
-        className="inline-flex items-center justify-center rounded-full min-w-[196px] px-6 py-3.5 text-[1.125rem] font-semibold border bg-accent border-accent text-white hover:bg-navy-900 hover:border-navy-900 transition-colors duration-200 disabled:opacity-60"
+        className="inline-flex items-center justify-center rounded-full min-w-[196px] px-6 py-3.5 text-[1.125rem] font-semibold bg-accent border border-accent text-white hover:bg-white hover:text-accent transition-colors duration-200 disabled:opacity-60"
       >
-        {status === "loading" ? "Submitting..." : "Submit Enrollment"}
+        {status === "loading" ? "Submitting..." : "Submit"}
       </button>
     </form>
   );

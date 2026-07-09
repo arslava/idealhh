@@ -14,10 +14,10 @@ export default function Header() {
     <header className="o-header relative z-50">
       {/* Top bar: phone + language switcher */}
       <div className="border-b border-navy-muted/20 py-3">
-        <div className="mx-auto max-w-[1140px] px-4 flex items-center justify-between gap-6 text-sm">
+        <div className="mx-auto max-w-[1140px] px-4 flex items-center justify-between gap-6">
           <div className="text-grey-800">
-            <span className="text-navy-muted mr-2">Call Us Today!</span>
-            <a href={site.phoneHref} className="font-semibold text-navy-700 hover:text-accent">
+            <span className="text-[1.25rem] font-semibold text-navy-muted mr-2">Call Us Today!</span>
+            <a href={site.phoneHref} className="text-[1.25rem] font-black text-navy-700 hover:text-accent">
               {site.phone}
             </a>
           </div>
@@ -66,7 +66,7 @@ export default function Header() {
           <div className="flex items-center gap-4">
             <Link
               href="/enroll-now"
-              className="hidden sm:inline-flex items-center rounded-full bg-accent text-white text-sm font-semibold px-6 py-3 hover:bg-navy-900 transition-colors shrink-0"
+              className="hidden sm:inline-flex items-center justify-center rounded-full min-w-[290px] bg-accent border border-accent text-white text-[1.125rem] font-bold px-6 py-3.5 hover:bg-white hover:text-accent transition-colors duration-200 shrink-0"
             >
               Enroll Today
             </Link>
@@ -134,7 +134,7 @@ export default function Header() {
             ))}
             <Link
               href="/enroll-now"
-              className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-accent text-white text-sm font-semibold px-6 py-3"
+              className="mt-4 inline-flex w-full items-center justify-center rounded-full bg-accent border border-accent text-white text-[1.125rem] font-bold px-6 py-3.5 hover:bg-white hover:text-accent transition-colors duration-200"
               onClick={() => setMobileOpen(false)}
             >
               Enroll Today
