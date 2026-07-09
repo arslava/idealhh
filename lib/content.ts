@@ -50,13 +50,26 @@ export const nav = [
     children: [
       { label: "Open Positions", href: "/careers" },
       { label: "Become A Caregiver", href: "/careers/how-it-works-caregivers" },
-      { label: "Apply as a Caregiver", href: "/careers#qualifyenroll" },
+      { label: "Apply as a Caregiver", href: "/careers/#qualifyenroll" },
     ],
   },
   { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const homePage = {
+  reviewsSection: {
+    title: "What Our Clients Say: Trusted Home Care in New York",
+    reviews: [
+      { name: "Sherice Carraway", date: "2022-10-26", rating: 5, content: "This is the best agency so far and I'm proud to have choose them and continue to pursue with them for a while" },
+      { name: "Nadine Douse", date: "2023-04-24", rating: 5, content: "Staff that I have encountered is great. If helping people is your calling, this is the Ideal company to work for." },
+      { name: "Denise Hammonds", date: "2024-01-22", rating: 5, content: "Ideal home health is the best. I have never been with an agency that was so kind and pleasant. Everyone works so well together — Yulliana and Ms. Paula especially kept communicating with me about the status of everything and assured me it was all going to be great." },
+      { name: "Dachira Rivera Ramos", date: "2024-02-15", rating: 5, content: "Very attentive and helpful, good care and equipment. (Translated from Spanish)" },
+      { name: "Youssef Elhalaby", date: "2024-04-26", rating: 5, content: "Great people, committed, very respectful, answer all questions in simple, understandable English, and follow up on every activity, helping find solutions for any issue. Special thanks to Rosemary, Annabil, and Emily." },
+      { name: "Shelby Gonzalez", date: "2024-05-25", rating: 5, content: "My experience was great. I can be a procrastinator but they stayed on me and helped me along the way." },
+      { name: "Racquel McDonald", date: "2024-08-10", rating: 5, content: "Ideal Home Health is the best agency I have ever worked with. They are very professional, always answer when you call, and help with whatever you need. Always get paid on time — I'm happy working with them." },
+      { name: "Lorraine Mullen", date: "2024-08-13", rating: 5, content: "Everyone at Ideal has been so patient, caring, helpful, kind, knowledgeable, and informative in establishing my entry into the program. Emily, Paula, and many staff went above and beyond to make sure I had a seamless experience. I am truly grateful." },
+    ],
+  },
   hero: {
     titlePrefix: "Ideal Home Health: ",
     highlight: "Compassionate Home Care Services",
@@ -65,7 +78,7 @@ export const homePage = {
       "Experience compassionate, high-quality home health care services right in your own home with Ideal Home Health. As a leading accredited home health agency in New York City, we are dedicated to providing personalized in-home care solutions that empower you to live independently and comfortably. Whether you need assistance with daily living activities or specialized support, our dedicated team is here for you. Discover the Ideal difference today.",
     // Real button order per the live site: primary (white/accent) = Become a
     // Caregiver, secondary (solid accent) = Apply for Homecare.
-    primaryButton: { title: "Become a Caregiver", href: "/careers#qualifyenroll" },
+    primaryButton: { title: "Become a Caregiver", href: "/careers/#qualifyenroll" },
     secondaryButton: { title: "Apply for Homecare", href: "/enroll-now" },
   },
   servicesTeaser: [
@@ -284,7 +297,7 @@ export const becomeCaregiverPage = {
     subtitle: "A Rewarding Career Awaits You at Ideal Home Health",
     description:
       "Are you ready to start a rewarding career helping others in your community? At Ideal Home Health, we value our staff and provide the support you need to succeed. Our team of professionals earns some of the highest wages in the industry for a company that truly cares about its employees and the patients they care for.",
-    button: { title: "Apply Now", href: "/careers#qualifyenroll" },
+    button: { title: "Apply Now", href: "/careers/#qualifyenroll" },
   },
   steps: [
     { number: "01.", title: "Contact Us", description: "Contact us to speak with a friendly coordinator who will guide you through our simple registration process and confirm you qualify." },
@@ -304,7 +317,7 @@ export const becomeCaregiverPage = {
   prefooterCta: {
     title: "Start Your Home Care Career Today",
     description: "Contact us to start the process of becoming an Ideal Home Health caregiver.",
-    button: { title: "Apply Now", href: "/careers#qualifyenroll" },
+    button: { title: "Apply Now", href: "/careers/#qualifyenroll" },
     image: "/images/ideal-home-health-caregiver-nyc.jpg",
   },
 };
@@ -655,7 +668,7 @@ export const locations = {
       image: "/images/home-health-care-in-nyc.jpg",
       buttons: [
         { title: "Apply for Homecare", href: "/enroll-now" },
-        { title: "Become a Caregiver", href: "/careers#qualifyenroll" },
+        { title: "Become a Caregiver", href: "/careers/#qualifyenroll" },
       ],
     },
     services: [
@@ -695,7 +708,7 @@ export const locations = {
       image: "/images/home-health-care-bronx.jpg",
       buttons: [
         { title: "Apply for Homecare", href: "/enroll-now" },
-        { title: "Become a Caregiver", href: "/careers#qualifyenroll" },
+        { title: "Become a Caregiver", href: "/careers/#qualifyenroll" },
       ],
     },
     services: [

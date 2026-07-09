@@ -14,7 +14,7 @@ export default function HowToEnrollPage() {
             {hero.title.replace(hero.highlight, "")}
             <span className="text-accent">{hero.highlight}</span>
           </h1>
-          <h2 className="mt-4 text-xl text-navy-700 font-semibold">{hero.subtitle}</h2>
+          <h2 className="mt-4 text-xl md:text-2xl text-navy-700 font-semibold">{hero.subtitle}</h2>
           <p className="mt-6 text-[1.125rem] md:text-[1.375rem] text-grey-800 leading-relaxed max-w-2xl mx-auto">
             {hero.description}
           </p>
@@ -41,7 +41,7 @@ export default function HowToEnrollPage() {
             {bullets.title.replace(bullets.highlight, "")}
             <span className="text-accent">{bullets.highlight}</span>
           </h2>
-          <h3 className="mt-4 text-lg text-navy-700 font-semibold">{bullets.subtitle}</h3>
+          <h3 className="mt-4 text-xl text-navy-700 font-semibold">{bullets.subtitle}</h3>
           <p className="mt-2 text-[1.375rem] text-grey-800">{bullets.description}</p>
           <h4 className="mt-8 text-xl font-semibold text-navy-700">{bullets.listTitle}</h4>
           <p className="mt-2 text-[1.375rem] text-grey-800">{bullets.listDescription}</p>

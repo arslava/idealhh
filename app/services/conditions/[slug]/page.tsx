@@ -25,7 +25,7 @@ export default async function ConditionDetailPage({ params }: { params: Promise<
               <span className="text-accent">{condition.heroHighlight}</span>
             </h1>
             {condition.heroSubtitle && (
-              <h2 className="mt-4 text-xl text-white/90 font-semibold">{condition.heroSubtitle}</h2>
+              <h2 className="mt-4 text-xl md:text-2xl text-white/90 font-semibold">{condition.heroSubtitle}</h2>
             )}
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">
               {condition.heroDescription}

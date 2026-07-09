@@ -39,7 +39,7 @@ export default function BlogIndexPage() {
             </div>
             <div className="p-6 flex flex-col flex-1">
               <p className="text-xs text-navy-muted uppercase tracking-wide">{formatDate(post.date)}</p>
-              <h2 className="mt-2 font-display text-xl font-semibold text-navy-800 leading-snug group-hover:text-accent transition-colors">
+              <h2 className="mt-2 font-display text-2xl font-semibold text-navy-800 leading-snug group-hover:text-accent transition-colors">
                 {post.title}
               </h2>
             </div>

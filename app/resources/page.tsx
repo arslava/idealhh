@@ -20,7 +20,7 @@ export default function ResourcesIndexPage() {
             href={card.href}
             className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] hover:shadow-[0_20px_40px_rgba(56,75,116,0.14)] transition-shadow transition-shadow"
           >
-            <h2 className="font-display text-xl font-semibold text-navy-800">{card.title}</h2>
+            <h2 className="font-display text-2xl font-semibold text-navy-800">{card.title}</h2>
             <p className="mt-3 text-sm text-grey-800 leading-relaxed">{card.description}</p>
           </Link>
         ))}

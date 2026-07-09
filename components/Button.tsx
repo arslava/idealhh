@@ -20,7 +20,7 @@ export default function Button({ href, children, variant = "outline", className 
   const variants = {
     outline: "bg-transparent border-accent text-accent hover:bg-accent hover:text-white",
     primary: "bg-white border-accent text-accent hover:bg-accent hover:text-white",
-    secondary: "bg-accent border-accent text-white hover:bg-navy-900 hover:border-navy-900",
+    secondary: "bg-accent border-accent text-white hover:bg-white hover:text-accent",
   };
 
   return (

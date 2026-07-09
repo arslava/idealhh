@@ -22,9 +22,9 @@ export default function HomeHealthAidePage() {
       </section>
       <WaveDivider />
 
-      <section className="mx-auto max-w-6xl px-6 py-16 grid md:grid-cols-2 gap-12 items-center">
+      <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
-          <h2 className="text-3xl font-semibold text-navy-700">{howTheyHelp.title}</h2>
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{howTheyHelp.title}</h2>
           <ul className="mt-8 space-y-4 text-[1.375rem]">
             {howTheyHelp.items.map((item) => (
               <li key={item} className="flex gap-4 text-grey-800/85 leading-relaxed">

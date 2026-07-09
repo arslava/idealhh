@@ -25,7 +25,7 @@ export default function BenefitsPage() {
       <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <p className="text-accent text-sm font-semibold uppercase tracking-wide">{qualify.cardTitle}</p>
-          <h2 className="mt-3 font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{qualify.heading}</h2>
+          <h2 className="mt-3 font-display text-[2rem] md:text-[2.5rem] leading-[1.1] font-black text-navy-800">{qualify.heading}</h2>
           <p className="mt-4 text-[1.375rem] text-grey-800 leading-relaxed">{qualify.description}</p>
           <Button href={qualify.button.href} className="mt-6">{qualify.button.title}</Button>
         </div>

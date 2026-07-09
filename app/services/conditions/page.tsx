@@ -17,7 +17,7 @@ export default function ConditionsPage() {
               {hero.title.replace(hero.highlight, "")}
               <span className="text-accent">{hero.highlight}</span>
             </h1>
-            <h2 className="mt-4 text-xl text-white/90 font-semibold">{hero.subtitle}</h2>
+            <h2 className="mt-4 text-xl md:text-2xl text-white/90 font-semibold">{hero.subtitle}</h2>
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">
               {hero.description}
             </p>
@@ -41,7 +41,7 @@ export default function ConditionsPage() {
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((card) => (
             <div key={card.slug} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
-              <h3 className="font-display text-xl font-semibold text-navy-800">{card.title}</h3>
+              <h3 className="font-display text-2xl font-semibold text-navy-800">{card.title}</h3>
               <p className="mt-2 text-sm text-grey-800 leading-relaxed">{card.description}</p>
               <Button href={`/services/conditions/${card.slug}`} variant="outline" className="mt-4 !min-w-0 !px-5 !py-2 text-sm">
                 Learn More

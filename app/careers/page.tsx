@@ -41,7 +41,7 @@ export default function CareersPage() {
           </h2>
           <p className="mt-3 text-[1.375rem] text-grey-800">{benefits.description}</p>
           <h3 className="mt-6 text-xl font-semibold text-navy-700">{benefits.listTitle}</h3>
-          <ul className="mt-4 space-y-3">
+          <ul className="mt-4 space-y-3 text-[1.375rem]">
             {benefits.items.map((item) => (
               <li key={item} className="flex gap-3 text-grey-800 leading-relaxed">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
@@ -59,12 +59,12 @@ export default function CareersPage() {
       <section id="qualifyenroll" className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-8 items-stretch">
           <div className="flex flex-col justify-center py-8">
-            <h2 className="font-display text-3xl font-semibold">{qualify.title}</h2>
-            <p className="mt-5 font-semibold">{qualify.subtitle}</p>
+            <h2 className="font-display text-[2.5rem] md:text-[3rem] leading-[1.1] font-black">{qualify.title}</h2>
+            <p className="mt-5 text-[1.375rem] font-semibold">{qualify.subtitle}</p>
             <ul className="mt-4 space-y-3">
               {qualify.items.map((item) => (
-                <li key={item} className="flex gap-3 text-white/85">
-                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
+                <li key={item} className="flex gap-3 text-[1.375rem] text-white/85">
+                  <span className="mt-3 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
                   {item}
                 </li>
               ))}
@@ -84,7 +84,7 @@ export default function CareersPage() {
             {jobs.map((job) => (
               <div key={job.title} className="rounded-3xl bg-white border border-navy-900/10 p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] flex flex-wrap items-center justify-between gap-4">
                 <div>
-                  <h3 className="font-display text-xl font-semibold text-navy-800">{job.title}</h3>
+                  <h3 className="font-display text-2xl font-semibold text-navy-800">{job.title}</h3>
                   <p className="mt-1 text-sm text-navy-muted">{job.label} · {job.location}</p>
                 </div>
                 <Button href="#qualifyenroll" variant="outline">Apply Now</Button>

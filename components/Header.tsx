@@ -11,7 +11,7 @@ export default function Header() {
   const [openSection, setOpenSection] = useState<string | null>(null);
 
   return (
-    <header className="o-header relative">
+    <header className="o-header relative z-50">
       {/* Top bar: phone + language switcher */}
       <div className="border-b border-navy-muted/20 py-3">
         <div className="mx-auto max-w-[1140px] px-4 flex items-center justify-between gap-6 text-sm">
@@ -45,7 +45,7 @@ export default function Header() {
                   {item.label}
                 </Link>
                 {item.children && (
-                  <div className="absolute left-0 top-full pt-3 hidden group-hover:block min-w-[240px]">
+                  <div className="absolute left-0 top-full pt-3 hidden group-hover:block min-w-[240px] z-50">
                     <div className="rounded-2xl bg-white shadow-[0_20px_40px_rgba(56,75,116,0.15)] py-2">
                       {item.children.map((child) => (
                         <Link

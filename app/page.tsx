@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { HeartHandshake, Stethoscope } from "lucide-react";
+import { HeartHandshake, Stethoscope, Star } from "lucide-react";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { homePage, locationCards } from "@/lib/content";
@@ -7,7 +7,7 @@ import { homePage, locationCards } from "@/lib/content";
 const icons = { heart: HeartHandshake, "heart-pulse": Stethoscope };
 
 export default function Home() {
-  const { hero, servicesTeaser, whoBenefits, customPlans, locations, careers, prefooterCta, heroImage, locationsImage } = homePage;
+  const { hero, servicesTeaser, whoBenefits, customPlans, locations, careers, prefooterCta, heroImage, locationsImage, reviewsSection } = homePage;
 
   return (
     <>
@@ -122,14 +122,44 @@ export default function Home() {
 
       {/* Location cards */}
       <section className="bg-bg-light py-16 md:py-20">
-        <div className="mx-auto max-w-[1140px] px-4 grid md:grid-cols-3 gap-6">
+        <div className="mx-auto max-w-2xl px-4 grid sm:grid-cols-2 gap-6">
           {locationCards.map((loc) => (
             <div key={loc.name} className="bg-white rounded-3xl border border-navy-900/10 shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8 text-center flex flex-col items-center">
-              <h3 className="font-display text-2xl font-semibold text-navy-800">{loc.name}</h3>
-              <p className="mt-3 text-sm text-navy-muted leading-relaxed">{loc.address}</p>
+              <h3 className="font-display text-[1.875rem] font-black text-navy-800">{loc.name}</h3>
+              <p className="mt-3 text-[1.125rem] text-navy-muted leading-relaxed">{loc.address}</p>
               <Button href={loc.button.href} className="mt-6">{loc.button.title}</Button>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Reviews — real content from the original site's homepage review
+          carousel (navy-600 / #364f85 background matches the source). Built
+          as a scrollable row rather than a full carousel widget. */}
+      <section className="bg-navy-600 py-16 md:py-20">
+        <div className="mx-auto max-w-[1140px] px-4">
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-white text-center">
+            {reviewsSection.title}
+          </h2>
+          <div className="mt-10 flex gap-6 overflow-x-auto pb-4 snap-x snap-mandatory -mx-4 px-4 md:mx-0 md:px-0">
+            {reviewsSection.reviews.map((r) => (
+              <div
+                key={r.name}
+                className="snap-start shrink-0 w-[300px] md:w-[340px] rounded-3xl bg-white p-6 shadow-[0_20px_40px_rgba(56,75,116,0.08)] flex flex-col"
+              >
+                <div className="flex gap-0.5">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} size={16} className={i < r.rating ? "fill-accent text-accent" : "text-navy-muted/30"} />
+                  ))}
+                </div>
+                <p className="mt-3 text-[1.0625rem] text-grey-800 leading-relaxed flex-1">{r.content}</p>
+                <div className="mt-4">
+                  <p className="font-semibold text-navy-800">{r.name}</p>
+                  <p className="text-sm text-navy-muted">{r.date}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

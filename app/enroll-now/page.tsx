@@ -18,7 +18,7 @@ export default function EnrollNowPage() {
               {hero.title.replace(hero.highlight, "")}
               <span className="text-accent">{hero.highlight}</span>
             </h1>
-            <h2 className="mt-4 text-xl text-white/90 font-semibold">{hero.subtitle}</h2>
+            <h2 className="mt-4 text-xl md:text-2xl text-white/90 font-semibold">{hero.subtitle}</h2>
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">
               {hero.description}
             </p>
@@ -32,11 +32,11 @@ export default function EnrollNowPage() {
 
       <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-8">
         <div className="rounded-3xl bg-bg-light p-8">
-          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{patientSection.title}</h2>
+          <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.1] font-black text-navy-800">{patientSection.title}</h2>
           <p className="mt-3 text-[1.375rem] text-grey-800 leading-relaxed">{patientSection.description}</p>
           <ul className="mt-6 space-y-3">
             {patientSection.questions.map((q) => (
-              <li key={q} className="flex gap-3 text-grey-800">
+              <li key={q} className="flex gap-3 text-[1.25rem] text-grey-800">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
                 {q}
               </li>
@@ -45,11 +45,11 @@ export default function EnrollNowPage() {
           <Button href="/how-to-enroll" className="mt-8">Know More About Enrolling</Button>
         </div>
         <div className="rounded-3xl bg-bg-light p-8">
-          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800">{caregiverSection.title}</h2>
+          <h2 className="font-display text-[2rem] md:text-[2.5rem] leading-[1.1] font-black text-navy-800">{caregiverSection.title}</h2>
           <p className="mt-3 text-[1.375rem] text-grey-800 leading-relaxed">{caregiverSection.description}</p>
           <ul className="mt-6 space-y-3">
             {caregiverSection.questions.map((q) => (
-              <li key={q} className="flex gap-3 text-grey-800">
+              <li key={q} className="flex gap-3 text-[1.25rem] text-grey-800">
                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
                 {q}
               </li>
