@@ -20,29 +20,26 @@ export default function EnrollNowPage() {
             {/* Text column */}
             <div className="md:w-1/2">
               <h1 className="font-display text-[2.8125rem] md:text-[3.75rem] leading-[1.05] font-black">
-                <span className="font-black">Enroll Now</span>: Qualify for Care or Apply to Join Our Team
+                {hero.title}
               </h1>
 
               <h2 className="mt-8 font-display text-[2.375rem] leading-[1.1] font-black">
                 {patientSection.title}
               </h2>
-              <p className="mt-4 text-[1.125rem] text-white/90 leading-relaxed">{patientSection.description}</p>
+              
               <div className="mt-4 space-y-2">
                 {patientSection.questions.map((q) => (
                   <p key={q} className="text-[1.125rem] text-white/90">— {q}</p>
                 ))}
               </div>
               <p className="mt-4">
-                Know more about{" "}
-                <Link href={patientSection.link.href} className="text-accent underline">
-                  enrolling as a patient.
-                </Link>
+                
               </p>
 
               <h2 className="mt-10 font-display text-[2.375rem] leading-[1.1] font-black">
                 {caregiverSection.title}
               </h2>
-              <p className="mt-4 text-[1.125rem] text-white/90 leading-relaxed">{caregiverSection.description}</p>
+              <p className="mt-4 text-[1.125rem] text-white/90 leading-relaxed"></p>
               <div className="mt-4 space-y-2">
                 {caregiverSection.questions.map((q) => (
                   <p key={q} className="text-[1.125rem] text-white/90">— {q}</p>
@@ -57,11 +54,9 @@ export default function EnrollNowPage() {
                 <h3 className="font-display text-2xl font-semibold text-navy-800 text-center">
                   {formSection.title}
                 </h3>
-                <p className="mt-2 text-sm text-accent text-center font-semibold">{formSection.note}</p>
+                
                 <div className="mt-4 flex justify-center flex-wrap gap-4">
-                  <Button href={formSection.caregiverButton.href} variant="secondary">
-                    {formSection.caregiverButton.title}
-                  </Button>
+                  
                 </div>
                 <div className="mt-6">
                   <EnrollNowFormRu />
@@ -74,12 +69,7 @@ export default function EnrollNowPage() {
 
       <ReviewsCarouselRu />
 
-      <PrefooterCta
-        {...prefooterCta}
-        description={
-          <>
-            {prefooterCta.description}
-            <br /><br />
+      <PrefooterCta {...prefooterCta} /><br />
             Know more about{" "}
             <Link href={patientSection.link.href} className="text-white underline">
               enrolling as a patient.
