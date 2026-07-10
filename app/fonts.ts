@@ -9,7 +9,7 @@ import { Cormorant_Garamond, Public_Sans } from "next/font/google";
 
 export const publicSans = Public_Sans({
   variable: "--font-public-sans",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: ["400", "600", "700", "900"],
 });
 
@@ -17,8 +17,13 @@ export const publicSans = Public_Sans({
 // .c-intro__title). weight:"variable" loads the variable font so any
 // font-weight (including 900, which has no static cut for this family) still
 // renders correctly.
+//
+// NOTE: "cyrillic" added for Russian pages (/ru/). This sandbox has no
+// network access to verify Cormorant Garamond actually ships a cyrillic
+// subset — if DigitalOcean's build rejects it, drop "cyrillic" here and
+// fall back to a system serif for Russian headings instead.
 export const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
-  subsets: ["latin"],
+  subsets: ["latin", "cyrillic"],
   weight: "variable",
 });
