@@ -1,151 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="russian">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AGENTS.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CLAUDE.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about-us/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/about-us/testimonials-reviews/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/caregiver-application/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/contact/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/enroll-now/route.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apple-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/[slug]/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/blog/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/careers/how-it-works-caregivers/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/careers/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/contact-us/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/enroll-now/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/home-care-benefits/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/how-to-enroll/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/legal/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locations/bronx/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locations/brooklyn/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locations/manhattan/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/locations/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/privacy-policy/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/faq/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/home-health-aide-resources/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/resources/traditional-care-patient-resources/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/conditions/[slug]/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/conditions/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/home-health-aide/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/services/visiting-home-nurse/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/tos/page.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CaregiverApplicationForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ContactForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/EnrollNowForm.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FloatingInput.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Footer.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LocationPageContent.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/PrefooterCta.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ReviewsCarousel.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/WaveDivider.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/blog.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/conditions.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/content.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/email.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/legal-text.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/privacy-policy-text.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/tos-text.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next-env.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/postcss.config.mjs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/file.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ProximaNova-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ProximaNova-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ProximaNova-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/fonts/ProximaNova-Semibold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/globe.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Daco_924160.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/characteristics-of-a-wound-care-nurse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/how-do-home-health-aides-help.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/how-to-maintain-an-effective-diabetic-care.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/keeping-the-home-quarantine-blues-away.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/positive-effects-of-music-among-seniors.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/the-risks-of-dementia-among-seniors.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/things-to-remember-when-caring-for-elderly-loved-ones.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/what-aging-in-place-means-for-seniors-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/what-are-the-benefits-of-having-a-visiting-home-nurse.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/what-happens-to-the-body-during-a-stroke.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/blog/you-can-hire-your-relative-to-care-for-you.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/bronx-families-choose-ideal-home-health.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/brooklyn-families-choose-ideal-home-health-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/caregiver-at-ideal-home-health-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/certified-home-health-aides-new-york.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/choose-ideal-home-health-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/compassionate-home-health-care-services-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/compassionate-in-home-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/compassionate-representative-ideal-home-health.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/24-hour-live-in-care-new-york-city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/arthritis-and-pain-management-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/assisting-parkinsons-patient-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/caring-bed-bound-patient-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/epilepsy-home-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/fall-prevention-care-in-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/help-with-daily-tasks-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/help-with-homely-tasks-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/home-care-for-wheelchair-bound-patients-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-arthritis-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-care-blood-pressure-monitoring-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-care-for-stroke-recovery-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-diabetic-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-epilepsy-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-fall-prevention-and-safety-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-health-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-parkinsons-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-patient-lifting-and-transferring-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/in-home-stroke-care-and-recovery-nyc-1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/individualized-care-plan-new-york-city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/individualized-home-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/live-in-assistance-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/patient-lifting-and-transferring-new-york-city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/post-hospital-care-new-york-city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/conditions/post-hospital-recovery-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home-health-aides-new-york.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home-health-care-bronx.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home-health-care-in-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home-health-caregiver-career.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/home-health-caregiver-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/iStock-1181209194.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ideal-home-health-care-in-new-york.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ideal-home-health-caregiver-application-processing-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/ideal-home-health-caregiver-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/in-home-health-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/join-ideal-home-health-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo-white.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/map.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/personalized-home-health-care-new-york.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/registered-home-nurse-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/registered-visiting-home-nurse-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/trusted-home-care-agency-new-york-city.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/visiting-home-nurse-care-nyc.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/visiting-home-nurse-care.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/visiting-home-nurse-new-york.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/next.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/vercel.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/window.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -178,18 +36,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="TF_FMT" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/api/contact" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/ru" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/api/contact" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/app/contact-us" />
-      <recent name="$PROJECT_DIR$/app" />
     </key>
   </component>
   <component name="RunManager">
@@ -424,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783624204527</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="russian">
+      <created>1783679686770</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1783679686770</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -441,19 +306,20 @@
     <MESSAGE value="init" />
     <MESSAGE value="resend" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="russian" />
+    <option name="LAST_COMMIT_MESSAGE" value="russian" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783679638469">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783679701513">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783679638469" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783679701513" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
-    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783679598099">
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783680417724">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783679598099" />
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783680417724" />
     <state x="828" y="242" key="RollbackChangesDialog" timestamp="1783679630331">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>

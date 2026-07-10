@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { publicSans, cormorant } from "./fonts";
+import { publicSans, cormorant, ptSans } from "./fonts";
 
 // Header/Footer now live per-locale (app/(en)/layout.tsx for English,
 // app/ru/layout.tsx for Russian) instead of here, since a shared global
@@ -18,7 +18,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${publicSans.variable} ${cormorant.variable}`}>
+    <html lang="en" className={`${publicSans.variable} ${cormorant.variable} ${ptSans.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );
