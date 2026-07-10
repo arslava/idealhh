@@ -1,9 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="russian">
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/images/Daco_924160.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/certified-home-health-aides-new-york.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/choose-ideal-home-health-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/compassionate-home-health-care-services-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/compassionate-in-home-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/24-hour-live-in-care-new-york-city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/assisting-parkinsons-patient-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/help-with-daily-tasks-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/home-care-for-wheelchair-bound-patients-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/in-home-arthritis-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/in-home-diabetic-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/in-home-epilepsy-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/in-home-fall-prevention-and-safety-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/in-home-patient-lifting-and-transferring-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/in-home-stroke-care-and-recovery-nyc-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/individualized-care-plan-new-york-city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/individualized-home-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/conditions/post-hospital-care-new-york-city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home-health-aides-new-york.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home-health-care-in-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/home-health-caregiver-career.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/iStock-1181209194.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/in-home-health-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/join-ideal-home-health-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/personalized-home-health-care-new-york.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/registered-home-nurse-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/registered-visiting-home-nurse-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/trusted-home-care-agency-new-york-city.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/visiting-home-nurse-care-nyc.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/visiting-home-nurse-new-york.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tsconfig.tsbuildinfo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/fonts.ts" beforeDir="false" afterPath="$PROJECT_DIR$/app/fonts.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/about-us/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/about-us/testimonials-reviews/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/about-us/testimonials-reviews/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/careers/how-it-works-caregivers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/careers/how-it-works-caregivers/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/careers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/careers/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/contact-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/contact-us/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/enroll-now/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/enroll-now/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/home-care-benefits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/home-care-benefits/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/conditions/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/home-health-aide/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/home-health-aide/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,11 +88,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/ru" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/api/contact" />
       <recent name="$PROJECT_DIR$/lib" />
       <recent name="$PROJECT_DIR$/components" />
-      <recent name="$PROJECT_DIR$/app/contact-us" />
     </key>
   </component>
   <component name="RunManager">
@@ -289,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783679686770</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="russian">
+      <created>1783680420847</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1783680420847</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -310,11 +362,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="russian" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783679701513">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783680420355">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783679701513" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783680420355" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783680417724">
       <screen x="0" y="23" width="1920" height="1002" />
