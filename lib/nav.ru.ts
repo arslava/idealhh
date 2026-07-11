@@ -1,8 +1,7 @@
-// Real Russian page titles from the WordPress export, assembled into a nav
-// structure (same pattern used for the English nav). Only includes items
-// that actually have Russian pages — Locations, Resources, Benefits, and
-// FAQ never had Russian translations on the original site, so they're
-// omitted here rather than linking to English pages from a Russian menu.
+// Real Russian page titles and nav_menu_item labels from the WordPress
+// export (post_type nav_menu_item, matched by _menu_item_object_id to the
+// actual Russian page IDs — not guessed or reused from the English nav).
+// CDPAP nav item (obj id 1433, "CDPAP" menu label) dropped per standing rule.
 export const navRu = [
   {
     label: "О нас",
@@ -19,11 +18,19 @@ export const navRu = [
       { label: "Как зарегестрироваться", href: "/ru/how-to-enroll" },
     ],
   },
-  { label: "Льготы", href: "/ru/home-care-benefits" },
+  // Was "Льготы" — real nav_menu_item label is "Льготы по уходу".
+  { label: "Льготы по уходу", href: "/ru/home-care-benefits" },
   {
-    label: "Карьера",
+    // Was "Карьера" — real nav_menu_item label is "Вакансии".
+    label: "Вакансии",
     href: "/ru/careers",
-    children: [{ label: "Станьте сиделкой", href: "/ru/careers/how-it-works-caregivers" }],
+    children: [
+      // Was "Станьте сиделкой" — real label is "Процесс найма".
+      { label: "Процесс найма", href: "/ru/careers/how-it-works-caregivers" },
+      // Was missing — a second real submenu item ("Открытые позиции") that
+      // links back to the careers page itself in the source.
+      { label: "Открытые позиции", href: "/ru/careers" },
+    ],
   },
   { label: "Свяжитесь с нами", href: "/ru/contact-us" },
 ];

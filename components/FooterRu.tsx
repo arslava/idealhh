@@ -58,17 +58,19 @@ export default function FooterRu() {
           <ul className="mt-4 space-y-2 text-sm">
             <li><Link href="/ru/about-us" className={linkClass}>О нас</Link></li>
             <li><Link href="/ru/about-us/testimonials-reviews" className={linkClass}>Свидетельства и отзывы</Link></li>
-            <li><Link href="/ru/careers/become-a-caregiver" className={linkClass}>Станьте сиделкой</Link></li>
+            {/* Was pointing to /ru/careers/become-a-caregiver, a route that
+                doesn't exist in this app (404) — actual route is below. */}
+            <li><Link href="/ru/careers/how-it-works-caregivers" className={linkClass}>Станьте сиделкой</Link></li>
           </ul>
         </div>
 
         <div>
           <h2 className="text-sm font-semibold uppercase tracking-wide text-white/50">Обслуживание</h2>
           <ul className="mt-4 space-y-2 text-sm">
+            {/* Source footer menu block ("Footer Menu 2 - Services RU") has
+                exactly these 2 items — no more, no less. */}
             <li><Link href="/ru/services" className={linkClass}>Обслуживание</Link></li>
-            <li><Link href="/ru/services/home-health-aide" className={linkClass}>Помощники по уходу на дому</Link></li>
-            <li><Link href="/ru/services/visiting-home-nurse" className={linkClass}>Медбратья и медсестра</Link></li>
-            <li><Link href="/ru/enroll-now" className={linkClass}>Зарегистрироваться сейчас</Link></li>
+            <li><Link href="/ru/services/conditions" className={linkClass}>Условия</Link></li>
           </ul>
         </div>
 

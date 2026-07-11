@@ -76,8 +76,8 @@ export const ruHomePage = {
   },
   locationsImage: "/images/Daco_924160.png",
   locationCards: [
-    { name: "Brooklyn", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Brooklyn Services", href: "/ru/locations/brooklyn" } },
-    { name: "Bronx", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Bronx Services", href: "/ru/locations/bronx" } },
+    { name: "Brooklyn", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Brooklyn Services", href: "/locations/brooklyn" } },
+    { name: "Bronx", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Bronx Services", href: "/locations/bronx" } },
   ],
   careers: {
     label: "IDEAL HOME HEALTH",
@@ -482,8 +482,8 @@ export const ruContactUsPage = {
     ],
   },
   officeCards: [
-    { title: "Бруклин", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Узнать больше", href: "/ru/locations/brooklyn" } },
-    { title: "Бронкс", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Узнать больше", href: "/ru/locations/bronx" } },
+    { title: "Бруклин", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Узнать больше", href: "/locations/brooklyn" } },
+    { title: "Бронкс", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Узнать больше", href: "/locations/bronx" } },
   ],
   prefooterCta: {
     title: "Если вы хотите стать пациентом или опекуном, зарегистрируйтесь сегодня.",
@@ -622,8 +622,8 @@ export const ruBenefitsPage = {
     button: { title: "Свяжитесь с нами", href: "/ru/contact-us" },
   },
   officeCards: [
-    { title: "Услуги в Бруклине", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Услуги в Бруклине", href: "/ru/locations/brooklyn" } },
-    { title: "Услуги в Бронксе", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Услуги в Бронксе", href: "/ru/locations/bronx" } },
+    { title: "Услуги в Бруклине", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Услуги в Бруклине", href: "/locations/brooklyn" } },
+    { title: "Услуги в Бронксе", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Услуги в Бронксе", href: "/locations/bronx" } },
   ],
   prefooterCta: {
     title: "Узнайте, имеете ли вы право на бесплатный уход на дому",
