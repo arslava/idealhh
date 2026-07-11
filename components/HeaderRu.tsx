@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { navRu, siteRu } from "@/lib/nav.ru";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function HeaderRu() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -20,7 +21,9 @@ export default function HeaderRu() {
               {siteRu.phone}
             </a>
           </div>
-          <div className="hidden sm:block text-navy-muted text-xs uppercase tracking-wide">Русский</div>
+          <div className="hidden sm:block">
+            <LanguageSwitcher />
+          </div>
         </div>
       </div>
 
@@ -82,6 +85,9 @@ export default function HeaderRu() {
       {mobileOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.15)] z-50 max-h-[80vh] overflow-y-auto">
           <nav className="px-4 py-4">
+            <div className="sm:hidden pb-4 mb-2 border-b border-navy-muted/10">
+              <LanguageSwitcher variant="button" />
+            </div>
             {navRu.map((item) => (
               <div key={item.label} className="border-b border-navy-muted/10 last:border-none">
                 <div className="flex items-center justify-between">

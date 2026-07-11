@@ -15,16 +15,13 @@ export default function RuHome() {
 
   return (
     <>
-      <section className="relative bg-navy-900 text-white overflow-hidden">
-        <Image
-          src={heroImage}
-          alt="Ideal Home Health"
-          fill
-          priority
-          className="object-cover opacity-30"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-900 via-navy-900/90 to-navy-900/70" />
-        <div className="relative mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
+      {/* Hero — matches the corrected English structure: two-column split on
+          a solid navy section (text left, photo right), not a full-bleed
+          image with a heavy opacity overlay. The Russian page was still on
+          the old full-bleed layout, which is why the hero photo was
+          effectively invisible even once the image file exists. */}
+      <section className="bg-navy-900 text-white">
+        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">
             <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-medium">
               {hero.fullTitle}
@@ -38,6 +35,15 @@ export default function RuHome() {
                 {hero.secondaryButton.title}
               </Button>
             </div>
+          </div>
+          <div className="relative min-h-[320px] h-full lg:-mr-4">
+            <Image
+              src={heroImage}
+              alt="Заботливые услуги по уходу на дому в Нью-Йорке"
+              fill
+              priority
+              className="object-cover rounded-t-[49px] lg:rounded-none"
+            />
           </div>
         </div>
       </section>

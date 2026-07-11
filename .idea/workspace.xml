@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="russian">
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeaderRu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderRu.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,7 +353,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783767100402</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="russian">
+      <created>1783768418577</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1783768418577</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -372,16 +381,16 @@
     <option name="LAST_COMMIT_MESSAGE" value="russian" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783767114020">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783768417898">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783767114020" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783768417898" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
-    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783686657995">
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783769361180">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783686657995" />
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783769361180" />
     <state x="828" y="242" key="RollbackChangesDialog" timestamp="1783768401965">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
