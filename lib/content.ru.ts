@@ -27,7 +27,7 @@ export const ruHomePage = {
     // rendered as prefix/suffix around the literal title text instead.
     fullTitle: "Ваше агенство должно быть Ideal",
     description:
-      "В Ideal Home Health мы профессионально подходим к выбору помощников по уходу на дому (хоуматенды) в Нью Йорке. Сотрудничая вместе мы достигаем наивысшего уровня независимости, одновременно предоставляя это на высшем уровне.",
+      "В Ideal Home Health мы профессионально подходим к выбору помощников по уходу на дому (хоуматенды) в Нью Йорке. Сотрудничая вместе мы достигаем наивысшего уровня независимости, одновременно предоставляя вам услуги самого высокого качества в вашем же доме.",
     primaryButton: { title: "Выбор предоставляем услуг", href: "/ru/careers/#qualifyenroll" },
     secondaryButton: { title: "Зарегестрируйтесь сегодня", href: "/ru/enroll-now" },
   },
@@ -103,13 +103,17 @@ export const ruHomePage = {
 export const ruAboutUsPage = {
   hero: {
     title: "Об Ideal Home Health",
-    description: "В Ideal Home Health, ваша семья — это наша семья. Мы начали наше обслуживание в 2013 году с целью того чтобы оживить неэффективную и старую систему в индустрии по уходу за пожилыми людьми в Нью-Йорке. С фокусом на обслуживание, коммуникации и эффективность.",
+    description: "В Ideal Home Health, ваша семья — это наша семья. Мы начали наше обслуживание в 2013 году с целью того чтобы оживить неэффективную и старую систему в индустрии по уходу за пожилыми людьми в Нью-Йорке. С фокусом на обслуживание, коммуникации и эффективность, мы нанимаем на работу сотрудников которые стараются улучшить вашу жизнь.",
     image: "/images/trusted-home-care-agency-new-york-city.jpg",
   },
   mission: {
     label: "IDEAL HOME HEALTH",
     title: "Наша миссия и основные ценности",
-    description: "Наша миссия — обеспечить исключительный уровень заботливого ухода, который расширяет возможности каждого человека, которому мы служим. Мы верим, что ваша семья — это наша семья, и неуклонно привержены коммуникации, эффективности и честности.",
+    // Source ACF field (text_image_blocks_0_description) is literally in
+    // English on the live site, identical to the English page's mission
+    // description — never translated. Kept verbatim per "identical to
+    // source" rule rather than the paraphrase that was here before.
+    description: "Our mission is to provide an exceptional standard of compassionate care that empowers every individual we serve. This mission is guided by our core values: a deep-seated belief that your family is our family, an unwavering commitment to communication and efficiency, and a promise to always act with integrity. By upholding these values, we ensure a higher standard of care that not only meets your physical needs but also supports your emotional and social well-being.",
     image: "/images/compassionate-in-home-care-nyc.jpg",
     button: { title: "Что говорят другие", href: "/ru/about-us/testimonials-reviews" },
   },
@@ -132,6 +136,15 @@ export const ruTestimonialsPage = {
     title: "Свидетельства и отзывы",
     description: "Мы гордимся тем что имеем счастливых сотрудников, пациентов и их семей.",
   },
+  // Was missing entirely from the Russian page — the source "acf/testimonials"
+  // block references these same 3 testimonial posts used on the English page.
+  // Content is English in the source (no Russian translation exists for
+  // these), identical to the EN testimonialsPage.testimonials entries.
+  testimonials: [
+    { author: "Joseph A.", role: "Family Member", rating: 5, content: "After I moved out of New York, caring for my mother became very stressful for my sister and I. Having an aide helps us know she's safe when we can't be there. We have had an incredible experience working with Ideal Home Health, they are professional and made the process easy." },
+    { author: "Liz P.", role: "Patient", rating: 5, content: "Thank you. I'm so happy to have the help. My aide helps with my medicine, and helps me do my hair in the morning. I'm happy when I can see my grandchildren and she keeps things tidy since I can't do it. Sarah is very nice, I really, really appreciate the help." },
+    { author: "Tayshia B.", role: "Caregiver", rating: 5, content: "I've been employed with Ideal Home Health for the past two years. I appreciate the time and efforts of their office coordinators who in my opinion go above and beyond to ensure I'm on top of keeping my documentation and training up to date. The pay is also some of the highest I've received, and I'm thankful to work here." },
+  ],
   reviews: [
     { rating: 5, name: "Джессика П.", location: "Бруклин, Нью-Йорк", review: "I was able to register my father in law for an aide very quickly, we were all setup within about a week. Ideal HH staff were great to work with, and the office is 15 minutes from my apartment which was convenient." },
     { rating: 4, name: "Ирсал М.", location: "Бронкс, Нью-Йорк", review: "The pay is very good and they accommodate my time off for religious holidays. I had some challenges with my paperwork to register but overall it has been a good experience." },
@@ -146,19 +159,27 @@ export const ruTestimonialsPage = {
 };
 
 export const ruServicesPage = {
-  hero: { title: "Наши специалисты готовы помочь с вашими индивидуальными потребностями." },
+  hero: {
+    title: "Наши специалисты готовы помочь с вашими индивидуальными потребностями.",
+    // Was missing entirely — restored from source (hero_banner_description).
+    description: "Наши высококачественные медицинские сотрудники готовы помочь с любой нуждой, большой или маленькой.",
+  },
   // CDPAP text-image block removed (was between HHA and Visiting Nurse cards
   // in the source, embedded in English text).
+  // Card descriptions below are the literal source text (text_image_blocks
+  // ACF fields), which is in English even on the Russian page in the source
+  // CMS — identical to the English /services/ page's card text. Previously
+  // this held an invented Russian paraphrase instead.
   services: [
     {
       title: "Помощники по уходу на дому (HHA)",
-      description: "Наши сертифицированные Министерством здравоохранения помощники по уходу на дому (HHA) оказывают заботливую помощь в повседневной жизни. Все HHA проходят строгое обучение дважды в год для обеспечения высочайших стандартов безопасности.",
+      description: "Our Department of Health certified Home Health Aides (HHAs) offer compassionate assistance with Activities of Daily Living (ADLs). From personal care to medication reminders, our in-home aides in NYC help maintain independence. All HHAs receive rigorous bi-annual training, ensuring top safety standards.",
       button: { title: "Узнайте больше", href: "/ru/services/home-health-aide" },
       image: "/images/home-health-aides-new-york.jpg",
     },
     {
       title: "Медбратья и медсестра — квалифицированный медицинский уход на дому",
-      description: "Получите квалифицированный медицинский уход в вашем доме в Нью-Йорке с нашими лицензированными выездными медсестрами (RN/LPN). Мы предлагаем ведение медикаментов, уход за ранами, послеоперационную поддержку, ведение хронических заболеваний и многое другое.",
+      description: "Receive skilled nursing care in your New York City home with our licensed Visiting Home Nurses (RNs/LPNs). We offer medication management, wound care, post-operative support, chronic disease management, and more. Our nurses create custom plans of care for your optimal health and recovery.",
       button: { title: "Узнайте больше", href: "/ru/services/visiting-home-nurse" },
       image: "/images/visiting-home-nurse-new-york.jpg",
     },
@@ -181,6 +202,8 @@ export const ruHomeHealthAidePage = {
   },
   howTheyHelp: {
     title: "Как мы помогаем",
+    // Was missing entirely — restored from source (bullets_list_description).
+    description: "Наши помощники по уходу на дому (хоуматенды) специально обучены",
     items: [
       "Помогать с ежедневными делами, включая подготовку еды.",
       "Помогать с домашней уборкой и поддержанием гигиены",
