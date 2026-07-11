@@ -5,7 +5,7 @@ import PrefooterCta from "@/components/PrefooterCta";
 import { ruServicesPage } from "@/lib/content.ru";
 
 export default function RuServicesPage() {
-  const { hero, services, whyChoose } = ruServicesPage;
+  const { hero, services, whyChoose, prefooterCta } = ruServicesPage;
   return (
     <>
       <section className="bg-navy-900 text-white">
@@ -45,6 +45,7 @@ export default function RuServicesPage() {
           </div>
         </div>
       </section>
+      <PrefooterCta {...prefooterCta} />
     </>
   );
 }

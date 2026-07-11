@@ -1,11 +1,10 @@
-import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruBecomeCaregiverPage } from "@/lib/content.ru";
 
 export default function RuBecomeCaregiverPage() {
-  const { hero, steps, stepsImage, intro, gettingStarted, prefooterCta } = ruBecomeCaregiverPage;
+  const { hero, steps, intro, gettingStarted, prefooterCta } = ruBecomeCaregiverPage;
   return (
     <>
       <section className="bg-bg-light">
@@ -16,30 +15,20 @@ export default function RuBecomeCaregiverPage() {
         </div>
       </section>
       <WaveDivider toColor="var(--color-white)" />
-      <section className="mx-auto max-w-[1140px] px-4 py-20 grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8">
-          {steps.map((step) => (
-            <div key={step.number} className="flex gap-5">
-              <span className="font-display text-3xl font-black text-accent shrink-0">{step.number}</span>
-              <div>
-                <h3 className="font-display text-xl font-semibold text-navy-800">{step.title}</h3>
-                <p className="mt-1 text-grey-800 leading-relaxed">{step.description}</p>
-              </div>
+      <section className="mx-auto max-w-[1140px] px-4 py-20 space-y-8">
+        {steps.map((step) => (
+          <div key={step.number} className="flex gap-5">
+            <span className="font-display text-3xl font-black text-accent shrink-0">{step.number}</span>
+            <div>
+              <h3 className="font-display text-xl font-semibold text-navy-800">{step.title}</h3>
+              <p className="mt-1 text-grey-800 leading-relaxed">{step.description}</p>
             </div>
-          ))}
-        </div>
-        <div className="relative rounded-[49px] overflow-hidden aspect-[4/3]">
-          <Image src={stepsImage} alt={hero.title} fill className="object-cover" />
-        </div>
+          </div>
+        ))}
       </section>
-      <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
-        <div className="relative rounded-[49px] overflow-hidden aspect-[4/3] order-2 md:order-1">
-          <Image src={intro.image} alt={intro.title} fill className="object-cover" />
-        </div>
-        <div className="order-1 md:order-2">
-          <h2 className="font-display text-3xl md:text-4xl font-semibold text-navy-800">{intro.title}</h2>
-          <p className="mt-4 text-[1.125rem] text-grey-800 leading-relaxed whitespace-pre-line">{intro.description}</p>
-        </div>
+      <section className="mx-auto max-w-[1140px] px-4 py-16">
+        <h2 className="font-display text-3xl md:text-4xl font-semibold text-navy-800">{intro.title}</h2>
+        <p className="mt-4 text-[1.125rem] text-grey-800 leading-relaxed whitespace-pre-line">{intro.description}</p>
       </section>
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[1140px] px-4 py-20">

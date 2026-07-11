@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/about-us/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/careers/how-it-works-caregivers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/careers/how-it-works-caregivers/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/home-care-benefits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/home-care-benefits/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/ru/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/conditions/[slug]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/HeaderRu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderRu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/conditions.ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/conditions.ru.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/content.ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/content.ru.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/nav.ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nav.ru.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.tsbuildinfo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,7 +375,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783768418577</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="russian">
+      <created>1783769747697</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1783769747697</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -381,11 +403,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="russian" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783768417898">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783769746585">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783768417898" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783769746585" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783769361180">
       <screen x="0" y="23" width="1920" height="1002" />

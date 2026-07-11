@@ -10,13 +10,13 @@ export function generateStaticParams() {
   return ruConditionPages.map((c) => ({ slug: c.slug }));
 }
 
-// Same 3 English-language testimonial posts (id 655/122/124) referenced by
-// the source ACF "testimonials" block on 12 of the 13 condition pages — no
-// Russian translation exists for these in the source.
+// Same 3 Russian-translated testimonial posts used elsewhere (ids 3957,
+// 3979, 4552) — confirmed via live fetch these render in Russian, not
+// English, on condition pages too.
 const TESTIMONIALS = [
-  { author: "Tayshia B.", role: "Caregiver", rating: 5, content: "I've been employed with Ideal Home Health for the past two years. I appreciate the time and efforts of their office coordinators who in my opinion go above and beyond to ensure I'm on top of keeping my documentation and training up to date. The pay is also some of the highest I've received, and I'm thankful to work here." },
-  { author: "Joseph A.", role: "Family Member", rating: 5, content: "After I moved out of New York, caring for my mother became very stressful for my sister and I. Having an aide helps us know she's safe when we can't be there. We have had an incredible experience working with Ideal Home Health, they are professional and made the process easy." },
-  { author: "Liz P.", role: "Patient", rating: 5, content: "Thank you. I'm so happy to have the help. My aide helps with my medicine, and helps me do my hair in the morning. I'm happy when I can see my grandchildren and she keeps things tidy since I can't do it. Sarah is very nice, I really, really appreciate the help." },
+  { author: "Тейшия Б.", role: "Опекун", rating: 5, content: "Я работаю в Ideal Home Health последние два года. Ценю время и усилия координаторов офиса, которые, на мой взгляд, делают больше, чем требуется, чтобы я всегда своевременно обновляла свою документацию и обучение. Оплата здесь также одна из самых высоких, что я получала, и я благодарна за возможность работать здесь." },
+  { author: "Лиз П", role: "Пациент", rating: 5, content: "Спасибо. Я так рада, что у меня есть помощь. Моя помощница помогает с лекарствами и утром помогает сделать прическу. Я счастлива, когда могу видеть внуков, а она поддерживает порядок, так как я сама не могу это делать. Сара очень милая, я очень, очень ценю помощь." },
+  { author: "Джозеф А.", role: "Член семьи", rating: 5, content: "После того как я переехал из Нью-Йорка, уход за моей мамой стал очень стрессовым для меня и моей сестры. Наличие помощника помогает нам быть уверенными, что она в безопасности, когда мы не можем быть рядом. У нас был потрясающий опыт сотрудничества с Ideal Home Health, они профессиональны и сделали процесс простым." },
 ];
 
 function Stars({ rating }: { rating: number }) {
@@ -42,8 +42,8 @@ export default async function RuConditionDetailPage({ params }: { params: Promis
             <h1 className="font-display text-[2.8125rem] md:text-[3.75rem] leading-[1.05]">{condition.title}</h1>
             <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">{condition.heroDescription}</p>
             <div className="mt-8 flex flex-wrap gap-4">
-              <Button href="/ru/contact-us" variant="primary">Свяжитесь с нами</Button>
-              <Button href="/ru/enroll-now" variant="secondary">Зарегистрироваться сейчас</Button>
+              <Button href="/ru/enroll-now" variant="primary">Зарегистрируйся сегодня</Button>
+              <Button href="/ru/contact-us" variant="secondary">Свяжитесь с нами</Button>
             </div>
           </div>
           <div className="relative min-h-[280px] h-full">
@@ -54,14 +54,9 @@ export default async function RuConditionDetailPage({ params }: { params: Promis
       <WaveDivider />
 
       {condition.intro.title && (
-        <section className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative rounded-[49px] overflow-hidden aspect-[4/3] order-2 md:order-1">
-            <Image src={condition.intro.image} alt={condition.intro.title} fill className="object-cover" />
-          </div>
-          <div className="order-1 md:order-2">
-            <h2 className="font-display text-3xl md:text-4xl font-semibold text-navy-800">{condition.intro.title}</h2>
-            <p className="mt-4 text-[1.125rem] text-grey-800 leading-relaxed">{condition.intro.description}</p>
-          </div>
+        <section className="mx-auto max-w-[1140px] px-4 py-16">
+          <h2 className="font-display text-3xl md:text-4xl font-semibold text-navy-800">{condition.intro.title}</h2>
+          <p className="mt-4 text-[1.125rem] text-grey-800 leading-relaxed max-w-2xl">{condition.intro.description}</p>
         </section>
       )}
 
@@ -83,7 +78,7 @@ export default async function RuConditionDetailPage({ params }: { params: Promis
 
       {condition.hasTestimonials && (
         <section className="mx-auto max-w-[1140px] px-4 py-16">
-          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Testimonials</h2>
+          <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Что говорят другие</h2>
           <div className="mt-8 grid md:grid-cols-3 gap-6">
             {TESTIMONIALS.map((t) => (
               <div key={t.author} className="rounded-3xl bg-white border border-navy-900/10 p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] flex flex-col">
@@ -100,9 +95,9 @@ export default async function RuConditionDetailPage({ params }: { params: Promis
       )}
 
       <PrefooterCta
-        title="Готовы больше узнать и получить необходимую помощь?"
-        description="Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить именно вашей семье."
-        button={{ title: "Свяжитесь с нами", href: "/ru/contact-us" }}
+        title={condition.prefooterTitle}
+        description={condition.prefooterDescription}
+        button={{ title: "Зарегистрируйся сегодня", href: "/ru/enroll-now" }}
       />
     </>
   );

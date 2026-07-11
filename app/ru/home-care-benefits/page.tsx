@@ -1,31 +1,18 @@
+import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruBenefitsPage } from "@/lib/content.ru";
 
 export default function RuBenefitsPage() {
-  const { homeBanner, hero, qualify, included, extras, steps, whyChoose, quote, locations, officeCards, prefooterCta } = ruBenefitsPage;
+  const { hero, qualify, included, extras, steps, whyChoose, quote, locations, officeCards, prefooterCta } = ruBenefitsPage;
   return (
     <>
-      <section className="bg-navy-800 text-white">
-        <div className="mx-auto max-w-[1140px] px-4 py-16 lg:py-20 text-center">
-          <h1 className="font-display text-[2.5rem] md:text-[3.5rem] leading-[1.05] max-w-4xl mx-auto">
-            {homeBanner.title.replace(homeBanner.highlight, "")}<span className="text-accent">{homeBanner.highlight}</span>
-          </h1>
-          <p className="mt-6 max-w-2xl mx-auto text-[1.125rem] text-white/80 leading-relaxed">{homeBanner.description}</p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button href={homeBanner.primaryButton.href} variant="secondary">{homeBanner.primaryButton.title}</Button>
-            <Button href={homeBanner.secondaryButton.href}>{homeBanner.secondaryButton.title}</Button>
-          </div>
-        </div>
-      </section>
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 py-16 lg:py-20 text-center">
           <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">{hero.label}</p>
           <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] leading-[1.05] max-w-3xl mx-auto">{hero.title}</h1>
           <p className="mt-6 max-w-2xl mx-auto text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">{hero.description}</p>
-          <p className="mt-4 text-accent font-semibold">{hero.phone}</p>
-          <Button href={hero.primaryButton.href} className="mt-6">{hero.primaryButton.title}</Button>
           <div className="mt-10 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
             {hero.badges.map((b) => (
               <div key={b.bold} className="rounded-2xl bg-white/10 p-5">
@@ -33,6 +20,11 @@ export default function RuBenefitsPage() {
                 <p className="mt-1 text-sm text-white/80">{b.normal}</p>
               </div>
             ))}
+          </div>
+          <Button href={hero.primaryButton.href} className="mt-8">{hero.primaryButton.title}</Button>
+          <p className="mt-4 text-accent font-semibold">{hero.phone}</p>
+          <div className="relative mt-10 mx-auto max-w-2xl aspect-[16/9] rounded-2xl overflow-hidden">
+            <Image src={hero.image} alt={hero.title} fill className="object-cover" />
           </div>
         </div>
       </section>

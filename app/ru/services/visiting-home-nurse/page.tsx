@@ -63,7 +63,7 @@ export default function RuVisitingHomeNursePage() {
       </section>
 
       <section className="mx-auto max-w-[1140px] px-4 py-16">
-        <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Testimonials</h2>
+        <h2 className="font-display text-[3.125rem] lg:text-[4.375rem] leading-[1.05] font-black text-navy-800 text-center">Что говорят другие</h2>
         <div className="mt-8 grid md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <div key={t.author} className="rounded-3xl bg-white border border-navy-900/10 p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)] flex flex-col">

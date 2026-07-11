@@ -1,8 +1,9 @@
 "use client";
 
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Globe } from "lucide-react";
+import { Globe, ChevronDown } from "lucide-react";
 
 // Routes that exist under /ru/ (relative path, no leading/trailing slash;
 // "" = homepage). Several English routes have no Russian equivalent at all
@@ -38,41 +39,81 @@ function isRuRouteValid(relPath: string): boolean {
   return match ? CONDITION_SLUGS.has(match[1]) : false;
 }
 
-export default function LanguageSwitcher({ variant = "text" }: { variant?: "text" | "button" }) {
+// This project only has English and Russian built out. The live WordPress
+// site's switcher lists ~10 WPML languages, but only these two actually
+// exist here — building a fake multi-language menu would just be more
+// broken links, so this stays a real 2-option dropdown.
+function useLanguageLinks() {
   const pathname = usePathname() || "/";
   const isRu = pathname === "/ru" || pathname.startsWith("/ru/");
 
-  let href: string;
-  let label: string;
+  const relPath = isRu ? pathname.replace(/^\/ru\/?/, "") : pathname.replace(/^\//, "");
+  const enHref = relPath ? `/${relPath}` : "/";
+  const ruHref = relPath === "" || isRuRouteValid(relPath) ? (relPath ? `/ru/${relPath}` : "/ru") : "/ru";
 
-  if (isRu) {
-    const relPath = pathname.replace(/^\/ru\/?/, "");
-    href = relPath ? `/${relPath}` : "/";
-    label = "English";
-  } else {
-    const relPath = pathname.replace(/^\//, "");
-    href = relPath === "" || isRuRouteValid(relPath) ? (relPath ? `/ru/${relPath}` : "/ru") : "/ru";
-    label = "Русский";
-  }
+  return {
+    current: isRu ? "ru" : "en",
+    options: [
+      { code: "en", label: "English", href: enHref },
+      { code: "ru", label: "Русский", href: ruHref },
+    ],
+  } as const;
+}
 
-  if (variant === "button") {
-    return (
-      <Link
-        href={href}
-        className="flex items-center gap-2 rounded-full border border-navy-muted/30 px-4 py-2.5 text-[1.125rem] font-semibold text-navy-700 hover:border-accent hover:text-accent transition-colors"
-      >
-        <Globe size={18} />
-        {label}
-      </Link>
-    );
-  }
+export default function LanguageSwitcher({ variant = "text" }: { variant?: "text" | "button" }) {
+  const [open, setOpen] = useState(false);
+  const rootRef = useRef<HTMLDivElement>(null);
+  const { current, options } = useLanguageLinks();
+  const currentOption = options.find((o) => o.code === current)!;
+
+  useEffect(() => {
+    function onClickOutside(e: MouseEvent) {
+      if (rootRef.current && !rootRef.current.contains(e.target as Node)) setOpen(false);
+    }
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, []);
+
+  const triggerClass =
+    variant === "button"
+      ? "flex items-center gap-2 rounded-full border border-navy-muted/30 px-4 py-2.5 text-[1.125rem] font-semibold text-navy-700 hover:border-accent hover:text-accent transition-colors w-full justify-center"
+      : "flex items-center gap-1.5 text-navy-muted text-xs uppercase tracking-wide hover:text-accent transition-colors";
 
   return (
-    <Link
-      href={href}
-      className="text-navy-muted text-xs uppercase tracking-wide hover:text-accent transition-colors"
-    >
-      {label}
-    </Link>
+    <div ref={rootRef} className="relative">
+      <button type="button" onClick={() => setOpen((v) => !v)} aria-expanded={open} aria-haspopup="listbox" className={triggerClass}>
+        <Globe size={variant === "button" ? 18 : 14} />
+        {currentOption.label}
+        <ChevronDown size={variant === "button" ? 16 : 12} className={`transition-transform ${open ? "rotate-180" : ""}`} />
+      </button>
+
+      {open && (
+        <div
+          role="listbox"
+          className={
+            variant === "button"
+              ? "mt-2 w-full rounded-xl bg-white border border-navy-muted/15 shadow-[0_20px_40px_rgba(56,75,116,0.15)] overflow-hidden"
+              : "absolute right-0 top-full mt-2 min-w-[140px] rounded-xl bg-white border border-navy-muted/15 shadow-[0_20px_40px_rgba(56,75,116,0.15)] overflow-hidden z-50"
+          }
+        >
+          {options.map((option) => (
+            <Link
+              key={option.code}
+              href={option.href}
+              role="option"
+              aria-selected={option.code === current}
+              onClick={() => setOpen(false)}
+              className={`block px-4 py-2.5 text-[1rem] font-semibold transition-colors ${
+                option.code === current
+                  ? "bg-bg-light text-accent"
+                  : "text-navy-700 hover:bg-bg-light hover:text-accent"
+              }`}
+            >
+              {option.label}
+            </Link>
+          ))}
+        </div>
+      )}
+    </div>
   );
 }

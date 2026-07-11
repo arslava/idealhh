@@ -6,7 +6,10 @@ export const navRu = [
   {
     label: "О нас",
     href: "/ru/about-us",
-    children: [{ label: "Свидетельства и отзывы", href: "/ru/about-us/testimonials-reviews" }],
+    children: [
+      { label: "О нас", href: "/ru/about-us" },
+      { label: "Свидетельства и отзывы", href: "/ru/about-us/testimonials-reviews" },
+    ],
   },
   {
     label: "Обслуживание",
