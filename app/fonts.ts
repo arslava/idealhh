@@ -9,7 +9,7 @@ import { Cormorant_Garamond, Public_Sans } from "next/font/google";
 
 export const publicSans = Public_Sans({
   variable: "--font-public-sans",
-  subsets: ["latin", "cyrillic"],
+  subsets: ["latin"], // Public Sans has no Google Fonts cyrillic subset (only latin/latin-ext/vietnamese)
   weight: ["400", "600", "700", "900"],
 });
 
