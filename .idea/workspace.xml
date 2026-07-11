@@ -1,8 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="russian">
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/about-us/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/about-us/testimonials-reviews/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/careers/how-it-works-caregivers/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/careers/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/contact-us/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/enroll-now/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/home-care-benefits/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/[slug]/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/home-health-aide/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -323,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783729771775</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="russian">
+      <created>1783730159919</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1783730159919</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -344,20 +366,20 @@
     <option name="LAST_COMMIT_MESSAGE" value="russian" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783729784140">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783730159455">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783729784140" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783730159455" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783686657995">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783686657995" />
-    <state x="828" y="242" key="RollbackChangesDialog" timestamp="1783729740235">
+    <state x="828" y="242" key="RollbackChangesDialog" timestamp="1783733655430">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="828" y="242" key="RollbackChangesDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783729740235" />
+    <state x="828" y="242" key="RollbackChangesDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783733655430" />
     <state x="563" y="477" key="com.intellij.ide.util.TipDialog" timestamp="1783611187784">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>

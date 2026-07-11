@@ -5,25 +5,32 @@ import { sendFormEmail, isSpam } from "@/lib/email";
 export async function POST(req: NextRequest) {
   try {
     const body = await req.json();
-    const { firstName, lastName, email, phone, medicaidId, preferredLanguage, smsOptIn, website } = body;
+    const { firstName, lastName, name, email, phone, medicaidId, interest, preferredLanguage, smsOptIn, website } = body;
 
     if (isSpam(website)) {
       return NextResponse.json({ ok: true });
     }
 
-    if (!firstName || !lastName || !phone) {
+    // English form sends firstName/lastName + medicaidId; Russian form
+    // (WPForms "Enroll Today Form (RU)", id 2506) sends a single "name"
+    // field plus an "interest" select (Patient enrollment / Become a
+    // caregiver) instead of Medicaid ID.
+    const fullName = name || `${firstName || ""} ${lastName || ""}`.trim();
+
+    if (!fullName || !phone) {
       return NextResponse.json({ ok: false, error: "Missing required fields." }, { status: 400 });
     }
 
     await sendFormEmail({
-      subject: `New Patient Enrollment — ${firstName} ${lastName}`,
+      subject: `New Patient Enrollment — ${fullName}`,
       replyTo: email || undefined,
       html: `
         <h2>New Patient Enrollment</h2>
-        <p><strong>Name:</strong> ${escapeHtml(firstName)} ${escapeHtml(lastName)}</p>
+        <p><strong>Name:</strong> ${escapeHtml(fullName)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email || "Not provided")}</p>
         <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
-        <p><strong>Medicaid ID:</strong> ${escapeHtml(medicaidId || "Not provided")}</p>
+        ${interest ? `<p><strong>Interested in:</strong> ${escapeHtml(interest)}</p>` : ""}
+        ${medicaidId ? `<p><strong>Medicaid ID:</strong> ${escapeHtml(medicaidId)}</p>` : ""}
         <p><strong>Preferred Language:</strong> ${escapeHtml(preferredLanguage || "English")}</p>
         <p><strong>SMS Opt-in:</strong> ${escapeHtml(smsOptIn || "No")}</p>
       `,

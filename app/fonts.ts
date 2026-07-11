@@ -9,7 +9,12 @@ import { Cormorant_Garamond, Public_Sans } from "next/font/google";
 
 export const publicSans = Public_Sans({
   variable: "--font-public-sans",
-  subsets: ["latin"], // Public Sans has no Google Fonts cyrillic subset (only latin/latin-ext/vietnamese)
+  // Public Sans has no Google Fonts cyrillic subset — only latin, latin-ext,
+  // vietnamese are available for this family. Cyrillic text on /ru/ pages
+  // will render with the browser's fallback sans-serif for glyphs outside
+  // latin, which is fine visually (Cormorant Garamond below does have a
+  // cyrillic subset and covers the display/heading font).
+  subsets: ["latin"],
   weight: ["400", "600", "700", "900"],
 });
 
@@ -18,10 +23,8 @@ export const publicSans = Public_Sans({
 // font-weight (including 900, which has no static cut for this family) still
 // renders correctly.
 //
-// NOTE: "cyrillic" added for Russian pages (/ru/). This sandbox has no
-// network access to verify Cormorant Garamond actually ships a cyrillic
-// subset — if DigitalOcean's build rejects it, drop "cyrillic" here and
-// fall back to a system serif for Russian headings instead.
+// Confirmed: Cormorant Garamond ships a "cyrillic" subset on Google Fonts
+// (Public Sans above does not — latin only there).
 export const cormorant = Cormorant_Garamond({
   variable: "--font-cormorant",
   subsets: ["latin", "cyrillic"],

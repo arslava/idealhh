@@ -192,17 +192,37 @@ export const ruServicesPage = {
   },
 };
 
+// Source: page id 1384 (/ru/services/home-health-aide/). Two separate title
+// fields exist in the source and were previously conflated — hero_banner_title
+// ("Помощники по уходу на дому (Хоуматенды)") is NOT the same field as
+// bullets_section_title ("Получите уход там где он больше всего нужен -
+// дома."), which belongs to a second text+image section further down the
+// page. Fixed below. Image attachment IDs 840, 726, 819 do not appear in
+// either the XML export or the SQL dump as media items, so their real
+// filenames are unverified — kept as placeholders (flagged) rather than
+// guessed.
 export const ruHomeHealthAidePage = {
   hero: {
     label: "Обслуживание",
+    title: "Помощники по уходу на дому (Хоуматенды)",
+    // hero_banner_description verbatim, including source typos
+    // ("Mинистерва", "хоматенды") — kept as-is per identical-to-source rule.
+    description: "Наши помощники по уходу на дому (хоуматенды) являются сертифицированными специалистами Mинистерва здравоохранения в ваших ежедневных нуждах и состоянии. Все наши сертифицированные хоматенды проходят тренинги 2 раза в год.",
+    image: "/images/certified-home-health-aides-new-york.jpg", // attachment id 840 — filename unverified
+    primaryButton: { title: "Зарегистрируйся сегодня", href: "/ru/enroll-now" },
+    secondaryButton: { title: "Свяжитесь с нами", href: "/ru/contact-us" },
+  },
+  // Was entirely missing — this is a second, separate text+image section
+  // (source ACF field group "bullets_section_*") that sits between the hero
+  // and the "How We Help" bullet list.
+  gettingCare: {
     title: "Получите уход там где он больше всего нужен - дома.",
     highlight: "дома",
-    description: "Наши помощники по уходу на дому (хоуматенды) являются сертифицированными специалистами Министерства здравоохранения в ваших ежедневных нуждах и состоянии. Все наши сертифицированные хоуматенды проходят тренинги 2 раза в год.",
-    image: "/images/certified-home-health-aides-new-york.jpg",
+    description: "С Ideal Home Health можно не переживать за родных зная что ваши родные дома с заботливыми и опытными профессионалами которые им помогут.",
+    image: "/images/home-health-aide-care-at-home.jpg", // attachment id 726 — filename unverified
   },
   howTheyHelp: {
     title: "Как мы помогаем",
-    // Was missing entirely — restored from source (bullets_list_description).
     description: "Наши помощники по уходу на дому (хоуматенды) специально обучены",
     items: [
       "Помогать с ежедневными делами, включая подготовку еды.",
@@ -213,18 +233,37 @@ export const ruHomeHealthAidePage = {
       "Обеспечить заботу и хорошее самочувствие через доброту, командную работу и ставить цели чтобы продолжить жить лучше!",
     ],
   },
+  // Was entirely missing (no prefooterCta rendered on this page at all).
+  prefooterCta: {
+    title: "Готовы больше узнать и получить необходимую помощь?",
+    description: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить именно вашей семье.",
+    button: { title: "Зарегистрируйся сегодня", href: "/ru/enroll-now" },
+    image: "/images/prefooter-hha.jpg", // attachment id 819 — filename unverified
+  },
 };
 
+// Source: page id 1394 (/ru/services/visiting-home-nurse/). Same pattern as
+// Home Health Aide — "hero.subtitle" here was actually bullets_section_title,
+// a separate section further down the page, not part of the hero banner.
 export const ruVisitingHomeNursePage = {
   hero: {
     label: "Обслуживание",
     title: "Медбратья и медсестра",
-    subtitle: "Высокий уровень обслуживания от лицензированных медсестер и медбратьев.",
     description: "Наши дипломированные медбратья и медсестра будут следить за вашими потребностями и состоянием здоровья, чтобы составить для вас индивидуальный план ухода.",
-    image: "/images/registered-visiting-home-nurse-nyc.jpg",
+    image: "/images/registered-visiting-home-nurse-nyc.jpg", // attachment id 831 — filename unverified
+    primaryButton: { title: "Зарегистрируйся сегодня", href: "/ru/enroll-now" },
+    secondaryButton: { title: "Свяжитесь с нами", href: "/ru/contact-us" },
+  },
+  // Was misused as hero.subtitle — actually a separate text+image section
+  // (source ACF field group "bullets_section_*").
+  qualityCare: {
+    title: "Высокий уровень обслуживания от лицензированных медсестер и медбратьев.",
+    image: "/images/licensed-registered-nurse.jpg", // attachment id 741 — filename unverified
   },
   bullets: {
-    listTitle: "Квалифицированные медбратья и медсестра в Ideal Home Health",
+    // "Квалификацированные" is a typo in the source (correct spelling would
+    // be "Квалифицированные") — preserved verbatim per identical-to-source rule.
+    listTitle: "Квалификацированные медбратья и медсестра в Ideal Home Health",
     listDescription: "Наши лицензированные специалисты в области здравоохранения могут помочь",
     items: [
       "Разработать вместе с вами план лечения, основанный на рекомендациях вашего врача, ваших собственных предпочтений и образе жизни",
@@ -233,7 +272,21 @@ export const ruVisitingHomeNursePage = {
       "Следить за графиком приема лекарств и отслеживать симптомы",
       "Послеоперационный уход и уход за ранами",
     ],
-    image: "/images/visiting-home-nurse-care-nyc.jpg",
+  },
+  // Was missing entirely — source has a testimonials carousel block here
+  // referencing the same 3 testimonial posts (English content, no Russian
+  // translation exists for these in the source).
+  testimonials: [
+    { author: "Tayshia B.", role: "Caregiver", rating: 5, content: "I've been employed with Ideal Home Health for the past two years. I appreciate the time and efforts of their office coordinators who in my opinion go above and beyond to ensure I'm on top of keeping my documentation and training up to date. The pay is also some of the highest I've received, and I'm thankful to work here." },
+    { author: "Joseph A.", role: "Family Member", rating: 5, content: "After I moved out of New York, caring for my mother became very stressful for my sister and I. Having an aide helps us know she's safe when we can't be there. We have had an incredible experience working with Ideal Home Health, they are professional and made the process easy." },
+    { author: "Liz P.", role: "Patient", rating: 5, content: "Thank you. I'm so happy to have the help. My aide helps with my medicine, and helps me do my hair in the morning. I'm happy when I can see my grandchildren and she keeps things tidy since I can't do it. Sarah is very nice, I really, really appreciate the help." },
+  ],
+  // Was missing entirely.
+  prefooterCta: {
+    title: "Готовы больше узнать и получить необходимую помощь?",
+    description: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить именно вашей семье.",
+    button: { title: "Зарегистрируйся сегодня", href: "/ru/enroll-now" },
+    image: "/images/prefooter-vhn.jpg", // attachment id 738 — filename unverified
   },
 };
 
@@ -250,9 +303,17 @@ export const ruHowToEnrollPage = {
     { number: "03.", title: "Найдите вашего идеального помощника", description: "Мы подберем для вас идеального помощника по уходу на дому (хоуматенда) с учетом вашего состояния и потребностей." },
     { number: "04.", title: "Получите уход там где он больше всего нужен - дома.", description: "Уход за вами может начаться сразу после небольшого количества документов. Это быстрый и легкий процесс." },
   ],
+  stepsImage: "/images/steps-slider-enroll.jpg", // attachment id 726 — filename unverified
   bullets: {
     title: "Мы упрощаем получение медицинской помощи.",
+    // bullets_section_description — was missing entirely. Genuinely in
+    // English in the source (no Russian translation exists for this field),
+    // kept verbatim per identical-to-source rule.
+    description: "Home Health in New York\nWe have several options to assist you based on your level of need, lifestyle and family preferences.",
+    image: "/images/bullets-section-enroll.jpg", // attachment id 708 — filename unverified
     listTitle: "Начать работать с Ideal Home Health",
+    // bullets_list_description — was missing entirely, also English in source.
+    listDescription: "After coordinating the details with your insurance and providers, we work with your family to ensure you'll receive your desired level of care.",
     // CDPAP clause removed from the first bullet ("а также CDPAP помощник").
     items: [
       "У нас есть высококвалифицированные помощники по уходу на дому (хоуматенды) и опытные медсестра и медбратья",
@@ -264,7 +325,9 @@ export const ruHowToEnrollPage = {
   prefooterCta: {
     title: "Готовы больше узнать и получить необходимую помощь?",
     description: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить именно вашей семье.",
-    button: { title: "Свяжитесь с нами", href: "/ru/contact-us" },
+    // Was wrong: button previously said "Свяжитесь с нами" → /contact-us.
+    // Source prefooter_cta_button is actually "Зарегистрируйся сегодня" → /enroll-now.
+    button: { title: "Зарегистрируйся сегодня", href: "/ru/enroll-now" },
   },
 };
 
@@ -280,6 +343,16 @@ export const ruBecomeCaregiverPage = {
     { number: "03.", title: "Получите предложение о работе", description: "Поздравляем! Теперь вы сиделка Ideal Home Health. Мы подберём для вас подходящего пациента." },
     { number: "04.", title: "Начните оказывать помощь.", description: "Начните заботиться о пациентах." },
   ],
+  stepsImage: "/images/steps-slider-caregiver.jpg", // attachment id 889 — filename unverified
+  // Was entirely missing — a secondary text+image intro section (source
+  // ACF field group "bullets_section_*") between the steps and the bullet
+  // list. Description is genuinely in English in the source (no Russian
+  // translation exists for this field) — kept verbatim.
+  intro: {
+    title: "Мы делаем получение сертификата сиделки простым.",
+    description: "Therapy in Brooklyn, New York\nAt Ideal Home Health, we value our staff and offer high wages, training and support to help you succeed.",
+    image: "/images/bullets-section-caregiver.jpg", // attachment id 893 — filename unverified
+  },
   gettingStarted: {
     listTitle: "Начало работы с Ideal Home Health",
     listDescription: "После того как вы свяжетесь с нами и заполните заявку, мы будем работать над тем, чтобы",
@@ -296,6 +369,7 @@ export const ruBecomeCaregiverPage = {
     title: "Начните свою карьеру уже сегодня.",
     description: "Свяжитесь с нами, чтобы начать процесс становления сиделкой Ideal Home Health.",
     button: { title: "Записаться сейчас", href: "/ru/enroll-now" },
+    image: "/images/prefooter-caregiver.jpg", // attachment id 732 — filename unverified
   },
 };
 
@@ -303,30 +377,63 @@ export const ruCareersPage = {
   hero: {
     title: "Карьера",
     subtitle: "Помощник по уходу на дому (HHA) в Бруклине, Нью-Йорк",
-    description: "Если вы квалифицированный, заботливый и преданный HHA, RN, LPN или PCA и хотите продолжить карьеру в динамичной, интересной компании, Ideal Home Health — это оптимальное место для вас.",
-    image: "/images/home-health-caregiver-career.jpg",
+    // Was truncated — source ends "...чтобы осуществить вашу мечту уже сегодня!"
+    description: "Если вы квалифицированный, заботливый и преданный HHA, RN, LPN или PCA и хотите продолжить карьеру в динамичной, интересной компании, Ideal Home Health — это оптимальное место работы, чтобы осуществить вашу мечту уже сегодня!",
+    image: "/images/home-health-caregiver-career.jpg", // attachment id 893 — filename unverified
     button: { title: "Станьте сиделкой", href: "#qualifyenroll" },
   },
   benefits: {
     title: "Начните захватывающую новую карьеру с Ideal Home Health.",
     description: "Свяжитесь с нами сегодня, чтобы поговорить с нашими представителями и начать процесс регистрации.",
+    image: "/images/bullets-section-careers.jpg", // attachment id 729 — filename unverified
     listTitle: "Преимущества Ideal",
+    // Was missing entirely (bullets_list_description) — short lead-in phrase.
+    listDescription: "В Ideal Home Health,",
     items: [
       "Мы понимаем, что баланс работы и личной жизни важен, и предлагаем гибкий график смен, чтобы подстроиться под ваш распорядок.",
       "Мы упрощаем оплату и настраиваем прямое перечисление на ваш банковский счет.",
       "Мы предлагаем щедрый пакет льгот.",
-      "У нас самая удобная рабочая среда с координаторами, которые направляют вас в ближайшее удобное место и всегда на связи.",
-      "Мы полностью преданы нашему персоналу, всегда учитываем его интересы и оказываем поддержку.",
-      "Мы обслуживаем этнически разнообразных клиентов, для нас важны билингвальные помощники.",
+      // Following 3 items were truncated — restored full source sentences.
+      "У нас самая удобная рабочая среда с координаторами, которые направляют вас в ближайшее удобное место и всегда на связи, чтобы помочь с любыми вопросами.",
+      "Мы полностью преданы нашему персоналу, всегда учитываем его интересы и оказываем поддержку, что отражается в высокой лояльности сотрудников к Ideal Home Health.",
+      "Мы обслуживаем этнически разнообразных клиентов, для нас важны билингвальные помощники, и мы приветствуем культурное и этническое разнообразие.",
     ],
   },
+  // This entire section was wrong — title and content were mistranslated/
+  // fabricated. Real source lives as raw Gutenberg blocks in the page's
+  // content:encoded (id="qualifyenroll" section), not in ACF/postmeta, which
+  // is why it was missed initially. Real title is "Подхожу ли я?" and there
+  // are genuinely two separate qualifying lists on this page — one for
+  // people seeking care, one for people wanting to become a caregiver.
   qualify: {
-    title: "Имею ли я право?",
-    subtitle: "Чтобы стать сиделкой:",
-    items: ["Вам 18 или больше?", "У вас есть разрешение на работу в США?", "Вы заинтересованы в получении оплаты более $21.64 / час?"],
-    formTitle: "Заявка на должность сиделки",
+    title: "Подхожу ли я?",
+    patientSubtitle: "Чтобы получить уход:",
+    patientItems: [
+      "Вы имеете право на Medicaid или думаете, что можете иметь?",
+      "Вы живёте в Нью-Йорке?",
+      "Вам нужна помощь в повседневных делах, таких как готовка, уборка и личный уход?",
+    ],
+    caregiverSubtitle: "Чтобы заботиться о ком-то:",
+    caregiverItems: [
+      "Вам 18 лет или больше?",
+      "У вас есть разрешение на работу в США?",
+      "Хотите зарабатывать более $21.64/час?",
+    ],
+    formTitle: "Заявка на работу сиделкой",
   },
-  jobs: [{ title: "Помощник по уходу на дому (HHA)", label: "ПОЛНАЯ / ЧАСТИЧНАЯ ЗАНЯТОСТЬ", location: "БРУКЛИН, НЬЮ-ЙОРК" }],
+  // Was missing entirely — source has a "locations" ACF block on this page.
+  locations: {
+    label: "обслуживаемые районы",
+    title: "Обслуживаем все районы и округа Нью-Йорка",
+    description: "Для удобства сиделок и ваших семей у нас есть офис рядом с домом. Ideal Home Health предоставляет лучший уход на дому, услуги компаньона, домработницы, терапии и медсестёр во всех пяти районах Нью-Йорка: Куинс, Бруклин, Манхэттен, Статен-Айленд и Бронкс.",
+    button: { title: "Свяжитесь с нами", href: "/ru/enroll-now" },
+  },
+  jobs: {
+    sectionTitle: "Список вакансий",
+    items: [
+      { title: "Помощник по уходу на дому (HHA)", label: "ПОЛНАЯ / ЧАСТИЧНАЯ ЗАНЯТОСТЬ", location: "БРУКЛИН, НЬЮ-ЙОРК", button: { title: "Подробнее", href: "https://www.indeed.com/m/viewjob?jk=7a68356e36b7bd4a&from=native" } },
+    ],
+  },
 };
 
 export const ruConditionsPage = {
@@ -336,19 +443,23 @@ export const ruConditionsPage = {
     image: "/images/in-home-health-care-nyc.jpg",
   },
   cards: [
-    { title: "Диабет", description: "Наши квалифицированные хоуматенды могут обеспечить надлежащее лечение диабета, чтобы помочь вам жить более счастливой и здоровой жизнью.", slug: "diabetes" },
+    // "хоматенды" is a typo in the source (missing "у") — preserved verbatim.
+    { title: "Диабет", description: "Наши квалифицированные хоматенды могут обеспечить надлежащее лечение диабета, чтобы помочь вам жить более счастливой и здоровой жизнью.", slug: "diabetes" },
     { title: "Инсульт", description: "Жизнь после инсульта может стать лучше с помощью помощника, который понимает, что ваше выздоровление является приоритетом номер один.", slug: "stroke" },
     { title: "Болезнь Альцгеймера / Деменция", description: "Мы обеспечиваем безопасность членов вашей семьи, заботясь о потребности в уходе за памятью, и помогаем им найти комфорт в повседневной жизни.", slug: "alzheimers-dementia" },
     { title: "Эпилепсия", description: "Эпилепсия может произойти мгновенно, мы можем быть рядом, чтобы обеспечить вашу безопасность, когда вам это нужно больше всего.", slug: "epilepsy" },
     { title: "Предотвращение падений", description: "Предотвращение падений может спасти вашу жизнь, снизить риск потенциальных осложнений и помочь вам сохранить или улучшить свою мобильность.", slug: "fall-prevention" },
-    { title: "Помощь с ежедневной рутиной", description: "Наши высококвалифицированные помощники по уходу на дому окажут вам помощь в повседневной жизни, чтобы вы продолжали заниматься любимым делом.", slug: "help-with-daily-tasks" },
+    { title: "Помощь с ежедневной рутиной", description: "Наши высококвалифицированные помощники по уходу на дому (хоуматенды) окажут вам помощь в повседневной жизни и чтобы вы продолжали заниматься вашим любимым делом.", slug: "help-with-daily-tasks" },
     { title: "Болезнь Паркинсона", description: "Наши высококвалифицированные помощники по уходу на дому специализируются по уходу за болезнью Паркинсона, помогая вам добиться наилучшего качества жизни.", slug: "parkinsons" },
     { title: "Артрит", description: "Когда перемещение вызывает у вас боль, мы можем помочь вам заниматься любимым делом с индивидуальным подходом к вашим потребностям.", slug: "arthritis" },
-    { title: "Поможем поднять и перенести", description: "У нас есть обученные специалисты, чтобы безопасно и надежно перемещать пациентов, во избежание ненужных травм и стресса.", slug: "lifting-and-transferring" },
-    { title: "Уход и забота 24/7", description: "Если вам нужна круглосуточная помощь, наши опытные помощники по уходу на дому могут быть рядом с вами, когда вы в нас больше всего нуждаетесь.", slug: "live-in-24-hour-care" },
-    { title: "Постбольничный уход", description: "После пребывания в больнице наши высококвалифицированные помощники по уходу на дому помогут вам соблюдать график выздоровления и как можно быстрее восстановиться.", slug: "post-hospital-care" },
-    { title: "Опора для инвалидного кресла / кровати", description: "Если член вашей семьи прикован к инвалидной коляске или к кровати, доверьтесь нашему высококвалифицированному специалисту.", slug: "wheel-chair-bed-bound-support" },
-    { title: "Индивидуальный уход", description: "Если ваши потребности и состояние требуют специального ухода или внимания, то наши сертифицированные мед.братья и мед.сестра помогут вам и вашей семье.", slug: "individualized-care" },
+    // Grid teaser title genuinely differs from the linked page's own title
+    // ("Поможем поднять и перенести") in the source — preserved as-is, both
+    // are real source text, just for different contexts (teaser vs. full page).
+    { title: "Подъем и перенос", description: "У нас есть обученные специалисты, чтобы безопасно и надежно перемещать пациентов, во избежание ненужных травм и стресса.", slug: "lifting-and-transferring" },
+    { title: "Круглосуточный уход", description: "Если вам нужна круглосуточная помощь, наши опытные помощники по уходу на дому (хоуматенды) могут быть рядом с вами, когда вы в нас больше всего нуждаетесь.", slug: "live-in-24-hour-care" },
+    { title: "Постбольничный уход", description: "После пребывания в больнице наши высококвалифицированные помощники по уходу на дому (хоуматенды) помогут вам соблюдать график выздоровления и как можно быстрее прийти в форму.", slug: "post-hospital-care" },
+    { title: "Уход за пациентами кто использует инвалидные кресла и кто прикован к кровати", description: "Если член вашей семьи прикован к инвалидной коляске или к кровати, доверьтесь нашему высококвалифицированному специалисту, который поможет ему безопасно перемещаться по своему пространству и выполнять повседневные дела.", slug: "wheel-chair-bed-bound-support" },
+    { title: "Индивидуальный уход", description: "Если ваши потребности и состояние требуют специального ухода или внимания, то наши сертифицированные мед.братья и мед.сестра помогут вам и вашей семье разработать индивидуальный план по уходу за вами.", slug: "individualized-care" },
   ],
   prefooterCta: {
     title: "Готовы больше узнать и получить необходимую помощь?",
@@ -366,6 +477,8 @@ export const ruContactUsPage = {
     ],
     links: [
       { prefix: "Если вы хотите стать пациентом или опекуном, ", label: "зарегистрируйтесь сегодня.", href: "/ru/enroll-now" },
+      // Was missing entirely — third sentence in contact_banner_title_description.
+      { prefix: "Если вы ищете информацию о карьере в Ideal HH, не связанной с опекой пациентов, ", label: "просмотрите наш список вакансий.", href: "/ru/careers" },
     ],
   },
   officeCards: [
@@ -381,13 +494,24 @@ export const ruContactUsPage = {
 };
 
 export const ruEnrollNowPage = {
-  hero: { title: "Зарегистрируйтесь сегодня" },
+  hero: {
+    label: "Ideal Home Health",
+    title: "Зарегистрируйтесь сегодня",
+    highlight: "сегодня",
+    // Genuinely a small English H1 embedded inside the Russian description
+    // field in the source — kept as-is.
+    subheading: "Home Health Aide in New York",
+    description: "Наши опекуны помогут вам вести более счастливый и здоровый образ жизни. Позвоните нам прямо сейчас, чтобы поговорить с представителем Ideal Home Health и узнать, как мы можем улучшить ваше обслуживание.",
+    phone: "(718) 517 - 2424",
+  },
   // Source has a genuine copy-paste bug: both the patient and caregiver
-  // qualification sections are labeled "Чтобы заботиться о ком-то:" in the
-  // original CMS data. Preserved as-is (not corrected) to stay faithful to
-  // what's actually in the export.
+  // qualification lists are labeled "Чтобы заботиться о ком-то:" in the
+  // original CMS data, and both sit under a single shared title "Имею ли я
+  // право?" — there is no second heading ("Готовы стать сиделкой?" was
+  // fabricated in a previous pass and has been removed). Preserved as-is to
+  // stay faithful to what's actually in the export.
+  qualifyTitle: "Имею ли я право?",
   patientSection: {
-    title: "Имею ли я право?",
     subtitle: "Чтобы заботиться о ком-то:",
     questions: [
       "Имеете ли вы право на участие в программе Medicaid или думаете, что можете?",
@@ -396,9 +520,8 @@ export const ruEnrollNowPage = {
     ],
   },
   caregiverSection: {
-    title: "Готовы стать сиделкой?",
     subtitle: "Чтобы заботиться о ком-то:",
-    questions: ["Вам 18 или больше?", "У вас есть разрешение на работу в США?", "Вы заинтересованы в получении оплаты более $21.64/час?"],
+    questions: ["Вам 18 или больше?", "У вас есть разрешение на работу в США?", "Вы заинтересованы в получении оплаты более $ 21.64 / час?"],
   },
   formSection: { title: "Зарегистрируйтесь сегодня" },
   prefooterCta: {
@@ -409,15 +532,36 @@ export const ruEnrollNowPage = {
 };
 
 export const ruBenefitsPage = {
+  // Was missing entirely — a separate hero-style banner (source
+  // "home_banner_*" fields) that sits above the main hero_banner section
+  // on this specific page. Both are genuinely present in the source.
+  homeBanner: {
+    title: "Ideal Home Health: услуги по уходу на дому с заботой и вниманием в Нью-Йорке",
+    highlight: "Услуги по уходу на дому с заботой и вниманием",
+    description: "Воспользуйтесь услугами Ideal Home Health — это заботливый и высококачественный уход на дому прямо у вас дома. Являясь ведущим аккредитованным агентством по уходу на дому в Нью-Йорке, мы стремимся предоставлять индивидуальные решения по уходу на дому, которые помогут вам вести самостоятельную и комфортную жизнь. Независимо от того, нужна ли вам помощь в повседневных делах или специализированная поддержка, наша преданная своему делу команда всегда готова прийти вам на помощь. Узнайте о преимуществах Ideal уже сегодня.",
+    primaryButton: { title: "Станьте опекуном", href: "/ru/careers/#qualifyenroll" },
+    secondaryButton: { title: "Подать заявку на услуги по уходу на дому", href: "/ru/enroll-now" },
+  },
   hero: {
     label: "Ideal Home Health",
     title: "Услуги по уходу на дому, покрываемые программами Medicaid и Medicare",
-    description: "Воспользуйтесь надежными услугами по уходу на дому в Нью-Йорке, включающими индивидуальную поддержку, помощь с транспортом, легкую уборку, напоминания о приеме лекарств и многое другое.",
+    // Was truncated — source ends "...доступно для пожилых людей, имеющих
+    // право на участие в программах Medicaid и Medicare."
+    description: "Воспользуйтесь надежными услугами по уходу на дому в Нью-Йорке, включающими индивидуальную поддержку, помощь с транспортом, легкую уборку, напоминания о приеме лекарств и многое другое — доступно для пожилых людей, имеющих право на участие в программах Medicaid и Medicare.",
+    phone: "(718) 517-2424",
+    // Was missing entirely (hero_banner_badges).
+    badges: [
+      { bold: "220 долларов в месяц", normal: "для подходящих товаров повседневного спроса" },
+      { bold: "До 360 долларов в год", normal: "в программе поощрений за здоровый образ жизни" },
+      { bold: "Круглосуточная поддержка", normal: "для надежных опекунов" },
+    ],
+    primaryButton: { title: "Зарегистрироваться сейчас", href: "/ru/enroll-now" },
   },
   qualify: {
     cardTitle: "Вы можете иметь право на участие, если",
     heading: "Сколько стоит уход на дому от компании Ideal Home Health?",
-    description: "Для многих пожилых жителей Нью-Йорка, отвечающих установленным критериям, услуги по уходу на дому от Ideal Home Health могут быть предоставлены без каких-либо затрат из собственного кармана в рамках программ Medicaid и Medicare.",
+    // Was missing the second paragraph entirely.
+    description: "Для многих пожилых жителей Нью-Йорка, отвечающих установленным критериям, услуги по уходу на дому от Ideal Home Health могут быть предоставлены без каких-либо затрат из собственного кармана в рамках программ Medicaid и Medicare.\n\nВместо того чтобы предлагать семьям выбирать пакет услуг с почасовой оплатой, мы сначала проверяем, имеете ли вы или ваш близкий право на получение льгот по уходу на дому, покрываемых страховкой.",
     button: { title: "Проверить, имею ли я право на участие", href: "/ru/enroll-now" },
     items: ["Вам 55 лет или больше", "У вас есть страховка Medicaid и Medicare", "Вы живете в Бруклине, Бронксе, Квинсе, Стэйтен-Айленде или Нью-Йорке", "Вам нужна помощь в повседневных делах"],
   },
@@ -445,11 +589,12 @@ export const ruBenefitsPage = {
     button: { title: "Зарегистрируйтесь сейчас", href: "/ru/enroll-now" },
     // CDPAP clause removed from step 3 ("либо поможем вам зарегистрировать
     // ... в качестве лица, осуществляющего уход по программе CDPAP").
+    // Steps 1, 2, and 4 were all truncated — restored full source sentences.
     items: [
-      { number: "01.", title: "Свяжитесь с нами", description: "Свяжитесь с нами, чтобы обсудить свои потребности со специалистом по работе с клиентами Ideal Home Health, и мы поможем вам сделать первый шаг." },
-      { number: "02.", title: "Мы поможем вам согласовать все детали", description: "Мы поможем вам со всем необходимым оформлением документов, включая проверку права на участие в программе Medicaid." },
+      { number: "01.", title: "Свяжитесь с нами", description: "Свяжитесь с нами, чтобы обсудить свои потребности со специалистом по работе с клиентами Ideal Home Health, и мы ответим на ваши вопросы и поможем вам сделать первый шаг." },
+      { number: "02.", title: "Мы поможем вам согласовать все детали", description: "Мы поможем вам со всем необходимым оформлением документов, включая проверку права на участие в программе Medicaid, запись на государственные обследования и координацию действий с врачами, чтобы упростить весь процесс." },
       { number: "03.", title: "Найдите своего идеального помощника", description: "Мы подберем для вас сертифицированного помощника, который идеально подойдет с учетом вашего конкретного состояния и потребностей." },
-      { number: "04.", title: "Получить медицинскую помощь", description: "Ваше индивидуальное обслуживание может начаться сразу же после оформления всех необходимых документов." },
+      { number: "04.", title: "Получить медицинскую помощь", description: "Ваше индивидуальное обслуживание может начаться сразу же после оформления всех необходимых документов. Это быстрая и простая процедура, призванная обеспечить вам необходимую помощь без лишних задержек." },
     ],
   },
   whyChoose: {
@@ -464,8 +609,22 @@ export const ruBenefitsPage = {
   quote: {
     label: "«Заботимся о вас, как о родных».",
     title: "Забота, как в семье",
-    description: "В Ideal Home Health мы подходим к уходу индивидуально. Мы помогаем пожилым людям чувствовать себя в безопасности, получать необходимую поддержку и жить с комфортом в своей семье.",
+    // Was truncated — source ends "...даря при этом их близким душевное
+    // спокойствие."
+    description: "В Ideal Home Health мы подходим к уходу индивидуально. Мы помогаем пожилым людям чувствовать себя в безопасности, получать необходимую поддержку и жить с комфортом в своей семье, даря при этом их близким душевное спокойствие.",
   },
+  // Was missing entirely — source has both a "locations" ACF block and a
+  // separate "services" (office cards) block on this page.
+  locations: {
+    label: "Идеальное домашнее здравоохранение",
+    title: "Услуги по уходу на дому в Нью-Йорке",
+    description: "Компания «Ideal Home Health» предоставляет услуги по уходу на дому для пожилых людей и семей, имеющих на это право, по всему Нью-Йорку.",
+    button: { title: "Свяжитесь с нами", href: "/ru/contact-us" },
+  },
+  officeCards: [
+    { title: "Услуги в Бруклине", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", button: { title: "Услуги в Бруклине", href: "/ru/locations/brooklyn" } },
+    { title: "Услуги в Бронксе", address: "391 East 149th Street, Suite 515, Bronx, NY 10455", button: { title: "Услуги в Бронксе", href: "/ru/locations/bronx" } },
+  ],
   prefooterCta: {
     title: "Узнайте, имеете ли вы право на бесплатный уход на дому",
     description: "Свяжитесь с нами сегодня, чтобы получить бесплатную консультацию и обсудить индивидуальный план ухода на дому, идеально подходящий для вашей семьи в Нью-Йорке.",
