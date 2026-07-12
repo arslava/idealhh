@@ -1,39 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="fixes">
-      <change afterPath="$PROJECT_DIR$/app/es/about-us/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/carreras/convertirse-en-un-cuidador-de-ideal-home-health/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/carreras/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/conditions/[slug]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/contact-us/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/enroll-now/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/home-care-benefits/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/how-to-enroll/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/services/conditions/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/services/home-health-aide/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/services/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/es/services/visiting-home-nurse/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ru/careers/become-a-caregiver/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ru/льготы-по-уходу-на-дому/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CaregiverApplicationFormEs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ContactFormEs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/EnrollNowFormEs.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/copy-wp-images.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/conditions.es.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/slug-map.ts" afterDir="false" />
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/home-care-benefits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/home-care-benefits/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/FooterRu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/FooterRu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/conditions.ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/conditions.ru.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/content.es.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/content.es.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/content.ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/content.ru.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nav.es.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nav.es.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/nav.ru.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/nav.ru.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/copy-wp-images.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/copy-wp-images.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.tsbuildinfo" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -431,7 +400,21 @@
       <option name="project" value="LOCAL" />
       <updated>1783818206447</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="spanish and fixes">
+      <created>1783863853472</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1783863853472</updated>
+    </task>
+    <task id="LOCAL-00047" summary="spanish and fixes">
+      <created>1783863906499</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1783863906499</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -451,14 +434,15 @@
     <MESSAGE value="resend" />
     <MESSAGE value="russian" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="spanish and fixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="spanish and fixes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783863852912">
+    <state x="448" y="126" key="CommitChangelistDialog2" timestamp="1783863905576">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783863852912" />
+    <state x="448" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783863905576" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783863901600">
       <screen x="0" y="23" width="1920" height="1002" />
