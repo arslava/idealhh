@@ -22,14 +22,18 @@ export const navRu = [
     ],
   },
   // Was "Льготы" — real nav_menu_item label is "Льготы по уходу".
-  { label: "Льготы по уходу", href: "/ru/home-care-benefits" },
+  // Real live slug is Cyrillic: /ru/льготы-по-уходу-на-дому/ (was wrongly
+  // using the English "/ru/home-care-benefits" slug).
+  { label: "Льготы по уходу", href: "/ru/льготы-по-уходу-на-дому" },
   {
     // Was "Карьера" — real nav_menu_item label is "Вакансии".
     label: "Вакансии",
     href: "/ru/careers",
     children: [
       // Was "Станьте сиделкой" — real label is "Процесс найма".
-      { label: "Процесс найма", href: "/ru/careers/how-it-works-caregivers" },
+      // Real live slug is /ru/careers/become-a-caregiver/ (was wrongly
+      // reusing the English "how-it-works-caregivers" slug).
+      { label: "Процесс найма", href: "/ru/careers/become-a-caregiver" },
       // Was missing — a second real submenu item ("Открытые позиции") that
       // links back to the careers page itself in the source.
       { label: "Открытые позиции", href: "/ru/careers" },

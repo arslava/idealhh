@@ -4,61 +4,73 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Globe, ChevronDown } from "lucide-react";
+import { slugMap, conditionSlugMap, type SlugEntry } from "@/lib/slug-map";
 
-// Routes that exist under /ru/ (relative path, no leading/trailing slash;
-// "" = homepage). Condition detail pages live at /ru/conditions/{slug}
-// (not nested under /ru/services/), matching the real site's URL structure
-// — only the conditions overview page itself is nested under /services/.
-const RU_ROUTES = new Set([
-  "", "about-us", "about-us/testimonials-reviews",
-  "careers", "careers/how-it-works-caregivers",
-  "contact-us", "enroll-now", "home-care-benefits", "how-to-enroll",
-  "services", "services/conditions", "services/home-health-aide", "services/visiting-home-nurse",
-]);
-const RU_CONDITION_SLUGS = new Set([
-  "alzheimers-dementia", "arthritis", "diabetes", "epilepsy", "fall-prevention",
-  "help-with-daily-tasks", "individualized-care", "lifting-and-transferring",
-  "live-in-24-hour-care", "parkinsons", "post-hospital-care", "stroke",
-  "wheel-chair-bed-bound-support",
-]);
+type Locale = "en" | "ru" | "es";
 
-// Routes that exist under /es/. Only 11 of the 13 condition slugs have a
-// Spanish translation in the source — diabetes and stroke were never
-// translated (confirmed against the export), so those two fall back to
-// the Spanish homepage rather than a broken link.
-const ES_ROUTES = new Set([
-  "", "about-us", "about-us/testimonials-reviews",
-  "careers", "careers/how-it-works-caregivers",
-  "contact-us", "enroll-now", "home-care-benefits", "how-to-enroll",
-  "services", "services/conditions", "services/home-health-aide", "services/visiting-home-nurse",
-]);
-const ES_CONDITION_SLUGS = new Set([
-  "alzheimers-dementia", "arthritis", "epilepsy", "fall-prevention",
-  "help-with-daily-tasks", "individualized-care", "lifting-and-transferring",
-  "live-in-24-hour-care", "parkinsons", "post-hospital-care",
-  "wheel-chair-bed-bound-support",
-]);
+// Reverse index: internal EN relPath -> its slugMap entry, built once.
+// Lets us go from "the EN page currently open" to "what's the real RU/ES
+// URL for this same page" without assuming any slug string is shared.
+const byEnPath: Record<string, SlugEntry> = Object.fromEntries(
+  Object.values(slugMap).map((entry) => [entry.en, entry])
+);
 
-function isRouteValid(relPath: string, routes: Set<string>, conditionSlugs: Set<string>): boolean {
-  if (routes.has(relPath)) return true;
-  const match = relPath.match(/^conditions\/([^/]+)$/);
-  return match ? conditionSlugs.has(match[1]) : false;
+function pathFor(entry: SlugEntry | undefined, locale: Locale): string | null {
+  if (!entry) return null;
+  const value = entry[locale];
+  if (value === null) return null;
+  const prefix = locale === "en" ? "" : `/${locale}`;
+  return value ? `${prefix}/${value}` : prefix || "/";
 }
 
 function useLanguageLinks() {
   const pathname = usePathname() || "/";
   const isRu = pathname === "/ru" || pathname.startsWith("/ru/");
   const isEs = pathname === "/es" || pathname.startsWith("/es/");
-  const current = isRu ? "ru" : isEs ? "es" : "en";
+  const current: Locale = isRu ? "ru" : isEs ? "es" : "en";
 
   const relPath =
     current === "ru" ? pathname.replace(/^\/ru\/?/, "") :
     current === "es" ? pathname.replace(/^\/es\/?/, "") :
     pathname.replace(/^\//, "");
 
-  const enHref = relPath ? `/${relPath}` : "/";
-  const ruHref = relPath === "" || isRouteValid(relPath, RU_ROUTES, RU_CONDITION_SLUGS) ? (relPath ? `/ru/${relPath}` : "/ru") : "/ru";
-  const esHref = relPath === "" || isRouteValid(relPath, ES_ROUTES, ES_CONDITION_SLUGS) ? (relPath ? `/es/${relPath}` : "/es") : "/es";
+  // Is this a condition detail page? Its relPath under the current locale
+  // uses that locale's own slug, so we first have to find the EN slug it
+  // corresponds to before we can look up the other two locales.
+  const conditionMatch = relPath.match(/^conditions\/([^/]+)$/);
+  let enSlug: string | null = null;
+  if (conditionMatch) {
+    const localSlug = conditionMatch[1];
+    if (current === "en") {
+      enSlug = localSlug;
+    } else {
+      const found = Object.entries(conditionSlugMap).find(
+        ([, v]) => v[current] === localSlug
+      );
+      enSlug = found ? found[0] : null;
+    }
+  }
+
+  let enHref: string, ruHref: string, esHref: string;
+
+  if (enSlug) {
+    const c = conditionSlugMap[enSlug];
+    enHref = `/conditions/${enSlug}`;
+    ruHref = c?.ru ? `/ru/conditions/${c.ru}` : "/ru/services/conditions";
+    esHref = c?.es ? `/es/conditions/${c.es}` : "/es/services/conditions";
+  } else {
+    // Regular page: find its slugMap entry via the EN path.
+    const enRelPath =
+      current === "en" ? relPath : (() => {
+        const found = Object.values(slugMap).find((e) => e[current] === relPath);
+        return found?.en ?? null;
+      })();
+    const entry = enRelPath !== null ? byEnPath[enRelPath] : undefined;
+
+    enHref = pathFor(entry, "en") ?? (relPath ? `/${relPath}` : "/");
+    ruHref = pathFor(entry, "ru") ?? "/ru";
+    esHref = pathFor(entry, "es") ?? "/es";
+  }
 
   return {
     current,

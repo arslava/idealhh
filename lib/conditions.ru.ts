@@ -20,7 +20,7 @@ export type RuConditionPage = {
 
 export const ruConditionPages: RuConditionPage[] = [
   {
-    slug: "individualized-care",
+    slug: "индивидуальный-уход",
     title: "Индивидуальный уход",
     heroDescription: "Если ваши потребности и состояние требуют специального ухода или внимания, то наши сертифицированные мед.братья и мед.сестра помогут вам и вашей семье разработать индивидуальный план по уходу за вами.",
     heroImage: "/images/conditions/individualized-care-plan-new-york-city.jpg",
@@ -37,7 +37,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами, чтобы обсудить уникальные потребности вашей семьи.",
   },
   {
-    slug: "wheel-chair-bed-bound-support",
+    slug: "опора-для-инвалидного-кресла-кровати",
     title: "Опора для инвалидного кресла / кровати",
     heroDescription: "Если член вашей семьи прикован к инвалидной коляске или к кровати, доверьтесь нашему высококвалифицированному специалисту, который поможет ему безопасно перемещаться по своему пространству и выполнять повседневные дела.",
     heroImage: "/images/conditions/home-care-for-wheelchair-bound-patients-nyc.jpg",
@@ -54,7 +54,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами, чтобы обсудить уникальные потребности вашей семьи.",
   },
   {
-    slug: "post-hospital-care",
+    slug: "постбольничный-уход",
     title: "Постбольничный уход",
     heroDescription: "После пребывания в больнице наши высококвалифицированные помощники по уходу на дому (хоуматенды) помогут вам соблюдать график выздоровления и как можно быстрее прийти в форму.",
     heroImage: "/images/conditions/post-hospital-care-new-york-city.jpg",
@@ -71,7 +71,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами, чтобы обсудить уникальные потребности вашей семьи.",
   },
   {
-    slug: "live-in-24-hour-care",
+    slug: "уход-и-забота-24-7",
     title: "Уход и забота 24/7",
     heroDescription: "Если вам нужна круглосуточная помощь, наши опытные помощники по уходу на дому (хоуматенды) могут быть рядом с вами, когда вы в нас больше всего нуждаетесь.",
     heroImage: "/images/conditions/24-hour-live-in-care-new-york-city.jpg",
@@ -88,7 +88,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить именно вашей семье.",
   },
   {
-    slug: "lifting-and-transferring",
+    slug: "поможем-поднять-и-перенести",
     title: "Поможем поднять и перенести",
     heroDescription: "У нас есть обученные специалисты, чтобы безопасно и надежно перемещать пациентов, во избежание ненужных травм и стресса.",
     heroImage: "/images/conditions/in-home-patient-lifting-and-transferring-nyc.jpg",
@@ -105,7 +105,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами, чтобы обсудить уникальные потребности вашей семьи.",
   },
   {
-    slug: "arthritis",
+    slug: "артрит",
     title: "Артрит",
     heroDescription: "Когда перемещение вызывает у вас боль, мы можем помочь вам заниматься любимым делом с индивидуальным подходом к вашим потребностям.",
     heroImage: "/images/conditions/in-home-arthritis-care-nyc.jpg",
@@ -139,7 +139,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить вашей семье.",
   },
   {
-    slug: "help-with-daily-tasks",
+    slug: "помощь-с-ежедневной-рутиной-2",
     title: "Помощь с ежедневной рутиной",
     heroDescription: "Наши высококвалифицированные помощники по уходу на дому (хоуматенды) окажут вам помощь в повседневной жизни и чтобы вы продолжали заниматься вашим любимым делом.",
     heroImage: "/images/conditions/help-with-daily-tasks-nyc.jpg",
@@ -156,7 +156,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить вашей семье.",
   },
   {
-    slug: "fall-prevention",
+    slug: "предотвращение-падений",
     title: "Предотвращение падений",
     heroDescription: "Предотвращение падений может спасти вашу жизнь, снизить риск потенциальных осложнений и помочь вам сохранить или улучшить свою мобильность.",
     heroImage: "/images/conditions/in-home-fall-prevention-and-safety-care-nyc.jpg",
@@ -173,7 +173,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить вашей семье.",
   },
   {
-    slug: "epilepsy",
+    slug: "эпилепсия",
     title: "Эпилепсия",
     heroDescription: "Эпилепсия может произойти мгновенно, мы можем быть рядом, чтобы обеспечить вашу безопасность, когда вам это нужно больше всего.",
     heroImage: "/images/conditions/in-home-epilepsy-care-nyc.jpg",
@@ -207,7 +207,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить вашей семье.",
   },
   {
-    slug: "stroke",
+    slug: "инсульт",
     title: "Инсульт",
     heroDescription: "Жизнь после инсульта может стать лучше с помощью помощника, который понимает, что ваше выздоровление является приоритетом номер один.",
     heroImage: "/images/conditions/in-home-stroke-care-and-recovery-nyc-1.jpg",
@@ -224,7 +224,7 @@ export const ruConditionPages: RuConditionPage[] = [
     prefooterDescription: "Свяжитесь с нами сегодня чтобы обсудить план по обслуживанию который будет подходить вашей семье.",
   },
   {
-    slug: "diabetes",
+    slug: "диабет",
     title: "Диабет",
     heroDescription: "Наши квалифицированные хоматенды могут обеспечить надлежащее лечение диабета, чтобы помочь вам жить более счастливой и здоровой жизнью.",
     heroImage: "/images/conditions/in-home-diabetic-care-nyc.jpg",

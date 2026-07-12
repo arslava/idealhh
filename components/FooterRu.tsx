@@ -60,7 +60,7 @@ export default function FooterRu() {
             <li><Link href="/ru/about-us/testimonials-reviews" className={linkClass}>Свидетельства и отзывы</Link></li>
             {/* Was pointing to /ru/careers/become-a-caregiver, a route that
                 doesn't exist in this app (404) — actual route is below. */}
-            <li><Link href="/ru/careers/how-it-works-caregivers" className={linkClass}>Станьте сиделкой</Link></li>
+            <li><Link href="/ru/careers/become-a-caregiver" className={linkClass}>Станьте сиделкой</Link></li>
           </ul>
         </div>
 

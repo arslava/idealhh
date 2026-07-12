@@ -2,10 +2,10 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
-import { benefitsPage } from "@/lib/content";
+import { esBenefitsPage } from "@/lib/content.es";
 
-export default function BenefitsPage() {
-  const { hero, qualify, included, includedImage, extras, stepsImage, steps, whyChoose, locations, officeCards, quote, prefooterCta } = benefitsPage;
+export default function EsBenefitsPage() {
+  const { hero, qualify, included, includedImage, extras, stepsImage, steps, whyChoose, locations, officeCards, quote, prefooterCta } = esBenefitsPage;
 
   return (
     <>
@@ -29,7 +29,7 @@ export default function BenefitsPage() {
             </div>
             <div className="mt-8 flex flex-wrap items-center gap-6">
               <Button href={hero.button.href} variant="primary">{hero.button.title}</Button>
-              <a href="tel:7185172424" className="text-accent font-semibold">Call us today! {hero.phone}</a>
+              <a href="tel:7185172424" className="text-accent font-semibold">¡Llámenos hoy mismo! {hero.phone}</a>
             </div>
           </div>
           <div className="relative min-h-[280px] h-full">

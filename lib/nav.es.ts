@@ -1,8 +1,12 @@
 // Real Spanish page titles and nav labels, confirmed directly from the live
 // /es/ site (fetched, not just export data). CDPAP nav item ("CDPAP" under
-// Servicio) dropped per standing rule. Internal routes use English slugs,
-// matching the existing /ru/ and /en/ pattern (not the literal Spanish
-// WordPress slugs like "/es/carreras/").
+// Servicio) dropped per standing rule.
+//
+// CORRECTED: routes now use the real live Spanish slugs (verified against
+// page-sitemap.xml / conditions-sitemap.xml hreflang alternates), not the
+// English-slug substitutes this file used previously. Most pages are
+// untranslated slugs (about-us, services, etc. — confirmed on the live
+// site), but careers/carreras and its sub-page are real Spanish slugs.
 export const navEs = [
   {
     label: "Sobre Nosotros",
@@ -25,10 +29,10 @@ export const navEs = [
   { label: "Prestaciones de asistencia a domicilio", href: "/es/home-care-benefits" },
   {
     label: "Trabajos",
-    href: "/es/careers",
+    href: "/es/carreras",
     children: [
-      { label: "Posiciones abiertas", href: "/es/careers" },
-      { label: "Proceso de contratación", href: "/es/careers/how-it-works-caregivers" },
+      { label: "Posiciones abiertas", href: "/es/carreras" },
+      { label: "Proceso de contratación", href: "/es/carreras/convertirse-en-un-cuidador-de-ideal-home-health" },
     ],
   },
   { label: "Contáctenos", href: "/es/contact-us" },
