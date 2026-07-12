@@ -55,6 +55,14 @@ export default function BecomeCaregiverPage() {
             <p className="mt-3 text-[1.375rem] text-grey-800">{gettingStarted.description}</p>
             <h3 className="mt-6 text-xl font-semibold text-navy-700">{gettingStarted.listTitle}</h3>
             <p className="mt-2 text-[1.375rem] text-grey-800">{gettingStarted.listDescription}</p>
+            <ul className="mt-4 space-y-3">
+              {gettingStarted.items.map((item) => (
+                <li key={item} className="flex gap-3 text-grey-800 leading-relaxed">
+                  <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </section>

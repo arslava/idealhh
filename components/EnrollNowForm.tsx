@@ -8,7 +8,7 @@ type Status = "idle" | "loading" | "success" | "error";
 const LANGUAGES = [
   "English", "Spanish", "Russian", "Arabic", "Mandarin", "Cantonese",
   "Haitian Creole", "French", "Hindi", "Urdu", "Albanian", "Armenian",
-  "Bengali", "Burmese", "Korean", "Italian", "Indonesian", "Nepali", "Punjabi",
+  "Bengali", "Burmese", "Cantonese", "Korean", "Italian", "Indonesian", "Nepali", "Punjabi",
 ];
 
 // Patient Enrollment form — matches the real fields on the original site's

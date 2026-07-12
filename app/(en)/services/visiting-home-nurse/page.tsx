@@ -1,8 +1,20 @@
 import Image from "next/image";
+import { Star } from "lucide-react";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { visitingHomeNursePage } from "@/lib/content";
+import { conditionTestimonials } from "@/lib/conditions";
+
+function Stars({ rating }: { rating: number }) {
+  return (
+    <div className="flex gap-0.5">
+      {Array.from({ length: 5 }).map((_, i) => (
+        <Star key={i} size={16} className={i < rating ? "fill-accent text-accent" : "text-navy-muted/30"} />
+      ))}
+    </div>
+  );
+}
 
 export default function VisitingHomeNursePage() {
   const { hero, bullets, prefooterCta } = visitingHomeNursePage;
@@ -52,6 +64,27 @@ export default function VisitingHomeNursePage() {
         </div>
         <div className="relative rounded-[49px] overflow-hidden aspect-[4/3]">
           <Image src={bullets.image} alt={bullets.title} fill className="object-cover" />
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1140px] px-4 py-16">
+        <p className="text-accent text-sm font-semibold uppercase tracking-wide text-center">what others are saying</p>
+        <div className="mt-8 grid md:grid-cols-3 gap-6">
+          {conditionTestimonials.map((t) => (
+            <div key={t.author} className="rounded-3xl bg-white border border-navy-900/10 overflow-hidden shadow-[0_20px_40px_rgba(56,75,116,0.08)] flex flex-col">
+              <div className="relative aspect-[4/3]">
+                <Image src={t.image} alt={t.author} fill className="object-cover" />
+              </div>
+              <div className="p-6 flex flex-col flex-1">
+                <Stars rating={t.rating} />
+                <p className="mt-3 text-[1.0625rem] text-grey-800 leading-relaxed flex-1">&ldquo;{t.content}&rdquo;</p>
+                <div className="mt-4">
+                  <p className="font-semibold text-navy-800">{t.author}</p>
+                  <p className="text-sm text-navy-muted">{t.role}</p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 

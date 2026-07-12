@@ -2,12 +2,12 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
-import { locations, prefooterDefault } from "@/lib/content";
+import { locations } from "@/lib/content";
 
 type LocationKey = keyof typeof locations;
 
 export default function LocationPageContent({ locationKey }: { locationKey: LocationKey }) {
-  const { hero, services, whyChoose, name } = locations[locationKey];
+  const { hero, services, whyChoose, name, prefooterCta } = locations[locationKey];
 
   return (
     <>
@@ -76,11 +76,7 @@ export default function LocationPageContent({ locationKey }: { locationKey: Loca
         </div>
       </section>
 
-      <PrefooterCta
-        title={`Ready to Start Your Home Care Journey in ${name}?`}
-        description={prefooterDefault.description}
-        button={{ title: `Contact Our ${name} Team`, href: "/contact-us" }}
-      />
+      <PrefooterCta {...prefooterCta} />
     </>
   );
 }

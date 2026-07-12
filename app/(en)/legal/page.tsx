@@ -15,7 +15,9 @@ export default function LegalPage() {
         <p>
           Ideal Home Health complies with applicable Federal civil rights laws and does not discriminate
           on the basis of race, color, national origin, age, disability, or sex (including pregnancy,
-          sexual orientation, and gender identity).
+          sexual orientation, and gender identity). Ideal Home Health does not exclude people or treat
+          them differently because of race, color, national origin, age, disability, or sex (including
+          pregnancy, sexual orientation, and gender identity).
         </p>
         <p>Ideal Home Health:</p>
         <p>Provides free aids and services to people with disabilities to communicate effectively with us, such as:</p>
@@ -49,6 +51,12 @@ export default function LegalPage() {
           </a>
           , or by phone (toll-free) at 1-800-368-1019 (1-800-537-7697 TDD), or by mail to U.S. Dept. of
           Health and Human Services, 200 Independence Avenue, SW Room 509F, HHH Building, Washington, D.C. 20201.
+        </p>
+        <p>
+          Complaint forms are available at{" "}
+          <a href="https://www.hhs.gov/ocr/complaints/index.html" target="_blank" rel="noopener noreferrer" className="text-accent underline">
+            https://www.hhs.gov/ocr/complaints/index.html
+          </a>.
         </p>
         <p>
           ATTENTION: If you speak English, language assistance services, free of charge, are available to

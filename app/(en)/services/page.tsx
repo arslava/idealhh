@@ -2,19 +2,29 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
-import { servicesPage, prefooterDefault } from "@/lib/content";
+import { servicesPage } from "@/lib/content";
 
 export default function ServicesPage() {
-  const { hero, services, whyChoose } = servicesPage;
+  const { hero, services, whyChoose, prefooterCta } = servicesPage;
 
   return (
     <>
       <section className="bg-navy-900 text-white">
-        <div className="mx-auto max-w-6xl px-6 pt-16 pb-20 md:pt-20 md:pb-24">
-          <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Services</p>
-          <h1 className="mt-4 max-w-2xl font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
-            {hero.title}
-          </h1>
+        <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
+          <div className="py-16 lg:py-20">
+            <p className="text-accent text-sm font-semibold tracking-[0.2em] uppercase">Services</p>
+            <h1 className="mt-4 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05]">
+              {hero.title}
+            </h1>
+            <p className="mt-6 max-w-xl text-[1.125rem] md:text-[1.375rem] text-white/80 leading-relaxed">{hero.description}</p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button href={hero.primaryButton.href} variant="primary">{hero.primaryButton.title}</Button>
+              <Button href={hero.secondaryButton.href} variant="secondary">{hero.secondaryButton.title}</Button>
+            </div>
+          </div>
+          <div className="relative min-h-[280px] h-full">
+            <Image src={hero.image} alt={hero.title} fill className="object-cover rounded-t-[49px] lg:rounded-[49px]" />
+          </div>
         </div>
       </section>
       <WaveDivider />
@@ -57,7 +67,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      <PrefooterCta {...prefooterDefault} />
+      <PrefooterCta {...prefooterCta} />
     </>
   );
 }

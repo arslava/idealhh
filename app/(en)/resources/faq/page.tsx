@@ -11,10 +11,9 @@ function QuestionList({ items }: { items: { question: string; answer: string }[]
             {item.question}
             <span className="text-accent text-xl shrink-0 group-open:rotate-45 transition-transform">+</span>
           </summary>
-          <p
-            className="mt-3 text-grey-800 leading-relaxed [&_a]:text-accent [&_a]:underline"
-            dangerouslySetInnerHTML={{ __html: item.answer }}
-          />
+          <p className="mt-3 text-grey-800 leading-relaxed whitespace-pre-line [&_a]:text-accent [&_a]:underline">
+            {item.answer}
+          </p>
         </details>
       ))}
     </div>
@@ -28,7 +27,11 @@ export default function FaqPage() {
     <>
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
-          <h1 className="font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-black text-navy-800">{hero.title}</h1>
+          <p className="text-accent text-sm font-semibold uppercase tracking-wide">{hero.label}</p>
+          <h1 className="mt-3 font-display text-[2.8125rem] md:text-[4.0625rem] lg:text-[5.625rem] leading-[1.05] font-black text-navy-800">{hero.title}</h1>
+          <h2 className="mt-3 text-xl md:text-2xl text-navy-700 font-semibold">{hero.subtitle}</h2>
+          <p className="mt-4 text-[1.125rem] md:text-[1.375rem] text-grey-800 leading-relaxed max-w-2xl mx-auto">{hero.description}</p>
+          <Button href={hero.button.href} className="mt-6">{hero.button.title}</Button>
         </div>
       </section>
 

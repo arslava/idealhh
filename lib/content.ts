@@ -59,15 +59,19 @@ export const nav = [
 export const homePage = {
   reviewsSection: {
     title: "What Our Clients Say: Trusted Home Care in New York",
+    // Every review below is verbatim from the live source, including
+    // grammatical errors, punctuation quirks, and emojis — an earlier pass
+    // had "cleaned up" grammar and paraphrased/shortened several of these,
+    // which is not an accurate migration.
     reviews: [
       { name: "Sherice Carraway", date: "2022-10-26", rating: 5, content: "This is the best agency so far and I'm proud to have choose them and continue to pursue with them for a while" },
       { name: "Nadine Douse", date: "2023-04-24", rating: 5, content: "Staff that I have encountered is great. If helping people is your calling, this is the Ideal company to work for." },
-      { name: "Denise Hammonds", date: "2024-01-22", rating: 5, content: "Ideal home health is the best. I have never been with an agency that was so kind and pleasant. Everyone works so well together — Yulliana and Ms. Paula especially kept communicating with me about the status of everything and assured me it was all going to be great." },
-      { name: "Dachira Rivera Ramos", date: "2024-02-15", rating: 5, content: "Very attentive and helpful, good care and equipment. (Translated from Spanish)" },
-      { name: "Youssef Elhalaby", date: "2024-04-26", rating: 5, content: "Great people, committed, very respectful, answer all questions in simple, understandable English, and follow up on every activity, helping find solutions for any issue. Special thanks to Rosemary, Annabil, and Emily." },
-      { name: "Shelby Gonzalez", date: "2024-05-25", rating: 5, content: "My experience was great. I can be a procrastinator but they stayed on me and helped me along the way." },
-      { name: "Racquel McDonald", date: "2024-08-10", rating: 5, content: "Ideal Home Health is the best agency I have ever worked with. They are very professional, always answer when you call, and help with whatever you need. Always get paid on time — I'm happy working with them." },
-      { name: "Lorraine Mullen", date: "2024-08-13", rating: 5, content: "Everyone at Ideal has been so patient, caring, helpful, kind, knowledgeable, and informative in establishing my entry into the program. Emily, Paula, and many staff went above and beyond to make sure I had a seamless experience. I am truly grateful." },
+      { name: "Denise Hammonds", date: "2024-01-22", rating: 5, content: "Ideal home health is the best 💯..I have never been with a agency that was so kind and pleasant..absolutely work so well all the ladies but there is two I must mention and that's Yulliana and none other than Ms.Paula she grab the horns of the bull and road it out.. and through it all she kept communicating as well as Yulliana to me about the status of everything..What I got from it was they assured me everything was going to be great 👍🏾...They are Magnificent at what they do and again I want to thank you from the bottom of my heart...Beautiful ladies 🤗" },
+      { name: "Dachira Rivera Ramos", date: "2024-02-15", rating: 5, content: "(Translated by Google) Very attentive and helpful, good care and equipment.\n\n(Original)\n\nMuy atentos y servicial, un buen cuidado y equipo." },
+      { name: "Youssef Elhalaby", date: "2024-04-26", rating: 5, content: "Great people, committed, very respectful, answer all questions in a very simple straight understandable English, follow up every single activity and helping finding solutions and options for any issue or difficulty you may face, thankful greatful and special thanks to Rosemary, Annabil and Emily." },
+      { name: "Shelby Gonzalez", date: "2024-05-25", rating: 5, content: "My experience was great. I can be a procrastinator but they stayed on me and helped me along the way" },
+      { name: "Racquel McDonald", date: "2024-08-10", rating: 5, content: "Ideal Home Health is the best agency have ever work with. There are very professional always answer when you call and help with whatever you need. Always get paid on time they are the best I'm happy working with them ❤️." },
+      { name: "Lorraine Mullen", date: "2024-08-13", rating: 5, content: "Everyone at Ideal has been so patient , caring, helpful, kind, knowledgeable, informative and willing to assist in establishing my entry into the program. Emily, Paula and many staff employees have gone above and beyond to help make sure I was able to have a seamless experience. I am truly grateful" },
     ],
   },
   hero: {
@@ -103,7 +107,7 @@ export const homePage = {
     items: [
       "Seniors seeking independent living assistance",
       "Individuals recovering from surgery or illness",
-      "Patients with chronic conditions, including stroke and diabetes care at home",
+      "Patients with chronic conditions (e.g., stroke, diabetes care at home)",
       "Families needing respite care",
     ],
     button: { title: "Enroll Now", href: "/enroll-now" },
@@ -138,6 +142,8 @@ export const homePage = {
     description:
       "Contact us today for a free consultation and discuss a custom home care plan perfectly suited to your family's needs in New York City.",
     button: { title: "Enroll Today", href: "/enroll-now" },
+    // attachment: ideal-home-health-care-in-new-york.jpg, confirmed via live page.
+    image: "/images/ideal-home-health-care-in-new-york.jpg",
   },
   heroImage: "/images/compassionate-home-health-care-services-nyc.jpg",
   locationsImage: "/images/Daco_924160.png",
@@ -145,11 +151,21 @@ export const homePage = {
 
 export const servicesPage = {
   hero: {
-    title: "Our Home Care Services",
+    // Was wrong — real live title is below.
+    title: "Comprehensive Home Health Care Services in New York City – Tailored to Your Needs",
+    // Was missing entirely.
+    description: "Ideal Home Health is a leading in-home health care agency in New York, providing high-quality, personalized home care services. Our trained nurses and certified home health aides empower individuals across New York City to live independently and comfortably at home.",
+    image: "/images/home-health-care-services-new-york-city.jpg",
+    primaryButton: { title: "Contact Us", href: "/contact-us" },
+    secondaryButton: { title: "Enroll Today", href: "/enroll-now" },
   },
+  // CDPAP card removed per standing rule (source has one between HHA and
+  // Visiting Nurse, linking externally to idealcdpap.com).
   services: [
     {
-      title: "Home Health Aides (HHA): Essential Daily Support",
+      // Was "Home Health Aides (HHA): Essential Daily Support" — real title
+      // uses an em dash, not parentheses.
+      title: "Home Health Aides – HHA: Essential Daily Support",
       description:
         "Our Department of Health certified Home Health Aides (HHAs) offer compassionate assistance with Activities of Daily Living (ADLs). From personal care to medication reminders, our in-home aides in NYC help maintain independence. All HHAs receive continuous training, ensuring top safety standards.",
       button: { title: "Learn More", href: "/services/home-health-aide" },
@@ -157,8 +173,10 @@ export const servicesPage = {
     },
     {
       title: "Visiting Home Nurse – Expert Skilled Nursing Care at Home",
+      // Was paraphrased — real ending is "...for your optimal health and
+      // recovery." not "...tailored to your recovery and health goals."
       description:
-        "Receive skilled nursing care in your New York City home with our licensed Visiting Home Nurses (RNs/LPNs). We offer medication management, wound care, post-operative support, chronic disease management, and more. Our nurses create custom plans tailored to your recovery and health goals.",
+        "Receive skilled nursing care in your New York City home with our licensed Visiting Home Nurses (RNs/LPNs). We offer medication management, wound care, post-operative support, chronic disease management, and more. Our nurses create custom plans of care for your optimal health and recovery.",
       button: { title: "Learn More", href: "/services/visiting-home-nurse" },
       image: "/images/visiting-home-nurse-new-york.jpg",
     },
@@ -175,14 +193,34 @@ export const servicesPage = {
     button: { title: "Enroll Now", href: "/enroll-now" },
     image: "/images/choose-ideal-home-health-care-nyc.jpg",
   },
+  // Was missing entirely.
+  prefooterCta: {
+    title: "Ready to Find Your Ideal Home Health Care Solution in New York City?",
+    description: "Discover compassionate support for your family. Contact us today for a free consultation to discuss a custom home care plan tailored to your unique needs in New York City. Let our expertise and empathy guide you.",
+    button: { title: "Enroll Now", href: "/enroll-now" },
+    image: "/images/ideal-home-health-care-new-york-city.jpg",
+  },
 };
 
 export const homeHealthAidePage = {
+  // Was missing entirely — this is the real hero. What used to be called
+  // "hero" below is actually a second section further down the page (same
+  // conflation bug found and fixed on the Russian version of this page).
   hero: {
+    label: "SERVICES",
+    title: "Certified Home Health Aides (HHAs) in New York City",
+    subtitle: "Providing Compassionate In-Home Care in All NYC Boroughs",
+    description: "Our Department of Health certified Home Health Aides (HHAs) are compassionate professionals trained to assist with your daily needs. We provide in-home care throughout New York City's boroughs, ensuring every client receives personalized attention and the highest standards of safety and care. All our aides receive continuous training in life-saving and safety services.",
+    image: "/images/certified-home-health-aides-nyc.jpg",
+    primaryButton: { title: "Enroll Now", href: "/enroll-now" },
+    secondaryButton: { title: "Contact Us", href: "/contact-us" },
+  },
+  gettingCare: {
     title: "Receive Compassionate and Skilled Care at Home",
     highlight: "at home",
     description:
       "With Ideal Home Health, you can rest easy knowing your loved one is receiving the support they need to maintain their independence in the comfort of their home. Our certified Home Health Aides are trained to assist with a variety of needs.",
+    image: "/images/certified-home-health-aides-new-york.jpg",
   },
   howTheyHelp: {
     title: "How Our Home Health Aides Help",
@@ -194,19 +232,29 @@ export const homeHealthAidePage = {
       "Promoting independence and physical activity within the home",
       "Providing compassionate care and promoting well being through kindness, teamwork and setting goals to continue living your best life!",
     ],
-    image: "/images/certified-home-health-aides-new-york.jpg",
+  },
+  // Was missing entirely.
+  prefooterCta: {
+    title: "Ready to Get the Help You Need?",
+    description: "Ready to discuss your family's unique care requirements? Contact us today to learn more about a custom care plan that's right for you.",
+    button: { title: "Enroll Now", href: "/enroll-now" },
+    image: "/images/home-health-aide-for-families-nyc.jpg",
   },
 };
 
 export const locationCards = [
   {
     name: "Brooklyn",
-    address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235",
+    subtitle: "Ideal Home Health – Brooklyn Office",
+    address: "2617 East 16th Street, Floor 2, Brooklyn, NY, 11235, US",
+    phone: "(718) 517 – 2424",
     button: { title: "Brooklyn Services", href: "/locations/brooklyn" },
   },
   {
     name: "Bronx",
-    address: "391 East 149th Street, Suite 515, Bronx, NY 10455",
+    subtitle: "Ideal Home Health – Bronx Office",
+    address: "391 East 149th Street, Suite 515, Bronx, NY, 10455, US",
+    phone: "(718) 517 – 2424",
     button: { title: "Bronx Services", href: "/locations/bronx" },
   },
 ];
@@ -262,16 +310,31 @@ export const careersPage = {
     highlight: "Career",
     description: "Contact us today to speak with our dedicated representatives to start your registration process.",
     listTitle: "Our Unmatched Caregiver Benefits",
+    // Was missing — short lead-in line before the bullet list.
+    listIntro: "At Ideal Home Health,",
     image: "/images/home-health-caregiver-career.jpg",
     items: [
       "We understand work life balance is important, and offer flexible shift options to accommodate your schedule.",
       "We make payment easy and setup direct deposit to your bank account.",
-      "We offer a generous benefits package.",
+      "We offer a generous benefits package",
       "We have the most accommodating work environment with coordinators who place you at the most convenient location that works for you and are always on call to assist with any issues at hand.",
-      "We are singularly dedicated to our staff, always having their best interest in mind every step of the way.",
-      "We serve an ethnically diverse clientele — bi-lingual aides are important to us, and we welcome cultural and ethnic diversity.",
+      // Was truncated — real sentence continues below.
+      "We are singularly dedicated to our staff, always having their best interest in mind every step of the way and display a unique measure of confidence and support which is reflected in our staff's loyalty to Ideal Home Health.",
+      "We serve an ethnically diverse clientele, bi-lingual aides are important to us, and we welcome cultural and ethnic diversity.",
     ],
   },
+  // Was missing entirely.
+  areasServed: {
+    label: "areas served",
+    title: "Serving all NYC boroughs and counties",
+    description: "For the convenience of our caregivers and clients, we have offices close to home. Ideal Home Health provides the best quality care of home health aide, companionship, housekeeper, therapy, & nursing service in the five boroughs of New York City: Queens, Brooklyn, Manhattan, Staten Island, and the Bronx.",
+    button: { title: "Apply as a Caregiver", href: "/careers/#qualifyenroll" },
+    image: "/images/Daco_924160.png",
+  },
+  officeCards: [
+    { title: "Brooklyn", address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235", phone: "(718) 517 – 2424" },
+    { title: "Bronx", address: "391 East 149th Street, Suite 515, Bronx, NY, 10455", phone: "(718) 517 – 2424" },
+  ],
   // Real content from the original site's #qualifyenroll section on this
   // page: a "Do I qualify?" checklist next to a "Caregiver Job Application"
   // form (WPForms id 3064 originally).
@@ -286,7 +349,7 @@ export const careersPage = {
     formTitle: "Caregiver Job Application",
   },
   jobs: [
-    { title: "Home Health Aide (HHA)", label: "FULL-TIME / PART-TIME", location: "BROOKLYN, NY" },
+    { title: "Home Health Aide (HHA)", label: "FULL-TIME / PART-TIME", location: "BROOKLYN, NY", button: { title: "View Job", href: "https://www.indeed.com/m/viewjob?jk=7a68356e36b7bd4a&from=native" } },
   ],
 };
 
@@ -312,6 +375,14 @@ export const becomeCaregiverPage = {
     description: "At Ideal Home Health, we value our staff by offering high wages, ongoing training, and the support you need to succeed.",
     listTitle: "Getting Started with Ideal Home Health",
     listDescription: "Once you join our team, we will work with you to:",
+    // Was missing entirely — only the heading rendered, no bullet list.
+    items: [
+      "Place you with a patient who will be a successful match.",
+      "Provide ongoing training to keep you up-to-date with required skills.",
+      "Provide coordinators who can assist you in receiving any equipment or services that will help you provide a higher level of care.",
+      "Pay some of the highest wages available for home health aides and skilled nursing caregivers.",
+      "Offer flexible scheduling and a supportive work environment.",
+    ],
     image: "/images/caregiver-at-ideal-home-health-nyc.jpg",
   },
   prefooterCta: {
@@ -348,13 +419,39 @@ export const conditionsPage = {
     { title: "Lifting & Transferring", description: "We have trained specialists to move patients safely and securely to avoid unnecessary injury and stress.", slug: "lifting-and-transferring" },
     { title: "Live In 24 Hour Care", description: "When you need assistance around the clock, our experienced home health aides can be there for you whenever you need us most.", slug: "live-in-24-hour-care" },
     { title: "Post Hospital Care", description: "After a hospital stay, our highly trained home health aides can help you follow your recovery schedule and get better as quickly as possible.", slug: "post-hospital-care" },
-    { title: "Wheelchair / Bed Bound Support", description: "If your family member is wheelchair or bed bound, trust our highly trained specialists to help them move safely through their space and complete daily tasks.", slug: "wheel-chair-bed-bound-support" },
+    { title: "Wheel chair / Bed bound support", description: "If your family member is wheel chair or bed bound, trust our highly trained specialist to help them move safely through their space and complete daily tasks.", slug: "wheel-chair-bed-bound-support" },
     { title: "Individualized Care", description: "If you have a unique condition or set of needs, our certified nurses can work with you and your family to come up with an individualized treatment plan.", slug: "individualized-care" },
   ],
+  // Was missing entirely — confirmed present on the live page.
+  whyChoose: {
+    title: "Why Choose Ideal Home Health for Condition-Specific Care?",
+    description: "When you or a loved one are managing a specific condition, you need more than just standard care—you need a team that understands your unique challenges. Ideal Home Health offers specialized support to help you live a healthier, more independent life.",
+    image: "/images/specialized-home-care-new-york-city.jpg",
+    subheading: "Here's how we ensure you get the specialized support you need:",
+    items: [
+      { title: "Expert, Specialized Staff", description: "Certified Home Health Aides (HHAs) and licensed Visiting Home Nurses." },
+      { title: "Customized Care Plans", description: "Tailored to your specific diagnosis, routine, and lifestyle." },
+      { title: "Collaborative Approach", description: "In coordination with your Physician and other Healthcare Providers." },
+    ],
+  },
+  // Was missing entirely — confirmed present on the live page.
+  howItWorks: {
+    title: "Your Path to Better Health: How It Works",
+    description: "Getting the personalized care you need is a simple and straightforward process. We're here to guide you every step of the way, so you can focus on what matters most—your health and well-being.",
+    image: "/images/personalized-home-care-nyc.jpg",
+    subheading: "Here is your path to a custom care plan:",
+    steps: [
+      { title: "Contact Us", description: "Discuss your needs and medical condition." },
+      { title: "Assessment", description: "We work with you and your physician to create a custom care plan." },
+      { title: "Receive Care", description: "We match you with a skilled professional to begin services." },
+    ],
+  },
   prefooterCta: {
     title: "Ready to Find the Right Care for Your Condition?",
     description: "Contact us today to discuss your family's unique needs.",
     button: { title: "Contact Us", href: "/contact-us" },
+    // attachment: unique-home-care-nyc.jpg, confirmed via live page.
+    image: "/images/unique-home-care-nyc.jpg",
   },
 };
 
@@ -390,31 +487,53 @@ export const enrollNowPage = {
     title: "Have Questions About Enrollment or Careers?",
     description: "Our compassionate representatives are here to help. Contact us today to get personalized answers to any questions you have about home care eligibility or caregiver career opportunities.",
     button: { title: "Contact Us", href: "/contact-us" },
+    // Was missing entirely.
+    image: "/images/compassionate-representative-ideal-home-health.jpg",
   },
 };
 
 export const resourcesIndexPage = {
   hero: {
-    title: "Patient & Caregiver Resources",
-    description: "Helpful forms, links, and answers to common questions for patients and caregivers.",
+    title: "Ideal Home Health Patient & Caregiver Resource Center",
+    subtitle: "All the Information You Need to Succeed with Home Care",
+    description: "Whether you're an existing patient, a home health aide, or just exploring your options, our Resource Center is designed to provide you with all the information you need. Below, you'll find helpful guides, forms, and FAQs for a wide range of topics.",
+    button: { title: "Contact Us", href: "/contact-us" },
   },
-  cards: [
-    {
-      title: "Home Health Aide Resources",
-      description: "Forms and pre-employment requirements for Home Health Aides.",
-      href: "/resources/home-health-aide-resources",
-    },
-    {
-      title: "Traditional Care Patient Resources",
-      description: "FAQs, policy guidance, and helpful links for patients receiving traditional home care.",
-      href: "/resources/traditional-care-patient-resources",
-    },
-    {
-      title: "FAQ",
-      description: "Common questions from patients and caregivers.",
-      href: "/resources/faq",
-    },
-  ],
+  patientResources: {
+    sectionTitle: "Patient Resources",
+    cards: [
+      // CDPAP Patients card removed per standing rule.
+      {
+        title: "Traditional Care Patients",
+        description: "If you are a Traditional Care patient or are considering this option, we've included helpful links and answers to frequently asked questions.",
+        button: { title: "View Traditional Care Patient Resources", href: "/resources/traditional-care-patient-resources" },
+      },
+      {
+        title: "COVID-19",
+        description: "Department of Health (DOH) has recently provided us with a COVID-19 Fact Sheet.",
+        button: { title: "View COVID-19 Fact Sheet", href: "https://idealhh.com/wp-content/uploads/2021/01/covid_english.pdf" },
+      },
+    ],
+    note: { prefix: "Not sure what type of patient care you need? Please feel free to ", label: "Contact Us", href: "/contact-us", suffix: " for assistance." },
+  },
+  caregiverResources: {
+    sectionTitle: "Caregiver Resources",
+    cards: [
+      // CDPAP Caregivers card removed per standing rule.
+      {
+        title: "Home Health Aides",
+        description: "If you are planning to become or are currently a Home Health Aide, we've included common forms, frequently asked questions, and helpful links.",
+        button: { title: "View Home Health Aide Resources", href: "/resources/home-health-aide-resources" },
+      },
+    ],
+    note: { prefix: "Not sure what type of caregiver you are? Please feel free to ", label: "Contact Us", href: "/contact-us", suffix: " for assistance." },
+  },
+  prefooterCta: {
+    title: "Ready to Learn More and Get the Help You Need?",
+    description: "If you have any questions or are ready to get started, please contact our team.",
+    button: { title: "Contact Us", href: "/contact-us" },
+    image: "/images/conditions/contact-home-health-care-nyc.jpg",
+  },
 };
 
 // Q&A content pulled from the WordPress "faq" custom post type (referenced by
@@ -426,7 +545,11 @@ export const resourcesIndexPage = {
 // traditional-care answer.
 export const faqPage = {
   hero: {
+    label: "Ideal Home Health",
     title: "Frequently Asked Questions",
+    subtitle: "Answers to Your Common Questions About Home Care and Our Services",
+    description: "Getting started with home health care can lead to many questions. Here, you'll find clear and concise answers to common questions about our services, the enrollment process, and how we can support you or your loved one.",
+    button: { title: "Contact Us", href: "/contact-us" },
   },
   patientQuestions: [
     {
@@ -455,11 +578,13 @@ export const faqPage = {
       question: "What are the requirements to apply as a Home Health Aide?",
       answer: "To apply as a home health aide, as part of our complete application process we request a Home Health Aide certificate from a NYC DOH training facility, proof of eligibility to work legally in the US (I-9 Form), your medical history, completion of a background check, and completion of a drug screening.",
     },
+    // CDPAP caregiver requirements question removed per standing rule.
   ],
   prefooterCta: {
     title: "Ready to Get Started?",
     description: "If you have a question that isn't answered here or are ready to begin the enrollment process, please contact our team.",
     button: { title: "Contact Us", href: "/contact-us" },
+    image: "/images/conditions/enroll-in-home-health-care-nyc.jpg",
   },
 };
 
@@ -519,11 +644,16 @@ export const testimonialsPage = {
     title: "Testimonials & Reviews",
     subtitle: "Hear What Our Patients, Families, and Caregivers Say",
     description: "The positive feedback from our patients, their families, and our dedicated caregivers is a testament to the compassionate, high-quality care we provide. Read their stories to learn more about the Ideal Home Health difference.",
+    // Was missing entirely.
+    button: { title: "Contact Us", href: "/contact-us" },
   },
+  // Was hardcoded "Testimonials" — real section heading/label below.
+  testimonialsLabel: "what others are saying",
+  testimonialsTitle: "Trusted Companionship in New York City",
   testimonials: [
-    { author: "Joseph A.", role: "Family Member", rating: 5, content: "After I moved out of New York, caring for my mother became very stressful for my sister and I. Having an aide helps us know she's safe when we can't be there. We have had an incredible experience working with Ideal Home Health, they are professional and made the process easy." },
-    { author: "Liz P.", role: "Patient", rating: 5, content: "Thank you. I'm so happy to have the help. My aide helps with my medicine, and helps me do my hair in the morning. I'm happy when I can see my grandchildren and she keeps things tidy since I can't do it. Sarah is very nice, I really, really appreciate the help." },
-    { author: "Tayshia B.", role: "Caregiver", rating: 5, content: "I've been employed with Ideal Home Health for the past two years. I appreciate the time and efforts of their office coordinators who in my opinion go above and beyond to ensure I'm on top of keeping my documentation and training up to date. The pay is also some of the highest I've received, and I'm thankful to work here." },
+    { author: "Joseph A.", role: "Family Member", rating: 5, content: "After I moved out of New York, caring for my mother became very stressful for my sister and I. Having an aide helps us know she's safe when we can't be there. We have had an incredible experience working with Ideal Home Health, they are professional and made the process easy.", image: "/images/iStock-1089410668.jpg" },
+    { author: "Liz P.", role: "Patient", rating: 5, content: "Thank you. I'm so happy to have the help. My aide helps with my medicine, and helps me do my hair in the morning. I'm happy when I can see my grandchildren and she keeps things tidy since I can't do it. Sarah is very nice, I really, really appreciate the help.", image: "/images/iStock-1138669982.jpg" },
+    { author: "Tayshia B.", role: "Caregiver", rating: 5, content: "I've been employed with Ideal Home Health for the past two years. I appreciate the time and efforts of their office coordinators who in my opinion go above and beyond to ensure I'm on top of keeping my documentation and training up to date. The pay is also some of the highest I've received, and I'm thankful to work here.", image: "/images/pexels-tarzine-jackson.jpg" },
   ],
   reviews: [
     { rating: 5, name: "Jessica P.", location: "Brooklyn, NY", review: "I was able to register my father in law for an aide very quickly, we were all setup within about a week. Ideal HH staff were great to work with, and the office is 15 minutes from my apartment which was convenient. Overall great service, I highly recommend them if you need a home aide." },
@@ -535,6 +665,8 @@ export const testimonialsPage = {
     title: "Ready to learn more and get the help you need?",
     description: "Contact us today to discuss your family's unique needs.",
     button: { title: "Contact Us", href: "/contact-us" },
+    // attachment: contact-ideal-home-health-care-nyc.jpg, confirmed via live page.
+    image: "/images/contact-ideal-home-health-care-nyc.jpg",
   },
 };
 
@@ -549,6 +681,9 @@ export const howToEnrollPage = {
     highlight: "Ideal Home Health",
     subtitle: "A Simple Process to Get the Compassionate Care You Deserve",
     description: "Getting started with home health care can seem complicated, but we've made the process simple and straightforward. Our team is here to guide you every step of the way, from understanding your options to getting your care started as quickly as possible.",
+    // Was missing entirely.
+    image: "/images/how-to-enroll-ideal-home-health-nyc.jpg",
+    button: { title: "Enroll Now", href: "/enroll-now" },
   },
   steps: [
     { number: "01.", title: "Contact Us", description: "Contact us to speak with an Ideal Home Health customer specialist about your needs, and we'll answer your questions and help you take the first step." },
@@ -561,6 +696,8 @@ export const howToEnrollPage = {
     highlight: "Receiving Care Easy",
     subtitle: "Home Health Care in New York City",
     description: "We have several options to assist you based on your level of need, lifestyle and family preferences.",
+    // Was missing entirely.
+    image: "/images/compassionate-caregivers-nyc.jpg",
     listTitle: "Getting Started with Ideal Home Health",
     listDescription: "After coordinating the details with your insurance and providers, we work with your family to ensure you'll receive your desired level of care.",
     items: [
@@ -574,19 +711,21 @@ export const howToEnrollPage = {
     title: "Ready to Learn More and Get the Help You Need?",
     description: "Contact us to discuss a custom care plan for your unique needs.",
     button: { title: "Contact Us", href: "/contact-us" },
+    // Was missing entirely.
+    image: "/images/contact-ideal-home-health-care-new-york-city.jpg",
   },
 };
 
 export const privacyPolicyPage = {
-  hero: { title: "Privacy Policy" },
-  intro: "As Required by the Privacy Regulations Promulgated Pursuant to the Health Insurance Portability and Accountability Act of 1996 (HIPAA) — this notice describes how health information about you may be used and disclosed, and how you can get access to your identifiable health information. Please review this notice carefully.",
+  hero: { label: "Ideal Home Health", title: "Privacy Policy" },
+  intro: "As Required by the Privacy Regulations Promulgated Pursuant to the Health Insurance Portability and Accountability Act of 1996 (HIPAA) THIS NOTICE DESCRIBES HOW HEALTH INFORMATION ABOUT YOU MAY BE USED AND DISCLOSED, AND HOW YOU CAN GET ACCESS TO YOUR IDENTIFIABLE HEALTH INFORMATION. PLEASE REVIEW THIS NOTICE CAREFULLY.",
   effectiveDate: "This Notice is effective as of September 23, 2014.",
   contact: {
     title: "HIPAA Privacy Officer",
-    lines: ["Ideal Home Health, Inc.", "2617 East 16th Street, 2nd Floor", "Brooklyn, NY 11235", "(718) 517-2424"],
+    lines: ["Ideal Home Health, Inc", "2617 East 16th Street, 2nd Floor", "Brooklyn, NY 11235", "(718) 517-2424"],
   },
-  // Full legal text, split into paragraphs for rendering. Pulled verbatim from
-  // the WordPress export's ACF "informational-links" field.
+  // Full legal text lives in lib/privacy-policy-text.ts (privacyPolicyParagraphs)
+  // — already verified complete and verbatim, confirmed against the live page.
 };
 
 export const tosPage = {
@@ -596,13 +735,26 @@ export const tosPage = {
 export const benefitsPage = {
   hero: {
     label: "Ideal Home Health",
-    title: "Understand Your Home Care Benefits",
-    description: "For many eligible seniors in New York City, home care may be available at little to no cost through Medicaid and Medicare.",
+    // Was wrong — real live title is below.
+    title: "Home Care Benefits Covered by Medicaid & Medicare",
+    // Was completely different text — real live description is below.
+    description: "Get reliable in-home care in NYC with personal support, transportation assistance, light housekeeping, medication reminders, and more — available for eligible seniors through Medicaid and Medicare.",
+    // attachment: Rectangle-1.png, confirmed real filename via live page.
+    image: "/images/Rectangle-1.png",
+    phone: "(718) 517-2424",
+    // Was missing entirely. Third item is a genuine grammar quirk in the
+    // source ("support for and trusted caregivers") — kept verbatim.
+    badges: [
+      { bold: "$220 paid monthly", normal: "for eligible everyday items" },
+      { bold: "Up to $360/year", normal: "in wellness rewards" },
+      { bold: "24/7 support", normal: "for and trusted caregivers" },
+    ],
+    button: { title: "Check My Eligibility", href: "/enroll-now" },
   },
   qualify: {
     cardTitle: "You May Qualify If",
     heading: "How Much Does Home Care Cost with Ideal Home Health?",
-    description: "For many eligible seniors in New York City, in-home care with Ideal Home Health may be available at no out-of-pocket cost through Medicaid and Medicare. Instead of asking families to choose an hourly care package, we first check whether you or your loved one qualifies for covered home care benefits.",
+    description: "For many eligible seniors in New York City, in-home care with Ideal Home Health may be available at no out-of-pocket cost through Medicaid and Medicare.\n\nInstead of asking families to choose an hourly care package, we first check whether you or your loved one qualifies for covered home care benefits.",
     button: { title: "Check My Eligibility", href: "/enroll-now" },
     items: [
       "You are 55 or older",
@@ -615,21 +767,25 @@ export const benefitsPage = {
     title: "What's Included in Your Home Care Benefits?",
     button: { title: "Get Help Enrolling Today", href: "/enroll-now" },
     items: [
-      { title: "Personal Care", description: "Help with bathing, dressing, laundry, and daily personal needs." },
-      { title: "Transportation Assistance", description: "Support with travel to doctor appointments, errands, and social activities." },
-      { title: "Light Housekeeping", description: "Meal preparation, light cleaning, and companionship at home." },
-      { title: "Medication Reminders", description: "Daily assistance with medication reminders and management." },
+      { title: "Personal Care", description: "Help with bathing, dressing, laundry, and daily personal needs.", icon: "/images/boxicons_car-filled.png" },
+      { title: "Transportation Assistance", description: "Support with travel to doctor appointments, errands, and social activities.", icon: "/images/boxicons_car-filled-1.png" },
+      { title: "Light Housekeeping", description: "Meal preparation, light cleaning, and companionship at home.", icon: "/images/boxicons_car-filled-2.png" },
+      { title: "Medication Reminders", description: "Daily assistance with medication reminders and management.", icon: "/images/boxicons_car-filled-3.png" },
     ],
   },
+  // Was missing entirely — image between "Included" and "Extras" sections.
+  includedImage: "/images/Frame-11-2.png",
   extras: {
     title: "Eligible Members May Receive More Than Home Care",
     items: [
-      { title: "$220 Paid Monthly", description: "To spend on eligible items that support your daily needs." },
-      { title: "Up to $360 Per Year", description: "Available through wellness rewards." },
-      { title: "Prescription Support", description: "Medication and pharmacist support to help you stay on track." },
-      { title: "Free with Medicaid and Medicare", description: "For eligible members who meet program requirements." },
+      { title: "$220 Paid Monthly", description: "To spend on eligible items that support your daily needs.", icon: "/images/Frame-21.png" },
+      { title: "Up to $360 Per Year", description: "Available through wellness rewards.", icon: "/images/Frame-21.png" },
+      { title: "Prescription Support", description: "Medication and pharmacist support to help you stay on track.", icon: "/images/Frame-21.png" },
+      { title: "Free with Medicaid and Medicare", description: "For eligible members who meet program requirements.", icon: "/images/Frame-21.png" },
     ],
   },
+  // Was missing entirely — image before the "How to Get Started" steps.
+  stepsImage: "/images/photo-test2.png",
   // CDPAP mention removed from step 3 (originally offered registering a
   // family member as a CDPAP caregiver as an alternative option).
   steps: {
@@ -645,21 +801,39 @@ export const benefitsPage = {
   whyChoose: {
     title: "Why Families Choose Ideal Home Health",
     items: [
-      { title: "Continuity & Trust", description: "Consistent long-term care builds trust with clients and families." },
-      { title: "24/7 Support", description: "Help is available around the clock when you need it." },
-      { title: "Cultural & Language Match", description: "We prioritize pairing clients with caregivers who understand their language and culture." },
-      { title: "Thoroughly Vetted Aides", description: "Caregivers undergo background checks and professional training." },
+      { title: "Continuity & Trust", description: "Consistent long-term care builds trust with clients and families.", icon: "/images/Frame-1.png" },
+      { title: "24/7 Support", description: "Help is available around the clock when you need it.", icon: "/images/Frame-2.png" },
+      { title: "Cultural & Language Match", description: "We prioritize pairing clients with caregivers who understand their language and culture.", icon: "/images/Frame-3.png" },
+      { title: "Thoroughly Vetted Aides", description: "Caregivers undergo background checks and professional training.", icon: "/images/Frame-4.png" },
     ],
   },
+  // Was missing entirely — a full locations + office-cards section between
+  // "Why Choose" and the quote section.
+  locations: {
+    label: "Ideal Home Health",
+    title: "Home Care Services Across New York City",
+    description: "Ideal Home Health provides in-home care support for eligible seniors and families across NYC.",
+    button: { title: "Get in Touch", href: "/contact-us" },
+    image: "/images/Daco_924160.png",
+  },
+  officeCards: [
+    { title: "Brooklyn", subtitle: "Ideal Home Health – Brooklyn Office", address: "2617 East 16th Street, Floor 2, Brooklyn, NY, 11235, US", phone: "(718) 517 – 2424", button: { title: "Brooklyn Services", href: "/locations/brooklyn" } },
+    { title: "Bronx", subtitle: "Ideal Home Health – Bronx Office", address: "391 East 149th Street, Suite 515, Bronx, NY, 10455, US", phone: "(718) 517 – 2424", button: { title: "Bronx Services", href: "/locations/bronx" } },
+  ],
   quote: {
     label: '"Caring for you like family."',
     title: "Care That Feels Like Family",
     description: "At Ideal Home Health, care is personal. We help seniors stay safe, supported, and comfortable at home while giving families peace of mind.",
+    // attachment: Frame-11-508x550.jpg, confirmed real filename via live page.
+    image: "/images/Frame-11.jpg",
   },
   prefooterCta: {
-    title: "Ready to Find Your Ideal Home Health Care Solution in NYC?",
+    // Was wrong — real live title/button are below.
+    title: "Find Out If You Qualify for $0 Home Care",
     description: "Contact us today for a free consultation and discuss a custom home care plan perfectly suited to your family's needs in New York City.",
-    button: { title: "Enroll Today", href: "/enroll-now" },
+    button: { title: "Check My Eligibility", href: "/enroll-now" },
+    // attachment: Image.jpg, confirmed real filename via live page.
+    image: "/images/Image.jpg",
   },
 };
 
@@ -671,7 +845,8 @@ export const locations = {
       highlight: "Home Health Care Services",
       description:
         "Ideal Home Health is proud to be a trusted home health care agency in Brooklyn, New York. We understand the diverse and vibrant communities that make up this incredible borough. Our dedicated team provides personalized in-home care solutions to residents across Brooklyn's neighborhoods, from historic Brooklyn Heights to the lively streets of Williamsburg and the family-friendly vibe of Park Slope.",
-      image: "/images/home-health-care-in-nyc.jpg",
+      // Was wrong — real image is below.
+      image: "/images/in-home-health-care-brooklyn-nyc.jpg",
       buttons: [
         { title: "Apply for Homecare", href: "/enroll-now" },
         { title: "Become a Caregiver", href: "/careers/#qualifyenroll" },
@@ -702,6 +877,13 @@ export const locations = {
         { title: "Seamless Process", description: "Easy enrollment and guidance through Medicaid and insurance." },
         { title: "Community Connection", description: "Proudly serving Brooklyn residents with a focus on local support." },
       ],
+    },
+    // Was missing entirely.
+    prefooterCta: {
+      title: "Ready to Start Your Home Care Journey in Brooklyn?",
+      description: "Connecting with Ideal Home Health is simple. Reach out today for a free consultation to discuss your personalized home care options in Brooklyn, NY. We're here to help.",
+      button: { title: "Contact Our Brooklyn Team", href: "/contact-us" },
+      image: "/images/home-health-care-brooklyn-contact-1.jpg",
     },
   },
   bronx: {
@@ -743,6 +925,13 @@ export const locations = {
         { title: "Community Connection", description: "Proudly serving Bronx residents with a focus on local support." },
       ],
     },
+    // Was missing entirely.
+    prefooterCta: {
+      title: "Ready to Start Your Home Care Journey in The Bronx?",
+      description: "Connecting with Ideal Home Health is simple. Reach out today for a free consultation to discuss your personalized home care options in The Bronx, NY. We're here to help.",
+      button: { title: "Contact Our Bronx Office", href: "/contact-us" },
+      image: "/images/home-health-care-bronx-contact.jpg",
+    },
   },
 };
 
@@ -773,6 +962,7 @@ export const locationsIndexPage = {
     title: "Ready to Discuss Your Home Care Needs in NYC?",
     description: "Whether you're exploring options for yourself or a loved one, our team is here to help. Contact us today for a free consultation.",
     button: { title: "Contact Us", href: "/contact-us" },
+    image: "/images/in-home-care-nyc.jpg",
   },
 };
 
@@ -799,10 +989,35 @@ export const aboutUsPage = {
   areasServed: {
     label: "areas served",
     title: "Serving all NYC Boroughs and Counties",
+    // Was truncated and merged into one paragraph — source has two distinct
+    // paragraphs, and the second one cuts off early in the previous version.
     description:
-      "Starting in the home basement of one of our founding partners, Ideal Home Health began as a small company of four people in Brooklyn. In just 5 years, we have grown to a community of 1500+ people, proudly serving all five boroughs of New York City. In addition to providing home health services, Ideal Home Health is deeply rooted in our community. We have partnered with dozens of community centers, senior facilities, and charities.",
+      "Starting in the home basement of one of our founding partners, Ideal Home Health began as a small company of four people in Brooklyn. In just 5 years, we have grown to a community of 1500+ people, proudly serving all five boroughs of New York City.\n\nIn addition to providing home health services, Ideal Home Health is deeply rooted in our community. We have partnered with dozens of community centers, senior facilities, and charities to make a positive impact on our neighborhoods in New York City.",
     image: "/images/Daco_924160.png",
+    // Was missing — button before the office cards.
+    button: { title: "Get in Touch", href: "/contact-us" },
   },
+  // Was missing entirely — confirmed present and rendered on the live page.
+  officeCards: [
+    { title: "Brooklyn", subtitle: "Ideal Home Health – Brooklyn Office", address: "2617 East 16th Street, Floor 2, Brooklyn, NY, 11235, US", phone: "(718) 517 – 2424", button: { title: "Learn More", href: "/locations/brooklyn" } },
+    { title: "Bronx", subtitle: "Ideal Home Health – Bronx Office", address: "391 East 149th Street, Suite 515, Bronx, NY, 10455, US", phone: "(718) 517 – 2424", button: { title: "Learn More", href: "/locations/bronx" } },
+  ],
+  // Was missing entirely — confirmed present and rendered on the live page
+  // (a 4-slide multilingual carousel; 3 of 4 slides are genuinely non-English
+  // even on the English page in the source — kept verbatim).
+  languages: [
+    { title: "Your language and cultural needs are our priority", description: "We speak your language and understand you and your families cultural needs and preferences.", button: { title: "Enroll Today!", href: "/enroll-now" } },
+    { title: "Язык на котором вы говорите и ваши культурные ценности у нас в приоритете", description: "Мы говорим на вашем языке и понимаем вас и ваши культурные ценности и предпочтения.", button: { title: "Enroll Today!", href: "/enroll-now" } },
+    { title: "Sus necesidades de idioma y cultura son nuestra prioridad", description: "Hablamos su idioma y entendemos sus necesidades y preferencias culturales al igual que la de sus familiares.", button: { title: "Enroll Today!", href: "/enroll-now" } },
+    { title: "您的语言和文化需求是我们的首要任务", description: "我们说您的语言，并了解您和您的家人的文化需求和喜好。", button: { title: "Enroll Today!", href: "/enroll-now" } },
+  ],
+  // Was missing entirely — confirmed present and rendered on the live page.
+  statistics: [
+    { topTitle: "We've helped", featureTopText: "5,000+", featureText: "Patients & Caregivers", description: "Since starting Ideal Home Health." },
+    { topTitle: "We service", featureTopText: "Patients of", featureText: "many religions", description: "including Catholic, Christian, Muslim, Hindu, Buddhist, Adventist, Jehovahs Witness, Jewish and more." },
+    { topTitle: "We have", featureTopText: "Caregivers that", featureText: "speak your language", description: "with over 34 languages spoken by our caregivers." },
+    { topTitle: "At Ideal Home Health", featureTopText: "We understand", featureText: "your cultural needs", description: "servicing patients from over 46 countries." },
+  ],
   prefooterCta: {
     title: "Have any questions?",
     description: "Our compassionate representatives are available to discuss any questions you have.",
@@ -829,12 +1044,16 @@ export const contactUsPage = {
   officeCards: [
     {
       title: "Brooklyn",
-      address: "2617 East 16th Street, Floor 2, Brooklyn, NY 11235",
+      subtitle: "Ideal Home Health – Brooklyn Office",
+      address: "2617 East 16th Street, Floor 2, Brooklyn, NY, 11235, US",
+      phone: "(718) 517 – 2424",
       button: { title: "Learn More", href: "/locations/brooklyn" },
     },
     {
       title: "Bronx",
-      address: "391 East 149th Street, Suite 515, Bronx, NY 10455",
+      subtitle: "Ideal Home Health – Bronx Office",
+      address: "391 East 149th Street, Suite 515, Bronx, NY, 10455, US",
+      phone: "(718) 517 – 2424",
       button: { title: "Learn More", href: "/locations/bronx" },
     },
   ],

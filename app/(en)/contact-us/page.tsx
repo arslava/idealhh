@@ -59,7 +59,9 @@ export default function ContactUsPage() {
           {officeCards.map((office) => (
             <div key={office.title} className="rounded-3xl border border-navy-900/10 bg-white p-8 text-center shadow-[0_20px_40px_rgba(56,75,116,0.08)] flex flex-col items-center">
               <h3 className="font-display text-[1.875rem] font-black text-navy-800">{office.title}</h3>
+              <p className="mt-1 text-sm text-navy-muted">{office.subtitle}</p>
               <p className="mt-3 text-[1.125rem] text-navy-muted leading-relaxed">{office.address}</p>
+              <p className="mt-1 text-sm text-navy-muted">Phone: {office.phone}</p>
               <Button href={office.button.href} variant="outline" className="mt-6">
                 {office.button.title}
               </Button>

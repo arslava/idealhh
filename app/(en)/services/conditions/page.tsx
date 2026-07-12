@@ -5,7 +5,7 @@ import PrefooterCta from "@/components/PrefooterCta";
 import { conditionsPage } from "@/lib/content";
 
 export default function ConditionsPage() {
-  const { hero, sectionTitle, cards, prefooterCta } = conditionsPage;
+  const { hero, sectionTitle, cards, whyChoose, howItWorks, prefooterCta } = conditionsPage;
 
   return (
     <>
@@ -43,11 +43,56 @@ export default function ConditionsPage() {
             <div key={card.slug} className="rounded-3xl border border-navy-900/10 bg-white p-8 shadow-[0_20px_40px_rgba(56,75,116,0.08)]">
               <h3 className="font-display text-2xl font-semibold text-navy-800">{card.title}</h3>
               <p className="mt-2 text-sm text-grey-800 leading-relaxed">{card.description}</p>
-              <Button href={`/services/conditions/${card.slug}`} variant="outline" className="mt-4 !min-w-0 !px-5 !py-2 text-sm">
+              <Button href={`/conditions/${card.slug}`} variant="outline" className="mt-4 !min-w-0 !px-5 !py-2 text-sm">
                 Learn More
               </Button>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="bg-bg-light">
+        <div className="mx-auto max-w-[1140px] px-4 py-16 grid md:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800">{whyChoose.title}</h2>
+            <p className="mt-4 text-[1.125rem] text-grey-800 leading-relaxed">{whyChoose.description}</p>
+          </div>
+          <div className="relative aspect-[4/3] rounded-[49px] overflow-hidden">
+            <Image src={whyChoose.image} alt={whyChoose.title} fill className="object-cover" />
+          </div>
+        </div>
+        <div className="mx-auto max-w-[1140px] px-4 pb-16">
+          <h3 className="text-xl font-semibold text-navy-700">{whyChoose.subheading}</h3>
+          <ul className="mt-4 space-y-3 max-w-2xl">
+            {whyChoose.items.map((item) => (
+              <li key={item.title} className="flex gap-3 text-grey-800 leading-relaxed">
+                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-accent shrink-0" />
+                <span><strong className="text-navy-800">{item.title}</strong>: {item.description}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1140px] px-4 py-16">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="order-2 md:order-1 relative aspect-[4/3] rounded-[49px] overflow-hidden">
+            <Image src={howItWorks.image} alt={howItWorks.title} fill className="object-cover" />
+          </div>
+          <div className="order-1 md:order-2">
+            <h2 className="font-display text-3xl md:text-4xl font-black text-navy-800">{howItWorks.title}</h2>
+            <p className="mt-4 text-[1.125rem] text-grey-800 leading-relaxed">{howItWorks.description}</p>
+          </div>
+        </div>
+        <div className="mt-10">
+          <h3 className="text-xl font-semibold text-navy-700">{howItWorks.subheading}</h3>
+          <ol className="mt-4 space-y-3 max-w-2xl list-decimal list-inside">
+            {howItWorks.steps.map((step) => (
+              <li key={step.title} className="text-grey-800 leading-relaxed">
+                <strong className="text-navy-800">{step.title}</strong>: {step.description}
+              </li>
+            ))}
+          </ol>
         </div>
       </section>
 

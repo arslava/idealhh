@@ -6,56 +6,66 @@ import { usePathname } from "next/navigation";
 import { Globe, ChevronDown } from "lucide-react";
 
 // Routes that exist under /ru/ (relative path, no leading/trailing slash;
-// "" = homepage). Several English routes have no Russian equivalent at all
-// (locations, resources, blog, legal pages) — switching from one of those
-// falls back to the Russian homepage rather than a broken link.
+// "" = homepage). Condition detail pages live at /ru/conditions/{slug}
+// (not nested under /ru/services/), matching the real site's URL structure
+// — only the conditions overview page itself is nested under /services/.
 const RU_ROUTES = new Set([
-  "",
-  "about-us",
-  "about-us/testimonials-reviews",
-  "careers",
-  "careers/how-it-works-caregivers",
-  "contact-us",
-  "enroll-now",
-  "home-care-benefits",
-  "how-to-enroll",
-  "services",
-  "services/conditions",
-  "services/home-health-aide",
-  "services/visiting-home-nurse",
+  "", "about-us", "about-us/testimonials-reviews",
+  "careers", "careers/how-it-works-caregivers",
+  "contact-us", "enroll-now", "home-care-benefits", "how-to-enroll",
+  "services", "services/conditions", "services/home-health-aide", "services/visiting-home-nurse",
 ]);
-
-// All 13 condition detail slugs are identical between locales.
-const CONDITION_SLUGS = new Set([
+const RU_CONDITION_SLUGS = new Set([
   "alzheimers-dementia", "arthritis", "diabetes", "epilepsy", "fall-prevention",
   "help-with-daily-tasks", "individualized-care", "lifting-and-transferring",
   "live-in-24-hour-care", "parkinsons", "post-hospital-care", "stroke",
   "wheel-chair-bed-bound-support",
 ]);
 
-function isRuRouteValid(relPath: string): boolean {
-  if (RU_ROUTES.has(relPath)) return true;
-  const match = relPath.match(/^services\/conditions\/([^/]+)$/);
-  return match ? CONDITION_SLUGS.has(match[1]) : false;
+// Routes that exist under /es/. Only 11 of the 13 condition slugs have a
+// Spanish translation in the source — diabetes and stroke were never
+// translated (confirmed against the export), so those two fall back to
+// the Spanish homepage rather than a broken link.
+const ES_ROUTES = new Set([
+  "", "about-us", "about-us/testimonials-reviews",
+  "careers", "careers/how-it-works-caregivers",
+  "contact-us", "enroll-now", "home-care-benefits", "how-to-enroll",
+  "services", "services/conditions", "services/home-health-aide", "services/visiting-home-nurse",
+]);
+const ES_CONDITION_SLUGS = new Set([
+  "alzheimers-dementia", "arthritis", "epilepsy", "fall-prevention",
+  "help-with-daily-tasks", "individualized-care", "lifting-and-transferring",
+  "live-in-24-hour-care", "parkinsons", "post-hospital-care",
+  "wheel-chair-bed-bound-support",
+]);
+
+function isRouteValid(relPath: string, routes: Set<string>, conditionSlugs: Set<string>): boolean {
+  if (routes.has(relPath)) return true;
+  const match = relPath.match(/^conditions\/([^/]+)$/);
+  return match ? conditionSlugs.has(match[1]) : false;
 }
 
-// This project only has English and Russian built out. The live WordPress
-// site's switcher lists ~10 WPML languages, but only these two actually
-// exist here — building a fake multi-language menu would just be more
-// broken links, so this stays a real 2-option dropdown.
 function useLanguageLinks() {
   const pathname = usePathname() || "/";
   const isRu = pathname === "/ru" || pathname.startsWith("/ru/");
+  const isEs = pathname === "/es" || pathname.startsWith("/es/");
+  const current = isRu ? "ru" : isEs ? "es" : "en";
 
-  const relPath = isRu ? pathname.replace(/^\/ru\/?/, "") : pathname.replace(/^\//, "");
+  const relPath =
+    current === "ru" ? pathname.replace(/^\/ru\/?/, "") :
+    current === "es" ? pathname.replace(/^\/es\/?/, "") :
+    pathname.replace(/^\//, "");
+
   const enHref = relPath ? `/${relPath}` : "/";
-  const ruHref = relPath === "" || isRuRouteValid(relPath) ? (relPath ? `/ru/${relPath}` : "/ru") : "/ru";
+  const ruHref = relPath === "" || isRouteValid(relPath, RU_ROUTES, RU_CONDITION_SLUGS) ? (relPath ? `/ru/${relPath}` : "/ru") : "/ru";
+  const esHref = relPath === "" || isRouteValid(relPath, ES_ROUTES, ES_CONDITION_SLUGS) ? (relPath ? `/es/${relPath}` : "/es") : "/es";
 
   return {
-    current: isRu ? "ru" : "en",
+    current,
     options: [
       { code: "en", label: "English", href: enHref },
       { code: "ru", label: "Русский", href: ruHref },
+      { code: "es", label: "Español", href: esHref },
     ],
   } as const;
 }

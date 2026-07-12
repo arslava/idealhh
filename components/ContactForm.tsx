@@ -6,8 +6,8 @@ import FloatingInput from "./FloatingInput";
 type Status = "idle" | "loading" | "success" | "error";
 
 const LANGUAGES = [
-  "English", "Spanish", "Russian", "Haitian Creole", "Cantonese",
-  "Arabic", "Mandarin", "French", "Hindi", "Urdu",
+  "English", "Spanish", "Russian", "Arabic", "Mandarin", "Cantonese",
+  "Haitian Creole", "French", "Hindi", "Urdu",
 ];
 
 // Matches the real "Send Us a Message" form (WPForms id 2466): separate

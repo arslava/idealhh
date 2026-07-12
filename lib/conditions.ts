@@ -17,10 +17,25 @@ export type ConditionPage = {
   bulletsListDescription: string;
   bulletsItems: string[];
   bulletsImage: string;
+  // Was missing — confirmed via live fetch that condition pages include the
+  // same 3-testimonial block (with real photos) used on the Testimonials &
+  // Reviews page. Optional since not yet confirmed for every one of the 13.
+  hasTestimonials?: boolean;
   prefooterTitle: string;
   prefooterDescription: string;
   prefooterButtonTitle: string;
+  // Was missing — confirmed real filenames only added where verified via
+  // live fetch; left undefined elsewhere rather than guessed.
+  prefooterImage?: string;
 };
+
+// Same 3 English testimonials (with real photos) used on the Testimonials &
+// Reviews page — confirmed via live fetch to also appear on condition pages.
+export const conditionTestimonials = [
+  { author: "Tayshia B.", role: "Caregiver", rating: 5, content: "I've been employed with Ideal Home Health for the past two years. I appreciate the time and efforts of their office coordinators who in my opinion go above and beyond to ensure I'm on top of keeping my documentation and training up to date. The pay is also some of the highest I've received, and I'm thankful to work here.", image: "/images/pexels-tarzine-jackson.jpg" },
+  { author: "Joseph A.", role: "Family Member", rating: 5, content: "After I moved out of New York, caring for my mother became very stressful for my sister and I. Having an aide helps us know she's safe when we can't be there. We have had an incredible experience working with Ideal Home Health, they are professional and made the process easy.", image: "/images/iStock-1089410668.jpg" },
+  { author: "Liz P.", role: "Patient", rating: 5, content: "Thank you. I'm so happy to have the help. My aide helps with my medicine, and helps me do my hair in the morning. I'm happy when I can see my grandchildren and she keeps things tidy since I can't do it. Sarah is very nice, I really, really appreciate the help.", image: "/images/iStock-1138669982.jpg" },
+];
 
 export const conditionPages: ConditionPage[] = [
   {
@@ -38,9 +53,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our home health aides can assist with:",
     bulletsItems: ["Assistance with managing resting tremors, stiffness, slowness of movement, and poor balance.", "Adherence to your custom plan of care, specifically addressing your condition and personal needs.", "Assistance with medication management to ensure you take them as prescribed.", "Assist you in preparing diet-specific meals.", "Encouraging exercise and physical activity as prescribed by your physical therapist to help preserve mobility and function.", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe.", "Accompany you to doctors' appointments and on errands.", "Monitor blood pressure and any other condition-specific tasks required for your unique needs."],
     bulletsImage: "/images/conditions/assisting-parkinsons-patient-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Get the help you need to manage your Parkinson's",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/parkinsons-care-custom-plan.jpg",
   },
   {
     slug: "diabetes",
@@ -57,9 +74,12 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our Home Care Professionals are trained to: ",
     bulletsItems: ["Assist with medication management and ensure you take them as prescribed.", "Accompany you to doctor's appointments.", "Provide aid in a nutritious diet, physical exercise, and social interaction.", "Monitor blood sugar, blood pressure, and any other condition-specific tasks required for your unique needs.", "Monitor for key diabetes-specific complications, such as blurry vision and eye problems, foot health, and infections.", "Provide companionship and assist with daily household tasks."],
     bulletsImage: "/images/conditions/in-home-care-blood-pressure-monitoring-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to learn more and get the help you need to manage your diabetes?",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    // attachment: enroll-in-home-health-care-nyc.jpg, confirmed via live page.
+    prefooterImage: "/images/conditions/enroll-in-home-health-care-nyc.jpg",
   },
   {
     slug: "stroke",
@@ -76,28 +96,35 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our Home Care Specialists are trained to: ",
     bulletsItems: ["Daily mobility and fall prevention.", "Monitor signs of stroke and report stroke causing symptoms.", "Providing companionship and assisting to communicate your needs to others.", "Assistance with medication management and ensure you take them as prescribed", "Accompany you to doctors, speech therapy, occupational therapy and physical therapy, and any other medical appointments.", "Help you to focus more on the factors you are able to change , such as prepare specific meals as recommended by your physician.", "Assisting with daily tasks including dressing, toileting, bathing and eating."],
     bulletsImage: "/images/conditions/in-home-care-for-stroke-recovery-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to Learn More and Get the Help You Need to Manage Life After a Stroke?",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/custome-care-for-stroke-nyc.jpg",
   },
   {
     slug: "alzheimers-dementia",
     title: "Alzheimer's / Dementia",
-    heroLabel: "\u0423\u0421\u041b\u041e\u0412\u0418\u042f",
-    heroTitle: "Alzheimer's / Dementia",
-    heroHighlight: "",
-    heroSubtitle: null,
-    heroDescription: "\u041c\u044b \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0438\u0432\u0430\u0435\u043c \u0431\u0435\u0437\u043e\u043f\u0430\u0441\u043d\u043e\u0441\u0442\u044c \u0447\u043b\u0435\u043d\u043e\u0432 \u0432\u0430\u0448\u0435\u0439 \u0441\u0435\u043c\u044c\u0438, \u0437\u0430\u0431\u043e\u0442\u044f\u0441\u044c \u043e \u043f\u043e\u0442\u0440\u0435\u0431\u043d\u043e\u0441\u0442\u0438 \u0432 \u0443\u0445\u043e\u0434\u0435 \u0437\u0430 \u043f\u0430\u043c\u044f\u0442\u044c\u044e, \u0438 \u043f\u043e\u043c\u043e\u0433\u0430\u0435\u043c \u0438\u043c \u043d\u0430\u0439\u0442\u0438 \u043a\u043e\u043c\u0444\u043e\u0440\u0442 \u0432 \u043f\u043e\u0432\u0441\u0435\u0434\u043d\u0435\u0432\u043d\u043e\u0439 \u0436\u0438\u0437\u043d\u0438.\"",
-    heroImage: "/images/conditions/in-home-health-care-nyc.jpg",
-    bulletsTitle: "\u0411\u043e\u043b\u0435\u0437\u043d\u044c \u0410\u043b\u044c\u0446\u0433\u0435\u0439\u043c\u0435\u0440\u0430 \u043d\u0435\u043f\u0440\u0435\u0434\u0441\u043a\u0430\u0437\u0443\u0435\u043c\u0430. ",
-    bulletsHighlight: "\u041d\u0435 \u0432\u0441\u0435 \u043f\u0430\u0446\u0438\u0435\u043d\u0442\u044b \u0441 \u0431\u043e\u043b\u0435\u0437\u043d\u044c\u044e \u0410\u043b\u044c\u0446\u0433\u0435\u0439\u043c\u0435\u0440\u0430 \u0438\u043c\u0435\u044e\u0442 \u043e\u0434\u0438\u043d\u0430\u043a\u043e\u0432\u044b\u0435 \u0441\u0438\u043c\u043f\u0442\u043e\u043c\u044b.",
-    bulletsListTitle: "How we can help. ",
-    bulletsListDescription: "\u041d\u0430\u0448\u0438 \u0441\u0435\u0440\u0442\u0438\u0444\u0438\u0446\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u043f\u043e\u043c\u043e\u0449\u043d\u0438\u043a\u0438 \u043f\u043e \u0443\u0445\u043e\u0434\u0443 \u043d\u0430 \u0434\u043e\u043c\u0443 (\u0445\u043e\u0443\u043c\u0430\u0442\u0435\u043d\u0434\u044b) \u043e\u0431\u0443\u0447\u0435\u043d\u044b \u0440\u0430\u0441\u043f\u043e\u0437\u043d\u0430\u0432\u0430\u0442\u044c \u0432\u0441\u0435 \u0441\u0442\u0430\u0434\u0438\u0438 \u0434\u0435\u0444\u0438\u0446\u0438\u0442\u0430 \u043f\u0430\u043c\u044f\u0442\u0438.",
-    bulletsItems: ["\u0415\u0436\u0435\u0434\u043d\u0435\u0432\u043d\u0430\u044f \u043c\u043e\u0431\u0438\u043b\u044c\u043d\u043e\u0441\u0442\u044c \u0438 \u043f\u0440\u0435\u0434\u043e\u0442\u0432\u0440\u0430\u0449\u0435\u043d\u0438\u0435 \u043f\u0430\u0434\u0435\u043d\u0438\u0439", "\u041e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u0434\u0440\u0443\u0436\u0435\u0441\u043a\u043e\u0433\u043e \u043e\u0431\u0449\u0435\u043d\u0438\u044f \u0438 \u043f\u043e\u043c\u043e\u0449\u044c \u0432 \u0434\u043e\u043d\u0435\u0441\u0435\u043d\u0438\u0438 \u0432\u0430\u0448\u0438\u0445 \u043f\u043e\u0442\u0440\u0435\u0431\u043d\u043e\u0441\u0442\u0435\u0439 \u0434\u043e \u0434\u0440\u0443\u0433\u0438\u0445.", "\u041f\u043e\u043c\u043e\u0436\u0435\u043c \u0432 \u043f\u0440\u0438\u0435\u043c\u0435 \u043b\u0435\u043a\u0430\u0440\u0441\u0442\u0432 \u0438 \u043e\u0431\u0435\u0441\u043f\u0435\u0447\u0435\u043d\u0438\u0435 \u0438\u0445 \u043f\u0440\u0438\u0435\u043c\u0430 \u0432 \u0441\u043e\u043e\u0442\u0432\u0435\u0442\u0441\u0442\u0432\u0438\u0438 \u0441 \u043f\u0440\u0435\u0434\u043f\u0438\u0441\u0430\u043d\u0438\u044f\u043c\u0438, \u0447\u0442\u043e\u0431\u044b \u043d\u0438\u043a\u043e\u0433\u0434\u0430 \u043d\u0435 \u0437\u0430\u0431\u044b\u0442\u044c \u0434\u043e\u0437\u0443", "\u041d\u0430\u043f\u043e\u043c\u043d\u0438\u043c \u0438 \u0441\u043e\u043f\u0440\u043e\u0432\u043e\u0434\u0438\u043c \u043d\u0430 \u043f\u0440\u0438\u0435\u043c \u043a \u0432\u0440\u0430\u0447\u0443", "\u041f\u043e\u043c\u043e\u0436\u0435\u043c \u0432 \u043f\u0440\u0438\u0433\u043e\u0442\u043e\u0432\u043b\u0435\u043d\u0438\u0438 \u0434\u0438\u0435\u0442\u0438\u0447\u0435\u0441\u043a\u0438\u0445 \u0431\u043b\u044e\u0434.", "\u041d\u0430\u0448 \u0440\u0430\u0431\u043e\u0442\u043d\u0438\u043a \u043f\u043e \u0443\u0445\u043e\u0434\u0443 \u043d\u0430 \u0434\u043e\u043c\u0443 (\u0445\u043e\u0443\u043c\u0430\u0442\u0435\u043d\u0434) \u0441\u043e\u043e\u0431\u0449\u0438\u0442 \u043e\u0431 \u0438\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u0438 \u0430\u043f\u043f\u0435\u0442\u0438\u0442\u0430.", "\u0423\u0434\u043e\u0432\u043b\u0435\u0442\u0432\u043e\u0440\u0438\u043c \u0432\u0430\u0448\u0438 \u043f\u043e\u0442\u0440\u0435\u0431\u043d\u043e\u0441\u0442\u0438 \u0432 \u043b\u0438\u0447\u043d\u043e\u043c \u0443\u0445\u043e\u0434\u0435, \u043d\u043e \u043d\u0435 \u043b\u0438\u0448\u0430\u0442\u044c \u0432\u0430\u0441 \u043d\u0435\u0437\u0430\u0432\u0438\u0441\u0438\u043c\u043e\u0441\u0442\u0438.", "\u041f\u043e\u043c\u043e\u0436\u0435\u043c \u0432 \u043f\u043e\u0432\u0441\u0435\u0434\u043d\u0435\u0432\u043d\u044b\u0445 \u0434\u0435\u043b\u0430\u0445, \u0432\u043a\u043b\u044e\u0447\u0430\u044f \u043e\u0434\u0435\u0432\u0430\u043d\u0438\u0435, \u043f\u043e\u043b\u044c\u0437\u043e\u0432\u0430\u043d\u0438\u0435 \u0442\u0443\u0430\u043b\u0435\u0442\u043e\u043c, \u043a\u0443\u043f\u0430\u043d\u0438\u0435 \u0438 \u043f\u0440\u0438\u0435\u043c \u043f\u0438\u0449\u0438.", "\u0423\u0441\u043f\u043e\u043a\u0430\u0438\u0432\u0430\u044e\u0449\u0435\u0435 \u043f\u0440\u0438\u0441\u0443\u0442\u0441\u0442\u0432\u0438\u0435 \u0434\u0430\u0436\u0435 \u0432 \u0441\u0430\u043c\u044b\u0435 \u0434\u0435\u0437\u043e\u0440\u0438\u0435\u043d\u0442\u0438\u0440\u043e\u0432\u0430\u043d\u043d\u044b\u0435 \u0434\u043d\u0438."],
-    bulletsImage: "/images/conditions/in-home-health-care-nyc.jpg",
-    prefooterTitle: "\u0413\u043e\u0442\u043e\u0432\u044b \u0443\u0437\u043d\u0430\u0442\u044c \u0431\u043e\u043b\u044c\u0448\u0435 \u0438 \u043f\u043e\u043b\u0443\u0447\u0438\u0442\u044c \u043d\u0435\u043e\u0431\u0445\u043e\u0434\u0438\u043c\u0443\u044e \u043f\u043e\u043c\u043e\u0449\u044c \u0434\u043b\u044f \u043f\u043e\u0434\u0434\u0435\u0440\u0436\u043a\u0438 \u0447\u043b\u0435\u043d\u0430 \u0441\u0435\u043c\u044c\u0438 \u0441 \u043d\u0430\u0440\u0443\u0448\u0435\u043d\u0438\u0435\u043c \u043f\u0430\u043c\u044f\u0442\u0438?",
-    prefooterDescription: "\u0421\u0432\u044f\u0436\u0438\u0442\u0435\u0441\u044c \u0441 \u043d\u0430\u043c\u0438 \u0441\u0435\u0433\u043e\u0434\u043d\u044f \u0447\u0442\u043e\u0431\u044b \u043e\u0431\u0441\u0443\u0434\u0438\u0442\u044c \u043f\u043b\u0430\u043d \u043f\u043e \u043e\u0431\u0441\u043b\u0443\u0436\u0438\u0432\u0430\u043d\u0438\u044e \u043a\u043e\u0442\u043e\u0440\u044b\u0439 \u0431\u0443\u0434\u0435\u0442 \u043f\u043e\u0434\u0445\u043e\u0434\u0438\u0442\u044c \u0432\u0430\u0448\u0435\u0439 \u0441\u0435\u043c\u044c\u0435.",
-    prefooterButtonTitle: "\u0417\u0430\u0440\u0435\u0433\u0438\u0441\u0442\u0440\u0438\u0440\u0443\u0439\u0441\u044f \u0441\u0435\u0433\u043e\u0434\u043d\u044f",
+    // This entire entry was accidentally left in Russian (apparently
+    // copy-pasted from the Russian conditions file during an earlier
+    // build) — rebuilt here from the actual live English page.
+    heroLabel: "CONDITIONS",
+    heroTitle: "Compassionate In-Home Alzheimer's & Dementia Care",
+    heroHighlight: "Alzheimer's & Dementia",
+    heroSubtitle: "Expert Memory Care Services for Your Loved One in New York City",
+    heroDescription: "Our dedicated caregivers ensure the safety and comfort of your family member with memory care needs. We help them maintain a predictable daily routine, promoting peace of mind for you and your loved one.",
+    heroImage: "/images/conditions/in-home-alzheimers-and-dementia-care-nyc.jpg",
+    bulletsTitle: "Personalized Care for All Stages of Memory Loss",
+    bulletsHighlight: "All Stages of Memory Loss",
+    bulletsListTitle: "How we can help",
+    bulletsListDescription: "Our home care professionals are trained to recognize the needs of all stages of memory impairment. We provide compassionate support by helping with:",
+    bulletsItems: ["Daily mobility and fall prevention.", "Providing caring companionship and a consistent presence so your loved one is never lonely.", "Assistance with medication management to ensure doses are never forgotten.", "Reminders and accompaniment to doctors' appointments.", "Assist you in preparing diet-specific meals.", "Monitoring for and reporting changes in appetite.\nMeeting personal care needs while encouraging and supporting independence.", "Assisting with daily tasks including dressing, toileting, bathing, and eating.", "A calming presence to be there during even the most disoriented days."],
+    bulletsImage: "/images/conditions/compassionate-alzheimers-and-dementia-care-nyc.jpg",
+    hasTestimonials: true,
+    prefooterTitle: "Ready to Find Support for a Family Member with Memory Impairment?",
+    prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
+    prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/in-home-care-plan-for-memory-impairment-nyc.jpg",
   },
   {
     slug: "epilepsy",
@@ -114,14 +141,16 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our epilepsy care specialists are trained to:",
     bulletsItems: ["Ensure you are in a safe position during an epilepsy event.", "Assist with medication management to ensure you take them as prescribed.", "Work alongside your physician to successfully manage your epilepsy episodes.", "Reminders and accompaniment to doctors' appointments.", "Provide first-aid assistance to ensure your safety during a seizure event.", "Assist you in preparing diet-specific meals.", "Providing and maintaining calm, limited stress environments to decrease seizure events."],
     bulletsImage: "/images/conditions/epilepsy-home-care-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to Learn More and Find Support for Your Epilepsy?",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/home-health-caregiver-nyc.jpg",
   },
   {
     slug: "fall-prevention",
     title: "Fall Prevention",
-    heroLabel: "CONDITION",
+    heroLabel: "CONDITIONS",
     heroTitle: "Expert In-Home Fall Prevention & Safety",
     heroHighlight: "In-Home",
     heroSubtitle: "Specialized Home Care to Help You Live Confidently and Safely in NYC",
@@ -133,9 +162,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our home care professionals receive regular training to:",
     bulletsItems: ["Assess your home for safety concerns and make adjustments to prevent falls.", "Manage medication schedules and ensure you take them as prescribed.", "Accompany you to doctors' appointments.", "Monitor blood sugar, blood pressure, and any other condition-specific tasks required for your unique needs.", "Assist you in preparing diet-specific meals.", "Create and support a personalized exercise program.", "Provide companionship and assist with daily household tasks."],
     bulletsImage: "/images/conditions/fall-prevention-care-in-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to Learn More and Take the First Step in Fall Prevention?",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/fall-prevention-and-safety-care-nyc.jpg",
   },
   {
     slug: "help-with-daily-tasks",
@@ -152,9 +183,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our home health aides can assist with:",
     bulletsItems: ["Assist with medication management and ensure you take them as prescribed.", "Assist in preparing diet-specific meals.", "Create and support a personalized exercise program.", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe.", "Accompany you to doctors' appointments.", "Accompany you on errands.", "Monitor blood sugar, blood pressure, and any other condition-specific tasks required for your unique needs."],
     bulletsImage: "/images/conditions/help-with-homely-tasks-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to learn more and get help with your daily tasks?",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/contact-home-health-care-nyc.jpg",
   },
   {
     slug: "arthritis",
@@ -171,9 +204,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our home health aides can assist with:",
     bulletsItems: ["Assisting with medication management to prevent flare-ups and inflammation.", "Assist you in preparing diet-specific meals.", "Encouraging exercise and physical activity as prescribed by your physical or occupational therapist to help preserve mobility and function.", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe.", "Accompany you to doctors' appointments and on errands.", "Applying topical creams and heat/cold packs to help soothe painful joints.", "Assisting with dressing, bathing, and other personal care activities."],
     bulletsImage: "/images/conditions/arthritis-and-pain-management-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Get the help you need to manage your arthritis",
     prefooterDescription: "Contact us today to discuss a custom care plan suited to your family.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/custom-plan-in-home-arthritis-management-nyc.jpg",
   },
   {
     slug: "lifting-and-transferring",
@@ -190,9 +225,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our aides are trained to move patients securely to avoid unnecessary injury and stress:",
     bulletsItems: ["Trained to use a Hoyer lift.", "Transferring from bed to wheelchair, chair, or commode.", "Repositioning in bed to prevent pressure sores and maintain comfort.", "Safety-focused body mechanics to maneuver the patient from bed to wheelchair.", "Assisting the patient with movement to avoid injury.", "Monitoring for signs of discomfort or pain during transfers.", "Educating family members on proper transfer techniques for continued safety."],
     bulletsImage: "/images/conditions/patient-lifting-and-transferring-new-york-city.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Get the help you need lifting and transferring your loved one",
     prefooterDescription: "Contact us today to discuss your family's unique needs and learn how our trained specialists can provide a custom care plan for safe and stress-free mobility.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/specialized-patient-lifting-and-transferring-nyc.jpg",
   },
   {
     slug: "live-in-24-hour-care",
@@ -209,9 +246,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our home health aides can create a comfortable, safe and caring environment:",
     bulletsItems: ["Assistance with medication management to ensure you take them as prescribed.", "Assisting with proper diet and healthy meal preparation to promote total health.", "Encouraging exercise and physical activity as prescribed by a physical therapist to help preserve mobility and function.", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe.", "Accompany you to doctors' appointments and on errands.", "Provide a sense of peace for you and your family, knowing there is a caregiver available at all hours of the day."],
     bulletsImage: "/images/conditions/live-in-assistance-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to Discuss 24-Hour Live-In Care for Your Family?",
     prefooterDescription: "Contact us to discuss a custom care plan for your unique needs.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/compassionate-representative-ideal-home-health.jpg",
   },
   {
     slug: "post-hospital-care",
@@ -228,9 +267,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "After a hospital discharge, we ensure that you or your loved one receives the exact support they need to increase their chance of a full recovery.",
     bulletsItems: ["Assist with medication management to ensure you take them as prescribed.", "Assist with dressing changes and monitoring the healing of your condition as prescribed by your physician.", "Ensure and consistently comply with the customized recovery plan developed by our nursing team.", "Accompany you to doctors' appointments and on errands.", "Assist you in preparing diet-specific meals.", "Assisting with proper usage of mobility devices and Range of Motion exercises (as prescribed by your physician).", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe."],
     bulletsImage: "/images/conditions/post-hospital-recovery-care-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Get the help you need after returning home from the hospital",
     prefooterDescription: "Contact us to discuss a custom care plan unique to your recovery needs.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/contact-home-health-care-nyc.jpg",
   },
   {
     slug: "wheel-chair-bed-bound-support",
@@ -247,9 +288,11 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our aides are trained to move patients securely to avoid unnecessary injury and stress.",
     bulletsItems: ["Assistance with walking, wheelchair, and bed transfers, including the use of a Hoyer lift.", "Safety-focused body mechanics to maneuver the patient from bed to wheelchair.", "Repositioning in bed to prevent spasticity and pressure sores.", "Assisting the patient with movement to avoid injury.", "Assistance with bathing and sanitary needs.", "Accompany you to doctors' appointments and on errands.", "Assisting with preparing diet-specific meals.", "Encouraging exercise and physical activity as prescribed by your physical therapist to help preserve mobility and function.", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe."],
     bulletsImage: "/images/conditions/caring-bed-bound-patient-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to Find Support for Your Loved One?",
     prefooterDescription: "Contact us to discuss a custom care plan for your family's unique needs.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/enroll-in-home-health-care-nyc.jpg",
   },
   {
     slug: "individualized-care",
@@ -266,8 +309,10 @@ export const conditionPages: ConditionPage[] = [
     bulletsListDescription: "Our approach to personalized care includes:",
     bulletsItems: ["Working with a registered nurse to develop a treatment plan tailored to your unique care needs.", "Following care guidelines as prescribed by your physician.", "Collaborating with you and your family to develop a dietary plan based on your specific preferences.", "Finding an aide who speaks your language and understands your cultural needs.", "Encouraging exercise and physical activity as prescribed by your physical therapist to help preserve mobility and function.", "Assist with household cleaning, laundry, and clutter removal to ensure your home is mobility safe."],
     bulletsImage: "/images/conditions/individualized-home-care-nyc.jpg",
+    hasTestimonials: true,
     prefooterTitle: "Ready to Work With Us on a Personalized Care Plan?",
     prefooterDescription: "Contact us to discuss your family's unique needs.",
     prefooterButtonTitle: "Contact Us",
+    prefooterImage: "/images/conditions/individualized-home-care-plan-nyc.jpg",
   },
 ];

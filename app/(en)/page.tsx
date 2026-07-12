@@ -127,7 +127,9 @@ export default function Home() {
           {locationCards.map((loc) => (
             <div key={loc.name} className="bg-white rounded-3xl border border-navy-900/10 shadow-[0_20px_40px_rgba(56,75,116,0.08)] p-8 text-center flex flex-col items-center">
               <h3 className="font-display text-[1.875rem] font-black text-navy-800">{loc.name}</h3>
+              <p className="mt-1 text-sm text-navy-muted">{loc.subtitle}</p>
               <p className="mt-3 text-[1.125rem] text-navy-muted leading-relaxed">{loc.address}</p>
+              <p className="mt-1 text-sm text-navy-muted">Phone: {loc.phone}</p>
               <Button href={loc.button.href} className="mt-6">{loc.button.title}</Button>
             </div>
           ))}
