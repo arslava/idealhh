@@ -3,11 +3,11 @@ import { slugMap, conditionSlugMap, localizedHref, localizedConditionHref, type 
 
 export const SITE_URL = "https://idealhh.com";
 
-const ALL_LOCALES: Locale[] = ["en", "ru", "es", "ar", "zhHant"];
+export const ALL_LOCALES: Locale[] = ["en", "ru", "es", "ar", "zhHant"];
 
 // hreflang requires real BCP-47 codes, not our internal object-key names —
 // zhHant's real tag is "zh-Hant", not "zhHant".
-const HREFLANG_CODE: Record<Locale, string> = {
+export const HREFLANG_CODE: Record<Locale, string> = {
   en: "en", ru: "ru", es: "es", ar: "ar", zhHant: "zh-Hant",
 };
 

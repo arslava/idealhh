@@ -1,114 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/ar/about-us/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/careers/how-it-works-caregivers/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/careers/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/contact-us-2/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/enroll-now/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/home-care-benefits/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/how-to-enroll/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/services/conditions/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/services/home-health-aide/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/services/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/ar/services/visiting-home-nurse/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/about-us/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/careers/how-it-works-caregivers/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/careers/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/contact-us-2/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/enroll-now/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/home-care-benefits/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/how-to-enroll/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/services/conditions/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/services/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/zh-hant/services/visiting-home-nurse/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CaregiverApplicationFormAr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/CaregiverApplicationFormZhHant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ContactFormAr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ContactFormZhHant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/EnrollNowFormAr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/EnrollNowFormZhHant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/FooterAr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/FooterZhHant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HeaderAr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/HeaderZhHant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/JsonLd.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ReviewsCarouselAr.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ReviewsCarouselZhHant.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/content.ar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/content.zh-hant.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/metadata.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nav.ar.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/nav.zh-hant.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/schema.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/middleware.ts" afterDir="false" />
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="arabic and chinese">
+      <change afterPath="$PROJECT_DIR$/app/sitemap.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/Flag.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/LanguageSwitcherMobile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/locale-flags.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/use-language-links.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/about-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/about-us/testimonials-reviews/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/blog/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/blog/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/blog/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/blog/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/careers/how-it-works-caregivers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/careers/how-it-works-caregivers/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/careers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/careers/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/conditions/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/conditions/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/contact-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/contact-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/enroll-now/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/enroll-now/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/home-care-benefits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/home-care-benefits/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/how-to-enroll/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/legal/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/legal/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/locations/bronx/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/locations/bronx/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/locations/brooklyn/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/locations/brooklyn/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/locations/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/locations/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/privacy-policy/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/privacy-policy/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/resources/faq/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/resources/faq/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/resources/home-health-aide-resources/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/resources/home-health-aide-resources/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/resources/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/resources/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/resources/traditional-care-patient-resources/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/resources/traditional-care-patient-resources/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/services/conditions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/services/home-health-aide/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/services/home-health-aide/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/services/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/services/visiting-home-nurse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/services/visiting-home-nurse/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(en)/tos/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(en)/tos/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/about-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/about-us/testimonials-reviews/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/carreras/convertirse-en-un-cuidador-de-ideal-home-health/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/carreras/convertirse-en-un-cuidador-de-ideal-home-health/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/carreras/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/carreras/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/conditions/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/conditions/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/contact-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/contact-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/enroll-now/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/enroll-now/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/home-care-benefits/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/home-care-benefits/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/how-to-enroll/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/services/conditions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/services/home-health-aide/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/services/home-health-aide/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/services/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/es/services/visiting-home-nurse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/es/services/visiting-home-nurse/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/%D0%BB%D1%8C%D0%B3%D0%BE%D1%82%D1%8B-%D0%BF%D0%BE-%D1%83%D1%85%D0%BE%D0%B4%D1%83-%D0%BD%D0%B0-%D0%B4%D0%BE%D0%BC%D1%83/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/%D0%BB%D1%8C%D0%B3%D0%BE%D1%82%D1%8B-%D0%BF%D0%BE-%D1%83%D1%85%D0%BE%D0%B4%D1%83-%D0%BD%D0%B0-%D0%B4%D0%BE%D0%BC%D1%83/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/about-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/about-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/about-us/testimonials-reviews/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/about-us/testimonials-reviews/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/careers/become-a-caregiver/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/careers/become-a-caregiver/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/careers/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/careers/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/conditions/[slug]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/conditions/[slug]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/contact-us/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/contact-us/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/enroll-now/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/enroll-now/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/how-to-enroll/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/conditions/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/services/home-health-aide/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/home-health-aide/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/ru/services/visiting-home-nurse/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeaderAr.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderAr.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeaderEs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderEs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeaderRu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderRu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/HeaderZhHant.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderZhHant.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LocationPageContent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LocationPageContent.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/slug-map.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/slug-map.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.tsbuildinfo" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.tsbuildinfo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/metadata.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/metadata.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,8 +56,8 @@
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/app/ru" />
       <recent name="$PROJECT_DIR$/app" />
+      <recent name="$PROJECT_DIR$/app/ru" />
       <recent name="$PROJECT_DIR$/app/api/contact" />
       <recent name="$PROJECT_DIR$/lib" />
     </key>
@@ -527,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783864905615</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="arabic and chinese">
+      <created>1783892887143</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1783892887143</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -548,14 +462,15 @@
     <MESSAGE value="russian" />
     <MESSAGE value="fixes" />
     <MESSAGE value="spanish and fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="spanish and fixes" />
+    <MESSAGE value="arabic and chinese" />
+    <option name="LAST_COMMIT_MESSAGE" value="arabic and chinese" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="402" y="126" key="CommitChangelistDialog2" timestamp="1783864905240">
+    <state x="396" y="126" key="CommitChangelistDialog2" timestamp="1783893826841">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="402" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783864905240" />
+    <state x="396" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783893826841" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
     <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783863901600">
       <screen x="0" y="23" width="1920" height="1002" />

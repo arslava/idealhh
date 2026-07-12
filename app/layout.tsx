@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import "./globals.css";
 import { publicSans, cormorant } from "./fonts";
+import LanguageSwitcherMobile from "@/components/LanguageSwitcherMobile";
 
 // Header/Footer now live per-locale (app/(en)/layout.tsx for English,
 // app/ru/layout.tsx for Russian) instead of here, since a shared global
@@ -30,7 +31,10 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} dir={dir} className={`${publicSans.variable} ${cormorant.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <LanguageSwitcherMobile />
+      </body>
     </html>
   );
 }

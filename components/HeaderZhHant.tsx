@@ -85,9 +85,6 @@ export default function HeaderZhHant() {
       {mobileOpen && (
         <div className="lg:hidden absolute top-full left-0 right-0 bg-white shadow-[0_20px_40px_rgba(56,75,116,0.15)] z-50 max-h-[80vh] overflow-y-auto">
           <nav className="px-4 py-4">
-            <div className="sm:hidden pb-4 mb-2 border-b border-navy-muted/10">
-              <LanguageSwitcher variant="button" />
-            </div>
             {navZhHant.map((item) => (
               <div key={item.label} className="border-b border-navy-muted/10 last:border-none">
                 <div className="flex items-center justify-between">
