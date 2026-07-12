@@ -4,6 +4,14 @@ import PrefooterCta from "@/components/PrefooterCta";
 import ContactFormEs from "@/components/ContactFormEs";
 import ReviewsCarouselEs from "@/components/ReviewsCarouselEs";
 import { esContactUsPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "contactUs",
+  locale: "es",
+  title: "Contáctenos | Ideal Home Health en Brooklyn y el Bronx",
+  description: "Comuníquese con Ideal Home Health al (718) 517-2424 o mediante nuestro formulario. Oficinas en Brooklyn y el Bronx atendiendo toda la ciudad de Nueva York.",
+});
 
 export default function EsContactUsPage() {
   const { hero, officeCards, prefooterCta } = esContactUsPage;

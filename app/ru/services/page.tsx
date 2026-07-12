@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruServicesPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "services",
+  locale: "ru",
+  title: "Услуги по уходу на дому в Нью-Йорке | Ideal Home Health",
+  description: "Помощники по уходу на дому и дипломированные медсёстры в Нью-Йорке. Заботливый и индивидуальный уход для пациентов в Бруклине и Бронксе.",
+});
 
 export default function RuServicesPage() {
   const { hero, services, whyChoose, prefooterCta } = ruServicesPage;

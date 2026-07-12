@@ -1,6 +1,14 @@
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruConditionsPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "conditionsOverview",
+  locale: "ru",
+  title: "Уход при заболеваниях на дому | Ideal Home Health",
+  description: "Специализированный уход на дому в Нью-Йорке при диабете, инсульте, болезни Альцгеймера, эпилепсии, артрите и других состояниях.",
+});
 
 export default function RuConditionsPage() {
   const { cards, prefooterCta } = ruConditionsPage;

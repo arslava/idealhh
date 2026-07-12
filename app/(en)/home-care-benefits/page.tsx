@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { benefitsPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "homeCareBenefits",
+  locale: "en",
+  title: "Home Care Benefits Covered by Medicaid & Medicare | Ideal Home Health",
+  description: "Find out if you or a loved one qualify for no-cost in-home care through Medicaid and Medicare — personal care, transportation assistance, and medication reminders in NYC.",
+});
 
 export default function BenefitsPage() {
   const { hero, qualify, included, includedImage, extras, stepsImage, steps, whyChoose, locations, officeCards, quote, prefooterCta } = benefitsPage;

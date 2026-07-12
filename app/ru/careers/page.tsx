@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import CaregiverApplicationFormRu from "@/components/CaregiverApplicationFormRu";
 import { ruCareersPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "careers",
+  locale: "ru",
+  title: "Вакансии помощника по уходу на дому в Нью-Йорке | Ideal Home Health",
+  description: "Присоединяйтесь к команде Ideal Home Health как HHA, RN, LPN или PCA. Конкурентная зарплата и гибкий график в Бруклине и Бронксе.",
+});
 
 export default function RuCareersPage() {
   const { hero, benefits, qualify, locations, jobs } = ruCareersPage;

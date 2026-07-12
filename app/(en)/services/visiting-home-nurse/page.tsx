@@ -5,6 +5,14 @@ import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { visitingHomeNursePage } from "@/lib/content";
 import { conditionTestimonials } from "@/lib/conditions";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "visitingHomeNurse",
+  locale: "en",
+  title: "Visiting Home Nurse | Skilled Nursing Care in NYC | Ideal Home Health",
+  description: "Licensed registered nurses delivering expert skilled nursing care in your New York City home, with custom care plans tailored to your unique medical needs.",
+});
 
 function Stars({ rating }: { rating: number }) {
   return (

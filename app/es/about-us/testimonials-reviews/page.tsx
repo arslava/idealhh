@@ -2,6 +2,19 @@ import Image from "next/image";
 import { Star } from "lucide-react";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esTestimonialsPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+// Real title confirmed via live fetch. The live meta-description was
+// literally just "Companionship in Brooklyn, New York" (matches the
+// genuinely-untranslated second heading on this page, see the hero note
+// below) — too thin to be useful in search results, so a real descriptive
+// one is used here instead of reproducing it.
+export const metadata = buildMetadata({
+  key: "testimonials",
+  locale: "es",
+  title: "Testimonios & Reseñas - Ideal Home Health",
+  description: "Lea testimonios reales de pacientes, cuidadores y familias sobre su experiencia con Ideal Home Health, agencia de cuidados a domicilio de confianza en Nueva York.",
+});
 
 function Stars({ rating }: { rating: number }) {
   return (

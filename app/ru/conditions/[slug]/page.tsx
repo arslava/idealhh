@@ -5,9 +5,22 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruConditionPages } from "@/lib/conditions.ru";
+import { buildConditionMetadata } from "@/lib/metadata";
+import { conditionSlugMap } from "@/lib/slug-map";
 
 export function generateStaticParams() {
   return ruConditionPages.map((c) => ({ slug: c.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const condition = ruConditionPages.find((c) => c.slug === slug);
+  if (!condition) return {};
+  const enSlug = Object.entries(conditionSlugMap).find(([, v]) => v.ru === slug)?.[0];
+  const title = `${condition.title} — уход на дому в Нью-Йорке | Ideal Home Health`;
+  const description = condition.heroDescription;
+  if (!enSlug) return { title, description };
+  return buildConditionMetadata({ enSlug, locale: "ru", title, description });
 }
 
 // Same 3 Russian-translated testimonial posts used elsewhere (ids 3957,

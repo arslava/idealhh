@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { howToEnrollPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "howToEnroll",
+  locale: "en",
+  title: "How to Enroll | Getting Started with Ideal Home Health",
+  description: "A simple process to get the compassionate care you deserve — from checking Medicaid eligibility to being matched with the ideal caregiver for your needs.",
+});
 
 export default function HowToEnrollPage() {
   const { hero, steps, bullets, prefooterCta } = howToEnrollPage;

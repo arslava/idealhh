@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruAboutUsPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "aboutUs",
+  locale: "ru",
+  title: "О нас | Ideal Home Health: надёжное агентство по уходу на дому в Нью-Йорке",
+  description: "В Ideal Home Health ваша семья — это наша семья. Узнайте о нашей миссии предоставлять качественный уход на дому в Нью-Йорке с 2013 года.",
+});
 
 export default function RuAboutUsPage() {
   const { hero, mission, areasServed, officeCards, languages, statistics, prefooterCta } = ruAboutUsPage;

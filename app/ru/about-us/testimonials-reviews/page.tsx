@@ -1,6 +1,14 @@
 import { Star } from "lucide-react";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruTestimonialsPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "testimonials",
+  locale: "ru",
+  title: "Свидетельства и отзывы | Ideal Home Health",
+  description: "Реальные отзывы пациентов, опекунов и их семей об опыте работы с Ideal Home Health — надёжным агентством по уходу на дому в Нью-Йорке.",
+});
 
 function Stars({ rating }: { rating: number }) {
   return (

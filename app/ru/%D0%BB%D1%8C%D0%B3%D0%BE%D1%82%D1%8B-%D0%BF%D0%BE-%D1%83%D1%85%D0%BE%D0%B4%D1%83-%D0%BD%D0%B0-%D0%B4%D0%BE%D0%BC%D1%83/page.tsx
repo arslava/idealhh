@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruBenefitsPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "homeCareBenefits",
+  locale: "ru",
+  title: "Льготы по уходу на дому по программам Medicaid и Medicare | Ideal Home Health",
+  description: "Узнайте, имеете ли вы или ваш близкий право на бесплатный уход на дому по программам Medicaid и Medicare в Нью-Йорке.",
+});
 
 export default function RuBenefitsPage() {
   const { hero, qualify, included, extras, steps, whyChoose, quote, locations, officeCards, prefooterCta } = ruBenefitsPage;

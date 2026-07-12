@@ -4,6 +4,14 @@ import PrefooterCta from "@/components/PrefooterCta";
 import ContactFormRu from "@/components/ContactFormRu";
 import ReviewsCarouselRu from "@/components/ReviewsCarouselRu";
 import { ruContactUsPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "contactUs",
+  locale: "ru",
+  title: "Свяжитесь с нами | Ideal Home Health в Бруклине и Бронксе",
+  description: "Свяжитесь с Ideal Home Health по телефону (718) 517-2424 или через нашу форму. Офисы в Бруклине и Бронксе обслуживают весь Нью-Йорк.",
+});
 
 export default function RuContactUsPage() {
   const { hero, officeCards, prefooterCta } = ruContactUsPage;

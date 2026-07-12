@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esBecomeCaregiverPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "becomeACaregiver",
+  locale: "es",
+  title: "Conviértase en Cuidador con Ideal Home Health | Nueva York",
+  description: "Aprenda cómo solicitar empleo como asistente de salud en el hogar con Ideal Home Health: proceso de solicitud, verificación de antecedentes y colocación con pacientes.",
+});
 
 export default function EsBecomeCaregiverPage() {
   const { hero, steps, stepsImage, gettingStarted, prefooterCta } = esBecomeCaregiverPage;

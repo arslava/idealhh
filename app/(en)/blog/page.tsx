@@ -1,6 +1,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import { blogPosts } from "@/lib/blog";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "blog",
+  locale: "en",
+  title: "Blog | Ideal Home Health",
+  description: "News, guides, and resources on home health care, aging in place, and caregiving from Ideal Home Health in New York City.",
+});
 
 function formatDate(dateStr: string) {
   return new Date(dateStr + "T00:00:00").toLocaleDateString("en-US", {

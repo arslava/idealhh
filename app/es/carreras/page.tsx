@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import CaregiverApplicationFormEs from "@/components/CaregiverApplicationFormEs";
 import { esCareersPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "careers",
+  locale: "es",
+  title: "Empleos de Cuidador de Salud en el Hogar en Nueva York | Ideal Home Health",
+  description: "Únase al equipo de Ideal Home Health como asistente de salud en el hogar (HHA), enfermera o PCA. Salarios competitivos y horarios flexibles en Brooklyn y el Bronx.",
+});
 
 export default function EsCareersPage() {
   const { hero, benefits, qualify, locations, officeCards, jobs } = esCareersPage;

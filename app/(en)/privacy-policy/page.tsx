@@ -1,5 +1,13 @@
 import { privacyPolicyPage } from "@/lib/content";
 import { privacyPolicyParagraphs } from "@/lib/privacy-policy-text";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "privacyPolicy",
+  locale: "en",
+  title: "Privacy Policy | Ideal Home Health",
+  description: "Ideal Home Health's HIPAA Notice of Privacy Practices, describing how your health information may be used and disclosed and how to access it.",
+});
 
 export default function PrivacyPolicyPage() {
   const { hero, intro, effectiveDate, contact } = privacyPolicyPage;

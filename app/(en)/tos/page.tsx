@@ -1,5 +1,13 @@
 import { tosPage } from "@/lib/content";
 import { tosHtml } from "@/lib/tos-text";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "tos",
+  locale: "en",
+  title: "Terms of Service | Ideal Home Health",
+  description: "The Terms of Service governing your use of the Ideal Home Health website and services.",
+});
 
 export default function TosPage() {
   return (

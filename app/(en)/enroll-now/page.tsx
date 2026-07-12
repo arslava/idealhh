@@ -4,6 +4,14 @@ import PrefooterCta from "@/components/PrefooterCta";
 import EnrollNowForm from "@/components/EnrollNowForm";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import { enrollNowPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "enrollNow",
+  locale: "en",
+  title: "Enroll Now | Qualify for Home Care | Ideal Home Health",
+  description: "See if you or a loved one qualify for Medicaid- or Medicare-covered home care, and enroll today with Ideal Home Health in New York City.",
+});
 
 export default function EnrollNowPage() {
   const { hero, patientSection, caregiverSection, formSection, prefooterCta } = enrollNowPage;

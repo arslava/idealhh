@@ -5,9 +5,48 @@ import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { blogPosts } from "@/lib/blog";
 import { prefooterDefault } from "@/lib/content";
+import { SITE_URL } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
+}
+
+function excerptFrom(html: string, maxLen = 160): string {
+  const text = html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
+  return text.length > maxLen ? `${text.slice(0, maxLen - 1).trimEnd()}…` : text;
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const post = blogPosts.find((p) => p.slug === slug);
+  if (!post) return {};
+  const description = excerptFrom(post.contentHtml);
+  const canonical = `${SITE_URL}/blog/${post.slug}`;
+  const title = `${post.title} | Ideal Home Health Blog`;
+  // Use the post's own image when it has one (more relevant for a social
+  // share than the generic site logo); fall back to the logo otherwise.
+  const image = post.image ? `${SITE_URL}${post.image}` : `${SITE_URL}/images/logo.svg`;
+  return {
+    title,
+    description,
+    keywords: ["Home Care", "Home Health Care Agency in Brooklyn New York", "Caregiver in Brooklyn New York"],
+    alternates: { canonical },
+    openGraph: {
+      title: post.title,
+      description,
+      url: canonical,
+      siteName: "Ideal Home Health",
+      locale: "en_US",
+      type: "article",
+      images: [{ url: image }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description,
+      images: [image],
+    },
+  };
 }
 
 function formatDate(dateStr: string) {

@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { becomeCaregiverPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "becomeACaregiver",
+  locale: "en",
+  title: "Become a Caregiver | Join Our Team | Ideal Home Health",
+  description: "Learn how to apply for a caregiver job with Ideal Home Health: our simple application process, background check, and matching with the ideal patient for you.",
+});
 
 export default function BecomeCaregiverPage() {
   const { hero, steps, stepsImage, gettingStarted, prefooterCta } = becomeCaregiverPage;

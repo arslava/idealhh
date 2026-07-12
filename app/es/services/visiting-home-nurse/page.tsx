@@ -4,6 +4,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esVisitingHomeNursePage, esTestimonialsPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "visitingHomeNurse",
+  locale: "es",
+  title: "Enfermera Visitante a Domicilio en Nueva York | Ideal Home Health",
+  description: "Enfermeras registradas con licencia que brindan cuidado médico especializado en su hogar en Nueva York: manejo de medicamentos, cuidado de heridas y planes personalizados.",
+});
 
 function Stars({ rating }: { rating: number }) {
   return (

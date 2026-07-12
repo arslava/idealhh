@@ -3,7 +3,17 @@ import { HeartHandshake, Stethoscope } from "lucide-react";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
+import JsonLd from "@/components/JsonLd";
 import { homePage, locationCards } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+import { organizationSchema } from "@/lib/schema";
+
+export const metadata = buildMetadata({
+  key: "home",
+  locale: "en",
+  title: "Home Health Care NYC | Ideal Home Health",
+  description: "Ideal Home Health provides compassionate home health care services across New York City's five boroughs, including Home Health Aides and Visiting Nurses. Your trusted choice in NYC.",
+});
 
 const icons = { heart: HeartHandshake, "heart-pulse": Stethoscope };
 
@@ -12,6 +22,7 @@ export default function Home() {
 
   return (
     <>
+      <JsonLd data={organizationSchema("en")} />
       {/* Hero — real structure is a two-column split on a solid navy section,
           not a full-bleed image with overlay. Text left, photo right. */}
       <section className="bg-navy-900 text-white">

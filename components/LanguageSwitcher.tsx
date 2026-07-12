@@ -4,13 +4,17 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Globe, ChevronDown } from "lucide-react";
-import { slugMap, conditionSlugMap, type SlugEntry } from "@/lib/slug-map";
+import { slugMap, conditionSlugMap, LOCALE_SEGMENT, type SlugEntry, type Locale } from "@/lib/slug-map";
 
-type Locale = "en" | "ru" | "es";
+const LOCALES: Locale[] = ["en", "ru", "es", "ar", "zhHant"];
+const LOCALE_LABELS: Record<Locale, string> = {
+  en: "English", ru: "Русский", es: "Español", ar: "العربية", zhHant: "繁體中文",
+};
 
 // Reverse index: internal EN relPath -> its slugMap entry, built once.
-// Lets us go from "the EN page currently open" to "what's the real RU/ES
-// URL for this same page" without assuming any slug string is shared.
+// Lets us go from "the EN page currently open" to "what's the real
+// RU/ES/AR/ZH-HANT URL for this same page" without assuming any slug
+// string is shared.
 const byEnPath: Record<string, SlugEntry> = Object.fromEntries(
   Object.values(slugMap).map((entry) => [entry.en, entry])
 );
@@ -19,24 +23,27 @@ function pathFor(entry: SlugEntry | undefined, locale: Locale): string | null {
   if (!entry) return null;
   const value = entry[locale];
   if (value === null) return null;
-  const prefix = locale === "en" ? "" : `/${locale}`;
+  const segment = LOCALE_SEGMENT[locale];
+  const prefix = segment ? `/${segment}` : "";
   return value ? `${prefix}/${value}` : prefix || "/";
 }
 
 function useLanguageLinks() {
   const pathname = usePathname() || "/";
-  const isRu = pathname === "/ru" || pathname.startsWith("/ru/");
-  const isEs = pathname === "/es" || pathname.startsWith("/es/");
-  const current: Locale = isRu ? "ru" : isEs ? "es" : "en";
+  const current: Locale =
+    LOCALES.find((l) => {
+      if (l === "en") return false;
+      const seg = LOCALE_SEGMENT[l];
+      return pathname === `/${seg}` || pathname.startsWith(`/${seg}/`);
+    }) ?? "en";
 
+  const currentSegment = LOCALE_SEGMENT[current];
   const relPath =
-    current === "ru" ? pathname.replace(/^\/ru\/?/, "") :
-    current === "es" ? pathname.replace(/^\/es\/?/, "") :
-    pathname.replace(/^\//, "");
+    current === "en" ? pathname.replace(/^\//, "") : pathname.replace(new RegExp(`^/${currentSegment}/?`), "");
 
   // Is this a condition detail page? Its relPath under the current locale
   // uses that locale's own slug, so we first have to find the EN slug it
-  // corresponds to before we can look up the other two locales.
+  // corresponds to before we can look up the other locales.
   const conditionMatch = relPath.match(/^conditions\/([^/]+)$/);
   let enSlug: string | null = null;
   if (conditionMatch) {
@@ -51,34 +58,27 @@ function useLanguageLinks() {
     }
   }
 
-  let enHref: string, ruHref: string, esHref: string;
-
-  if (enSlug) {
-    const c = conditionSlugMap[enSlug];
-    enHref = `/conditions/${enSlug}`;
-    ruHref = c?.ru ? `/ru/conditions/${c.ru}` : "/ru/services/conditions";
-    esHref = c?.es ? `/es/conditions/${c.es}` : "/es/services/conditions";
-  } else {
-    // Regular page: find its slugMap entry via the EN path.
+  const hrefFor = (locale: Locale): string => {
+    if (enSlug) {
+      if (locale === "en") return `/conditions/${enSlug}`;
+      const c = conditionSlugMap[enSlug];
+      const translated = c?.[locale];
+      const segment = LOCALE_SEGMENT[locale];
+      return translated ? `/${segment}/conditions/${translated}` : `/${segment}/services/conditions`;
+    }
     const enRelPath =
       current === "en" ? relPath : (() => {
         const found = Object.values(slugMap).find((e) => e[current] === relPath);
         return found?.en ?? null;
       })();
     const entry = enRelPath !== null ? byEnPath[enRelPath] : undefined;
-
-    enHref = pathFor(entry, "en") ?? (relPath ? `/${relPath}` : "/");
-    ruHref = pathFor(entry, "ru") ?? "/ru";
-    esHref = pathFor(entry, "es") ?? "/es";
-  }
+    const segment = LOCALE_SEGMENT[locale];
+    return pathFor(entry, locale) ?? (locale === "en" ? (relPath ? `/${relPath}` : "/") : `/${segment}`);
+  };
 
   return {
     current,
-    options: [
-      { code: "en", label: "English", href: enHref },
-      { code: "ru", label: "Русский", href: ruHref },
-      { code: "es", label: "Español", href: esHref },
-    ],
+    options: LOCALES.map((code) => ({ code, label: LOCALE_LABELS[code], href: hrefFor(code) })),
   } as const;
 }
 

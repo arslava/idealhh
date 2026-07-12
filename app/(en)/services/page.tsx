@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { servicesPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "services",
+  locale: "en",
+  title: "Home Health Care Services in NYC | Ideal Home Health",
+  description: "Ideal Home Health is a leading in-home health care agency in New York, providing Home Health Aides and licensed Visiting Nurses for personalized, high-quality home care.",
+});
 
 export default function ServicesPage() {
   const { hero, services, whyChoose, prefooterCta } = servicesPage;

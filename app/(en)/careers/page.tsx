@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import CaregiverApplicationForm from "@/components/CaregiverApplicationForm";
 import { careersPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "careers",
+  locale: "en",
+  title: "Home Health Aide Jobs in NYC | Careers at Ideal Home Health",
+  description: "Join Ideal Home Health as an HHA, RN, LPN, or PCA. Competitive pay and a supportive work environment for home health caregivers across New York City.",
+});
 
 export default function CareersPage() {
   const { hero, benefits, areasServed, officeCards, qualify, jobs } = careersPage;

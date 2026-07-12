@@ -5,9 +5,22 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { conditionPages, conditionTestimonials } from "@/lib/conditions";
+import { buildConditionMetadata } from "@/lib/metadata";
 
 export function generateStaticParams() {
   return conditionPages.map((c) => ({ slug: c.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const condition = conditionPages.find((c) => c.slug === slug);
+  if (!condition) return {};
+  return buildConditionMetadata({
+    enSlug: slug as Parameters<typeof buildConditionMetadata>[0]["enSlug"],
+    locale: "en",
+    title: `${condition.title} Home Care in NYC | Ideal Home Health`,
+    description: condition.heroDescription,
+  });
 }
 
 function Stars({ rating }: { rating: number }) {

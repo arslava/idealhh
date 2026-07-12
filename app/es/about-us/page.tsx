@@ -2,6 +2,15 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esAboutUsPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+// Real title/description confirmed via live fetch of /es/about-us/.
+export const metadata = buildMetadata({
+  key: "aboutUs",
+  locale: "es",
+  title: "Acerca de nosotros | Ideal Home Health: su agencia de cuidados a domicilio de confianza en Nueva York",
+  description: "Conozca la misión de Ideal Home Health de proporcionar cuidados domiciliarios compasivos en la ciudad de Nueva York. Somos una agencia de cuidados domiciliarios de confianza que presta servicios en Brooklyn, el Bronx y Manhattan desde 2013.",
+});
 
 export default function EsAboutUsPage() {
   const { hero, mission, areasServed, officeCards, languages, statistics, prefooterCta } = esAboutUsPage;

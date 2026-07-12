@@ -1,4 +1,12 @@
 import { languageAssistanceLines } from "@/lib/legal-text";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "legal",
+  locale: "en",
+  title: "Language Assistance & Nondiscrimination Notice | Ideal Home Health",
+  description: "Ideal Home Health's Language Assistance and Nondiscrimination and Accessibility Requirements Notice, including free language assistance services for patients.",
+});
 
 export default function LegalPage() {
   return (

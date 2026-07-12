@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { aboutUsPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "aboutUs",
+  locale: "en",
+  title: "About Us | Ideal Home Health: Trusted Home Care Agency in NYC",
+  description: "Learn about Ideal Home Health's mission to provide compassionate home care in New York City. A trusted home care agency serving Brooklyn, the Bronx, and Manhattan since 2013.",
+});
 
 export default function AboutUsPage() {
   const { hero, mission, areasServed, officeCards, languages, statistics, prefooterCta } = aboutUsPage;

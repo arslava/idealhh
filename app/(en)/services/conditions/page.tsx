@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { conditionsPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "conditionsOverview",
+  locale: "en",
+  title: "Specialized Home Care Services for Your Condition | Ideal Home Health",
+  description: "Condition-specific home care in New York City for arthritis, Parkinson's, epilepsy, fall prevention, post-hospital care, and more — tailored to your routine and needs.",
+});
 
 export default function ConditionsPage() {
   const { hero, sectionTitle, cards, whyChoose, howItWorks, prefooterCta } = conditionsPage;

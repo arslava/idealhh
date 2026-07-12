@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esHowToEnrollPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "howToEnroll",
+  locale: "es",
+  title: "Cómo Inscribirse en Atención Domiciliaria | Ideal Home Health",
+  description: "Conozca el proceso paso a paso para inscribirse como paciente con Ideal Home Health en Nueva York: verificación de Medicaid, evaluación y asignación de cuidador.",
+});
 
 export default function EsHowToEnrollPage() {
   const { hero, steps, bullets, prefooterCta } = esHowToEnrollPage;

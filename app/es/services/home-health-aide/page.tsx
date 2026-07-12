@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esHomeHealthAidePage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "homeHealthAide",
+  locale: "es",
+  title: "Asistentes de Salud en el Hogar (HHA) en Nueva York | Ideal Home Health",
+  description: "Asistentes de salud en el hogar certificados por el Departamento de Salud, con entrenamiento bi-anual en seguridad. Cuidado personal y ayuda diaria en Brooklyn y el Bronx.",
+});
 
 export default function EsHomeHealthAidePage() {
   const { hero, gettingCare, howTheyHelp, prefooterCta } = esHomeHealthAidePage;

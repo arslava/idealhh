@@ -4,6 +4,14 @@ import PrefooterCta from "@/components/PrefooterCta";
 import ContactForm from "@/components/ContactForm";
 import ReviewsCarousel from "@/components/ReviewsCarousel";
 import { contactUsPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "contactUs",
+  locale: "en",
+  title: "Contact Ideal Home Health | NYC Home Care Experts",
+  description: "Contact Ideal Home Health at (718) 517-2424 or via our form. Offices in Brooklyn and the Bronx serving home care patients across New York City.",
+});
 
 export default function ContactUsPage() {
   const { hero, officeCards, prefooterCta } = contactUsPage;

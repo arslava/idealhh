@@ -1,6 +1,16 @@
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
+import JsonLd from "@/components/JsonLd";
 import { faqPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+import { faqPageSchema } from "@/lib/schema";
+
+export const metadata = buildMetadata({
+  key: "faq",
+  locale: "en",
+  title: "Frequently Asked Questions | Ideal Home Health",
+  description: "Clear, concise answers to common questions about home care services, the enrollment process, and how Ideal Home Health can support you or your loved one.",
+});
 
 function QuestionList({ items }: { items: { question: string; answer: string }[] }) {
   return (
@@ -22,9 +32,11 @@ function QuestionList({ items }: { items: { question: string; answer: string }[]
 
 export default function FaqPage() {
   const { hero, patientQuestions, caregiverQuestions, prefooterCta } = faqPage;
+  const schema = faqPageSchema([...patientQuestions, ...caregiverQuestions]);
 
   return (
     <>
+      <JsonLd data={schema} />
       <section className="bg-bg-light">
         <div className="mx-auto max-w-[840px] px-4 py-16 text-center">
           <p className="text-accent text-sm font-semibold uppercase tracking-wide">{hero.label}</p>

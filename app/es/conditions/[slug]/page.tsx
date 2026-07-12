@@ -6,9 +6,23 @@ import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esConditionPages } from "@/lib/conditions.es";
 import { esTestimonialsPage } from "@/lib/content.es";
+import { buildConditionMetadata } from "@/lib/metadata";
+import { conditionSlugMap } from "@/lib/slug-map";
 
 export function generateStaticParams() {
   return esConditionPages.map((c) => ({ slug: c.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const condition = esConditionPages.find((c) => c.slug === slug);
+  if (!condition) return {};
+  // Map back to the canonical EN slug (needed for hreflang lookups).
+  const enSlug = Object.entries(conditionSlugMap).find(([, v]) => v.es === slug)?.[0];
+  const title = `${condition.title} | Cuidado en el Hogar en Nueva York | Ideal Home Health`;
+  const description = condition.heroDescription;
+  if (!enSlug) return { title, description };
+  return buildConditionMetadata({ enSlug, locale: "es", title, description });
 }
 
 function Stars({ rating }: { rating: number }) {

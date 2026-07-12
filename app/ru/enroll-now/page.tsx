@@ -3,6 +3,14 @@ import PrefooterCta from "@/components/PrefooterCta";
 import EnrollNowFormRu from "@/components/EnrollNowFormRu";
 import ReviewsCarouselRu from "@/components/ReviewsCarouselRu";
 import { ruEnrollNowPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "enrollNow",
+  locale: "ru",
+  title: "Зарегистрируйтесь сегодня | Ideal Home Health",
+  description: "Узнайте, имеете ли вы или ваш близкий право на уход на дому по программам Medicaid или Medicare, и зарегистрируйтесь сегодня с Ideal Home Health.",
+});
 
 export default function RuEnrollNowPage() {
   const { hero, qualifyTitle, patientSection, caregiverSection, formSection, prefooterCta } = ruEnrollNowPage;

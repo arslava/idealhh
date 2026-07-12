@@ -1,4 +1,12 @@
 import { traditionalCareResourcesPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "traditionalCareResources",
+  locale: "en",
+  title: "Traditional Care Patient Resources | Ideal Home Health",
+  description: "Common questions and resources for Traditional Care patients of Ideal Home Health, including how to switch from another home care agency.",
+});
 
 export default function TraditionalCareResourcesPage() {
   const { hero, faqIntro, questions, policyLinks, infoLinks } = traditionalCareResourcesPage;

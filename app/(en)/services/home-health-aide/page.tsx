@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { homeHealthAidePage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "homeHealthAide",
+  locale: "en",
+  title: "Certified Home Health Aides (HHAs) in NYC | Ideal Home Health",
+  description: "Our Department of Health certified Home Health Aides provide compassionate in-home care throughout New York City's boroughs, with continuous training in life-saving safety services.",
+});
 
 export default function HomeHealthAidePage() {
   const { hero, gettingCare, howTheyHelp, prefooterCta } = homeHealthAidePage;

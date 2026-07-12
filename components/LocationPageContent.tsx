@@ -2,15 +2,30 @@ import Image from "next/image";
 import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
+import JsonLd from "@/components/JsonLd";
 import { locations } from "@/lib/content";
+import { localBusinessSchema } from "@/lib/schema";
 
 type LocationKey = keyof typeof locations;
 
+// Real office addresses, matching what's already used in the office cards
+// on About Us / Home Care Benefits / Contact Us across every locale.
+const OFFICE_ADDRESSES: Record<LocationKey, { streetAddress: string; addressLocality: string; postalCode: string }> = {
+  brooklyn: { streetAddress: "2617 East 16th Street, Floor 2", addressLocality: "Brooklyn", postalCode: "11235" },
+  bronx: { streetAddress: "391 East 149th Street, Suite 515", addressLocality: "Bronx", postalCode: "10455" },
+};
+
 export default function LocationPageContent({ locationKey }: { locationKey: LocationKey }) {
   const { hero, services, whyChoose, name, prefooterCta } = locations[locationKey];
+  const schema = localBusinessSchema({
+    name,
+    ...OFFICE_ADDRESSES[locationKey],
+    path: `/locations/${locationKey}`,
+  });
 
   return (
     <>
+      <JsonLd data={schema} />
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">

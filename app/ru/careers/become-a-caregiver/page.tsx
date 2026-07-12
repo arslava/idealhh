@@ -2,6 +2,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruBecomeCaregiverPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "becomeACaregiver",
+  locale: "ru",
+  title: "Станьте сиделкой в Ideal Home Health | Нью-Йорк",
+  description: "Узнайте, как подать заявку на работу сиделкой в Ideal Home Health: процесс подачи заявки, проверка биографии и подбор пациента.",
+});
 
 export default function RuBecomeCaregiverPage() {
   const { hero, steps, intro, gettingStarted, prefooterCta } = ruBecomeCaregiverPage;

@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { locationsIndexPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "locationsIndex",
+  locale: "en",
+  title: "Our Locations | Ideal Home Health Brooklyn & Bronx",
+  description: "Ideal Home Health serves patients and families across New York City's five boroughs, with local offices in Brooklyn and the Bronx.",
+});
 
 export default function LocationsIndexPage() {
   const { hero, cards, prefooterCta } = locationsIndexPage;

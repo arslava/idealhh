@@ -1,6 +1,14 @@
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esConditionsPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "conditionsOverview",
+  locale: "es",
+  title: "Cuidado por Condición Médica en el Hogar | Ideal Home Health",
+  description: "Atención domiciliaria especializada para artritis, Parkinson, epilepsia, prevención de caídas, cuidado poshospitalario y más, en la ciudad de Nueva York.",
+});
 
 export default function EsConditionsPage() {
   const { cards, prefooterCta } = esConditionsPage;

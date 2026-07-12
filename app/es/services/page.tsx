@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esServicesPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "services",
+  locale: "es",
+  title: "Servicios de Atención Domiciliaria en Nueva York | Ideal Home Health",
+  description: "Asistentes de salud en el hogar y enfermeras visitantes con licencia en la ciudad de Nueva York. Cuidado compasivo y personalizado para pacientes en Brooklyn y el Bronx.",
+});
 
 export default function EsServicesPage() {
   const { hero, services, whyChoose, prefooterCta } = esServicesPage;

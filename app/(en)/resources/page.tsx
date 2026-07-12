@@ -2,6 +2,14 @@ import Link from "next/link";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { resourcesIndexPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "resourcesIndex",
+  locale: "en",
+  title: "Patient & Caregiver Resource Center | Ideal Home Health",
+  description: "Helpful guides, forms, and FAQs for existing patients, home health aides, and families exploring home care options with Ideal Home Health.",
+});
 
 export default function ResourcesIndexPage() {
   const { hero, patientResources, caregiverResources, prefooterCta } = resourcesIndexPage;

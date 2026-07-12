@@ -3,7 +3,17 @@ import { HeartHandshake, Stethoscope } from "lucide-react";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import ReviewsCarouselRu from "@/components/ReviewsCarouselRu";
+import JsonLd from "@/components/JsonLd";
 import { ruHomePage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+import { organizationSchema } from "@/lib/schema";
+
+export const metadata = buildMetadata({
+  key: "home",
+  locale: "ru",
+  title: "Уход на дому в Нью-Йорке | Ideal Home Health",
+  description: "Ideal Home Health предоставляет услуги по уходу на дому в Нью-Йорке и всех пяти районах города, включая помощников по уходу на дому и медсестёр. Ваш надёжный выбор в Нью-Йорке.",
+});
 
 const icons = { heart: HeartHandshake, "heart-pulse": Stethoscope };
 
@@ -15,6 +25,7 @@ export default function RuHome() {
 
   return (
     <>
+      <JsonLd data={organizationSchema("ru")} />
       {/* Hero — matches the corrected English structure: two-column split on
           a solid navy section (text left, photo right), not a full-bleed
           image with a heavy opacity overlay. The Russian page was still on

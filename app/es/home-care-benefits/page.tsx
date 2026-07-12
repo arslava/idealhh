@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { esBenefitsPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "homeCareBenefits",
+  locale: "es",
+  title: "Prestaciones de Atención Domiciliaria Cubiertas por Medicaid | Ideal Home Health",
+  description: "Descubra si usted o su ser querido califican para recibir asistencia domiciliaria sin costo a través de Medicaid y Medicare en la ciudad de Nueva York.",
+});
 
 export default function EsBenefitsPage() {
   const { hero, qualify, included, includedImage, extras, stepsImage, steps, whyChoose, locations, officeCards, quote, prefooterCta } = esBenefitsPage;

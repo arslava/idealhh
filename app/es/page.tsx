@@ -3,7 +3,21 @@ import { HeartHandshake, Stethoscope } from "lucide-react";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import ReviewsCarouselEs from "@/components/ReviewsCarouselEs";
+import JsonLd from "@/components/JsonLd";
 import { esHomePage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+import { organizationSchema } from "@/lib/schema";
+
+// Live source's own <title> tag is actually still in English even on
+// /es/ (a WPML gap, confirmed via live fetch) — written properly in
+// Spanish here instead of reproducing that gap. Description is the real
+// live meta-description with its CDPAP mention removed per standing rule.
+export const metadata = buildMetadata({
+  key: "home",
+  locale: "es",
+  title: "Atención Médica a Domicilio en Nueva York | Ideal Home Health",
+  description: "Ideal Home Health ofrece servicios de atención médica domiciliaria con compasión en la ciudad de Nueva York y los cinco distritos, incluyendo asistentes de salud en el hogar, HHA y PCA. Su opción de confianza en Nueva York.",
+});
 
 const icons = { heart: HeartHandshake, "heart-pulse": Stethoscope };
 
@@ -12,6 +26,7 @@ export default function EsHome() {
 
   return (
     <>
+      <JsonLd data={organizationSchema("es")} />
       <section className="bg-navy-900 text-white">
         <div className="mx-auto max-w-[1140px] px-4 grid lg:grid-cols-2 gap-10 items-stretch">
           <div className="py-16 lg:py-20">

@@ -3,6 +3,14 @@ import PrefooterCta from "@/components/PrefooterCta";
 import EnrollNowFormEs from "@/components/EnrollNowFormEs";
 import ReviewsCarouselEs from "@/components/ReviewsCarouselEs";
 import { esEnrollNowPage } from "@/lib/content.es";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "enrollNow",
+  locale: "es",
+  title: "Inscríbase Hoy | Atención Domiciliaria en Nueva York | Ideal Home Health",
+  description: "Vea si usted o su familiar califican para recibir atención domiciliaria a través de Medicaid o Medicare, e inscríbase hoy con Ideal Home Health en Nueva York.",
+});
 
 export default function EsEnrollNowPage() {
   const { heroTitle, patientSection, caregiverSection, formSection, prefooterCta } = esEnrollNowPage;

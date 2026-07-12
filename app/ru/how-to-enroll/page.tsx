@@ -2,6 +2,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruHowToEnrollPage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "howToEnroll",
+  locale: "ru",
+  title: "Как зарегистрироваться на уход на дому | Ideal Home Health",
+  description: "Простой процесс регистрации на уход на дому с Ideal Home Health в Нью-Йорке: проверка Medicaid, оценка состояния и подбор помощника.",
+});
 
 export default function RuHowToEnrollPage() {
   const { hero, steps, bullets, prefooterCta } = ruHowToEnrollPage;

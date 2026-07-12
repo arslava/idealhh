@@ -1,4 +1,12 @@
 import { homeHealthAideResourcesPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "hhaResources",
+  locale: "en",
+  title: "Home Health Aide Resources | Ideal Home Health",
+  description: "Timesheets, pre-employment requirements, and other forms and resources for Ideal Home Health's certified Home Health Aides.",
+});
 
 export default function HomeHealthAideResourcesPage() {
   const { hero, forms } = homeHealthAideResourcesPage;

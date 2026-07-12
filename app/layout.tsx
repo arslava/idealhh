@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import "./globals.css";
 import { publicSans, cormorant } from "./fonts";
 
@@ -12,13 +13,23 @@ export const metadata: Metadata = {
     "Ideal Home Health provides compassionate home health care services across Brooklyn and the Bronx — Home Health Aides, Visiting Nurses, and personalized care plans.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Only the root layout can render <html>, so per-locale nested layouts
+  // (app/ru/layout.tsx, app/es/layout.tsx, app/ar/layout.tsx) can't set
+  // `lang`/`dir` themselves — every non-EN page was previously shipping
+  // lang="en" (and no dir attribute at all) to browsers, screen readers,
+  // and search engines. middleware.ts detects the locale from the
+  // pathname and passes it through via a request header.
+  const headersList = await headers();
+  const locale = headersList.get("x-locale") ?? "en";
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
   return (
-    <html lang="en" className={`${publicSans.variable} ${cormorant.variable}`}>
+    <html lang={locale} dir={dir} className={`${publicSans.variable} ${cormorant.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );

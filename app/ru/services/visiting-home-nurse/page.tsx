@@ -4,6 +4,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruVisitingHomeNursePage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "visitingHomeNurse",
+  locale: "ru",
+  title: "Медбратья и медсёстры на дому в Нью-Йорке | Ideal Home Health",
+  description: "Дипломированные медсёстры составят для вас индивидуальный план ухода, следя за вашим состоянием здоровья прямо у вас дома в Нью-Йорке.",
+});
 
 function Stars({ rating }: { rating: number }) {
   return (

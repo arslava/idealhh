@@ -3,6 +3,14 @@ import Button from "@/components/Button";
 import WaveDivider from "@/components/WaveDivider";
 import PrefooterCta from "@/components/PrefooterCta";
 import { ruHomeHealthAidePage } from "@/lib/content.ru";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "homeHealthAide",
+  locale: "ru",
+  title: "Помощники по уходу на дому (HHA) в Нью-Йорке | Ideal Home Health",
+  description: "Сертифицированные Министерством здравоохранения помощники по уходу на дому, проходящие обучение дважды в год. Уход в вашем доме в Нью-Йорке.",
+});
 
 export default function RuHomeHealthAidePage() {
   const { hero, gettingCare, howTheyHelp, prefooterCta } = ruHomeHealthAidePage;

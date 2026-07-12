@@ -3,6 +3,14 @@ import { Star } from "lucide-react";
 import Button from "@/components/Button";
 import PrefooterCta from "@/components/PrefooterCta";
 import { testimonialsPage } from "@/lib/content";
+import { buildMetadata } from "@/lib/metadata";
+
+export const metadata = buildMetadata({
+  key: "testimonials",
+  locale: "en",
+  title: "Testimonials & Reviews | Ideal Home Health",
+  description: "Read real testimonials and reviews from patients, caregivers, and families about their experience with Ideal Home Health, a trusted home care agency in New York City.",
+});
 
 function Stars({ rating }: { rating: number }) {
   return (
