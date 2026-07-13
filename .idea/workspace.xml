@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="arabic and chinese">
-      <change afterPath="$PROJECT_DIR$/app/sitemap.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/Flag.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/LanguageSwitcherMobile.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/locale-flags.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/use-language-links.ts" afterDir="false" />
+    <list default="true" id="bf891bbc-ec8e-4037-ae48-6781e059c8b2" name="Default Changelist" comment="language">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeaderAr.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderAr.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeaderEs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderEs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeaderRu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderRu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/HeaderZhHant.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/HeaderZhHant.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/LanguageSwitcher.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/metadata.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/metadata.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EnrollNowForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/EnrollNowForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EnrollNowFormAr.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/EnrollNowFormAr.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/EnrollNowFormEs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/EnrollNowFormEs.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,13 +87,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783382490132</updated>
-    </task>
-    <task id="LOCAL-00001" summary="init">
-      <created>1783443439071</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1783443439071</updated>
     </task>
     <task id="LOCAL-00002" summary="init">
       <created>1783451368168</created>
@@ -441,7 +424,14 @@
       <option name="project" value="LOCAL" />
       <updated>1783892887143</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="language">
+      <created>1783893881453</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1783893881453</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -463,19 +453,20 @@
     <MESSAGE value="fixes" />
     <MESSAGE value="spanish and fixes" />
     <MESSAGE value="arabic and chinese" />
-    <option name="LAST_COMMIT_MESSAGE" value="arabic and chinese" />
+    <MESSAGE value="language" />
+    <option name="LAST_COMMIT_MESSAGE" value="language" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="396" y="126" key="CommitChangelistDialog2" timestamp="1783893826841">
+    <state x="396" y="126" key="CommitChangelistDialog2" timestamp="1783893927909">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
     <state x="-981" y="141" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@-1280.141.1280.777" timestamp="1783611222565" />
-    <state x="396" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783893826841" />
+    <state x="396" y="126" key="CommitChangelistDialog2/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783893927909" />
     <state x="448" y="132" key="CommitChangelistDialog2/0.23.1920.1057/-1280.141.1280.722@0.23.1920.1057" timestamp="1783459244564" />
-    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783863901600">
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog" timestamp="1783967458578">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
-    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783863901600" />
+    <state x="100" y="123" width="1720" height="802" key="DiffContextDialog/0.23.1920.1002/-1280.141.1280.777@0.23.1920.1002" timestamp="1783967458578" />
     <state x="828" y="242" key="RollbackChangesDialog" timestamp="1783768401965">
       <screen x="0" y="23" width="1920" height="1002" />
     </state>
